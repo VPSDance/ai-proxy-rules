@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { aggregateProviders, mergeRuleSets, providerToTarget } from "../src/data.js";
-import { render } from "../src/generators/index.js";
-import type { ProviderSource } from "../src/types.js";
+import { aggregateProviders, mergeRuleSets, providerToTarget } from "../scripts/data.js";
+import { render } from "../scripts/generators/index.js";
+import type { ProviderSource } from "../scripts/types.js";
 
 const anthropic: ProviderSource = {
   provider: "anthropic",

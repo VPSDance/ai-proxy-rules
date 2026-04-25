@@ -2,8 +2,29 @@ name: Generate Rules
 
 on:
   push:
+    branches:
+      - main
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "tests/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "tsconfig.json"
+      - ".github/workflows/generate.yml"
   pull_request:
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "tests/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "tsconfig.json"
+      - ".github/workflows/generate.yml"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate:
@@ -21,3 +42,15 @@ jobs:
       - run: pnpm check
       - run: pnpm test
       - run: pnpm generate
+      - name: Commit generated rules
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "vps.dance"
+          git config user.email "dancevps@gmail.com"
+          git add rules
+          if git diff --cached --quiet; then
+            echo "No rule changes"
+          else
+            git commit -m "Update generated rules"
+            git push
+          fi

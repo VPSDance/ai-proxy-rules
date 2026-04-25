@@ -18,6 +18,12 @@
 - 支持聚合：多个 provider 可以合并成 `all` 规则。
 - 易于扩展：后续新增 `cursor`、`openai`、`gemini` 等 provider 时，只需要添加 YAML。
 
+## 目录结构
+
+- `data/`: 人工维护的数据源。
+- `scripts/`: 规则生成脚本。
+- `rules/`: 生成后的规则文件。
+
 ## 快速开始
 
 ```bash

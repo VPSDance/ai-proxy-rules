@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "check": "tsc --noEmit",
-    "generate": "tsx src/cli.ts generate",
+    "generate": "tsx scripts/cli.ts generate",
     "test": "vitest run"
   },
   "dependencies": {
