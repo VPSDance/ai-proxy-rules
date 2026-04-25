@@ -1,8 +1,5 @@
 name: Generate Rules
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 on:
   push:
     branches:
@@ -37,7 +34,6 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24
-          cache: pnpm
       - run: corepack enable
       - run: corepack prepare pnpm@10.27.0 --activate
       - run: pnpm install --frozen-lockfile
