@@ -1,0 +1,10 @@
+# All AI Providers
+# all
+DOMAIN,api.anthropic.com,AI
+DOMAIN,claude.ai,AI
+DOMAIN,console.anthropic.com,AI
+DOMAIN-SUFFIX,anthropic.com,AI
+DOMAIN-SUFFIX,anthropic.com.cn,AI
+DOMAIN-SUFFIX,claude.ai,AI
+DOMAIN-KEYWORD,anthropic,AI
+DOMAIN-KEYWORD,claude,AI

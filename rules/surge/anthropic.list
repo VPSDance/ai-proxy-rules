@@ -1,0 +1,10 @@
+# Anthropic
+# anthropic
+DOMAIN,api.anthropic.com
+DOMAIN,claude.ai
+DOMAIN,console.anthropic.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,anthropic.com.cn
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude

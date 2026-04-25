@@ -1,0 +1,17 @@
+provider: anthropic
+name: Anthropic
+description: Claude and Anthropic API domains.
+rules:
+  domain:
+    - api.anthropic.com
+    - console.anthropic.com
+    - claude.ai
+  domainSuffix:
+    - anthropic.com
+    - anthropic.com.cn
+    - claude.ai
+  domainKeyword:
+    - anthropic
+    - claude
+  ipCidr: []
+  ipCidr6: []

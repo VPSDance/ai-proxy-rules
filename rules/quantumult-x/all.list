@@ -1,0 +1,10 @@
+# All AI Providers
+# all
+HOST,api.anthropic.com,AI
+HOST,claude.ai,AI
+HOST,console.anthropic.com,AI
+HOST-SUFFIX,anthropic.com,AI
+HOST-SUFFIX,anthropic.com.cn,AI
+HOST-SUFFIX,claude.ai,AI
+HOST-KEYWORD,anthropic,AI
+HOST-KEYWORD,claude,AI
