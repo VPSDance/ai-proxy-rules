@@ -17,7 +17,6 @@
 - 多客户端输出：同一份数据生成多个客户端格式。
 - 支持聚合：多个 provider 可以合并成 `all` 规则。
 - 易于扩展：后续新增 `cursor`、`openai`、`gemini` 等 provider 时，只需要添加 YAML。
-- 无构建产物：TypeScript 源码通过 `tsx` 直接运行，最终产物只有 `rules/`。
 
 ## 快速开始
 
@@ -124,7 +123,7 @@ sing-box 输出 source rule-set JSON：
 
 ## GitHub Actions
 
-`.github/workflows/generate.yml` 会在 push 和 pull request 时运行类型检查、测试和生成命令。这个项目不需要编译 `dist/`，规则产物直接写入 `rules/`。
+`.github/workflows/generate.yml` 会在 push 和 pull request 时运行类型检查、测试和生成命令。
 
 ## 新增 provider
 
