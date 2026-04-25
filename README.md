@@ -101,8 +101,6 @@ GitHub Actions 会在影响规则生成的文件变化时自动运行检查和�
 
 ## References
 
-参考资料：
-
 - https://github.com/xiaolai/anthropic-claude-surge-rules-set
 - https://ip.net.coffee/claude/site.html
 - https://docs.anthropic.com/en/api/ip-addresses
