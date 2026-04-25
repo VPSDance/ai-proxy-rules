@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "bin": {
-    "ai-proxy-rules": "dist/cli.js"
-  },
   "scripts": {
-    "build": "tsc",
     "check": "tsc --noEmit",
     "generate": "tsx src/cli.ts generate",
     "test": "vitest run"
