@@ -74,6 +74,7 @@ groups:
 - `domainKeyword`: 域名关键字。
 - `ipCidr`: IPv4 CIDR。
 - `ipCidr6`: IPv6 CIDR。
+- `asn`: 自治系统号，仅输出到支持 ASN 规则的客户端。
 
 ## 维护
 

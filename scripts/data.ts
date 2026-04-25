@@ -10,14 +10,16 @@ const rulesSchema = z
     domainSuffix: z.array(z.string()).default([]),
     domainKeyword: z.array(z.string()).default([]),
     ipCidr: z.array(z.string()).default([]),
-    ipCidr6: z.array(z.string()).default([])
+    ipCidr6: z.array(z.string()).default([]),
+    asn: z.array(z.coerce.number().int().positive()).default([])
   })
   .default({
     domain: [],
     domainSuffix: [],
     domainKeyword: [],
     ipCidr: [],
-    ipCidr6: []
+    ipCidr6: [],
+    asn: []
   });
 
 const providerSchema = z.object({
@@ -86,7 +88,8 @@ export function mergeRuleSets(ruleSets: RuleSet[]): RuleSet {
     domainSuffix: ruleSets.flatMap((rules) => rules.domainSuffix),
     domainKeyword: ruleSets.flatMap((rules) => rules.domainKeyword),
     ipCidr: ruleSets.flatMap((rules) => rules.ipCidr),
-    ipCidr6: ruleSets.flatMap((rules) => rules.ipCidr6)
+    ipCidr6: ruleSets.flatMap((rules) => rules.ipCidr6),
+    asn: ruleSets.flatMap((rules) => rules.asn)
   });
 }
 
@@ -124,7 +127,8 @@ function emptyRuleSet(): RuleSet {
     domainSuffix: [],
     domainKeyword: [],
     ipCidr: [],
-    ipCidr6: []
+    ipCidr6: [],
+    asn: []
   };
 }
 
@@ -134,7 +138,8 @@ function normalizeRuleSet(rules: RuleSet): RuleSet {
     domainSuffix: normalizeDnsRules(rules.domainSuffix),
     domainKeyword: normalizeTextRules(rules.domainKeyword),
     ipCidr: normalizeTextRules(rules.ipCidr),
-    ipCidr6: normalizeTextRules(rules.ipCidr6)
+    ipCidr6: normalizeTextRules(rules.ipCidr6),
+    asn: normalizeAsnRules(rules.asn)
   };
 }
 
@@ -144,4 +149,8 @@ function normalizeDnsRules(values: string[]): string[] {
 
 function normalizeTextRules(values: string[]): string[] {
   return [...new Set(values.map((value) => value.trim()).filter(Boolean))].sort();
+}
+
+function normalizeAsnRules(values: number[]): number[] {
+  return [...new Set(values)].sort((a, b) => a - b);
 }

@@ -14,6 +14,7 @@ export interface RuleSet {
   domainKeyword: string[];
   ipCidr: string[];
   ipCidr6: string[];
+  asn: number[];
 }
 
 export interface RuleGroup {

@@ -16,6 +16,8 @@ groups:
 
   - name: Network
     rules:
+      asn:
+        - 399358
       ipCidr:
         - 160.79.104.0/21
       ipCidr6:

@@ -43,7 +43,8 @@ function renderSurge(target: RenderTarget): string {
       ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
       ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
       ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
-      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`)
+      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`),
+      ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
     ])
   );
 }
@@ -54,7 +55,8 @@ function renderMihomo(target: RenderTarget): string {
     ...rules.domainSuffix.map((value) => `- DOMAIN-SUFFIX,${value}`),
     ...rules.domainKeyword.map((value) => `- DOMAIN-KEYWORD,${value}`),
     ...rules.ipCidr.map((value) => `- IP-CIDR,${value},no-resolve`),
-    ...rules.ipCidr6.map((value) => `- IP-CIDR6,${value},no-resolve`)
+    ...rules.ipCidr6.map((value) => `- IP-CIDR6,${value},no-resolve`),
+    ...rules.asn.map((value) => `- IP-ASN,${value},no-resolve`)
   ]).map((line) => (line ? `  ${line}` : ""));
 
   return ["payload:", ...lines, ""].join("\n");
@@ -79,7 +81,8 @@ function renderQuantumultX(target: RenderTarget, options: RenderOptions): string
       ...rules.domainSuffix.map((value) => `HOST-SUFFIX,${value},${options.policy}`),
       ...rules.domainKeyword.map((value) => `HOST-KEYWORD,${value},${options.policy}`),
       ...rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
-      ...rules.ipCidr6.map((value) => `IP6-CIDR,${value},${options.policy},no-resolve`)
+      ...rules.ipCidr6.map((value) => `IP6-CIDR,${value},${options.policy},no-resolve`),
+      ...rules.asn.map((value) => `IP-ASN,${value},${options.policy},no-resolve`)
     ])
   );
 }
@@ -92,7 +95,8 @@ function renderLoon(target: RenderTarget, options: RenderOptions): string {
       ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value},${options.policy}`),
       ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value},${options.policy}`),
       ...rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
-      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},${options.policy},no-resolve`)
+      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},${options.policy},no-resolve`),
+      ...rules.asn.map((value) => `IP-ASN,${value},${options.policy},no-resolve`)
     ])
   );
 }
