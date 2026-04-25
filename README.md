@@ -53,18 +53,18 @@ data/providers/<provider>.yaml
 ```yaml
 provider: anthropic
 name: Anthropic
-description: Claude and Anthropic API domains.
-rules:
-  domain:
-    - api.anthropic.com
-  domainSuffix:
-    - anthropic.com
-  domainKeyword:
-    - claude
-  ipCidr:
-    - 203.0.113.0/24
-  ipCidr6:
-    - 2001:db8::/32
+description: Anthropic and Claude services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - anthropic.com
+        - claude.ai
+
+  - name: Third-Party
+    rules:
+      domain:
+        - cdn.usefathom.com
 ```
 
 字段说明：
@@ -100,7 +100,7 @@ GitHub Actions 会在影响规则生成的文件变化时自动运行检查和�
 
 ## References
 
-规则维护参考公开资料和实际使用场景，不直接复制单一来源：
+参考资料：
 
 - https://github.com/xiaolai/anthropic-claude-surge-rules-set
 - https://ip.net.coffee/claude/site.html
