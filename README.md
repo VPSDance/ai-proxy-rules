@@ -1,84 +1,54 @@
 # AI Proxy Rules
 
-从一个固定数据源生成多个代理客户端的 AI 服务规则。
+AI 服务代理规则集合。规则数据统一维护在 `data/`，并生成到多个代理客户端可直接引用的 `rules/` 文件。
 
-当前默认数据源支持 `anthropic`，生成目标支持：
+当前已支持：
 
 - Surge
 - Clash / Mihomo
 - sing-box
 - Quantumult X
 - Loon
-- 汇总规则 `all`
 
-## 设计目标
+## 规则文件
 
-- 单一数据源维护：每个 AI 服务只维护一个 YAML 文件。
-- 多客户端输出：同一份数据生成多个客户端格式。
-- 支持聚合：多个 provider 可以合并成 `all` 规则。
-- 易于扩展：后续新增 `cursor`、`openai`、`gemini` 等 provider 时，只需要添加 YAML。
+汇总规则：
+
+```text
+rules/surge/all.list
+rules/mihomo/all.yaml
+rules/sing-box/all.json
+rules/quantumult-x/all.list
+rules/loon/all.list
+```
+
+当前 provider：
+
+```text
+rules/surge/anthropic.list
+rules/mihomo/anthropic.yaml
+rules/sing-box/anthropic.json
+rules/quantumult-x/anthropic.list
+rules/loon/anthropic.list
+```
 
 ## 目录结构
 
-- `data/`: 人工维护的数据源。
-- `scripts/`: 规则生成脚本。
-- `rules/`: 生成后的规则文件。
-
-## 快速开始
-
-```bash
-pnpm install
-pnpm generate
+```text
+data/     人工维护的数据源
+scripts/ 规则生成脚本
+rules/   生成后的规则文件
 ```
 
-默认会读取 `data/providers/*.yaml`，并输出到 `rules`：
+## 数据源
+
+每个 provider 一个 YAML 文件：
 
 ```text
-rules/
-  surge/anthropic.list
-  mihomo/anthropic.yaml
-  sing-box/anthropic.json
-  quantumult-x/anthropic.list
-  loon/anthropic.list
-  surge/all.list
-  ...
+data/providers/<provider>.yaml
 ```
 
-## 常用命令
-
-生成全部 provider 和汇总规则：
-
-```bash
-pnpm generate
-```
-
-只生成 Anthropic：
-
-```bash
-pnpm generate -- --provider anthropic
-```
-
-生成多个 provider，并额外生成 `all`：
-
-```bash
-pnpm generate -- --provider anthropic,cursor
-```
-
-只生成指定客户端：
-
-```bash
-pnpm generate -- --format surge,mihomo,sing-box
-```
-
-自定义 Quantumult X / Loon 策略名：
-
-```bash
-pnpm generate -- --policy "AI Proxy"
-```
-
-## 数据源格式
-
-每个 provider 一个文件，放在 `data/providers/<provider>.yaml`：
+示例：
 
 ```yaml
 provider: anthropic
@@ -105,35 +75,25 @@ rules:
 - `ipCidr`: IPv4 CIDR。
 - `ipCidr6`: IPv6 CIDR。
 
-## 输出格式说明
+## 维护
 
-Surge / Mihomo 输出的是 rule-set 片段，不带策略名，适合远程规则集引用。
+安装依赖：
 
-Quantumult X / Loon 规则通常需要策略名，因此默认策略名是 `AI`，可以通过 `--policy` 修改。
-
-sing-box 输出 source rule-set JSON：
-
-```json
-{
-  "version": 3,
-  "rules": [
-    {
-      "domain": ["api.anthropic.com"],
-      "domain_suffix": ["anthropic.com"],
-      "domain_keyword": ["claude"],
-      "ip_cidr": ["203.0.113.0/24", "2001:db8::/32"]
-    }
-  ]
-}
+```bash
+pnpm install
 ```
 
-## GitHub Actions
+生成规则：
 
-`.github/workflows/generate.yml` 会在 push 和 pull request 时运行类型检查、测试和生成命令。
+```bash
+pnpm generate
+```
 
-## 新增 provider
+验证：
 
-1. 新增 `data/providers/cursor.yaml`。
-2. 按现有 schema 填写域名和 CIDR。
-3. 运行 `pnpm test && pnpm generate`。
-4. 检查 `rules/*/cursor.*` 和 `rules/*/all.*`。
+```bash
+pnpm check
+pnpm test
+```
+
+GitHub Actions 会在影响规则生成的文件变化时自动运行检查和生成，并在 `rules/` 有变化时提交生成结果。
