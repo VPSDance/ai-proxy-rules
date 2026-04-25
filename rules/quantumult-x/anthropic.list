@@ -1,10 +1,31 @@
 # Anthropic
 # anthropic
-HOST,api.anthropic.com,AI
-HOST,claude.ai,AI
-HOST,console.anthropic.com,AI
+# Core
 HOST-SUFFIX,anthropic.com,AI
 HOST-SUFFIX,anthropic.com.cn,AI
+HOST-SUFFIX,clau.de,AI
 HOST-SUFFIX,claude.ai,AI
-HOST-KEYWORD,anthropic,AI
-HOST-KEYWORD,claude,AI
+HOST-SUFFIX,claude.com,AI
+HOST-SUFFIX,claudemcpclient.com,AI
+HOST-SUFFIX,claudeusercontent.com,AI
+HOST-SUFFIX,modelcontextprotocol.io,AI
+
+# Network
+IP-CIDR,160.79.104.0/21,AI,no-resolve
+IP6-CIDR,2607:6bc0::/48,AI,no-resolve
+
+# Third-Party
+HOST,anthropic-com.ghost.io,AI
+HOST,anthropic.auth0.com,AI
+HOST,anthropic.com.cdn.cloudflare.net,AI
+HOST,browser-intake-us5-datadoghq.com,AI
+HOST,cdn.growthbook.io,AI
+HOST,cdn.usefathom.com,AI
+HOST,servd-anthropic-website.b-cdn.net,AI
+HOST,storage.googleapis.com,AI
+HOST-SUFFIX,intercom.io,AI
+HOST-SUFFIX,intercomcdn.com,AI
+HOST-SUFFIX,sentry.io,AI
+HOST-SUFFIX,statsigapi.net,AI
+HOST-KEYWORD,datadog,AI
+HOST-KEYWORD,sift,AI

@@ -16,10 +16,16 @@ export interface RuleSet {
   ipCidr6: string[];
 }
 
+export interface RuleGroup {
+  name: string;
+  rules: RuleSet;
+}
+
 export interface ProviderSource {
   provider: string;
   name: string;
   description?: string;
+  groups: RuleGroup[];
   rules: RuleSet;
 }
 
@@ -27,6 +33,7 @@ export interface RenderTarget {
   id: string;
   name: string;
   description?: string;
+  groups: RuleGroup[];
   rules: RuleSet;
 }
 

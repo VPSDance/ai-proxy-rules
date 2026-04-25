@@ -97,3 +97,11 @@ pnpm test
 ```
 
 GitHub Actions 会在影响规则生成的文件变化时自动运行检查和生成，并在 `rules/` 有变化时提交生成结果。
+
+## References
+
+规则维护参考公开资料和实际使用场景，不直接复制单一来源：
+
+- https://github.com/xiaolai/anthropic-claude-surge-rules-set
+- https://ip.net.coffee/claude/site.html
+- https://docs.anthropic.com/en/api/ip-addresses

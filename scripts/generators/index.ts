@@ -1,4 +1,3 @@
-import { stringify } from "yaml";
 import type { Format, RenderedFile, RenderOptions, RenderTarget, RuleSet } from "../types.js";
 
 export function render(format: Format, target: RenderTarget, options: RenderOptions): RenderedFile {
@@ -37,30 +36,28 @@ export function render(format: Format, target: RenderTarget, options: RenderOpti
 }
 
 function renderSurge(target: RenderTarget): string {
-  return withHeader(target, [
-    ...target.rules.domain.map((value) => `DOMAIN,${value}`),
-    ...target.rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
-    ...target.rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
-    ...target.rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
-    ...target.rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`)
-  ]);
+  return withHeader(
+    target,
+    renderGroupedLines(target, (rules) => [
+      ...rules.domain.map((value) => `DOMAIN,${value}`),
+      ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
+      ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
+      ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
+      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`)
+    ])
+  );
 }
 
 function renderMihomo(target: RenderTarget): string {
-  const payload = [
-    ...target.rules.domain.map((value) => `DOMAIN,${value}`),
-    ...target.rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
-    ...target.rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
-    ...target.rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
-    ...target.rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`)
-  ];
+  const lines = renderGroupedLines(target, (rules) => [
+    ...rules.domain.map((value) => `- DOMAIN,${value}`),
+    ...rules.domainSuffix.map((value) => `- DOMAIN-SUFFIX,${value}`),
+    ...rules.domainKeyword.map((value) => `- DOMAIN-KEYWORD,${value}`),
+    ...rules.ipCidr.map((value) => `- IP-CIDR,${value},no-resolve`),
+    ...rules.ipCidr6.map((value) => `- IP-CIDR6,${value},no-resolve`)
+  ]).map((line) => (line ? `  ${line}` : ""));
 
-  return stringify(
-    {
-      payload
-    },
-    { lineWidth: 0 }
-  );
+  return ["payload:", ...lines, ""].join("\n");
 }
 
 function renderSingBox(target: RenderTarget): string {
@@ -75,27 +72,62 @@ function renderSingBox(target: RenderTarget): string {
 }
 
 function renderQuantumultX(target: RenderTarget, options: RenderOptions): string {
-  return withHeader(target, [
-    ...target.rules.domain.map((value) => `HOST,${value},${options.policy}`),
-    ...target.rules.domainSuffix.map((value) => `HOST-SUFFIX,${value},${options.policy}`),
-    ...target.rules.domainKeyword.map((value) => `HOST-KEYWORD,${value},${options.policy}`),
-    ...target.rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
-    ...target.rules.ipCidr6.map((value) => `IP6-CIDR,${value},${options.policy},no-resolve`)
-  ]);
+  return withHeader(
+    target,
+    renderGroupedLines(target, (rules) => [
+      ...rules.domain.map((value) => `HOST,${value},${options.policy}`),
+      ...rules.domainSuffix.map((value) => `HOST-SUFFIX,${value},${options.policy}`),
+      ...rules.domainKeyword.map((value) => `HOST-KEYWORD,${value},${options.policy}`),
+      ...rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
+      ...rules.ipCidr6.map((value) => `IP6-CIDR,${value},${options.policy},no-resolve`)
+    ])
+  );
 }
 
 function renderLoon(target: RenderTarget, options: RenderOptions): string {
-  return withHeader(target, [
-    ...target.rules.domain.map((value) => `DOMAIN,${value},${options.policy}`),
-    ...target.rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value},${options.policy}`),
-    ...target.rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value},${options.policy}`),
-    ...target.rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
-    ...target.rules.ipCidr6.map((value) => `IP-CIDR6,${value},${options.policy},no-resolve`)
-  ]);
+  return withHeader(
+    target,
+    renderGroupedLines(target, (rules) => [
+      ...rules.domain.map((value) => `DOMAIN,${value},${options.policy}`),
+      ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value},${options.policy}`),
+      ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value},${options.policy}`),
+      ...rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
+      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},${options.policy},no-resolve`)
+    ])
+  );
 }
 
 function withHeader(target: RenderTarget, lines: string[]): string {
   return [`# ${target.name}`, `# ${target.id}`, ...lines, ""].join("\n");
+}
+
+function renderGroupedLines(
+  target: RenderTarget,
+  renderRules: (rules: RuleSet) => string[]
+): string[] {
+  const seen = new Set<string>();
+  const lines: string[] = [];
+
+  for (const group of target.groups) {
+    const groupLines = renderRules(group.rules).filter((line) => {
+      if (seen.has(line)) {
+        return false;
+      }
+
+      seen.add(line);
+      return true;
+    });
+
+    if (groupLines.length > 0) {
+      if (lines.length > 0) {
+        lines.push("");
+      }
+
+      lines.push(`# ${group.name}`, ...groupLines);
+    }
+  }
+
+  return lines;
 }
 
 function assignIfAny(target: Record<string, string[]>, key: string, values: string[]): void {

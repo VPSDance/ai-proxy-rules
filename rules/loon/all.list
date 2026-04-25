@@ -1,10 +1,31 @@
 # All AI Providers
 # all
-DOMAIN,api.anthropic.com,AI
-DOMAIN,claude.ai,AI
-DOMAIN,console.anthropic.com,AI
+# Anthropic / Core
 DOMAIN-SUFFIX,anthropic.com,AI
 DOMAIN-SUFFIX,anthropic.com.cn,AI
+DOMAIN-SUFFIX,clau.de,AI
 DOMAIN-SUFFIX,claude.ai,AI
-DOMAIN-KEYWORD,anthropic,AI
-DOMAIN-KEYWORD,claude,AI
+DOMAIN-SUFFIX,claude.com,AI
+DOMAIN-SUFFIX,claudemcpclient.com,AI
+DOMAIN-SUFFIX,claudeusercontent.com,AI
+DOMAIN-SUFFIX,modelcontextprotocol.io,AI
+
+# Anthropic / Network
+IP-CIDR,160.79.104.0/21,AI,no-resolve
+IP-CIDR6,2607:6bc0::/48,AI,no-resolve
+
+# Anthropic / Third-Party
+DOMAIN,anthropic-com.ghost.io,AI
+DOMAIN,anthropic.auth0.com,AI
+DOMAIN,anthropic.com.cdn.cloudflare.net,AI
+DOMAIN,browser-intake-us5-datadoghq.com,AI
+DOMAIN,cdn.growthbook.io,AI
+DOMAIN,cdn.usefathom.com,AI
+DOMAIN,servd-anthropic-website.b-cdn.net,AI
+DOMAIN,storage.googleapis.com,AI
+DOMAIN-SUFFIX,intercom.io,AI
+DOMAIN-SUFFIX,intercomcdn.com,AI
+DOMAIN-SUFFIX,sentry.io,AI
+DOMAIN-SUFFIX,statsigapi.net,AI
+DOMAIN-KEYWORD,datadog,AI
+DOMAIN-KEYWORD,sift,AI

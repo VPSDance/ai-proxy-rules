@@ -6,6 +6,28 @@ import type { ProviderSource } from "../scripts/types.js";
 const anthropic: ProviderSource = {
   provider: "anthropic",
   name: "Anthropic",
+  groups: [
+    {
+      name: "Core",
+      rules: {
+        domain: ["api.anthropic.com"],
+        domainSuffix: ["anthropic.com"],
+        domainKeyword: ["claude"],
+        ipCidr: [],
+        ipCidr6: []
+      }
+    },
+    {
+      name: "Network",
+      rules: {
+        domain: [],
+        domainSuffix: [],
+        domainKeyword: [],
+        ipCidr: ["203.0.113.0/24"],
+        ipCidr6: ["2001:db8::/32"]
+      }
+    }
+  ],
   rules: {
     domain: ["api.anthropic.com"],
     domainSuffix: ["anthropic.com"],
@@ -18,6 +40,18 @@ const anthropic: ProviderSource = {
 const cursor: ProviderSource = {
   provider: "cursor",
   name: "Cursor",
+  groups: [
+    {
+      name: "Core",
+      rules: {
+        domain: ["api2.cursor.sh"],
+        domainSuffix: ["cursor.sh"],
+        domainKeyword: [],
+        ipCidr: [],
+        ipCidr6: []
+      }
+    }
+  ],
   rules: {
     domain: ["api2.cursor.sh"],
     domainSuffix: ["cursor.sh"],
@@ -61,8 +95,40 @@ describe("generators", () => {
     const rendered = render("surge", target, { policy: "AI" });
 
     expect(target.id).toBe("all");
+    expect(rendered.content).toContain("# Anthropic / Core");
+    expect(rendered.content).toContain("# Cursor / Core");
     expect(rendered.content).toContain("DOMAIN,api.anthropic.com");
     expect(rendered.content).toContain("DOMAIN,api2.cursor.sh");
+  });
+
+  it("deduplicates rendered all rules across provider groups", () => {
+    const duplicated: ProviderSource = {
+      provider: "duplicated",
+      name: "Duplicated",
+      groups: [
+        {
+          name: "Third-Party",
+          rules: {
+            domain: ["api.anthropic.com"],
+            domainSuffix: [],
+            domainKeyword: [],
+            ipCidr: [],
+            ipCidr6: []
+          }
+        }
+      ],
+      rules: {
+        domain: ["api.anthropic.com"],
+        domainSuffix: [],
+        domainKeyword: [],
+        ipCidr: [],
+        ipCidr6: []
+      }
+    };
+    const target = aggregateProviders([anthropic, duplicated]);
+    const rendered = render("surge", target, { policy: "AI" });
+
+    expect(rendered.content.match(/DOMAIN,api\.anthropic\.com/g)).toHaveLength(1);
   });
 
   it("deduplicates and sorts merged rules", () => {

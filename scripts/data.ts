@@ -2,7 +2,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { parse } from "yaml";
 import { z } from "zod";
-import type { ProviderSource, RenderTarget, RuleSet } from "./types.js";
+import type { ProviderSource, RenderTarget, RuleGroup, RuleSet } from "./types.js";
 
 const rulesSchema = z
   .object({
@@ -24,7 +24,17 @@ const providerSchema = z.object({
   provider: z.string().min(1).regex(/^[a-z0-9][a-z0-9-]*$/),
   name: z.string().min(1),
   description: z.string().optional(),
-  rules: rulesSchema
+  rules: rulesSchema.optional(),
+  groups: z
+    .array(
+      z.object({
+        name: z.string().min(1),
+        rules: rulesSchema
+      })
+    )
+    .optional()
+}).refine((data) => data.rules || data.groups, {
+  message: "Provider must define rules or groups"
 });
 
 export async function loadProvider(inputDir: string, provider: string): Promise<ProviderSource> {
@@ -44,10 +54,18 @@ export async function loadAllProviders(inputDir: string): Promise<ProviderSource
 }
 
 export function aggregateProviders(providers: ProviderSource[]): RenderTarget {
+  const groups = providers.flatMap((provider) =>
+    provider.groups.map((group) => ({
+      name: `${provider.name} / ${group.name}`,
+      rules: group.rules
+    }))
+  );
+
   return {
     id: "all",
     name: "All AI Providers",
     description: "Aggregated AI provider rules.",
+    groups,
     rules: mergeRuleSets(providers.map((provider) => provider.rules))
   };
 }
@@ -57,6 +75,7 @@ export function providerToTarget(provider: ProviderSource): RenderTarget {
     id: provider.provider,
     name: provider.name,
     description: provider.description,
+    groups: provider.groups,
     rules: provider.rules
   };
 }
@@ -74,9 +93,38 @@ export function mergeRuleSets(ruleSets: RuleSet[]): RuleSet {
 async function parseProviderFile(filePath: string): Promise<ProviderSource> {
   const raw = await readFile(filePath, "utf8");
   const parsed = providerSchema.parse(parse(raw));
+  const groups = normalizeRuleGroups(
+    parsed.groups ?? [
+      {
+        name: "Rules",
+        rules: parsed.rules ?? emptyRuleSet()
+      }
+    ]
+  );
+
   return {
-    ...parsed,
-    rules: normalizeRuleSet(parsed.rules)
+    provider: parsed.provider,
+    name: parsed.name,
+    description: parsed.description,
+    groups,
+    rules: mergeRuleSets(groups.map((group) => group.rules))
+  };
+}
+
+function normalizeRuleGroups(groups: RuleGroup[]): RuleGroup[] {
+  return groups.map((group) => ({
+    name: group.name,
+    rules: normalizeRuleSet(group.rules)
+  }));
+}
+
+function emptyRuleSet(): RuleSet {
+  return {
+    domain: [],
+    domainSuffix: [],
+    domainKeyword: [],
+    ipCidr: [],
+    ipCidr6: []
   };
 }
 

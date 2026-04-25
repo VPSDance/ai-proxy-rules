@@ -3,18 +3,36 @@
   "rules": [
     {
       "domain": [
-        "api.anthropic.com",
-        "claude.ai",
-        "console.anthropic.com"
+        "anthropic-com.ghost.io",
+        "anthropic.auth0.com",
+        "anthropic.com.cdn.cloudflare.net",
+        "browser-intake-us5-datadoghq.com",
+        "cdn.growthbook.io",
+        "cdn.usefathom.com",
+        "servd-anthropic-website.b-cdn.net",
+        "storage.googleapis.com"
       ],
       "domain_suffix": [
         "anthropic.com",
         "anthropic.com.cn",
-        "claude.ai"
+        "clau.de",
+        "claude.ai",
+        "claude.com",
+        "claudemcpclient.com",
+        "claudeusercontent.com",
+        "intercom.io",
+        "intercomcdn.com",
+        "modelcontextprotocol.io",
+        "sentry.io",
+        "statsigapi.net"
       ],
       "domain_keyword": [
-        "anthropic",
-        "claude"
+        "datadog",
+        "sift"
+      ],
+      "ip_cidr": [
+        "160.79.104.0/21",
+        "2607:6bc0::/48"
       ]
     }
   ]
