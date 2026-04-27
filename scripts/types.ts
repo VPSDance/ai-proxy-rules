@@ -3,7 +3,8 @@ export const formats = [
   "mihomo",
   "sing-box",
   "quantumult-x",
-  "loon"
+  "loon",
+  "shadowrocket"
 ] as const;
 
 export type Format = (typeof formats)[number];

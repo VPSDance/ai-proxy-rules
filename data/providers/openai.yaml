@@ -1,0 +1,52 @@
+provider: openai
+name: OpenAI
+description: OpenAI and ChatGPT services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - ai.com
+        - chatgpt.com
+        - chatgpt.livekit.cloud
+        - oaistatic.com
+        - oaiusercontent.com
+        - openai.com
+        - openaiapi-site.azureedge.net
+        - openaicom.imgix.net
+      domainKeyword:
+        - openai
+
+  - name: Network
+    rules:
+      ipCidr:
+        - 24.199.123.28/32
+        - 64.23.132.171/32
+
+  - name: Third-Party
+    rules:
+      domain:
+        - browser-intake-datadoghq.com
+        - chat.openai.com.cdn.cloudflare.net
+        - openai-api.arkoselabs.com
+        - openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+        - openaicomproductionae4b.blob.core.windows.net
+        - production-openaicom-storage.azureedge.net
+        - static.cloudflareinsights.com
+      domainSuffix:
+        - algolia.net
+        - api.statsig.com
+        - auth0.com
+        - client-api.arkoselabs.com
+        - events.statsigapi.net
+        - featuregates.org
+        - host.livekit.cloud
+        - identrust.com
+        - intercom.io
+        - intercomcdn.com
+        - launchdarkly.com
+        - observeit.net
+        - segment.io
+        - sentry.io
+        - statsigapi.net
+        - stripe.com
+        - turn.livekit.cloud

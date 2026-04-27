@@ -99,6 +99,19 @@ describe("generators", () => {
     expect(rendered.content).toContain("IP-ASN,399358,AI Proxy,no-resolve");
   });
 
+  it("renders shadowrocket with policy", () => {
+    const rendered = render("shadowrocket", providerToTarget(anthropic), {
+      policy: "AI Proxy"
+    });
+
+    expect(rendered.extension).toBe("list");
+    expect(rendered.content).toContain("DOMAIN,api.anthropic.com,AI Proxy");
+    expect(rendered.content).toContain("DOMAIN-SUFFIX,anthropic.com,AI Proxy");
+    expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,AI Proxy,no-resolve");
+    expect(rendered.content).toContain("IP-CIDR6,2001:db8::/32,AI Proxy,no-resolve");
+    expect(rendered.content).toContain("IP-ASN,399358,AI Proxy,no-resolve");
+  });
+
   it("aggregates providers into all", () => {
     const target = aggregateProviders([anthropic, cursor]);
     const rendered = render("surge", target, { policy: "AI" });

@@ -32,6 +32,12 @@ export function render(format: Format, target: RenderTarget, options: RenderOpti
         extension: "list",
         content: renderLoon(target, options)
       };
+    case "shadowrocket":
+      return {
+        format,
+        extension: "list",
+        content: renderShadowrocket(target, options)
+      };
   }
 }
 
@@ -88,6 +94,20 @@ function renderQuantumultX(target: RenderTarget, options: RenderOptions): string
 }
 
 function renderLoon(target: RenderTarget, options: RenderOptions): string {
+  return withHeader(
+    target,
+    renderGroupedLines(target, (rules) => [
+      ...rules.domain.map((value) => `DOMAIN,${value},${options.policy}`),
+      ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value},${options.policy}`),
+      ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value},${options.policy}`),
+      ...rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
+      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},${options.policy},no-resolve`),
+      ...rules.asn.map((value) => `IP-ASN,${value},${options.policy},no-resolve`)
+    ])
+  );
+}
+
+function renderShadowrocket(target: RenderTarget, options: RenderOptions): string {
   return withHeader(
     target,
     renderGroupedLines(target, (rules) => [

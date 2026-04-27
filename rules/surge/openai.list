@@ -1,37 +1,6 @@
-# All AI Providers
-# all
-# Anthropic / Core
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,anthropic.com.cn
-DOMAIN-SUFFIX,clau.de
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,claude.com
-DOMAIN-SUFFIX,claudemcpclient.com
-DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN-SUFFIX,modelcontextprotocol.io
-
-# Anthropic / Network
-IP-CIDR,160.79.104.0/21,no-resolve
-IP-CIDR6,2607:6bc0::/48,no-resolve
-IP-ASN,399358,no-resolve
-
-# Anthropic / Third-Party
-DOMAIN,anthropic-com.ghost.io
-DOMAIN,anthropic.auth0.com
-DOMAIN,anthropic.com.cdn.cloudflare.net
-DOMAIN,browser-intake-us5-datadoghq.com
-DOMAIN,cdn.growthbook.io
-DOMAIN,cdn.usefathom.com
-DOMAIN,servd-anthropic-website.b-cdn.net
-DOMAIN,storage.googleapis.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-KEYWORD,datadog
-DOMAIN-KEYWORD,sift
-
-# OpenAI / Core
+# OpenAI
+# openai
+# Core
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
@@ -42,11 +11,11 @@ DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-KEYWORD,openai
 
-# OpenAI / Network
+# Network
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 
-# OpenAI / Third-Party
+# Third-Party
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openai-api.arkoselabs.com
@@ -62,8 +31,12 @@ DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
