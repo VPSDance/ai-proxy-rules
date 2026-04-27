@@ -13,7 +13,6 @@
         "browser-intake-us5-datadoghq.com",
         "cdn.growthbook.io",
         "cdn.usefathom.com",
-        "chat.openai.com.cdn.cloudflare.net",
         "gateway.bingviz.microsoft.net",
         "gateway.bingviz.microsoftapp.net",
         "in.appcenter.ms",
@@ -80,7 +79,6 @@
       "domain_keyword": [
         "datadog",
         "openai",
-        "openaicom-api",
         "sift"
       ],
       "ip_cidr": [

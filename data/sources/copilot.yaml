@@ -16,14 +16,11 @@ groups:
       domainSuffix:
         - copilot.microsoft.com
         - githubcopilot.com
-        - oaistatic.com
-        - oaiusercontent.com
-        - openaiapi-site.azureedge.net
-        - openaicom.imgix.net
       domain:
-        - openai-api.arkoselabs.com
-        - openaicomproductionae4b.blob.core.windows.net
-        - production-openaicom-storage.azureedge.net
+        - copilot.microsoft.com
+        - githubcopilot.com
+        - location.microsoft.com
+        - odc.officeapps.live.com
 
   - name: Network
     include:
@@ -41,11 +38,9 @@ groups:
         - auth0.com
         - bing-shopping.microsoft-falcon.io
         - challenges.cloudflare.com
-        - client-api.arkoselabs.com
         - edgeservices.bing.com
         - events.statsigapi.net
         - featuregates.org
-        - host.livekit.cloud
         - identrust.com
         - intercom.io
         - intercomcdn.com
@@ -54,12 +49,28 @@ groups:
         - segment.io
         - sentry.io
         - stripe.com
-        - turn.livekit.cloud
     fromSource: true
 patch:
   remove:
-    domainSuffix:
-      - chatgpt.com
-      - openai.com
+    domain:
+      - chat.openai.com.cdn.cloudflare.net
+      - openai-api.arkoselabs.com
+      - openaicomproductionae4b.blob.core.windows.net
+      - production-openaicom-storage.azureedge.net
     asn:
       - 20473
+    domainSuffix:
+      - chatgpt.com
+      - chatgpt.livekit.cloud
+      - host.livekit.cloud
+      - oaistatic.com
+      - oaiusercontent.com
+      - openai.com
+      - openaiapi-site.azureedge.net
+      - openaicom.imgix.net
+      - turn.livekit.cloud
+    domainKeyword:
+      - openaicom-api
+    ipCidr:
+      - 24.199.123.28/32
+      - 64.23.132.171/32

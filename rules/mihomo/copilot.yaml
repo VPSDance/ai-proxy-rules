@@ -1,30 +1,18 @@
 payload:
   # Core
-  - DOMAIN,openai-api.arkoselabs.com
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net
-  - DOMAIN,production-openaicom-storage.azureedge.net
+  - DOMAIN,location.microsoft.com
+  - DOMAIN,odc.officeapps.live.com
   - DOMAIN-SUFFIX,copilot.microsoft.com
   - DOMAIN-SUFFIX,githubcopilot.com
-  - DOMAIN-SUFFIX,oaistatic.com
-  - DOMAIN-SUFFIX,oaiusercontent.com
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-  - DOMAIN-SUFFIX,openaicom.imgix.net
-
-  # Network
-  - IP-CIDR,24.199.123.28/32,no-resolve
-  - IP-CIDR,64.23.132.171/32,no-resolve
 
   # Third-Party
   - DOMAIN,api.msn.com
   - DOMAIN,api.statsig.com
   - DOMAIN,assets.msn.com
   - DOMAIN,browser-intake-datadoghq.com
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net
   - DOMAIN,gateway.bingviz.microsoft.net
   - DOMAIN,gateway.bingviz.microsoftapp.net
   - DOMAIN,in.appcenter.ms
-  - DOMAIN,location.microsoft.com
-  - DOMAIN,odc.officeapps.live.com
   - DOMAIN,r.bing.com
   - DOMAIN,self.events.data.microsoft.com
   - DOMAIN,services.bingapis.com
@@ -36,12 +24,10 @@ payload:
   - DOMAIN-SUFFIX,auth0.com
   - DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
   - DOMAIN-SUFFIX,challenges.cloudflare.com
-  - DOMAIN-SUFFIX,chatgpt.livekit.cloud
   - DOMAIN-SUFFIX,client-api.arkoselabs.com
   - DOMAIN-SUFFIX,edgeservices.bing.com
   - DOMAIN-SUFFIX,events.statsigapi.net
   - DOMAIN-SUFFIX,featuregates.org
-  - DOMAIN-SUFFIX,host.livekit.cloud
   - DOMAIN-SUFFIX,identrust.com
   - DOMAIN-SUFFIX,intercom.io
   - DOMAIN-SUFFIX,intercomcdn.com
@@ -50,6 +36,4 @@ payload:
   - DOMAIN-SUFFIX,segment.io
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,stripe.com
-  - DOMAIN-SUFFIX,turn.livekit.cloud
-  - DOMAIN-KEYWORD,openaicom-api
   - IP-ASN,14061,no-resolve

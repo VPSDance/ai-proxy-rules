@@ -32,31 +32,19 @@ DOMAIN-KEYWORD,datadog,AI
 DOMAIN-KEYWORD,sift,AI
 
 # Copilot / Core
-DOMAIN,openai-api.arkoselabs.com,AI
-DOMAIN,openaicomproductionae4b.blob.core.windows.net,AI
-DOMAIN,production-openaicom-storage.azureedge.net,AI
+DOMAIN,location.microsoft.com,AI
+DOMAIN,odc.officeapps.live.com,AI
 DOMAIN-SUFFIX,copilot.microsoft.com,AI
 DOMAIN-SUFFIX,githubcopilot.com,AI
-DOMAIN-SUFFIX,oaistatic.com,AI
-DOMAIN-SUFFIX,oaiusercontent.com,AI
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net,AI
-DOMAIN-SUFFIX,openaicom.imgix.net,AI
-
-# Copilot / Network
-IP-CIDR,24.199.123.28/32,AI,no-resolve
-IP-CIDR,64.23.132.171/32,AI,no-resolve
 
 # Copilot / Third-Party
 DOMAIN,api.msn.com,AI
 DOMAIN,api.statsig.com,AI
 DOMAIN,assets.msn.com,AI
 DOMAIN,browser-intake-datadoghq.com,AI
-DOMAIN,chat.openai.com.cdn.cloudflare.net,AI
 DOMAIN,gateway.bingviz.microsoft.net,AI
 DOMAIN,gateway.bingviz.microsoftapp.net,AI
 DOMAIN,in.appcenter.ms,AI
-DOMAIN,location.microsoft.com,AI
-DOMAIN,odc.officeapps.live.com,AI
 DOMAIN,r.bing.com,AI
 DOMAIN,self.events.data.microsoft.com,AI
 DOMAIN,services.bingapis.com,AI
@@ -68,36 +56,44 @@ DOMAIN-SUFFIX,api.microsoftapp.net,AI
 DOMAIN-SUFFIX,auth0.com,AI
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io,AI
 DOMAIN-SUFFIX,challenges.cloudflare.com,AI
-DOMAIN-SUFFIX,chatgpt.livekit.cloud,AI
 DOMAIN-SUFFIX,client-api.arkoselabs.com,AI
 DOMAIN-SUFFIX,edgeservices.bing.com,AI
 DOMAIN-SUFFIX,events.statsigapi.net,AI
 DOMAIN-SUFFIX,featuregates.org,AI
-DOMAIN-SUFFIX,host.livekit.cloud,AI
 DOMAIN-SUFFIX,identrust.com,AI
 DOMAIN-SUFFIX,launchdarkly.com,AI
 DOMAIN-SUFFIX,observeit.net,AI
 DOMAIN-SUFFIX,segment.io,AI
 DOMAIN-SUFFIX,stripe.com,AI
-DOMAIN-SUFFIX,turn.livekit.cloud,AI
-DOMAIN-KEYWORD,openaicom-api,AI
 IP-ASN,14061,AI,no-resolve
 
 # OpenAI / Core
 DOMAIN-SUFFIX,ai.com,AI
 DOMAIN-SUFFIX,chat.com,AI
 DOMAIN-SUFFIX,chatgpt.com,AI
+DOMAIN-SUFFIX,chatgpt.livekit.cloud,AI
 DOMAIN-SUFFIX,crixet.com,AI
+DOMAIN-SUFFIX,oaistatic.com,AI
+DOMAIN-SUFFIX,oaiusercontent.com,AI
 DOMAIN-SUFFIX,openai.com,AI
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,AI
+DOMAIN-SUFFIX,openaicom.imgix.net,AI
 DOMAIN-SUFFIX,sora.com,AI
 DOMAIN-KEYWORD,openai,AI
 
 # OpenAI / Network
 IP-CIDR,199.47.142.0/23,AI,no-resolve
+IP-CIDR,24.199.123.28/32,AI,no-resolve
+IP-CIDR,64.23.132.171/32,AI,no-resolve
 IP-CIDR6,2604:f20::/32,AI,no-resolve
 IP-ASN,401518,AI,no-resolve
 
 # OpenAI / Third-Party
+DOMAIN,openai-api.arkoselabs.com,AI
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,AI
+DOMAIN,openaicomproductionae4b.blob.core.windows.net,AI
+DOMAIN,production-openaicom-storage.azureedge.net,AI
 DOMAIN-SUFFIX,api.statsig.com,AI
+DOMAIN-SUFFIX,host.livekit.cloud,AI
 DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net,AI
+DOMAIN-SUFFIX,turn.livekit.cloud,AI

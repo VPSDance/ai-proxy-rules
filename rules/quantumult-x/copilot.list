@@ -1,31 +1,19 @@
 # Copilot
 # copilot
 # Core
-HOST,openai-api.arkoselabs.com,AI
-HOST,openaicomproductionae4b.blob.core.windows.net,AI
-HOST,production-openaicom-storage.azureedge.net,AI
+HOST,location.microsoft.com,AI
+HOST,odc.officeapps.live.com,AI
 HOST-SUFFIX,copilot.microsoft.com,AI
 HOST-SUFFIX,githubcopilot.com,AI
-HOST-SUFFIX,oaistatic.com,AI
-HOST-SUFFIX,oaiusercontent.com,AI
-HOST-SUFFIX,openaiapi-site.azureedge.net,AI
-HOST-SUFFIX,openaicom.imgix.net,AI
-
-# Network
-IP-CIDR,24.199.123.28/32,AI,no-resolve
-IP-CIDR,64.23.132.171/32,AI,no-resolve
 
 # Third-Party
 HOST,api.msn.com,AI
 HOST,api.statsig.com,AI
 HOST,assets.msn.com,AI
 HOST,browser-intake-datadoghq.com,AI
-HOST,chat.openai.com.cdn.cloudflare.net,AI
 HOST,gateway.bingviz.microsoft.net,AI
 HOST,gateway.bingviz.microsoftapp.net,AI
 HOST,in.appcenter.ms,AI
-HOST,location.microsoft.com,AI
-HOST,odc.officeapps.live.com,AI
 HOST,r.bing.com,AI
 HOST,self.events.data.microsoft.com,AI
 HOST,services.bingapis.com,AI
@@ -37,12 +25,10 @@ HOST-SUFFIX,api.microsoftapp.net,AI
 HOST-SUFFIX,auth0.com,AI
 HOST-SUFFIX,bing-shopping.microsoft-falcon.io,AI
 HOST-SUFFIX,challenges.cloudflare.com,AI
-HOST-SUFFIX,chatgpt.livekit.cloud,AI
 HOST-SUFFIX,client-api.arkoselabs.com,AI
 HOST-SUFFIX,edgeservices.bing.com,AI
 HOST-SUFFIX,events.statsigapi.net,AI
 HOST-SUFFIX,featuregates.org,AI
-HOST-SUFFIX,host.livekit.cloud,AI
 HOST-SUFFIX,identrust.com,AI
 HOST-SUFFIX,intercom.io,AI
 HOST-SUFFIX,intercomcdn.com,AI
@@ -51,6 +37,4 @@ HOST-SUFFIX,observeit.net,AI
 HOST-SUFFIX,segment.io,AI
 HOST-SUFFIX,sentry.io,AI
 HOST-SUFFIX,stripe.com,AI
-HOST-SUFFIX,turn.livekit.cloud,AI
-HOST-KEYWORD,openaicom-api,AI
 IP-ASN,14061,AI,no-resolve
