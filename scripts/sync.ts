@@ -102,7 +102,7 @@ const program = new Command();
 program
   .name("sync-provider-data")
   .description("Sync normalized provider data from upstream sources and local patches.")
-  .option("-i, --input <dir>", "source provider directory", "sources/providers")
+  .option("-i, --input <dir>", "provider source directory", "data/sources")
   .option("-o, --output <dir>", "normalized provider data directory", "data/providers")
   .option("-p, --provider <names>", "comma-separated provider names or all", "all")
   .action(async (options: SyncOptions) => {

@@ -5,7 +5,6 @@ on:
     branches:
       - main
     paths:
-      - "sources/**"
       - "data/**"
       - "scripts/**"
       - "tests/**"
@@ -15,7 +14,6 @@ on:
       - ".github/workflows/generate.yml"
   pull_request:
     paths:
-      - "sources/**"
       - "data/**"
       - "scripts/**"
       - "tests/**"

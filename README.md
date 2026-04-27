@@ -38,8 +38,7 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/shadowrocket/<pro
 ## 目录结构
 
 ```text
-sources/ 上游来源与同步策略
-data/    Provider 数据源
+data/    Provider 数据
 scripts/ 同步与生成脚本
 rules/   自动生成的规则文件
 ```
