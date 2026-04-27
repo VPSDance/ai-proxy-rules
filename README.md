@@ -18,7 +18,9 @@ AI 服务代理规则集合，生成多个代理客户端可直接引用的 `rul
 
 ## 规则文件
 
-全部 AI 服务规则使用 `all`：
+把下面地址填到客户端的规则订阅、rule-set 或 rule-providers 配置里。
+
+需要同时覆盖所有 AI 服务时，使用 `all`：
 
 ```text
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/all.list
@@ -29,7 +31,7 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/all.list
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/shadowrocket/all.list
 ```
 
-单个 AI 服务使用 provider id：
+只需要某一个 AI 服务时，把 `<provider>` 换成 `anthropic` 或 `openai`：
 
 ```text
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/<provider>.list
@@ -40,11 +42,17 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/<provider>.l
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/shadowrocket/<provider>.list
 ```
 
+例如 Anthropic / Claude 的 Surge 规则：
+
+```text
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/anthropic.list
+```
+
 ## 目录结构
 
 ```text
 data/sources/   人工维护的来源配置
-data/providers/ 自动同步的 Provider 数据
+data/providers/ 由 data/sources/ 生成的 Provider 数据
 scripts/        同步与生成脚本
 rules/          自动生成的规则文件
 ```
