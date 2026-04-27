@@ -1,6 +1,6 @@
 export const formats = [
   "surge",
-  "mihomo",
+  "clash",
   "sing-box",
   "quantumult-x",
   "loon",

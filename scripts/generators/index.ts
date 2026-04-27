@@ -10,11 +10,11 @@ export function render(format: Format, target: RenderTarget): RenderedFile {
         extension: "list",
         content: renderSurge(target)
       };
-    case "mihomo":
+    case "clash":
       return {
         format,
         extension: "yaml",
-        content: renderMihomo(target)
+        content: renderClash(target)
       };
     case "sing-box":
       return {
@@ -63,7 +63,7 @@ function renderSurge(target: RenderTarget): string {
   );
 }
 
-function renderMihomo(target: RenderTarget): string {
+function renderClash(target: RenderTarget): string {
   const lines = renderGroupedLines(target, (rules) => [
     ...rules.domain.map((value) => `- DOMAIN,${value}`),
     ...rules.domainSuffix.map((value) => `- DOMAIN-SUFFIX,${value}`),

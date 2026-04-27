@@ -72,8 +72,8 @@ const fixtureIde: ProviderSource = {
 };
 
 describe("generators", () => {
-  it("renders mihomo payload rules", () => {
-    const rendered = render("mihomo", providerToTarget(anthropic));
+  it("renders clash payload rules", () => {
+    const rendered = render("clash", providerToTarget(anthropic));
 
     expect(rendered.extension).toBe("yaml");
     expect(rendered.content).toContain("DOMAIN,api.anthropic.com");
@@ -163,7 +163,7 @@ describe("generators", () => {
     };
     const target = providerToTarget(provider);
 
-    expect(render("mihomo", target).content).toContain("DOMAIN-REGEX,^example-\\d+\\.foo\\.com$");
+    expect(render("clash", target).content).toContain("DOMAIN-REGEX,^example-\\d+\\.foo\\.com$");
     const singBox = JSON.parse(render("sing-box", target).content);
     expect(singBox.rules[0].domain_regex).toEqual(["^example-\\d+\\.foo\\.com$"]);
 
