@@ -72,11 +72,9 @@ const sourceProviderSchema = z.object({
   sources: z.array(sourceSchema).default([]),
   options: z
     .object({
-      removeCoveredDomains: z.boolean().default(true),
       importAsnFromSource: z.boolean().default(true)
     })
     .default({
-      removeCoveredDomains: true,
       importAsnFromSource: true
     }),
   groups: z
@@ -180,11 +178,7 @@ async function buildProviderData(provider: SourceProvider, baseDir: string): Pro
     }
   }
 
-  const groupRules = groups.map((group) => group.rules);
-  const normalizedRules = provider.options.removeCoveredDomains
-    ? removeCoveredDomains(groupRules)
-    : groupRules;
-  const normalizedGroups = compactGroups(normalizedRules, groups);
+  const normalizedGroups = compactGroups(removeCoveredDomains(groups.map((group) => group.rules)), groups);
 
   return {
     provider: provider.provider,

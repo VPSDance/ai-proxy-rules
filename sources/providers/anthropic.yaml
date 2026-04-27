@@ -5,10 +5,13 @@ sources:
   - name: net-coffee
     type: remote-html
     url: https://ip.net.coffee/claude/site.html
-    selector: ".article pre"
+    selector: ".tab-panel[data-panel=\"yaml\"] pre"
+    parser: mihomo-yaml
+  - name: xiaolai
+    type: remote-text
+    url: https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/anthropic.list
     parser: classical
 options:
-  removeCoveredDomains: true
   importAsnFromSource: false
 groups:
   - name: Core
@@ -58,3 +61,5 @@ patch:
       - sentry
     ipCidr6:
       - 2607:6bc0::/32
+    ipCidr:
+      - 160.79.104.0/23
