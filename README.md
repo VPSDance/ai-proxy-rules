@@ -12,7 +12,7 @@ AI 服务代理规则集合。规则数据统一维护在 `data/`，并生成到
 
 ## 规则文件
 
-汇总规则：
+汇总规则使用 `all`：
 
 ```text
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/all.list
@@ -22,20 +22,14 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/all.
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/all.list
 ```
 
-当前 provider：
+单个 provider 使用对应的 provider id：
 
 ```text
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/anthropic.list
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/mihomo/anthropic.yaml
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/sing-box/anthropic.json
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/anthropic.list
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/anthropic.list
-```
-
-自定义规则：
-
-```text
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/custom/surge/apple.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/<provider>.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/mihomo/<provider>.yaml
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/sing-box/<provider>.json
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/<provider>.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/<provider>.list
 ```
 
 ## 目录结构
