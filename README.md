@@ -15,21 +15,27 @@ AI 服务代理规则集合。规则数据统一维护在 `data/`，并生成到
 汇总规则：
 
 ```text
-rules/surge/all.list
-rules/mihomo/all.yaml
-rules/sing-box/all.json
-rules/quantumult-x/all.list
-rules/loon/all.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/all.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/mihomo/all.yaml
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/sing-box/all.json
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/all.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/all.list
 ```
 
 当前 provider：
 
 ```text
-rules/surge/anthropic.list
-rules/mihomo/anthropic.yaml
-rules/sing-box/anthropic.json
-rules/quantumult-x/anthropic.list
-rules/loon/anthropic.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/anthropic.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/mihomo/anthropic.yaml
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/sing-box/anthropic.json
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/anthropic.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/anthropic.list
+```
+
+自定义规则：
+
+```text
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/custom/surge/apple.list
 ```
 
 ## 目录结构
