@@ -35,9 +35,9 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/<provider>.l
 ## 目录结构
 
 ```text
-data/     人工维护的数据源
+data/     Provider 数据源
 scripts/ 规则生成脚本
-rules/   生成后的规则文件
+rules/   自动生成的规则文件
 ```
 
 ## 数据源
