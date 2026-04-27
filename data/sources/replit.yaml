@@ -1,0 +1,12 @@
+provider: replit
+name: Replit
+description: Replit AI Agent, Assistant, workspace, and app deployment services.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - replit.com
+        - repl.it
+        - replit.dev
+        - replit.app
+        - repl.co

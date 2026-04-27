@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "repl.co",
+        "repl.it",
+        "replit.app",
+        "replit.com",
+        "replit.dev"
+      ]
+    }
+  ]
+}

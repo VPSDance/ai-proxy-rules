@@ -2,6 +2,23 @@
 # Aggregated AI provider rules.
 # https://github.com/VPSDance/ai-proxy-rules
 
+# Amazon Q Developer / Core
+HOST,aws-language-servers.us-east-1.amazonaws.com
+HOST,aws-toolkit-language-servers.amazonaws.com
+HOST,client-telemetry.us-east-1.amazonaws.com
+HOST,codewhisperer.us-east-1.amazonaws.com
+HOST,cognito-identity.us-east-1.amazonaws.com
+HOST,idetoolkits-hostedfiles.amazonaws.com
+HOST,idetoolkits.amazonwebservices.com
+HOST,q-developer-integration.us-east-1.api.aws
+HOST-SUFFIX,aws.dev
+HOST-SUFFIX,awsapps.com
+HOST-SUFFIX,awsstatic.com
+HOST-SUFFIX,console.aws.a2z.com
+HOST-SUFFIX,q.eu-central-1.amazonaws.com
+HOST-SUFFIX,q.us-east-1.amazonaws.com
+HOST-SUFFIX,sso.amazonaws.com
+
 # Anthropic / Core
 HOST-SUFFIX,anthropic.com
 HOST-SUFFIX,anthropic.com.cn
@@ -32,6 +49,9 @@ HOST-SUFFIX,sentry.io
 HOST-SUFFIX,statsigapi.net
 HOST-KEYWORD,datadog
 HOST-KEYWORD,sift
+
+# Augment Code / Core
+HOST-SUFFIX,augmentcode.com
 
 # Cerebras / Core
 HOST-SUFFIX,cerebras.ai
@@ -148,6 +168,9 @@ HOST-SUFFIX,grazie.ai
 HOST-SUFFIX,grazie.aws.intellij.net
 HOST-SUFFIX,jetbrains.ai
 
+# Kiro / Core
+HOST-SUFFIX,kiro.dev
+
 # Manus / Core
 HOST-SUFFIX,manus.im
 HOST-SUFFIX,manuscdn.com
@@ -209,6 +232,22 @@ HOST-SUFFIX,poecdn.net
 # Replicate / Core
 HOST-SUFFIX,replicate.com
 HOST-SUFFIX,replicate.delivery
+
+# Replit / Core
+HOST-SUFFIX,repl.co
+HOST-SUFFIX,repl.it
+HOST-SUFFIX,replit.app
+HOST-SUFFIX,replit.com
+HOST-SUFFIX,replit.dev
+
+# Sourcegraph / Core
+HOST-SUFFIX,ampcode.com
+HOST-SUFFIX,ampworkers.com
+HOST-SUFFIX,cody.dev
+HOST-SUFFIX,sourcegraph.com
+
+# Tabnine / Core
+HOST-SUFFIX,tabnine.com
 
 # Together AI / Core
 HOST-SUFFIX,together.ai

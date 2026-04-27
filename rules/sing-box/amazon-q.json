@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "aws-language-servers.us-east-1.amazonaws.com",
+        "aws-toolkit-language-servers.amazonaws.com",
+        "client-telemetry.us-east-1.amazonaws.com",
+        "codewhisperer.us-east-1.amazonaws.com",
+        "cognito-identity.us-east-1.amazonaws.com",
+        "idetoolkits-hostedfiles.amazonaws.com",
+        "idetoolkits.amazonwebservices.com",
+        "q-developer-integration.us-east-1.api.aws"
+      ],
+      "domain_suffix": [
+        "aws.dev",
+        "awsapps.com",
+        "awsstatic.com",
+        "console.aws.a2z.com",
+        "q.eu-central-1.amazonaws.com",
+        "q.us-east-1.amazonaws.com",
+        "sso.amazonaws.com"
+      ]
+    }
+  ]
+}

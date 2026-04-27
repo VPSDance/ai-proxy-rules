@@ -1,0 +1,11 @@
+provider: sourcegraph
+name: Sourcegraph
+description: Sourcegraph Cody and Amp AI coding services.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - sourcegraph.com
+        - cody.dev
+        - ampcode.com
+        - ampworkers.com

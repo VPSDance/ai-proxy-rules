@@ -1,0 +1,7 @@
+# AI Proxy Rules - Augment Code
+# Augment Code IDE extension, Auggie CLI, and coding agent services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,augmentcode.com

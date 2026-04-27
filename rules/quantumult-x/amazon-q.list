@@ -1,0 +1,20 @@
+# AI Proxy Rules - Amazon Q Developer
+# Amazon Q Developer IDE assistant and coding services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST,aws-language-servers.us-east-1.amazonaws.com
+HOST,aws-toolkit-language-servers.amazonaws.com
+HOST,client-telemetry.us-east-1.amazonaws.com
+HOST,codewhisperer.us-east-1.amazonaws.com
+HOST,cognito-identity.us-east-1.amazonaws.com
+HOST,idetoolkits-hostedfiles.amazonaws.com
+HOST,idetoolkits.amazonwebservices.com
+HOST,q-developer-integration.us-east-1.api.aws
+HOST-SUFFIX,aws.dev
+HOST-SUFFIX,awsapps.com
+HOST-SUFFIX,awsstatic.com
+HOST-SUFFIX,console.aws.a2z.com
+HOST-SUFFIX,q.eu-central-1.amazonaws.com
+HOST-SUFFIX,q.us-east-1.amazonaws.com
+HOST-SUFFIX,sso.amazonaws.com

@@ -1,0 +1,7 @@
+# AI Proxy Rules - Tabnine
+# Tabnine AI coding assistant and agent services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,tabnine.com

@@ -1,0 +1,10 @@
+# AI Proxy Rules - Replit
+# Replit AI Agent, Assistant, workspace, and app deployment services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,repl.co
+DOMAIN-SUFFIX,repl.it
+DOMAIN-SUFFIX,replit.app
+DOMAIN-SUFFIX,replit.com
+DOMAIN-SUFFIX,replit.dev

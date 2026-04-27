@@ -3,6 +3,23 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 payload:
+  # Amazon Q Developer / Core
+  - DOMAIN,aws-language-servers.us-east-1.amazonaws.com
+  - DOMAIN,aws-toolkit-language-servers.amazonaws.com
+  - DOMAIN,client-telemetry.us-east-1.amazonaws.com
+  - DOMAIN,codewhisperer.us-east-1.amazonaws.com
+  - DOMAIN,cognito-identity.us-east-1.amazonaws.com
+  - DOMAIN,idetoolkits-hostedfiles.amazonaws.com
+  - DOMAIN,idetoolkits.amazonwebservices.com
+  - DOMAIN,q-developer-integration.us-east-1.api.aws
+  - DOMAIN-SUFFIX,aws.dev
+  - DOMAIN-SUFFIX,awsapps.com
+  - DOMAIN-SUFFIX,awsstatic.com
+  - DOMAIN-SUFFIX,console.aws.a2z.com
+  - DOMAIN-SUFFIX,q.eu-central-1.amazonaws.com
+  - DOMAIN-SUFFIX,q.us-east-1.amazonaws.com
+  - DOMAIN-SUFFIX,sso.amazonaws.com
+
   # Anthropic / Core
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,anthropic.com.cn
@@ -33,6 +50,9 @@ payload:
   - DOMAIN-SUFFIX,statsigapi.net
   - DOMAIN-KEYWORD,datadog
   - DOMAIN-KEYWORD,sift
+
+  # Augment Code / Core
+  - DOMAIN-SUFFIX,augmentcode.com
 
   # Cerebras / Core
   - DOMAIN-SUFFIX,cerebras.ai
@@ -149,6 +169,9 @@ payload:
   - DOMAIN-SUFFIX,grazie.aws.intellij.net
   - DOMAIN-SUFFIX,jetbrains.ai
 
+  # Kiro / Core
+  - DOMAIN-SUFFIX,kiro.dev
+
   # Manus / Core
   - DOMAIN-SUFFIX,manus.im
   - DOMAIN-SUFFIX,manuscdn.com
@@ -211,6 +234,22 @@ payload:
   # Replicate / Core
   - DOMAIN-SUFFIX,replicate.com
   - DOMAIN-SUFFIX,replicate.delivery
+
+  # Replit / Core
+  - DOMAIN-SUFFIX,repl.co
+  - DOMAIN-SUFFIX,repl.it
+  - DOMAIN-SUFFIX,replit.app
+  - DOMAIN-SUFFIX,replit.com
+  - DOMAIN-SUFFIX,replit.dev
+
+  # Sourcegraph / Core
+  - DOMAIN-SUFFIX,ampcode.com
+  - DOMAIN-SUFFIX,ampworkers.com
+  - DOMAIN-SUFFIX,cody.dev
+  - DOMAIN-SUFFIX,sourcegraph.com
+
+  # Tabnine / Core
+  - DOMAIN-SUFFIX,tabnine.com
 
   # Together AI / Core
   - DOMAIN-SUFFIX,together.ai

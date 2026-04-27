@@ -1,0 +1,9 @@
+# AI Proxy Rules - Sourcegraph
+# Sourcegraph Cody and Amp AI coding services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,ampcode.com
+HOST-SUFFIX,ampworkers.com
+HOST-SUFFIX,cody.dev
+HOST-SUFFIX,sourcegraph.com

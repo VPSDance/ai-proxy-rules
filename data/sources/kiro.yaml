@@ -1,0 +1,10 @@
+provider: kiro
+name: Kiro
+description: AWS Kiro agentic IDE and CLI services.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - kiro.dev
+        - q.us-east-1.amazonaws.com
+        - q.eu-central-1.amazonaws.com
