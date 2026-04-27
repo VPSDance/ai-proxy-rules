@@ -42,7 +42,11 @@
         "turn.livekit.cloud"
       ],
       "domain_keyword": [
+        "chatgpt-async-webps-prod",
         "openai"
+      ],
+      "domain_regex": [
+        "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
       ],
       "ip_cidr": [
         "199.47.142.0/23",

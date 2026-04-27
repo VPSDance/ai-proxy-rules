@@ -1,0 +1,19 @@
+provider: trae
+name: Trae
+description: ByteDance Trae AI IDE (overseas).
+sources:
+  - name: skywalkerji
+    type: remote-text
+    url: https://raw.githubusercontent.com/SkywalkerJi/Clash-Rules/master/AI/Trae.yaml
+    parser: mihomo-yaml
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - trae.ai
+    fromSource: true
+patch:
+  remove:
+    domainSuffix:
+      - trae.com.cn
+      - tron.jiyunhudong.com

@@ -7,6 +7,7 @@ export type SourceParser = "classical" | "mihomo-yaml" | "domain-list-community"
 export interface ParseSourceOptions {
   sourceUrl?: string;
   fetchText?: (url: string) => Promise<string>;
+  followIncludes?: boolean;
 }
 
 export async function parseSourceRules(
@@ -54,6 +55,11 @@ export function parseClassicalRules(text: string): RuleSet {
       case "DOMAIN-KEYWORD":
       case "HOST-KEYWORD":
         rules.domainKeyword.push(value);
+        break;
+      case "DOMAIN-REGEX":
+      case "URL-REGEX":
+      case "HOST-WILDCARD":
+        rules.domainRegex.push(value);
         break;
       case "IP-CIDR":
         rules.ipCidr.push(value);
@@ -104,6 +110,10 @@ export async function parseDomainListCommunityRules(
     }
 
     if (line.startsWith("include:")) {
+      if (options.followIncludes === false) {
+        continue;
+      }
+
       const includeName = line.slice("include:".length).trim();
       if (!includeName) {
         continue;
@@ -151,6 +161,7 @@ export async function parseDomainListCommunityRules(
         rules.domainKeyword.push(value);
         break;
       case "regexp":
+        rules.domainRegex.push(value);
         break;
       default:
         rules.domainSuffix.push(value);
@@ -200,6 +211,7 @@ function mergeInto(target: RuleSet, source: RuleSet): void {
   target.domain.push(...source.domain);
   target.domainSuffix.push(...source.domainSuffix);
   target.domainKeyword.push(...source.domainKeyword);
+  target.domainRegex.push(...source.domainRegex);
   target.ipCidr.push(...source.ipCidr);
   target.ipCidr6.push(...source.ipCidr6);
   target.asn.push(...source.asn);

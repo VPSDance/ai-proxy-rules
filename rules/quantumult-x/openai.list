@@ -1,4 +1,5 @@
 # AI Proxy Rules - OpenAI
+# OpenAI and ChatGPT services.
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
@@ -13,6 +14,7 @@ HOST-SUFFIX,openai.com
 HOST-SUFFIX,openaiapi-site.azureedge.net
 HOST-SUFFIX,openaicom.imgix.net
 HOST-SUFFIX,sora.com
+HOST-KEYWORD,chatgpt-async-webps-prod
 HOST-KEYWORD,openai
 
 # Network

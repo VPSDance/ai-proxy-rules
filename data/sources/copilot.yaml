@@ -27,7 +27,7 @@ groups:
       ipCidr:
         - 24.199.123.28/32
         - 64.23.132.171/32
-    fromSourceTypes:
+    fromSource:
       - ipCidr
 
   - name: Third-Party

@@ -1,4 +1,5 @@
 # AI Proxy Rules - All AI Providers
+# Aggregated AI provider rules.
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Anthropic / Core
@@ -65,6 +66,12 @@ HOST-SUFFIX,segment.io
 HOST-SUFFIX,stripe.com
 IP-ASN,14061,no-resolve
 
+# Cursor / Core
+HOST-SUFFIX,cursor-cdn.com
+HOST-SUFFIX,cursor.com
+HOST-SUFFIX,cursor.sh
+HOST-SUFFIX,cursorapi.com
+
 # Google AI / Core
 HOST-SUFFIX,ai.google.dev
 HOST-SUFFIX,ai.studio
@@ -108,6 +115,19 @@ HOST-SUFFIX,proactivebackend-pa.googleapis.com
 HOST-SUFFIX,robinfrontend-pa.googleapis.com
 HOST-SUFFIX,stitch.withgoogle.com
 
+# JetBrains AI / Core
+HOST-SUFFIX,grazie.ai
+HOST-SUFFIX,grazie.aws.intellij.net
+HOST-SUFFIX,jetbrains.ai
+
+# Meta AI / Core
+HOST,ai.meta.com
+HOST-SUFFIX,llama.com
+HOST-SUFFIX,meta.ai
+
+# Mistral AI / Core
+HOST-SUFFIX,mistral.ai
+
 # OpenAI / Core
 HOST-SUFFIX,ai.com
 HOST-SUFFIX,chat.com
@@ -120,6 +140,7 @@ HOST-SUFFIX,openai.com
 HOST-SUFFIX,openaiapi-site.azureedge.net
 HOST-SUFFIX,openaicom.imgix.net
 HOST-SUFFIX,sora.com
+HOST-KEYWORD,chatgpt-async-webps-prod
 HOST-KEYWORD,openai
 
 # OpenAI / Network
@@ -138,3 +159,32 @@ HOST-SUFFIX,api.statsig.com
 HOST-SUFFIX,host.livekit.cloud
 HOST-SUFFIX,openai.com.cdn.cloudflare.net
 HOST-SUFFIX,turn.livekit.cloud
+
+# Perplexity / Core
+HOST,ppl-ai-file-upload.s3.amazonaws.com
+HOST,pplx-res.cloudinary.com
+HOST-SUFFIX,perplexity.ai
+HOST-SUFFIX,perplexity.com
+HOST-SUFFIX,pplx.ai
+
+# Trae / Core
+HOST-SUFFIX,abtestvm-sg.bytedance.com
+HOST-SUFFIX,bytegate-sg.byteintlapi.com
+HOST-SUFFIX,byteoversea.com
+HOST-SUFFIX,lf3-static.bytednsdoc.com
+HOST-SUFFIX,sf16-short-sg.bytedapm.com
+HOST-SUFFIX,starling.zijieapi.com
+HOST-SUFFIX,trae-api-sg.mchost.guru
+HOST-SUFFIX,trae.ai
+HOST-SUFFIX,tron-sg.bytelemon.com
+
+# Windsurf / Core
+HOST-SUFFIX,codeium.com
+HOST-SUFFIX,codeiumdata.com
+HOST-SUFFIX,windsurf.build
+HOST-SUFFIX,windsurf.com
+
+# xAI / Core
+HOST-SUFFIX,grok.com
+HOST-SUFFIX,grok.x.com
+HOST-SUFFIX,x.ai

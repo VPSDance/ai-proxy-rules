@@ -1,0 +1,11 @@
+provider: meta-ai
+name: Meta AI
+description: Meta AI products (Meta AI chat, Llama).
+groups:
+  - name: Core
+    rules:
+      domain:
+        - ai.meta.com
+      domainSuffix:
+        - llama.com
+        - meta.ai

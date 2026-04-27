@@ -1,0 +1,10 @@
+provider: x-ai
+name: xAI
+description: xAI and Grok.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - grok.com
+        - grok.x.com
+        - x.ai

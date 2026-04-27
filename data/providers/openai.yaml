@@ -17,6 +17,7 @@ groups:
         - openaicom.imgix.net
         - sora.com
       domainKeyword:
+        - chatgpt-async-webps-prod
         - openai
   - name: Network
     rules:
@@ -56,3 +57,5 @@ groups:
         - statsigapi.net
         - stripe.com
         - turn.livekit.cloud
+      domainRegex:
+        - ^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$

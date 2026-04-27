@@ -1,4 +1,5 @@
 # AI Proxy Rules - OpenAI
+# OpenAI and ChatGPT services.
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
@@ -13,6 +14,7 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,sora.com
+DOMAIN-KEYWORD,chatgpt-async-webps-prod
 DOMAIN-KEYWORD,openai
 
 # Network

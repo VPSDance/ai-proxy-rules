@@ -6,12 +6,12 @@ sources:
     type: remote-text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
     parser: mihomo-yaml
+    importAsn: false
   - name: v2fly
     type: remote-text
     url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/openai
     parser: domain-list-community
-options:
-  importAsnFromSource: false
+    importAsn: false
 groups:
   - name: Core
     include:
@@ -28,6 +28,7 @@ groups:
         - openaicom.imgix.net
         - sora.com
       domainKeyword:
+        - chatgpt-async-webps-prod
         - openai
 
   - name: Network
@@ -38,7 +39,7 @@ groups:
         - 199.47.142.0/23
       ipCidr6:
         - 2604:f20::/32
-    fromSourceTypes:
+    fromSource:
       - ipCidr
       - ipCidr6
 

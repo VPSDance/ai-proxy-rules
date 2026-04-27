@@ -1,0 +1,16 @@
+provider: trae
+name: Trae
+description: ByteDance Trae AI IDE (overseas).
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - abtestvm-sg.bytedance.com
+        - bytegate-sg.byteintlapi.com
+        - byteoversea.com
+        - lf3-static.bytednsdoc.com
+        - sf16-short-sg.bytedapm.com
+        - starling.zijieapi.com
+        - trae-api-sg.mchost.guru
+        - trae.ai
+        - tron-sg.bytelemon.com

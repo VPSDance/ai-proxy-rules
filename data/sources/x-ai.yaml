@@ -1,0 +1,11 @@
+provider: x-ai
+name: xAI
+description: xAI and Grok.
+sources:
+  - name: v2fly
+    type: remote-text
+    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/xai
+    parser: domain-list-community
+groups:
+  - name: Core
+    fromSource: true

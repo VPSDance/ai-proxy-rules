@@ -1,4 +1,5 @@
 # AI Proxy Rules - All AI Providers
+# Aggregated AI provider rules.
 # https://github.com/VPSDance/ai-proxy-rules
 
 payload:
@@ -66,6 +67,12 @@ payload:
   - DOMAIN-SUFFIX,stripe.com
   - IP-ASN,14061,no-resolve
 
+  # Cursor / Core
+  - DOMAIN-SUFFIX,cursor-cdn.com
+  - DOMAIN-SUFFIX,cursor.com
+  - DOMAIN-SUFFIX,cursor.sh
+  - DOMAIN-SUFFIX,cursorapi.com
+
   # Google AI / Core
   - DOMAIN-SUFFIX,ai.google.dev
   - DOMAIN-SUFFIX,ai.studio
@@ -109,6 +116,19 @@ payload:
   - DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
   - DOMAIN-SUFFIX,stitch.withgoogle.com
 
+  # JetBrains AI / Core
+  - DOMAIN-SUFFIX,grazie.ai
+  - DOMAIN-SUFFIX,grazie.aws.intellij.net
+  - DOMAIN-SUFFIX,jetbrains.ai
+
+  # Meta AI / Core
+  - DOMAIN,ai.meta.com
+  - DOMAIN-SUFFIX,llama.com
+  - DOMAIN-SUFFIX,meta.ai
+
+  # Mistral AI / Core
+  - DOMAIN-SUFFIX,mistral.ai
+
   # OpenAI / Core
   - DOMAIN-SUFFIX,ai.com
   - DOMAIN-SUFFIX,chat.com
@@ -121,6 +141,7 @@ payload:
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
   - DOMAIN-SUFFIX,openaicom.imgix.net
   - DOMAIN-SUFFIX,sora.com
+  - DOMAIN-KEYWORD,chatgpt-async-webps-prod
   - DOMAIN-KEYWORD,openai
 
   # OpenAI / Network
@@ -139,3 +160,33 @@ payload:
   - DOMAIN-SUFFIX,host.livekit.cloud
   - DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
   - DOMAIN-SUFFIX,turn.livekit.cloud
+  - DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
+
+  # Perplexity / Core
+  - DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
+  - DOMAIN,pplx-res.cloudinary.com
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,perplexity.com
+  - DOMAIN-SUFFIX,pplx.ai
+
+  # Trae / Core
+  - DOMAIN-SUFFIX,abtestvm-sg.bytedance.com
+  - DOMAIN-SUFFIX,bytegate-sg.byteintlapi.com
+  - DOMAIN-SUFFIX,byteoversea.com
+  - DOMAIN-SUFFIX,lf3-static.bytednsdoc.com
+  - DOMAIN-SUFFIX,sf16-short-sg.bytedapm.com
+  - DOMAIN-SUFFIX,starling.zijieapi.com
+  - DOMAIN-SUFFIX,trae-api-sg.mchost.guru
+  - DOMAIN-SUFFIX,trae.ai
+  - DOMAIN-SUFFIX,tron-sg.bytelemon.com
+
+  # Windsurf / Core
+  - DOMAIN-SUFFIX,codeium.com
+  - DOMAIN-SUFFIX,codeiumdata.com
+  - DOMAIN-SUFFIX,windsurf.build
+  - DOMAIN-SUFFIX,windsurf.com
+
+  # xAI / Core
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,grok.x.com
+  - DOMAIN-SUFFIX,x.ai

@@ -13,6 +13,7 @@ const anthropic: ProviderSource = {
         domain: ["api.anthropic.com"],
         domainSuffix: ["anthropic.com"],
         domainKeyword: ["claude"],
+        domainRegex: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []
@@ -24,6 +25,7 @@ const anthropic: ProviderSource = {
         domain: [],
         domainSuffix: [],
         domainKeyword: [],
+        domainRegex: [],
         ipCidr: ["203.0.113.0/24"],
         ipCidr6: ["2001:db8::/32"],
         asn: [399358]
@@ -34,22 +36,24 @@ const anthropic: ProviderSource = {
     domain: ["api.anthropic.com"],
     domainSuffix: ["anthropic.com"],
     domainKeyword: ["claude"],
+    domainRegex: [],
     ipCidr: ["203.0.113.0/24"],
     ipCidr6: ["2001:db8::/32"],
     asn: [399358]
   }
 };
 
-const cursor: ProviderSource = {
-  provider: "cursor",
-  name: "Cursor",
+const fixtureIde: ProviderSource = {
+  provider: "fixture-ide",
+  name: "Fixture IDE",
   groups: [
     {
       name: "Core",
       rules: {
-        domain: ["api2.cursor.sh"],
-        domainSuffix: ["cursor.sh"],
+        domain: ["api.fixture-ide.test"],
+        domainSuffix: ["fixture-ide.test"],
         domainKeyword: [],
+        domainRegex: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []
@@ -57,9 +61,10 @@ const cursor: ProviderSource = {
     }
   ],
   rules: {
-    domain: ["api2.cursor.sh"],
-    domainSuffix: ["cursor.sh"],
+    domain: ["api.fixture-ide.test"],
+    domainSuffix: ["fixture-ide.test"],
     domainKeyword: [],
+    domainRegex: [],
     ipCidr: [],
     ipCidr6: [],
     asn: []
@@ -118,15 +123,54 @@ describe("generators", () => {
     expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,no-resolve");
   });
 
+  it("emits domain-regex only in formats with first-class regex support", () => {
+    const provider: ProviderSource = {
+      provider: "regex-test",
+      name: "Regex Test",
+      groups: [
+        {
+          name: "Core",
+          rules: {
+            domain: [],
+            domainSuffix: [],
+            domainKeyword: [],
+            domainRegex: ["^example-\\d+\\.foo\\.com$"],
+            ipCidr: [],
+            ipCidr6: [],
+            asn: []
+          }
+        }
+      ],
+      rules: {
+        domain: [],
+        domainSuffix: [],
+        domainKeyword: [],
+        domainRegex: ["^example-\\d+\\.foo\\.com$"],
+        ipCidr: [],
+        ipCidr6: [],
+        asn: []
+      }
+    };
+    const target = providerToTarget(provider);
+
+    expect(render("mihomo", target).content).toContain("DOMAIN-REGEX,^example-\\d+\\.foo\\.com$");
+    const singBox = JSON.parse(render("sing-box", target).content);
+    expect(singBox.rules[0].domain_regex).toEqual(["^example-\\d+\\.foo\\.com$"]);
+
+    for (const format of ["surge", "loon", "shadowrocket", "quantumult-x"] as const) {
+      expect(render(format, target).content).not.toContain("REGEX");
+    }
+  });
+
   it("aggregates providers into all", () => {
-    const target = aggregateProviders([anthropic, cursor]);
+    const target = aggregateProviders([anthropic, fixtureIde]);
     const rendered = render("surge", target);
 
     expect(target.id).toBe("all");
     expect(rendered.content).toContain("# Anthropic / Core");
-    expect(rendered.content).toContain("# Cursor / Core");
+    expect(rendered.content).toContain("# Fixture IDE / Core");
     expect(rendered.content).toContain("DOMAIN,api.anthropic.com");
-    expect(rendered.content).toContain("DOMAIN,api2.cursor.sh");
+    expect(rendered.content).toContain("DOMAIN,api.fixture-ide.test");
   });
 
   it("deduplicates rendered all rules across provider groups", () => {
@@ -140,6 +184,7 @@ describe("generators", () => {
             domain: ["api.anthropic.com"],
             domainSuffix: [],
             domainKeyword: [],
+            domainRegex: [],
             ipCidr: [],
             ipCidr6: [],
             asn: []
@@ -150,6 +195,7 @@ describe("generators", () => {
         domain: ["api.anthropic.com"],
         domainSuffix: [],
         domainKeyword: [],
+        domainRegex: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []
@@ -165,15 +211,16 @@ describe("generators", () => {
     const merged = mergeRuleSets([
       anthropic.rules,
       {
-        domain: ["API.Anthropic.com", "api2.cursor.sh"],
+        domain: ["API.Anthropic.com", "api.fixture-ide.test"],
         domainSuffix: [],
         domainKeyword: [],
+        domainRegex: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []
       }
     ]);
 
-    expect(merged.domain).toEqual(["api.anthropic.com", "api2.cursor.sh"]);
+    expect(merged.domain).toEqual(["api.anthropic.com", "api.fixture-ide.test"]);
   });
 });

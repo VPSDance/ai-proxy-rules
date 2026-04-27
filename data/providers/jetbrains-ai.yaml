@@ -1,0 +1,10 @@
+provider: jetbrains-ai
+name: JetBrains AI
+description: JetBrains AI Assistant / Junie / Grazie.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - grazie.ai
+        - grazie.aws.intellij.net
+        - jetbrains.ai

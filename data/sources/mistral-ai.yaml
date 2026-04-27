@@ -1,0 +1,8 @@
+provider: mistral-ai
+name: Mistral AI
+description: Mistral AI (Le Chat, La Plateforme).
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - mistral.ai

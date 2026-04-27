@@ -1,0 +1,11 @@
+provider: windsurf
+name: Windsurf
+description: Windsurf (formerly Codeium) AI IDE.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - codeium.com
+        - codeiumdata.com
+        - windsurf.build
+        - windsurf.com

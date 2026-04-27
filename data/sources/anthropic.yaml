@@ -7,16 +7,17 @@ sources:
     url: https://ip.net.coffee/claude/site.html
     selector: ".tab-panel[data-panel=\"yaml\"] pre"
     parser: mihomo-yaml
+    importAsn: false
   - name: xiaolai
     type: remote-text
     url: https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/anthropic.list
     parser: classical
+    importAsn: false
   - name: v2fly
     type: remote-text
     url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/anthropic
     parser: domain-list-community
-options:
-  importAsnFromSource: false
+    importAsn: false
 groups:
   - name: Core
     include:
@@ -38,7 +39,7 @@ groups:
         - 160.79.104.0/21
       ipCidr6:
         - 2607:6bc0::/48
-    fromSourceTypes:
+    fromSource:
       - ipCidr
       - ipCidr6
 

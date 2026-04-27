@@ -1,0 +1,9 @@
+# AI Proxy Rules - Windsurf
+# Windsurf (formerly Codeium) AI IDE.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,codeium.com
+HOST-SUFFIX,codeiumdata.com
+HOST-SUFFIX,windsurf.build
+HOST-SUFFIX,windsurf.com

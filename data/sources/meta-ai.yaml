@@ -1,0 +1,19 @@
+provider: meta-ai
+name: Meta AI
+description: Meta AI products (Meta AI chat, Llama).
+sources:
+  - name: v2fly
+    type: remote-text
+    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/meta
+    parser: domain-list-community
+    followIncludes: false
+groups:
+  - name: Core
+    include:
+      domain:
+        - ai.meta.com
+    fromSource: true
+patch:
+  remove:
+    domainSuffix:
+      - meta.com

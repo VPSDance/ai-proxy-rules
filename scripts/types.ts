@@ -13,6 +13,7 @@ export interface RuleSet {
   domain: string[];
   domainSuffix: string[];
   domainKeyword: string[];
+  domainRegex: string[];
   ipCidr: string[];
   ipCidr6: string[];
   asn: number[];

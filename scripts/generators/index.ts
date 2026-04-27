@@ -62,6 +62,7 @@ function renderMihomo(target: RenderTarget): string {
     ...rules.domain.map((value) => `- DOMAIN,${value}`),
     ...rules.domainSuffix.map((value) => `- DOMAIN-SUFFIX,${value}`),
     ...rules.domainKeyword.map((value) => `- DOMAIN-KEYWORD,${value}`),
+    ...rules.domainRegex.map((value) => `- DOMAIN-REGEX,${value}`),
     ...rules.ipCidr.map((value) => `- IP-CIDR,${value},no-resolve`),
     ...rules.ipCidr6.map((value) => `- IP-CIDR6,${value},no-resolve`),
     ...rules.asn.map((value) => `- IP-ASN,${value},no-resolve`)
@@ -76,6 +77,7 @@ function renderSingBox(target: RenderTarget): string {
   assignIfAny(rule, "domain", target.rules.domain);
   assignIfAny(rule, "domain_suffix", target.rules.domainSuffix);
   assignIfAny(rule, "domain_keyword", target.rules.domainKeyword);
+  assignIfAny(rule, "domain_regex", target.rules.domainRegex);
   assignIfAny(rule, "ip_cidr", [...target.rules.ipCidr, ...target.rules.ipCidr6]);
 
   return `${JSON.stringify({ version: 3, rules: [rule] }, null, 2)}\n`;
@@ -128,7 +130,12 @@ function withHeader(target: RenderTarget, lines: string[]): string {
 }
 
 function headerLines(target: RenderTarget): string[] {
-  return [`# AI Proxy Rules - ${target.name}`, `# ${REPO_URL}`, ""];
+  const lines = [`# AI Proxy Rules - ${target.name}`];
+  if (target.description) {
+    lines.push(`# ${target.description}`);
+  }
+  lines.push(`# ${REPO_URL}`, "");
+  return lines;
 }
 
 function renderGroupedLines(

@@ -1,4 +1,5 @@
 # AI Proxy Rules - Google AI
+# Google AI product family (Gemini, AI Studio, NotebookLM, Labs, DeepMind, etc.).
 # https://github.com/VPSDance/ai-proxy-rules
 
 payload:

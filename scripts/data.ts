@@ -10,6 +10,7 @@ const rulesSchema = z
     domain: z.array(z.string()).default([]),
     domainSuffix: z.array(z.string()).default([]),
     domainKeyword: z.array(z.string()).default([]),
+    domainRegex: z.array(z.string()).default([]),
     ipCidr: z.array(z.string()).default([]),
     ipCidr6: z.array(z.string()).default([]),
     asn: z.array(z.coerce.number().int().positive()).default([])
@@ -18,6 +19,7 @@ const rulesSchema = z
     domain: [],
     domainSuffix: [],
     domainKeyword: [],
+    domainRegex: [],
     ipCidr: [],
     ipCidr6: [],
     asn: []
@@ -87,7 +89,11 @@ export { mergeRuleSets };
 
 async function parseProviderFile(filePath: string): Promise<ProviderSource> {
   const raw = await readFile(filePath, "utf8");
-  const parsed = providerSchema.parse(parse(raw));
+  const result = providerSchema.safeParse(parse(raw));
+  if (!result.success) {
+    throw new Error(`Invalid provider data in ${filePath}:\n${z.prettifyError(result.error)}`);
+  }
+  const parsed = result.data;
   const groups = normalizeRuleGroups(
     parsed.groups ?? [
       {

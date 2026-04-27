@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "ai.meta.com"
+      ],
+      "domain_suffix": [
+        "llama.com",
+        "meta.ai"
+      ]
+    }
+  ]
+}

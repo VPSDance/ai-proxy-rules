@@ -1,0 +1,8 @@
+# AI Proxy Rules - JetBrains AI
+# JetBrains AI Assistant / Junie / Grazie.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+DOMAIN-SUFFIX,jetbrains.ai

@@ -1,0 +1,14 @@
+# AI Proxy Rules - Trae
+# ByteDance Trae AI IDE (overseas).
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,abtestvm-sg.bytedance.com
+HOST-SUFFIX,bytegate-sg.byteintlapi.com
+HOST-SUFFIX,byteoversea.com
+HOST-SUFFIX,lf3-static.bytednsdoc.com
+HOST-SUFFIX,sf16-short-sg.bytedapm.com
+HOST-SUFFIX,starling.zijieapi.com
+HOST-SUFFIX,trae-api-sg.mchost.guru
+HOST-SUFFIX,trae.ai
+HOST-SUFFIX,tron-sg.bytelemon.com

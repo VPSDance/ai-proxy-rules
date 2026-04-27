@@ -1,0 +1,9 @@
+# AI Proxy Rules - xAI
+# xAI and Grok.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,grok.x.com
+  - DOMAIN-SUFFIX,x.ai

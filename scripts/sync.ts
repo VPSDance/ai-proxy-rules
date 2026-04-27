@@ -2,100 +2,20 @@
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { Command } from "commander";
-import { load } from "cheerio";
 import { parse, stringify } from "yaml";
 import { z } from "zod";
 import {
-  compactRuleSet,
-  emptyRuleSet,
-  mergeRuleSets,
-  normalizeRuleSet,
-  pickRuleKeys,
-  removeCoveredDomains,
-  ruleKeys,
-  subtractRuleSet,
-  type RuleKey
-} from "./rules.js";
-import { parseSourceRules, type SourceParser } from "./sync/parsers.js";
-import type { RuleGroup, RuleSet } from "./types.js";
+  buildProviderData,
+  sourceProviderSchema,
+  type SourceProvider,
+  type SourceProviderData
+} from "./sync/build.js";
 
 interface SyncOptions {
   input: string;
   output: string;
   provider: string;
 }
-
-const partialRulesSchema = z
-  .object({
-    domain: z.array(z.string()).default([]),
-    domainSuffix: z.array(z.string()).default([]),
-    domainKeyword: z.array(z.string()).default([]),
-    ipCidr: z.array(z.string()).default([]),
-    ipCidr6: z.array(z.string()).default([]),
-    asn: z.array(z.coerce.number().int().positive()).default([])
-  })
-  .default({
-    domain: [],
-    domainSuffix: [],
-    domainKeyword: [],
-    ipCidr: [],
-    ipCidr6: [],
-    asn: []
-  });
-
-const sourceSchema = z.discriminatedUnion("type", [
-  z.object({
-    name: z.string().min(1),
-    type: z.literal("remote-text"),
-    url: z.string().url(),
-    parser: z.enum(["classical", "mihomo-yaml", "domain-list-community"])
-  }),
-  z.object({
-    name: z.string().min(1),
-    type: z.literal("remote-html"),
-    url: z.string().url(),
-    selector: z.string().min(1),
-    parser: z.enum(["classical", "mihomo-yaml", "domain-list-community"])
-  }),
-  z.object({
-    name: z.string().min(1),
-    type: z.literal("local-text"),
-    path: z.string().min(1),
-    parser: z.enum(["classical", "mihomo-yaml", "domain-list-community"])
-  })
-]);
-
-const sourceProviderSchema = z.object({
-  provider: z.string().min(1).regex(/^[a-z0-9][a-z0-9-]*$/),
-  name: z.string().min(1),
-  description: z.string().optional(),
-  sources: z.array(sourceSchema).default([]),
-  options: z
-    .object({
-      importAsnFromSource: z.boolean().default(true)
-    })
-    .default({
-      importAsnFromSource: true
-    }),
-  groups: z
-    .array(
-      z.object({
-        name: z.string().min(1),
-        include: partialRulesSchema.optional(),
-        fromSource: z.boolean().default(false),
-        fromSourceTypes: z.array(z.enum(ruleKeys)).default([])
-      })
-    )
-    .min(1),
-  patch: z
-    .object({
-      remove: partialRulesSchema.optional()
-    })
-    .default({})
-});
-
-type SourceProvider = z.infer<typeof sourceProviderSchema>;
-type SourceConfig = z.infer<typeof sourceSchema>;
 
 const program = new Command();
 
@@ -147,131 +67,18 @@ async function selectSourceFiles(inputDir: string, providerOption: string): Prom
 
 async function loadSourceProvider(filePath: string): Promise<SourceProvider> {
   const raw = await readFile(filePath, "utf8");
-  return sourceProviderSchema.parse(parse(raw));
-}
-
-async function buildProviderData(provider: SourceProvider, baseDir: string): Promise<SourceProviderData> {
-  const sourceRules = await loadSourceRules(provider.sources, baseDir, provider.options.importAsnFromSource);
-  const removeRules = normalizePartialRuleSet(provider.patch.remove);
-  const explicitRules = mergeRuleSets(
-    provider.groups.map((group) => normalizePartialRuleSet(group.include))
-  );
-  let remainingSourceRules = subtractRuleSet(subtractRuleSet(sourceRules, removeRules), explicitRules);
-
-  const groups: RuleGroup[] = [];
-
-  for (const group of provider.groups) {
-    const includeRules = normalizePartialRuleSet(group.include);
-    const sourceGroupRules = group.fromSource
-      ? remainingSourceRules
-      : pickRuleKeys(remainingSourceRules, group.fromSourceTypes as RuleKey[]);
-    let rules = mergeRuleSets([includeRules, sourceGroupRules]);
-    rules = subtractRuleSet(rules, removeRules);
-
-    groups.push({
-      name: group.name,
-      rules
-    });
-
-    if (group.fromSource || group.fromSourceTypes.length > 0) {
-      remainingSourceRules = subtractRuleSet(remainingSourceRules, sourceGroupRules);
-    }
+  const result = sourceProviderSchema.safeParse(parse(raw));
+  if (!result.success) {
+    throw new Error(`Invalid source config in ${filePath}:\n${z.prettifyError(result.error)}`);
   }
-
-  const normalizedGroups = compactGroups(removeCoveredDomains(groups.map((group) => group.rules)), groups);
-
-  return {
-    provider: provider.provider,
-    name: provider.name,
-    description: provider.description,
-    groups: normalizedGroups
-  };
-}
-
-async function loadSourceRules(
-  sources: SourceConfig[],
-  baseDir: string,
-  importAsnFromSource: boolean
-): Promise<RuleSet> {
-  const textCache = new Map<string, Promise<string>>();
-  const rules = await Promise.all(
-    sources.map(async (source) => {
-      const text = await loadSourceText(source, baseDir);
-      const parsed = await parseSourceRules(text, source.parser as SourceParser, {
-        sourceUrl: source.type === "remote-text" || source.type === "remote-html" ? source.url : undefined,
-        fetchText: async (url) => {
-          const cached = textCache.get(url);
-          if (cached) {
-            return cached;
-          }
-
-          const fetched = fetchRemoteText(url);
-          textCache.set(url, fetched);
-          return fetched;
-        }
-      });
-
-      if (!importAsnFromSource) {
-        parsed.asn = [];
-      }
-
-      return parsed;
-    })
-  );
-
-  return mergeRuleSets(rules);
-}
-
-async function loadSourceText(source: SourceConfig, baseDir: string): Promise<string> {
-  if (source.type === "local-text") {
-    return readFile(path.resolve(baseDir, source.path), "utf8");
-  }
-
-  const text = await fetchRemoteText(source.url);
-  if (source.type === "remote-text") {
-    return text;
-  }
-
-  const $ = load(text);
-  const nodes = $(source.selector);
-  if (nodes.length === 0) {
-    throw new Error(`Selector "${source.selector}" matched no nodes in ${source.url}`);
-  }
-
-  return nodes
-    .map((_, element) => $(element).text())
-    .get()
-    .join("\n");
-}
-
-async function fetchRemoteText(url: string): Promise<string> {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
-  }
-
-  return response.text();
-}
-
-function compactGroups(rulesByIndex: RuleSet[], groups: RuleGroup[]): OutputGroup[] {
-  return groups.map((group, index) => ({
-    name: group.name,
-    rules: compactRuleSet(rulesByIndex[index] ?? emptyRuleSet())
-  }));
-}
-
-function normalizePartialRuleSet(rules: Partial<RuleSet> | undefined): RuleSet {
-  return normalizeRuleSet({
-    ...emptyRuleSet(),
-    ...rules
-  });
+  return result.data;
 }
 
 function stringifyProviderData(provider: SourceProviderData): string {
-  return `${stringify(provider, {
+  return stringify(provider, {
     lineWidth: 0,
     sortMapEntries: false
-  })}`;
+  });
 }
 
 function parseCsv(value: string): string[] {
@@ -279,16 +86,4 @@ function parseCsv(value: string): string[] {
     .split(",")
     .map((item) => item.trim())
     .filter(Boolean);
-}
-
-interface OutputGroup {
-  name: string;
-  rules: Partial<RuleSet>;
-}
-
-interface SourceProviderData {
-  provider: string;
-  name: string;
-  description?: string;
-  groups: OutputGroup[];
 }

@@ -1,0 +1,13 @@
+provider: perplexity
+name: Perplexity
+description: Perplexity AI search.
+groups:
+  - name: Core
+    rules:
+      domain:
+        - ppl-ai-file-upload.s3.amazonaws.com
+        - pplx-res.cloudinary.com
+      domainSuffix:
+        - perplexity.ai
+        - perplexity.com
+        - pplx.ai

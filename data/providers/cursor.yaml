@@ -1,0 +1,11 @@
+provider: cursor
+name: Cursor
+description: Cursor AI code editor.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - cursor-cdn.com
+        - cursor.com
+        - cursor.sh
+        - cursorapi.com
