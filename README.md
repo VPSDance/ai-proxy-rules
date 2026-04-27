@@ -2,7 +2,12 @@
 
 AI 服务代理规则集合，生成多个代理客户端可直接引用的 `rules/` 文件。
 
-当前已支持：
+支持的 AI 服务：
+
+- Anthropic / Claude (`anthropic`)
+- OpenAI / ChatGPT (`openai`)
+
+支持的客户端格式：
 
 - Surge
 - Clash / Mihomo
@@ -24,7 +29,7 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/all.list
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/shadowrocket/all.list
 ```
 
-单个 provider 使用对应的 provider id：
+单个 AI 服务使用 provider id：
 
 ```text
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/<provider>.list
