@@ -1,0 +1,8 @@
+provider: openrouter
+name: OpenRouter
+description: OpenRouter AI model routing services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - openrouter.ai

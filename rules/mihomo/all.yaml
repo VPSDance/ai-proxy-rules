@@ -34,6 +34,13 @@ payload:
   - DOMAIN-KEYWORD,datadog
   - DOMAIN-KEYWORD,sift
 
+  # Cerebras / Core
+  - DOMAIN-SUFFIX,cerebras.ai
+
+  # Cohere / Core
+  - DOMAIN-SUFFIX,cohere.ai
+  - DOMAIN-SUFFIX,cohere.com
+
   # Copilot / Core
   - DOMAIN,location.microsoft.com
   - DOMAIN,odc.officeapps.live.com
@@ -133,6 +140,10 @@ payload:
   - DOMAIN-SUFFIX,grazie.aws.intellij.net
   - DOMAIN-SUFFIX,jetbrains.ai
 
+  # Manus / Core
+  - DOMAIN-SUFFIX,manus.im
+  - DOMAIN-SUFFIX,manuscdn.com
+
   # Meta AI / Core
   - DOMAIN,ai.meta.com
   - DOMAIN-SUFFIX,llama.com
@@ -173,6 +184,9 @@ payload:
   - DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
+
+  # OpenRouter / Core
+  - DOMAIN-SUFFIX,openrouter.ai
 
   # Perplexity / Core
   - DOMAIN,ppl-ai-file-upload.s3.amazonaws.com

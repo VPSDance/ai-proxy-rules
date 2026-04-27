@@ -1,0 +1,9 @@
+provider: manus
+name: Manus
+description: Manus AI agent services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - manus.im
+        - manuscdn.com

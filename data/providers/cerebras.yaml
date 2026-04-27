@@ -1,0 +1,8 @@
+provider: cerebras
+name: Cerebras
+description: Cerebras AI inference services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - cerebras.ai

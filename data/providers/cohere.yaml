@@ -1,0 +1,9 @@
+provider: cohere
+name: Cohere
+description: Cohere AI services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - cohere.ai
+        - cohere.com

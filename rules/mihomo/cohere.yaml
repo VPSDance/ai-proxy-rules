@@ -1,0 +1,8 @@
+# AI Proxy Rules - Cohere
+# Cohere AI services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,cohere.ai
+  - DOMAIN-SUFFIX,cohere.com

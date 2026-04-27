@@ -33,6 +33,13 @@ HOST-SUFFIX,statsigapi.net
 HOST-KEYWORD,datadog
 HOST-KEYWORD,sift
 
+# Cerebras / Core
+HOST-SUFFIX,cerebras.ai
+
+# Cohere / Core
+HOST-SUFFIX,cohere.ai
+HOST-SUFFIX,cohere.com
+
 # Copilot / Core
 HOST,location.microsoft.com
 HOST,odc.officeapps.live.com
@@ -132,6 +139,10 @@ HOST-SUFFIX,grazie.ai
 HOST-SUFFIX,grazie.aws.intellij.net
 HOST-SUFFIX,jetbrains.ai
 
+# Manus / Core
+HOST-SUFFIX,manus.im
+HOST-SUFFIX,manuscdn.com
+
 # Meta AI / Core
 HOST,ai.meta.com
 HOST-SUFFIX,llama.com
@@ -171,6 +182,9 @@ HOST-SUFFIX,api.statsig.com
 HOST-SUFFIX,host.livekit.cloud
 HOST-SUFFIX,openai.com.cdn.cloudflare.net
 HOST-SUFFIX,turn.livekit.cloud
+
+# OpenRouter / Core
+HOST-SUFFIX,openrouter.ai
 
 # Perplexity / Core
 HOST,ppl-ai-file-upload.s3.amazonaws.com
