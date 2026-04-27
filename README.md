@@ -1,5 +1,9 @@
 # AI Proxy Rules
 
+[![daily sync](https://img.shields.io/github/actions/workflow/status/VPSDance/ai-proxy-rules/generate.yml?branch=main&label=daily%20sync)](https://github.com/VPSDance/ai-proxy-rules/actions/workflows/generate.yml)
+[![providers](https://img.shields.io/github/directory-file-count/VPSDance/ai-proxy-rules/data/sources?type=file&extension=yaml&label=providers)](https://github.com/VPSDance/ai-proxy-rules/tree/main/data/sources)
+[![last update](https://img.shields.io/github/last-commit/VPSDance/ai-proxy-rules/main?label=last%20update)](https://github.com/VPSDance/ai-proxy-rules/commits/main)
+
 AI 服务分流规则聚合，每日自动更新，多源合并去重并修正上游错误。直接订阅 `rules/` 文件，覆盖 Surge / Mihomo / sing-box / Loon / Shadowrocket / Quantumult X。
 
 规则覆盖范围：
