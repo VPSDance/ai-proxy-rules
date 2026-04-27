@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { parseClassicalRules, parseSourceRules } from "../scripts/sync/parsers.js";
+import {
+  parseClassicalRules,
+  parseDomainListCommunityRules,
+  parseSourceRules
+} from "../scripts/sync/parsers.js";
 
 describe("source sync parsers", () => {
   it("parses classical rules and ignores policy options", () => {
@@ -14,8 +18,8 @@ describe("source sync parsers", () => {
     expect(parsed.asn).toEqual([401518]);
   });
 
-  it("parses mihomo yaml payload rules", () => {
-    const parsed = parseSourceRules(
+  it("parses mihomo yaml payload rules", async () => {
+    const parsed = await parseSourceRules(
       `
 payload:
   - DOMAIN,browser-intake-datadoghq.com
@@ -28,5 +32,33 @@ payload:
     expect(parsed.domain).toEqual(["browser-intake-datadoghq.com"]);
     expect(parsed.domainKeyword).toEqual(["openai"]);
     expect(parsed.asn).toEqual([20473]);
+  });
+
+  it("parses domain-list-community rules with include recursion", async () => {
+    const parsed = await parseDomainListCommunityRules(
+      `
+include:child
+full:api.example.com
+keyword:openai
+chat.example.com
+regexp:^ignored$
+`,
+      {
+        sourceUrl: "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/openai",
+        fetchText: async (url) => {
+          expect(url).toBe(
+            "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/child"
+          );
+          return `
+githubcopilot.com
+full:copilot.microsoft.com
+`;
+        }
+      }
+    );
+
+    expect(parsed.domain).toEqual(["api.example.com", "copilot.microsoft.com"]);
+    expect(parsed.domainKeyword).toEqual(["openai"]);
+    expect(parsed.domainSuffix).toEqual(["chat.example.com", "githubcopilot.com"]);
   });
 });

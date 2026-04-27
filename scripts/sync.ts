@@ -48,20 +48,20 @@ const sourceSchema = z.discriminatedUnion("type", [
     name: z.string().min(1),
     type: z.literal("remote-text"),
     url: z.string().url(),
-    parser: z.enum(["classical", "mihomo-yaml"])
+    parser: z.enum(["classical", "mihomo-yaml", "domain-list-community"])
   }),
   z.object({
     name: z.string().min(1),
     type: z.literal("remote-html"),
     url: z.string().url(),
     selector: z.string().min(1),
-    parser: z.enum(["classical", "mihomo-yaml"])
+    parser: z.enum(["classical", "mihomo-yaml", "domain-list-community"])
   }),
   z.object({
     name: z.string().min(1),
     type: z.literal("local-text"),
     path: z.string().min(1),
-    parser: z.enum(["classical", "mihomo-yaml"])
+    parser: z.enum(["classical", "mihomo-yaml", "domain-list-community"])
   })
 ]);
 
@@ -193,10 +193,23 @@ async function loadSourceRules(
   baseDir: string,
   importAsnFromSource: boolean
 ): Promise<RuleSet> {
+  const textCache = new Map<string, Promise<string>>();
   const rules = await Promise.all(
     sources.map(async (source) => {
       const text = await loadSourceText(source, baseDir);
-      const parsed = parseSourceRules(text, source.parser as SourceParser);
+      const parsed = await parseSourceRules(text, source.parser as SourceParser, {
+        sourceUrl: source.type === "remote-text" || source.type === "remote-html" ? source.url : undefined,
+        fetchText: async (url) => {
+          const cached = textCache.get(url);
+          if (cached) {
+            return cached;
+          }
+
+          const fetched = fetchRemoteText(url);
+          textCache.set(url, fetched);
+          return fetched;
+        }
+      });
 
       if (!importAsnFromSource) {
         parsed.asn = [];
@@ -214,12 +227,7 @@ async function loadSourceText(source: SourceConfig, baseDir: string): Promise<st
     return readFile(path.resolve(baseDir, source.path), "utf8");
   }
 
-  const response = await fetch(source.url);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${source.url}: ${response.status} ${response.statusText}`);
-  }
-
-  const text = await response.text();
+  const text = await fetchRemoteText(source.url);
   if (source.type === "remote-text") {
     return text;
   }
@@ -234,6 +242,15 @@ async function loadSourceText(source: SourceConfig, baseDir: string): Promise<st
     .map((_, element) => $(element).text())
     .get()
     .join("\n");
+}
+
+async function fetchRemoteText(url: string): Promise<string> {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+  }
+
+  return response.text();
 }
 
 function compactGroups(rulesByIndex: RuleSet[], groups: RuleGroup[]): OutputGroup[] {

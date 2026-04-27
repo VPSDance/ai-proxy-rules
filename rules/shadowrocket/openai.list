@@ -23,7 +23,6 @@ IP-ASN,401518,AI,no-resolve
 
 # Third-Party
 DOMAIN,browser-intake-datadoghq.com,AI
-DOMAIN,chat.openai.com.cdn.cloudflare.net,AI
 DOMAIN,openai-api.arkoselabs.com,AI
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,AI
 DOMAIN,openaicomproductionae4b.blob.core.windows.net,AI
@@ -41,6 +40,7 @@ DOMAIN-SUFFIX,intercom.io,AI
 DOMAIN-SUFFIX,intercomcdn.com,AI
 DOMAIN-SUFFIX,launchdarkly.com,AI
 DOMAIN-SUFFIX,observeit.net,AI
+DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net,AI
 DOMAIN-SUFFIX,segment.io,AI
 DOMAIN-SUFFIX,sentry.io,AI
 DOMAIN-SUFFIX,statsigapi.net,AI

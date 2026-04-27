@@ -3,25 +3,40 @@
   "rules": [
     {
       "domain": [
+        "api.msn.com",
+        "api.statsig.com",
+        "assets.msn.com",
         "browser-intake-datadoghq.com",
+        "chat.openai.com.cdn.cloudflare.net",
+        "gateway.bingviz.microsoft.net",
+        "gateway.bingviz.microsoftapp.net",
+        "in.appcenter.ms",
+        "location.microsoft.com",
+        "odc.officeapps.live.com",
         "openai-api.arkoselabs.com",
-        "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
         "openaicomproductionae4b.blob.core.windows.net",
         "production-openaicom-storage.azureedge.net",
-        "static.cloudflareinsights.com"
+        "r.bing.com",
+        "self.events.data.microsoft.com",
+        "services.bingapis.com",
+        "static.cloudflareinsights.com",
+        "sydney.bing.com",
+        "www.bing.com"
       ],
       "domain_suffix": [
-        "ai.com",
         "algolia.net",
-        "api.statsig.com",
+        "api.microsoftapp.net",
         "auth0.com",
-        "chat.com",
+        "bing-shopping.microsoft-falcon.io",
+        "challenges.cloudflare.com",
         "chatgpt.com",
         "chatgpt.livekit.cloud",
         "client-api.arkoselabs.com",
-        "crixet.com",
+        "copilot.microsoft.com",
+        "edgeservices.bing.com",
         "events.statsigapi.net",
         "featuregates.org",
+        "githubcopilot.com",
         "host.livekit.cloud",
         "identrust.com",
         "intercom.io",
@@ -31,24 +46,19 @@
         "oaiusercontent.com",
         "observeit.net",
         "openai.com",
-        "openai.com.cdn.cloudflare.net",
         "openaiapi-site.azureedge.net",
         "openaicom.imgix.net",
         "segment.io",
         "sentry.io",
-        "sora.com",
-        "statsigapi.net",
         "stripe.com",
         "turn.livekit.cloud"
       ],
       "domain_keyword": [
-        "openai"
+        "openaicom-api"
       ],
       "ip_cidr": [
-        "199.47.142.0/23",
         "24.199.123.28/32",
-        "64.23.132.171/32",
-        "2604:f20::/32"
+        "64.23.132.171/32"
       ]
     }
   ]

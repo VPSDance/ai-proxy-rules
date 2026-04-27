@@ -2,11 +2,24 @@ import { parse } from "yaml";
 import { emptyRuleSet, normalizeRuleSet } from "../rules.js";
 import type { RuleSet } from "../types.js";
 
-export type SourceParser = "classical" | "mihomo-yaml";
+export type SourceParser = "classical" | "mihomo-yaml" | "domain-list-community";
 
-export function parseSourceRules(text: string, parser: SourceParser): RuleSet {
+export interface ParseSourceOptions {
+  sourceUrl?: string;
+  fetchText?: (url: string) => Promise<string>;
+}
+
+export async function parseSourceRules(
+  text: string,
+  parser: SourceParser,
+  options: ParseSourceOptions = {}
+): Promise<RuleSet> {
   if (parser === "mihomo-yaml") {
     return parseMihomoYamlRules(text);
+  }
+
+  if (parser === "domain-list-community") {
+    return parseDomainListCommunityRules(text, options);
   }
 
   return parseClassicalRules(text);
@@ -76,12 +89,107 @@ function parseMihomoYamlRules(text: string): RuleSet {
   throw new Error("Mihomo YAML source must contain a string payload list.");
 }
 
+export async function parseDomainListCommunityRules(
+  text: string,
+  options: ParseSourceOptions = {},
+  visited: Set<string> = new Set()
+): Promise<RuleSet> {
+  const rules = emptyRuleSet();
+  const baseUrl = options.sourceUrl ? new URL(".", options.sourceUrl).toString() : undefined;
+
+  for (const rawLine of text.split(/\r?\n/)) {
+    const line = normalizeDomainListLine(rawLine);
+    if (!line || line.startsWith("#")) {
+      continue;
+    }
+
+    if (line.startsWith("include:")) {
+      const includeName = line.slice("include:".length).trim();
+      if (!includeName) {
+        continue;
+      }
+
+      if (!options.fetchText) {
+        throw new Error(`Cannot resolve include "${includeName}" without fetchText`);
+      }
+
+      if (!baseUrl) {
+        throw new Error(`Cannot resolve include "${includeName}" without sourceUrl`);
+      }
+
+      const includeUrl = new URL(includeName, baseUrl).toString();
+      if (visited.has(includeUrl)) {
+        continue;
+      }
+
+      visited.add(includeUrl);
+      const includeText = await options.fetchText(includeUrl);
+      const included = await parseDomainListCommunityRules(includeText, {
+        ...options,
+        sourceUrl: includeUrl
+      }, visited);
+      mergeInto(rules, included);
+      continue;
+    }
+
+    const [prefix, rawValue] = splitDomainListEntry(line);
+    if (!rawValue) {
+      continue;
+    }
+
+    const value = stripTrailingTags(rawValue);
+
+    switch (prefix) {
+      case "full":
+        rules.domain.push(value);
+        break;
+      case "keyword":
+        rules.domainKeyword.push(value);
+        break;
+      case "regexp":
+        break;
+      default:
+        rules.domainSuffix.push(value);
+        break;
+    }
+  }
+
+  return normalizeRuleSet(rules);
+}
+
 function normalizeLine(line: string): string {
   return stripQuotes(line.trim().replace(/^-\s+/, ""));
 }
 
+function normalizeDomainListLine(line: string): string {
+  return line.trim();
+}
+
 function stripQuotes(value: string): string {
   return value.replace(/^['"]|['"]$/g, "");
+}
+
+function splitDomainListEntry(line: string): [string, string] {
+  const colonIndex = line.indexOf(":");
+  if (colonIndex === -1) {
+    return ["", line];
+  }
+
+  return [line.slice(0, colonIndex).trim().toLowerCase(), line.slice(colonIndex + 1).trim()];
+}
+
+function stripTrailingTags(value: string): string {
+  const [clean = ""] = value.split(/\s+@/);
+  return clean.trim();
+}
+
+function mergeInto(target: RuleSet, source: RuleSet): void {
+  target.domain.push(...source.domain);
+  target.domainSuffix.push(...source.domainSuffix);
+  target.domainKeyword.push(...source.domainKeyword);
+  target.ipCidr.push(...source.ipCidr);
+  target.ipCidr6.push(...source.ipCidr6);
+  target.asn.push(...source.asn);
 }
 
 function isPayloadObject(value: unknown): value is { payload: string[] } {

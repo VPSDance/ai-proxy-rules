@@ -1,37 +1,6 @@
-# All AI Providers
-# all
-# Anthropic / Core
-HOST-SUFFIX,anthropic.com,AI
-HOST-SUFFIX,anthropic.com.cn,AI
-HOST-SUFFIX,clau.de,AI
-HOST-SUFFIX,claude.ai,AI
-HOST-SUFFIX,claude.com,AI
-HOST-SUFFIX,claudemcpclient.com,AI
-HOST-SUFFIX,claudeusercontent.com,AI
-HOST-SUFFIX,modelcontextprotocol.io,AI
-
-# Anthropic / Network
-IP-CIDR,160.79.104.0/21,AI,no-resolve
-IP6-CIDR,2607:6bc0::/48,AI,no-resolve
-IP-ASN,399358,AI,no-resolve
-
-# Anthropic / Third-Party
-HOST,anthropic-com.ghost.io,AI
-HOST,anthropic.auth0.com,AI
-HOST,anthropic.com.cdn.cloudflare.net,AI
-HOST,browser-intake-us5-datadoghq.com,AI
-HOST,cdn.growthbook.io,AI
-HOST,cdn.usefathom.com,AI
-HOST,servd-anthropic-website.b-cdn.net,AI
-HOST,storage.googleapis.com,AI
-HOST-SUFFIX,intercom.io,AI
-HOST-SUFFIX,intercomcdn.com,AI
-HOST-SUFFIX,sentry.io,AI
-HOST-SUFFIX,statsigapi.net,AI
-HOST-KEYWORD,datadog,AI
-HOST-KEYWORD,sift,AI
-
-# Copilot / Core
+# Copilot
+# copilot
+# Core
 HOST,openai-api.arkoselabs.com,AI
 HOST,openaicomproductionae4b.blob.core.windows.net,AI
 HOST,production-openaicom-storage.azureedge.net,AI
@@ -44,11 +13,11 @@ HOST-SUFFIX,openai.com,AI
 HOST-SUFFIX,openaiapi-site.azureedge.net,AI
 HOST-SUFFIX,openaicom.imgix.net,AI
 
-# Copilot / Network
+# Network
 IP-CIDR,24.199.123.28/32,AI,no-resolve
 IP-CIDR,64.23.132.171/32,AI,no-resolve
 
-# Copilot / Third-Party
+# Third-Party
 HOST,api.msn.com,AI
 HOST,api.statsig.com,AI
 HOST,assets.msn.com,AI
@@ -77,27 +46,13 @@ HOST-SUFFIX,events.statsigapi.net,AI
 HOST-SUFFIX,featuregates.org,AI
 HOST-SUFFIX,host.livekit.cloud,AI
 HOST-SUFFIX,identrust.com,AI
+HOST-SUFFIX,intercom.io,AI
+HOST-SUFFIX,intercomcdn.com,AI
 HOST-SUFFIX,launchdarkly.com,AI
 HOST-SUFFIX,observeit.net,AI
 HOST-SUFFIX,segment.io,AI
+HOST-SUFFIX,sentry.io,AI
 HOST-SUFFIX,stripe.com,AI
 HOST-SUFFIX,turn.livekit.cloud,AI
 HOST-KEYWORD,openaicom-api,AI
 IP-ASN,14061,AI,no-resolve
-
-# OpenAI / Core
-HOST-SUFFIX,ai.com,AI
-HOST-SUFFIX,chat.com,AI
-HOST-SUFFIX,crixet.com,AI
-HOST-SUFFIX,sora.com,AI
-HOST-KEYWORD,openai,AI
-
-# OpenAI / Network
-IP-CIDR,199.47.142.0/23,AI,no-resolve
-IP6-CIDR,2604:f20::/32,AI,no-resolve
-IP-ASN,401518,AI,no-resolve
-
-# OpenAI / Third-Party
-HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,AI
-HOST-SUFFIX,api.statsig.com,AI
-HOST-SUFFIX,openai.com.cdn.cloudflare.net,AI

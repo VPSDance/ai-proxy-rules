@@ -6,6 +6,7 @@ AI 服务代理规则集合，生成多个代理客户端可直接引用的 `rul
 
 - Anthropic / Claude (`anthropic`)
 - OpenAI / ChatGPT (`openai`)
+- Copilot (`copilot`)
 
 支持的客户端格式：
 
@@ -31,7 +32,7 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/all.list
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/shadowrocket/all.list
 ```
 
-只需要某一个 AI 服务时，把 `<provider>` 换成 `anthropic` 或 `openai`：
+只需要某一个 AI 服务时，把 `<provider>` 换成 `anthropic`、`openai` 或 `copilot`：
 
 ```text
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/<provider>.list

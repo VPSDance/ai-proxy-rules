@@ -1,0 +1,64 @@
+provider: copilot
+name: Copilot
+description: Microsoft Copilot and related services.
+sources:
+  - name: blackmatrix7
+    type: remote-text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Copilot/Copilot.list
+    parser: classical
+  - name: v2fly
+    type: remote-text
+    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/github-copilot
+    parser: domain-list-community
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - copilot.microsoft.com
+        - githubcopilot.com
+        - openai.com
+        - chatgpt.com
+        - oaistatic.com
+        - oaiusercontent.com
+        - openaiapi-site.azureedge.net
+        - openaicom.imgix.net
+      domain:
+        - openai-api.arkoselabs.com
+        - openaicomproductionae4b.blob.core.windows.net
+        - production-openaicom-storage.azureedge.net
+
+  - name: Network
+    include:
+      ipCidr:
+        - 24.199.123.28/32
+        - 64.23.132.171/32
+    fromSourceTypes:
+      - ipCidr
+
+  - name: Third-Party
+    include:
+      domainSuffix:
+        - algolia.net
+        - api.microsoftapp.net
+        - auth0.com
+        - bing-shopping.microsoft-falcon.io
+        - challenges.cloudflare.com
+        - client-api.arkoselabs.com
+        - edgeservices.bing.com
+        - events.statsigapi.net
+        - featuregates.org
+        - host.livekit.cloud
+        - identrust.com
+        - intercom.io
+        - intercomcdn.com
+        - launchdarkly.com
+        - observeit.net
+        - segment.io
+        - sentry.io
+        - stripe.com
+        - turn.livekit.cloud
+    fromSource: true
+patch:
+  remove:
+    asn:
+      - 20473

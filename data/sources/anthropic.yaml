@@ -11,6 +11,10 @@ sources:
     type: remote-text
     url: https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/anthropic.list
     parser: classical
+  - name: v2fly
+    type: remote-text
+    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/anthropic
+    parser: domain-list-community
 options:
   importAsnFromSource: false
 groups:
