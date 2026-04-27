@@ -15,18 +15,16 @@ groups:
         - openaicom.imgix.net
       domainKeyword:
         - openai
-
   - name: Network
     rules:
-      asn:
-        - 401518
       ipCidr:
         - 199.47.142.0/23
         - 24.199.123.28/32
         - 64.23.132.171/32
       ipCidr6:
         - 2604:f20::/32
-
+      asn:
+        - 401518
   - name: Third-Party
     rules:
       domain:

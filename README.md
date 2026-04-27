@@ -1,6 +1,6 @@
 # AI Proxy Rules
 
-AI 服务代理规则集合。规则数据统一维护在 `data/`，并生成到多个代理客户端可直接引用的 `rules/` 文件。
+AI 服务代理规则集合。上游来源和本地补丁维护在 `sources/`，同步到 `data/` 后生成多个代理客户端可直接引用的 `rules/` 文件。
 
 当前已支持：
 
@@ -38,18 +38,22 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/shadowrocket/<pro
 ## 目录结构
 
 ```text
-data/     Provider 数据源
-scripts/ 规则生成脚本
+sources/ 上游来源与同步策略
+data/    Provider 数据源
+scripts/ 同步与生成脚本
 rules/   自动生成的规则文件
 ```
 
 ## 数据源
 
-每个 provider 一个 YAML 文件：
+每个 provider 有两层 YAML：
 
 ```text
+sources/providers/<provider>.yaml
 data/providers/<provider>.yaml
 ```
+
+`sources/` 定义上游 URL、HTML selector、导入类型和本地补丁；`data/` 是同步后的规范化数据。
 
 字段说明：
 
@@ -71,6 +75,7 @@ pnpm install
 生成规则：
 
 ```bash
+pnpm sync
 pnpm generate
 ```
 
@@ -81,7 +86,7 @@ pnpm check
 pnpm test
 ```
 
-GitHub Actions 会在影响规则生成的文件变化时自动运行检查和生成，并在 `rules/` 有变化时提交生成结果。
+GitHub Actions 会在影响规则生成的文件变化时自动运行同步、检查和生成，并在 `data/` 或 `rules/` 有变化时提交生成结果。
 
 ## References
 

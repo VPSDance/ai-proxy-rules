@@ -6,9 +6,11 @@
   "scripts": {
     "check": "tsc --noEmit",
     "generate": "tsx scripts/cli.ts generate",
+    "sync": "tsx scripts/sync.ts",
     "test": "vitest run"
   },
   "dependencies": {
+    "cheerio": "^1.2.0",
     "commander": "^14.0.2",
     "yaml": "^2.8.2",
     "zod": "^4.1.13"

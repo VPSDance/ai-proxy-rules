@@ -2,6 +2,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { parse } from "yaml";
 import { z } from "zod";
+import { emptyRuleSet, mergeRuleSets, normalizeRuleSet } from "./rules.js";
 import type { ProviderSource, RenderTarget, RuleGroup, RuleSet } from "./types.js";
 
 const rulesSchema = z
@@ -82,16 +83,7 @@ export function providerToTarget(provider: ProviderSource): RenderTarget {
   };
 }
 
-export function mergeRuleSets(ruleSets: RuleSet[]): RuleSet {
-  return normalizeRuleSet({
-    domain: ruleSets.flatMap((rules) => rules.domain),
-    domainSuffix: ruleSets.flatMap((rules) => rules.domainSuffix),
-    domainKeyword: ruleSets.flatMap((rules) => rules.domainKeyword),
-    ipCidr: ruleSets.flatMap((rules) => rules.ipCidr),
-    ipCidr6: ruleSets.flatMap((rules) => rules.ipCidr6),
-    asn: ruleSets.flatMap((rules) => rules.asn)
-  });
-}
+export { mergeRuleSets };
 
 async function parseProviderFile(filePath: string): Promise<ProviderSource> {
   const raw = await readFile(filePath, "utf8");
@@ -119,38 +111,4 @@ function normalizeRuleGroups(groups: RuleGroup[]): RuleGroup[] {
     name: group.name,
     rules: normalizeRuleSet(group.rules)
   }));
-}
-
-function emptyRuleSet(): RuleSet {
-  return {
-    domain: [],
-    domainSuffix: [],
-    domainKeyword: [],
-    ipCidr: [],
-    ipCidr6: [],
-    asn: []
-  };
-}
-
-function normalizeRuleSet(rules: RuleSet): RuleSet {
-  return {
-    domain: normalizeDnsRules(rules.domain),
-    domainSuffix: normalizeDnsRules(rules.domainSuffix),
-    domainKeyword: normalizeTextRules(rules.domainKeyword),
-    ipCidr: normalizeTextRules(rules.ipCidr),
-    ipCidr6: normalizeTextRules(rules.ipCidr6),
-    asn: normalizeAsnRules(rules.asn)
-  };
-}
-
-function normalizeDnsRules(values: string[]): string[] {
-  return normalizeTextRules(values.map((value) => value.toLowerCase()));
-}
-
-function normalizeTextRules(values: string[]): string[] {
-  return [...new Set(values.map((value) => value.trim()).filter(Boolean))].sort();
-}
-
-function normalizeAsnRules(values: number[]): number[] {
-  return [...new Set(values)].sort((a, b) => a - b);
 }

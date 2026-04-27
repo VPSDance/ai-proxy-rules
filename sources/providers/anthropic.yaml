@@ -1,0 +1,60 @@
+provider: anthropic
+name: Anthropic
+description: Anthropic and Claude services.
+sources:
+  - name: net-coffee
+    type: remote-html
+    url: https://ip.net.coffee/claude/site.html
+    selector: ".article pre"
+    parser: classical
+options:
+  removeCoveredDomains: true
+  importAsnFromSource: false
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - anthropic.com
+        - anthropic.com.cn
+        - claude.ai
+        - claude.com
+        - claudemcpclient.com
+        - claudeusercontent.com
+        - clau.de
+        - modelcontextprotocol.io
+
+  - name: Network
+    include:
+      asn:
+        - 399358
+      ipCidr:
+        - 160.79.104.0/21
+      ipCidr6:
+        - 2607:6bc0::/48
+    fromSourceTypes:
+      - ipCidr
+      - ipCidr6
+
+  - name: Third-Party
+    include:
+      domain:
+        - cdn.growthbook.io
+        - storage.googleapis.com
+      domainSuffix:
+        - statsigapi.net
+    fromSource: true
+patch:
+  remove:
+    domain:
+      - api.anthropic.com
+      - cdn.anthropic.com
+      - console.anthropic.com
+      - downloads.claude.ai
+      - mcp.anthropic.com
+      - workbench.anthropic.com
+    domainSuffix:
+      - time.apple.com
+    domainKeyword:
+      - sentry
+    ipCidr6:
+      - 2607:6bc0::/32
