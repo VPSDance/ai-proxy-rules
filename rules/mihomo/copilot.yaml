@@ -1,3 +1,6 @@
+# AI Proxy Rules - Copilot
+# https://github.com/VPSDance/ai-proxy-rules
+
 payload:
   # Core
   - DOMAIN,location.microsoft.com
@@ -13,12 +16,9 @@ payload:
   - DOMAIN,gateway.bingviz.microsoft.net
   - DOMAIN,gateway.bingviz.microsoftapp.net
   - DOMAIN,in.appcenter.ms
-  - DOMAIN,r.bing.com
   - DOMAIN,self.events.data.microsoft.com
-  - DOMAIN,services.bingapis.com
   - DOMAIN,static.cloudflareinsights.com
   - DOMAIN,sydney.bing.com
-  - DOMAIN,www.bing.com
   - DOMAIN-SUFFIX,algolia.net
   - DOMAIN-SUFFIX,api.microsoftapp.net
   - DOMAIN-SUFFIX,auth0.com

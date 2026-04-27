@@ -1,5 +1,6 @@
-# All AI Providers
-# all
+# AI Proxy Rules - All AI Providers
+# https://github.com/VPSDance/ai-proxy-rules
+
 # Anthropic / Core
 DOMAIN-SUFFIX,anthropic.com,AI
 DOMAIN-SUFFIX,anthropic.com.cn,AI
@@ -45,12 +46,9 @@ DOMAIN,browser-intake-datadoghq.com,AI
 DOMAIN,gateway.bingviz.microsoft.net,AI
 DOMAIN,gateway.bingviz.microsoftapp.net,AI
 DOMAIN,in.appcenter.ms,AI
-DOMAIN,r.bing.com,AI
 DOMAIN,self.events.data.microsoft.com,AI
-DOMAIN,services.bingapis.com,AI
 DOMAIN,static.cloudflareinsights.com,AI
 DOMAIN,sydney.bing.com,AI
-DOMAIN,www.bing.com,AI
 DOMAIN-SUFFIX,algolia.net,AI
 DOMAIN-SUFFIX,api.microsoftapp.net,AI
 DOMAIN-SUFFIX,auth0.com,AI

@@ -1,5 +1,6 @@
-# OpenAI
-# openai
+# AI Proxy Rules - OpenAI
+# https://github.com/VPSDance/ai-proxy-rules
+
 # Core
 HOST-SUFFIX,ai.com,AI
 HOST-SUFFIX,chat.com,AI

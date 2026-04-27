@@ -1,5 +1,7 @@
 import type { Format, RenderedFile, RenderOptions, RenderTarget, RuleSet } from "../types.js";
 
+const REPO_URL = "https://github.com/VPSDance/ai-proxy-rules";
+
 export function render(format: Format, target: RenderTarget, options: RenderOptions): RenderedFile {
   switch (format) {
     case "surge":
@@ -65,7 +67,7 @@ function renderMihomo(target: RenderTarget): string {
     ...rules.asn.map((value) => `- IP-ASN,${value},no-resolve`)
   ]).map((line) => (line ? `  ${line}` : ""));
 
-  return ["payload:", ...lines, ""].join("\n");
+  return [...headerLines(target), "payload:", ...lines, ""].join("\n");
 }
 
 function renderSingBox(target: RenderTarget): string {
@@ -122,7 +124,11 @@ function renderShadowrocket(target: RenderTarget, options: RenderOptions): strin
 }
 
 function withHeader(target: RenderTarget, lines: string[]): string {
-  return [`# ${target.name}`, `# ${target.id}`, ...lines, ""].join("\n");
+  return [...headerLines(target), ...lines, ""].join("\n");
+}
+
+function headerLines(target: RenderTarget): string[] {
+  return [`# AI Proxy Rules - ${target.name}`, `# ${REPO_URL}`, ""];
 }
 
 function renderGroupedLines(

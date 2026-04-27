@@ -22,12 +22,9 @@ groups:
         - gateway.bingviz.microsoft.net
         - gateway.bingviz.microsoftapp.net
         - in.appcenter.ms
-        - r.bing.com
         - self.events.data.microsoft.com
-        - services.bingapis.com
         - static.cloudflareinsights.com
         - sydney.bing.com
-        - www.bing.com
       domainSuffix:
         - algolia.net
         - api.microsoftapp.net

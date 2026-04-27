@@ -137,6 +137,10 @@ export async function parseDomainListCommunityRules(
       continue;
     }
 
+    if (!hasOnlyAllowedTags(rawValue)) {
+      continue;
+    }
+
     const value = stripTrailingTags(rawValue);
 
     switch (prefix) {
@@ -178,9 +182,18 @@ function splitDomainListEntry(line: string): [string, string] {
   return [line.slice(0, colonIndex).trim().toLowerCase(), line.slice(colonIndex + 1).trim()];
 }
 
+const ALLOWED_TAGS = new Set(["!cn"]);
+
 function stripTrailingTags(value: string): string {
   const [clean = ""] = value.split(/\s+@/);
   return clean.trim();
+}
+
+function hasOnlyAllowedTags(value: string): boolean {
+  const parts = value.split(/\s+/).slice(1);
+  return parts
+    .filter((part) => part.startsWith("@"))
+    .every((part) => ALLOWED_TAGS.has(part.slice(1).toLowerCase()));
 }
 
 function mergeInto(target: RuleSet, source: RuleSet): void {

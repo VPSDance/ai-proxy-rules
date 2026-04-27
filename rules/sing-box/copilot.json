@@ -12,12 +12,9 @@
         "in.appcenter.ms",
         "location.microsoft.com",
         "odc.officeapps.live.com",
-        "r.bing.com",
         "self.events.data.microsoft.com",
-        "services.bingapis.com",
         "static.cloudflareinsights.com",
-        "sydney.bing.com",
-        "www.bing.com"
+        "sydney.bing.com"
       ],
       "domain_suffix": [
         "algolia.net",

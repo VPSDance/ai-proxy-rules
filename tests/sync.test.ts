@@ -61,4 +61,20 @@ full:copilot.microsoft.com
     expect(parsed.domainKeyword).toEqual(["openai"]);
     expect(parsed.domainSuffix).toEqual(["chat.example.com", "githubcopilot.com"]);
   });
+
+  it("keeps only untagged or @!cn domain-list-community entries", async () => {
+    const parsed = await parseDomainListCommunityRules(
+      `
+ads.example.com @ads
+cn-only.example.com @cn
+unknown.example.com @geosite
+keep.example.com @!cn
+plain.example.com
+full:exact.example.com @ads
+`
+    );
+
+    expect(parsed.domainSuffix).toEqual(["keep.example.com", "plain.example.com"]);
+    expect(parsed.domain).toEqual([]);
+  });
 });

@@ -1,5 +1,6 @@
-# Anthropic
-# anthropic
+# AI Proxy Rules - Anthropic
+# https://github.com/VPSDance/ai-proxy-rules
+
 # Core
 HOST-SUFFIX,anthropic.com,AI
 HOST-SUFFIX,anthropic.com.cn,AI

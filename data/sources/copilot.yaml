@@ -57,6 +57,9 @@ patch:
       - openai-api.arkoselabs.com
       - openaicomproductionae4b.blob.core.windows.net
       - production-openaicom-storage.azureedge.net
+      - r.bing.com
+      - services.bingapis.com
+      - www.bing.com
     asn:
       - 20473
     domainSuffix:

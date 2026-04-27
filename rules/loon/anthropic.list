@@ -1,5 +1,6 @@
-# Anthropic
-# anthropic
+# AI Proxy Rules - Anthropic
+# https://github.com/VPSDance/ai-proxy-rules
+
 # Core
 DOMAIN-SUFFIX,anthropic.com,AI
 DOMAIN-SUFFIX,anthropic.com.cn,AI
