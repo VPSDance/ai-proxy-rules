@@ -1,0 +1,8 @@
+provider: heygen
+name: HeyGen
+description: HeyGen AI avatar video generation.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - heygen.com

@@ -1,0 +1,8 @@
+provider: leonardo-ai
+name: Leonardo AI
+description: Leonardo AI image generation.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - leonardo.ai

@@ -1,0 +1,6 @@
+# AI Proxy Rules - Recraft
+# Recraft AI image / vector generation.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,recraft.ai

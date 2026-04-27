@@ -81,6 +81,9 @@ HOST-SUFFIX,cerebras.ai
 # Character.AI / Core
 HOST-SUFFIX,character.ai
 
+# Civitai / Core
+HOST-SUFFIX,civitai.com
+
 # Cloudflare AI / Core
 HOST-SUFFIX,ai.cloudflare.com
 
@@ -90,6 +93,9 @@ HOST-SUFFIX,coderabbit.ai
 # Cohere / Core
 HOST-SUFFIX,cohere.ai
 HOST-SUFFIX,cohere.com
+
+# Continue / Core
+HOST-SUFFIX,continue.dev
 
 # Copilot / Core
 HOST,location.microsoft.com
@@ -123,6 +129,9 @@ HOST-SUFFIX,observeit.net
 HOST-SUFFIX,segment.io
 HOST-SUFFIX,stripe.com
 IP-ASN,14061,no-resolve
+
+# CrewAI / Core
+HOST-SUFFIX,crewai.com
 
 # Cursor / Core
 HOST-SUFFIX,cursor-cdn.com
@@ -195,6 +204,9 @@ HOST-SUFFIX,stitch.withgoogle.com
 # Groq / Core
 HOST-SUFFIX,groq.com
 
+# HeyGen / Core
+HOST-SUFFIX,heygen.com
+
 # Hugging Face / Core
 HOST-SUFFIX,hf.co
 HOST-SUFFIX,hf.space
@@ -202,6 +214,10 @@ HOST-SUFFIX,huggingface.co
 
 # Ideogram / Core
 HOST-SUFFIX,ideogram.ai
+
+# Inflection / Pi / Core
+HOST-SUFFIX,inflection.ai
+HOST-SUFFIX,pi.ai
 
 # JetBrains AI / Core
 HOST-SUFFIX,grazie.ai
@@ -213,6 +229,9 @@ HOST-SUFFIX,kiro.dev
 
 # LangChain / Core
 HOST-SUFFIX,langchain.com
+
+# Leonardo AI / Core
+HOST-SUFFIX,leonardo.ai
 
 # LM Studio / Core
 HOST-SUFFIX,lmstudio.ai
@@ -276,6 +295,9 @@ HOST-SUFFIX,turn.livekit.cloud
 # OpenRouter / Core
 HOST-SUFFIX,openrouter.ai
 
+# Otter.ai / Core
+HOST-SUFFIX,otter.ai
+
 # Perplexity / Core
 HOST,ppl-ai-file-upload.s3.amazonaws.com
 HOST,pplx-res.cloudinary.com
@@ -292,6 +314,9 @@ HOST-SUFFIX,pika.art
 # Poe / Core
 HOST-SUFFIX,poe.com
 HOST-SUFFIX,poecdn.net
+
+# Recraft / Core
+HOST-SUFFIX,recraft.ai
 
 # Replicate / Core
 HOST-SUFFIX,replicate.com
@@ -327,6 +352,9 @@ HOST-SUFFIX,tabnine.com
 # Together AI / Core
 HOST-SUFFIX,together.ai
 HOST-SUFFIX,together.xyz
+
+# Udio / Core
+HOST-SUFFIX,udio.com
 
 # v0 / Core
 HOST-SUFFIX,v0.app

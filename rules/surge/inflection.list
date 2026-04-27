@@ -1,0 +1,7 @@
+# AI Proxy Rules - Inflection / Pi
+# Inflection AI (Pi personal chat).
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,inflection.ai
+DOMAIN-SUFFIX,pi.ai

@@ -82,6 +82,9 @@ payload:
   # Character.AI / Core
   - DOMAIN-SUFFIX,character.ai
 
+  # Civitai / Core
+  - DOMAIN-SUFFIX,civitai.com
+
   # Cloudflare AI / Core
   - DOMAIN-SUFFIX,ai.cloudflare.com
 
@@ -91,6 +94,9 @@ payload:
   # Cohere / Core
   - DOMAIN-SUFFIX,cohere.ai
   - DOMAIN-SUFFIX,cohere.com
+
+  # Continue / Core
+  - DOMAIN-SUFFIX,continue.dev
 
   # Copilot / Core
   - DOMAIN,location.microsoft.com
@@ -124,6 +130,9 @@ payload:
   - DOMAIN-SUFFIX,segment.io
   - DOMAIN-SUFFIX,stripe.com
   - IP-ASN,14061,no-resolve
+
+  # CrewAI / Core
+  - DOMAIN-SUFFIX,crewai.com
 
   # Cursor / Core
   - DOMAIN-SUFFIX,cursor-cdn.com
@@ -196,6 +205,9 @@ payload:
   # Groq / Core
   - DOMAIN-SUFFIX,groq.com
 
+  # HeyGen / Core
+  - DOMAIN-SUFFIX,heygen.com
+
   # Hugging Face / Core
   - DOMAIN-SUFFIX,hf.co
   - DOMAIN-SUFFIX,hf.space
@@ -203,6 +215,10 @@ payload:
 
   # Ideogram / Core
   - DOMAIN-SUFFIX,ideogram.ai
+
+  # Inflection / Pi / Core
+  - DOMAIN-SUFFIX,inflection.ai
+  - DOMAIN-SUFFIX,pi.ai
 
   # JetBrains AI / Core
   - DOMAIN-SUFFIX,grazie.ai
@@ -214,6 +230,9 @@ payload:
 
   # LangChain / Core
   - DOMAIN-SUFFIX,langchain.com
+
+  # Leonardo AI / Core
+  - DOMAIN-SUFFIX,leonardo.ai
 
   # LM Studio / Core
   - DOMAIN-SUFFIX,lmstudio.ai
@@ -278,6 +297,9 @@ payload:
   # OpenRouter / Core
   - DOMAIN-SUFFIX,openrouter.ai
 
+  # Otter.ai / Core
+  - DOMAIN-SUFFIX,otter.ai
+
   # Perplexity / Core
   - DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
   - DOMAIN,pplx-res.cloudinary.com
@@ -294,6 +316,9 @@ payload:
   # Poe / Core
   - DOMAIN-SUFFIX,poe.com
   - DOMAIN-SUFFIX,poecdn.net
+
+  # Recraft / Core
+  - DOMAIN-SUFFIX,recraft.ai
 
   # Replicate / Core
   - DOMAIN-SUFFIX,replicate.com
@@ -329,6 +354,9 @@ payload:
   # Together AI / Core
   - DOMAIN-SUFFIX,together.ai
   - DOMAIN-SUFFIX,together.xyz
+
+  # Udio / Core
+  - DOMAIN-SUFFIX,udio.com
 
   # v0 / Core
   - DOMAIN-SUFFIX,v0.app

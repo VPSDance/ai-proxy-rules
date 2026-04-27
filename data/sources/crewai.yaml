@@ -1,0 +1,8 @@
+provider: crewai
+name: CrewAI
+description: CrewAI multi-agent framework.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - crewai.com

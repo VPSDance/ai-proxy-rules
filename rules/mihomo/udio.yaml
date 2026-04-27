@@ -1,0 +1,7 @@
+# AI Proxy Rules - Udio
+# Udio AI music generation.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,udio.com

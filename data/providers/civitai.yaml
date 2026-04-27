@@ -1,0 +1,8 @@
+provider: civitai
+name: Civitai
+description: Civitai (open image model hub).
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - civitai.com

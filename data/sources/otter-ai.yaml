@@ -1,0 +1,8 @@
+provider: otter-ai
+name: Otter.ai
+description: Otter.ai meeting transcription.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - otter.ai

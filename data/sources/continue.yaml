@@ -1,0 +1,8 @@
+provider: continue
+name: Continue
+description: Continue (open-source AI coding assistant).
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - continue.dev

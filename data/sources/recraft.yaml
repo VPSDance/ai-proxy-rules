@@ -1,0 +1,8 @@
+provider: recraft
+name: Recraft
+description: Recraft AI image / vector generation.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - recraft.ai

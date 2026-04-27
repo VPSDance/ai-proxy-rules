@@ -1,0 +1,9 @@
+provider: inflection
+name: Inflection / Pi
+description: Inflection AI (Pi personal chat).
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - inflection.ai
+        - pi.ai
