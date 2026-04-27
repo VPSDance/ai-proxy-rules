@@ -32,13 +32,16 @@ payload:
 
   # OpenAI / Core
   - DOMAIN-SUFFIX,ai.com
+  - DOMAIN-SUFFIX,chat.com
   - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-SUFFIX,chatgpt.livekit.cloud
+  - DOMAIN-SUFFIX,crixet.com
   - DOMAIN-SUFFIX,oaistatic.com
   - DOMAIN-SUFFIX,oaiusercontent.com
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
   - DOMAIN-SUFFIX,openaicom.imgix.net
+  - DOMAIN-SUFFIX,sora.com
   - DOMAIN-KEYWORD,openai
 
   # OpenAI / Network

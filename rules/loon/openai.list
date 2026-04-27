@@ -2,13 +2,16 @@
 # openai
 # Core
 DOMAIN-SUFFIX,ai.com,AI
+DOMAIN-SUFFIX,chat.com,AI
 DOMAIN-SUFFIX,chatgpt.com,AI
 DOMAIN-SUFFIX,chatgpt.livekit.cloud,AI
+DOMAIN-SUFFIX,crixet.com,AI
 DOMAIN-SUFFIX,oaistatic.com,AI
 DOMAIN-SUFFIX,oaiusercontent.com,AI
 DOMAIN-SUFFIX,openai.com,AI
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net,AI
 DOMAIN-SUFFIX,openaicom.imgix.net,AI
+DOMAIN-SUFFIX,sora.com,AI
 DOMAIN-KEYWORD,openai,AI
 
 # Network

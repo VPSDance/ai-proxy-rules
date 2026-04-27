@@ -6,13 +6,16 @@ groups:
     rules:
       domainSuffix:
         - ai.com
+        - chat.com
         - chatgpt.com
         - chatgpt.livekit.cloud
+        - crixet.com
         - oaistatic.com
         - oaiusercontent.com
         - openai.com
         - openaiapi-site.azureedge.net
         - openaicom.imgix.net
+        - sora.com
       domainKeyword:
         - openai
   - name: Network

@@ -2,13 +2,16 @@
 # openai
 # Core
 HOST-SUFFIX,ai.com,AI
+HOST-SUFFIX,chat.com,AI
 HOST-SUFFIX,chatgpt.com,AI
 HOST-SUFFIX,chatgpt.livekit.cloud,AI
+HOST-SUFFIX,crixet.com,AI
 HOST-SUFFIX,oaistatic.com,AI
 HOST-SUFFIX,oaiusercontent.com,AI
 HOST-SUFFIX,openai.com,AI
 HOST-SUFFIX,openaiapi-site.azureedge.net,AI
 HOST-SUFFIX,openaicom.imgix.net,AI
+HOST-SUFFIX,sora.com,AI
 HOST-KEYWORD,openai,AI
 
 # Network

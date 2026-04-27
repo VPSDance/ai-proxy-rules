@@ -26,6 +26,7 @@
         "anthropic.com.cn",
         "api.statsig.com",
         "auth0.com",
+        "chat.com",
         "chatgpt.com",
         "chatgpt.livekit.cloud",
         "clau.de",
@@ -34,6 +35,7 @@
         "claudemcpclient.com",
         "claudeusercontent.com",
         "client-api.arkoselabs.com",
+        "crixet.com",
         "events.statsigapi.net",
         "featuregates.org",
         "host.livekit.cloud",
@@ -50,6 +52,7 @@
         "openaicom.imgix.net",
         "segment.io",
         "sentry.io",
+        "sora.com",
         "statsigapi.net",
         "stripe.com",
         "turn.livekit.cloud"
