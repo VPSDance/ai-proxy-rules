@@ -4,7 +4,7 @@ description: Cursor AI code editor.
 sources:
   - name: v2fly
     type: remote-text
-    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/cursor
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/cursor
     parser: domain-list-community
 groups:
   - name: Core

@@ -4,12 +4,12 @@ description: Google AI product family (Gemini, AI Studio, NotebookLM, Labs, Deep
 sources:
   - name: blackmatrix7
     type: remote-text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Gemini/Gemini.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/Gemini/Gemini.list
     parser: classical
     importAsn: false
   - name: v2fly
     type: remote-text
-    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google-deepmind
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/google-deepmind
     parser: domain-list-community
     importAsn: false
 groups:

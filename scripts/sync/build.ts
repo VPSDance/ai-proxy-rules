@@ -102,11 +102,19 @@ export interface SourceProviderData {
   groups: OutputGroup[];
 }
 
+export type Fetcher = (url: string) => Promise<string>;
+
+export interface BuildContext {
+  fetcher?: Fetcher;
+}
+
 export async function buildProviderData(
   provider: SourceProvider,
-  baseDir: string
+  baseDir: string,
+  context: BuildContext = {}
 ): Promise<SourceProviderData> {
-  const sourceRules = await loadSourceRules(provider.sources, baseDir);
+  const fetcher = context.fetcher ?? defaultFetcher;
+  const sourceRules = await loadSourceRules(provider.sources, baseDir, fetcher);
   const removeRules = normalizePartialRuleSet(provider.patch.remove);
   const explicitRules = mergeRuleSets(
     provider.groups.map((group) => normalizePartialRuleSet(group.include))
@@ -152,11 +160,15 @@ function resolveFromSourceKeys(value: boolean | RuleKey[]): RuleKey[] {
   return [];
 }
 
-async function loadSourceRules(sources: SourceConfig[], baseDir: string): Promise<RuleSet> {
+async function loadSourceRules(
+  sources: SourceConfig[],
+  baseDir: string,
+  fetcher: Fetcher
+): Promise<RuleSet> {
   const textCache = new Map<string, Promise<string>>();
   const rules = await Promise.all(
     sources.map(async (source) => {
-      const text = await loadSourceText(source, baseDir);
+      const text = await loadSourceText(source, baseDir, fetcher);
       const parsed = await parseSourceRules(text, source.parser as SourceParser, {
         sourceUrl: source.type === "remote-text" || source.type === "remote-html" ? source.url : undefined,
         followIncludes: source.followIncludes,
@@ -166,7 +178,7 @@ async function loadSourceRules(sources: SourceConfig[], baseDir: string): Promis
             return cached;
           }
 
-          const fetched = fetchRemoteText(url);
+          const fetched = fetcher(url);
           textCache.set(url, fetched);
           return fetched;
         }
@@ -183,12 +195,16 @@ async function loadSourceRules(sources: SourceConfig[], baseDir: string): Promis
   return mergeRuleSets(rules);
 }
 
-async function loadSourceText(source: SourceConfig, baseDir: string): Promise<string> {
+async function loadSourceText(
+  source: SourceConfig,
+  baseDir: string,
+  fetcher: Fetcher
+): Promise<string> {
   if (source.type === "local-text") {
     return readFile(path.resolve(baseDir, source.path), "utf8");
   }
 
-  const text = await fetchRemoteText(source.url);
+  const text = await fetcher(source.url);
   if (source.type === "remote-text") {
     return text;
   }
@@ -205,7 +221,7 @@ async function loadSourceText(source: SourceConfig, baseDir: string): Promise<st
     .join("\n");
 }
 
-async function fetchRemoteText(url: string): Promise<string> {
+async function defaultFetcher(url: string): Promise<string> {
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);

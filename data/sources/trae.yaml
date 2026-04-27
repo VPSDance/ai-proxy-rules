@@ -4,7 +4,7 @@ description: ByteDance Trae AI IDE (overseas).
 sources:
   - name: skywalkerji
     type: remote-text
-    url: https://raw.githubusercontent.com/SkywalkerJi/Clash-Rules/master/AI/Trae.yaml
+    url: https://cdn.jsdelivr.net/gh/SkywalkerJi/Clash-Rules@master/AI/Trae.yaml
     parser: mihomo-yaml
 groups:
   - name: Core

@@ -4,7 +4,7 @@ description: Poe AI chat.
 sources:
   - name: v2fly
     type: remote-text
-    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/poe
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/poe
     parser: domain-list-community
 groups:
   - name: Core

@@ -1,0 +1,34 @@
+# ============================================================
+# ANTHROPIC / CLAUDE — COMPREHENSIVE PROXY RULESET
+# https://github.com/xiaolai/anthropic-claude-surge-rules-set
+# Generated: 2026-04-14
+# Format: Surge / Surfboard
+# ============================================================
+
+# Core API & Services
+DOMAIN-SUFFIX,anthropic.com
+
+# Claude Web & CLI
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,clau.de
+
+# MCP & Ecosystem
+DOMAIN-SUFFIX,modelcontextprotocol.io
+
+# Updates & Distribution
+DOMAIN,downloads.claude.ai
+DOMAIN,storage.googleapis.com
+
+# Feature Flags & Telemetry
+DOMAIN,cdn.growthbook.io
+
+# Anthropic IP Ranges (AS399358)
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
+
+# Third-Party Dependencies
+DOMAIN,cdn.usefathom.com
+

@@ -10,11 +10,13 @@ import {
   type SourceProvider,
   type SourceProviderData
 } from "./sync/build.js";
+import { FetchCache } from "./sync/cache.js";
 
 interface SyncOptions {
   input: string;
   output: string;
   provider: string;
+  cache: string;
 }
 
 const program = new Command();
@@ -25,6 +27,7 @@ program
   .option("-i, --input <dir>", "provider source directory", "data/sources")
   .option("-o, --output <dir>", "normalized provider data directory", "data/providers")
   .option("-p, --provider <names>", "comma-separated provider names or all", "all")
+  .option("--cache <dir>", "fetch cache directory used as fallback on upstream failure", "data/cache")
   .action(async (options: SyncOptions) => {
     await sync(options);
   });
@@ -34,12 +37,15 @@ await program.parseAsync();
 async function sync(options: SyncOptions): Promise<void> {
   const sourceFiles = await selectSourceFiles(options.input, options.provider);
   const writes: string[] = [];
+  const cache = new FetchCache(options.cache);
 
   await mkdir(options.output, { recursive: true });
 
   for (const sourceFile of sourceFiles) {
     const provider = await loadSourceProvider(sourceFile);
-    const normalized = await buildProviderData(provider, path.dirname(sourceFile));
+    const normalized = await buildProviderData(provider, path.dirname(sourceFile), {
+      fetcher: (url) => cache.fetch(url)
+    });
     const outPath = path.join(options.output, `${provider.provider}.yaml`);
 
     await writeFile(outPath, stringifyProviderData(normalized), "utf8");
@@ -48,6 +54,32 @@ async function sync(options: SyncOptions): Promise<void> {
 
   for (const filePath of writes) {
     console.log(filePath);
+  }
+
+  reportCacheWarnings(cache);
+}
+
+function reportCacheWarnings(cache: FetchCache): void {
+  const warnings = cache.getWarnings();
+  if (warnings.length === 0) {
+    return;
+  }
+
+  const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+  for (const warning of warnings) {
+    const cachedHint = warning.cachedAt ? ` (cached at ${warning.cachedAt})` : "";
+    const message = `Upstream fetch failed for ${warning.url}: ${warning.reason}. Using cached copy${cachedHint}.`;
+    if (isGithubActions) {
+      console.log(`::warning::${message}`);
+    } else {
+      console.warn(`[warning] ${message}`);
+    }
+  }
+
+  if (isGithubActions) {
+    console.log(`::warning::${warnings.length} upstream source(s) served from cache. Investigate and refresh when convenient.`);
+  } else {
+    console.warn(`[warning] ${warnings.length} upstream source(s) served from cache.`);
   }
 }
 

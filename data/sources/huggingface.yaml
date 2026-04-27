@@ -4,7 +4,7 @@ description: Hugging Face model hub, spaces, and inference services.
 sources:
   - name: v2fly
     type: remote-text
-    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/huggingface
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/huggingface
     parser: domain-list-community
 groups:
   - name: Core

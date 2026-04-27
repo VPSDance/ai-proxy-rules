@@ -10,12 +10,12 @@ sources:
     importAsn: false
   - name: xiaolai
     type: remote-text
-    url: https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/anthropic.list
+    url: https://cdn.jsdelivr.net/gh/xiaolai/anthropic-claude-surge-rules-set@main/anthropic.list
     parser: classical
     importAsn: false
   - name: v2fly
     type: remote-text
-    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/anthropic
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/anthropic
     parser: domain-list-community
     importAsn: false
 groups:

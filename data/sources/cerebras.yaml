@@ -4,7 +4,7 @@ description: Cerebras AI inference services.
 sources:
   - name: v2fly
     type: remote-text
-    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/cerebras
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/cerebras
     parser: domain-list-community
 groups:
   - name: Core

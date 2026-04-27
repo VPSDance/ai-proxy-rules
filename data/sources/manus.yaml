@@ -4,7 +4,7 @@ description: Manus AI agent services.
 sources:
   - name: v2fly
     type: remote-text
-    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/manus
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/manus
     parser: domain-list-community
 groups:
   - name: Core

@@ -4,11 +4,11 @@ description: Microsoft Copilot and related services.
 sources:
   - name: blackmatrix7
     type: remote-text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Copilot/Copilot.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Shadowrocket/Copilot/Copilot.list
     parser: classical
   - name: v2fly
     type: remote-text
-    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/github-copilot
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/github-copilot
     parser: domain-list-community
 groups:
   - name: Core
