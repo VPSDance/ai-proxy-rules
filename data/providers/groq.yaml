@@ -1,0 +1,8 @@
+provider: groq
+name: Groq
+description: Groq AI inference services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - groq.com

@@ -1,0 +1,7 @@
+# AI Proxy Rules - Poe
+# Poe AI chat.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,poe.com
+HOST-SUFFIX,poecdn.net

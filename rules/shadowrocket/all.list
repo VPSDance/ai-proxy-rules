@@ -72,6 +72,10 @@ DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
 
+# ElevenLabs / Core
+DOMAIN-SUFFIX,elevenlabs.com
+DOMAIN-SUFFIX,elevenlabs.io
+
 # Google AI / Core
 DOMAIN-SUFFIX,ai.google.dev
 DOMAIN-SUFFIX,ai.studio
@@ -114,6 +118,14 @@ DOMAIN-SUFFIX,opal.google.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
 DOMAIN-SUFFIX,stitch.withgoogle.com
+
+# Groq / Core
+DOMAIN-SUFFIX,groq.com
+
+# Hugging Face / Core
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,hf.space
+DOMAIN-SUFFIX,huggingface.co
 
 # JetBrains AI / Core
 DOMAIN-SUFFIX,grazie.ai
@@ -166,6 +178,10 @@ DOMAIN,pplx-res.cloudinary.com
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexity.com
 DOMAIN-SUFFIX,pplx.ai
+
+# Poe / Core
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,poecdn.net
 
 # Trae / Core
 DOMAIN-SUFFIX,abtestvm-sg.bytedance.com

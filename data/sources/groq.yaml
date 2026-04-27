@@ -1,0 +1,11 @@
+provider: groq
+name: Groq
+description: Groq AI inference services.
+sources:
+  - name: v2fly
+    type: remote-text
+    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/groq
+    parser: domain-list-community
+groups:
+  - name: Core
+    fromSource: true

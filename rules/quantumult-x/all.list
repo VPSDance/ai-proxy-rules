@@ -72,6 +72,10 @@ HOST-SUFFIX,cursor.com
 HOST-SUFFIX,cursor.sh
 HOST-SUFFIX,cursorapi.com
 
+# ElevenLabs / Core
+HOST-SUFFIX,elevenlabs.com
+HOST-SUFFIX,elevenlabs.io
+
 # Google AI / Core
 HOST-SUFFIX,ai.google.dev
 HOST-SUFFIX,ai.studio
@@ -114,6 +118,14 @@ HOST-SUFFIX,opal.google.com
 HOST-SUFFIX,proactivebackend-pa.googleapis.com
 HOST-SUFFIX,robinfrontend-pa.googleapis.com
 HOST-SUFFIX,stitch.withgoogle.com
+
+# Groq / Core
+HOST-SUFFIX,groq.com
+
+# Hugging Face / Core
+HOST-SUFFIX,hf.co
+HOST-SUFFIX,hf.space
+HOST-SUFFIX,huggingface.co
 
 # JetBrains AI / Core
 HOST-SUFFIX,grazie.ai
@@ -166,6 +178,10 @@ HOST,pplx-res.cloudinary.com
 HOST-SUFFIX,perplexity.ai
 HOST-SUFFIX,perplexity.com
 HOST-SUFFIX,pplx.ai
+
+# Poe / Core
+HOST-SUFFIX,poe.com
+HOST-SUFFIX,poecdn.net
 
 # Trae / Core
 HOST-SUFFIX,abtestvm-sg.bytedance.com

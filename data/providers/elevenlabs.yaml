@@ -1,0 +1,9 @@
+provider: elevenlabs
+name: ElevenLabs
+description: ElevenLabs voice AI services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - elevenlabs.com
+        - elevenlabs.io

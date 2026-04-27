@@ -1,0 +1,10 @@
+provider: huggingface
+name: Hugging Face
+description: Hugging Face model hub, spaces, and inference services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - hf.co
+        - hf.space
+        - huggingface.co

@@ -1,0 +1,9 @@
+provider: poe
+name: Poe
+description: Poe AI chat.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - poe.com
+        - poecdn.net

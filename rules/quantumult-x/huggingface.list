@@ -1,0 +1,8 @@
+# AI Proxy Rules - Hugging Face
+# Hugging Face model hub, spaces, and inference services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,hf.co
+HOST-SUFFIX,hf.space
+HOST-SUFFIX,huggingface.co
