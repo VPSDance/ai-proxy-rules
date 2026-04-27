@@ -54,6 +54,22 @@ payload:
   # Augment Code / Core
   - DOMAIN-SUFFIX,augmentcode.com
 
+  # ByteDance AI / Core
+  - DOMAIN-SUFFIX,abtestvm-sg.bytedance.com
+  - DOMAIN-SUFFIX,bytegate-sg.byteintlapi.com
+  - DOMAIN-SUFFIX,byteoversea.com
+  - DOMAIN-SUFFIX,cici.com
+  - DOMAIN-SUFFIX,ciciai.com
+  - DOMAIN-SUFFIX,ciciaicdn.com
+  - DOMAIN-SUFFIX,coze.com
+  - DOMAIN-SUFFIX,lf3-static.bytednsdoc.com
+  - DOMAIN-SUFFIX,marscode.com
+  - DOMAIN-SUFFIX,sf16-short-sg.bytedapm.com
+  - DOMAIN-SUFFIX,starling.zijieapi.com
+  - DOMAIN-SUFFIX,trae-api-sg.mchost.guru
+  - DOMAIN-SUFFIX,trae.ai
+  - DOMAIN-SUFFIX,tron-sg.bytelemon.com
+
   # Cerebras / Core
   - DOMAIN-SUFFIX,cerebras.ai
 
@@ -99,9 +115,6 @@ payload:
   - DOMAIN-SUFFIX,segment.io
   - DOMAIN-SUFFIX,stripe.com
   - IP-ASN,14061,no-resolve
-
-  # Coze / Core
-  - DOMAIN-SUFFIX,coze.com
 
   # Cursor / Core
   - DOMAIN-SUFFIX,cursor-cdn.com
@@ -283,17 +296,6 @@ payload:
   # Together AI / Core
   - DOMAIN-SUFFIX,together.ai
   - DOMAIN-SUFFIX,together.xyz
-
-  # Trae / Core
-  - DOMAIN-SUFFIX,abtestvm-sg.bytedance.com
-  - DOMAIN-SUFFIX,bytegate-sg.byteintlapi.com
-  - DOMAIN-SUFFIX,byteoversea.com
-  - DOMAIN-SUFFIX,lf3-static.bytednsdoc.com
-  - DOMAIN-SUFFIX,sf16-short-sg.bytedapm.com
-  - DOMAIN-SUFFIX,starling.zijieapi.com
-  - DOMAIN-SUFFIX,trae-api-sg.mchost.guru
-  - DOMAIN-SUFFIX,trae.ai
-  - DOMAIN-SUFFIX,tron-sg.bytelemon.com
 
   # v0 / Core
   - DOMAIN-SUFFIX,v0.app

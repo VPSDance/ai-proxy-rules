@@ -1,6 +1,6 @@
-provider: trae
-name: Trae
-description: ByteDance Trae AI IDE (overseas).
+provider: bytedance-ai
+name: ByteDance AI
+description: ByteDance AI products overseas (Trae, Coze, MarsCode, Cici).
 sources:
   - name: skywalkerji
     type: remote-text
@@ -10,6 +10,11 @@ groups:
   - name: Core
     include:
       domainSuffix:
+        - cici.com
+        - ciciai.com
+        - ciciaicdn.com
+        - coze.com
+        - marscode.com
         - trae.ai
     fromSource: true
 patch:

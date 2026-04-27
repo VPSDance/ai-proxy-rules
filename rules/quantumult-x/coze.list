@@ -1,6 +1,0 @@
-# AI Proxy Rules - Coze
-# ByteDance Coze AI agent platform (overseas).
-# https://github.com/VPSDance/ai-proxy-rules
-
-# Core
-HOST-SUFFIX,coze.com
