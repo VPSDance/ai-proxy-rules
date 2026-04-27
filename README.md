@@ -2,7 +2,7 @@
 
 AI 服务代理规则集合，生成多个代理客户端可直接引用的 `rules/` 文件。
 
-支持的 AI 服务：
+规则覆盖范围：
 
 - Anthropic / Claude (`anthropic`)
 - OpenAI / ChatGPT (`openai`)
@@ -18,7 +18,7 @@ AI 服务代理规则集合，生成多个代理客户端可直接引用的 `rul
 
 ## 规则文件
 
-汇总规则使用 `all`：
+全部 AI 服务规则使用 `all`：
 
 ```text
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/all.list
