@@ -39,10 +39,6 @@ export interface RenderTarget {
   rules: RuleSet;
 }
 
-export interface RenderOptions {
-  policy: string;
-}
-
 export interface RenderedFile {
   format: Format;
   extension: "list" | "yaml" | "json";

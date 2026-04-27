@@ -1,0 +1,43 @@
+provider: google-ai
+name: Google AI
+description: Google AI product family (Gemini, AI Studio, NotebookLM, Labs, DeepMind, etc.).
+sources:
+  - name: blackmatrix7
+    type: remote-text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Gemini/Gemini.list
+    parser: classical
+  - name: v2fly
+    type: remote-text
+    url: https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google-deepmind
+    parser: domain-list-community
+options:
+  importAsnFromSource: false
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - ai.google.dev
+        - ai.studio
+        - aistudio.google.com
+        - antigravity.google
+        - antigravity.google.com
+        - bard.google.com
+        - deepmind.com
+        - deepmind.google
+        - gemini.google
+        - gemini.google.com
+        - generativeai.google
+        - generativelanguage.googleapis.com
+        - notebooklm.google
+        - notebooklm.google.com
+
+  - name: Third-Party
+    fromSource: true
+patch:
+  remove:
+    domainSuffix:
+      - apis.google.com
+    domainKeyword:
+      - colab
+      - developerprofiles
+      - generativelanguage

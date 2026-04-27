@@ -1,8 +1,8 @@
-import type { Format, RenderedFile, RenderOptions, RenderTarget, RuleSet } from "../types.js";
+import type { Format, RenderedFile, RenderTarget, RuleSet } from "../types.js";
 
 const REPO_URL = "https://github.com/VPSDance/ai-proxy-rules";
 
-export function render(format: Format, target: RenderTarget, options: RenderOptions): RenderedFile {
+export function render(format: Format, target: RenderTarget): RenderedFile {
   switch (format) {
     case "surge":
       return {
@@ -26,19 +26,19 @@ export function render(format: Format, target: RenderTarget, options: RenderOpti
       return {
         format,
         extension: "list",
-        content: renderQuantumultX(target, options)
+        content: renderQuantumultX(target)
       };
     case "loon":
       return {
         format,
         extension: "list",
-        content: renderLoon(target, options)
+        content: renderLoon(target)
       };
     case "shadowrocket":
       return {
         format,
         extension: "list",
-        content: renderShadowrocket(target, options)
+        content: renderShadowrocket(target)
       };
   }
 }
@@ -81,44 +81,44 @@ function renderSingBox(target: RenderTarget): string {
   return `${JSON.stringify({ version: 3, rules: [rule] }, null, 2)}\n`;
 }
 
-function renderQuantumultX(target: RenderTarget, options: RenderOptions): string {
+function renderQuantumultX(target: RenderTarget): string {
   return withHeader(
     target,
     renderGroupedLines(target, (rules) => [
-      ...rules.domain.map((value) => `HOST,${value},${options.policy}`),
-      ...rules.domainSuffix.map((value) => `HOST-SUFFIX,${value},${options.policy}`),
-      ...rules.domainKeyword.map((value) => `HOST-KEYWORD,${value},${options.policy}`),
-      ...rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
-      ...rules.ipCidr6.map((value) => `IP6-CIDR,${value},${options.policy},no-resolve`),
-      ...rules.asn.map((value) => `IP-ASN,${value},${options.policy},no-resolve`)
+      ...rules.domain.map((value) => `HOST,${value}`),
+      ...rules.domainSuffix.map((value) => `HOST-SUFFIX,${value}`),
+      ...rules.domainKeyword.map((value) => `HOST-KEYWORD,${value}`),
+      ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
+      ...rules.ipCidr6.map((value) => `IP6-CIDR,${value},no-resolve`),
+      ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
     ])
   );
 }
 
-function renderLoon(target: RenderTarget, options: RenderOptions): string {
+function renderLoon(target: RenderTarget): string {
   return withHeader(
     target,
     renderGroupedLines(target, (rules) => [
-      ...rules.domain.map((value) => `DOMAIN,${value},${options.policy}`),
-      ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value},${options.policy}`),
-      ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value},${options.policy}`),
-      ...rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
-      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},${options.policy},no-resolve`),
-      ...rules.asn.map((value) => `IP-ASN,${value},${options.policy},no-resolve`)
+      ...rules.domain.map((value) => `DOMAIN,${value}`),
+      ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
+      ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
+      ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
+      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`),
+      ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
     ])
   );
 }
 
-function renderShadowrocket(target: RenderTarget, options: RenderOptions): string {
+function renderShadowrocket(target: RenderTarget): string {
   return withHeader(
     target,
     renderGroupedLines(target, (rules) => [
-      ...rules.domain.map((value) => `DOMAIN,${value},${options.policy}`),
-      ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value},${options.policy}`),
-      ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value},${options.policy}`),
-      ...rules.ipCidr.map((value) => `IP-CIDR,${value},${options.policy},no-resolve`),
-      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},${options.policy},no-resolve`),
-      ...rules.asn.map((value) => `IP-ASN,${value},${options.policy},no-resolve`)
+      ...rules.domain.map((value) => `DOMAIN,${value}`),
+      ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
+      ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
+      ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
+      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`),
+      ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
     ])
   );
 }

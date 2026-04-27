@@ -68,7 +68,7 @@ const cursor: ProviderSource = {
 
 describe("generators", () => {
   it("renders mihomo payload rules", () => {
-    const rendered = render("mihomo", providerToTarget(anthropic), { policy: "AI" });
+    const rendered = render("mihomo", providerToTarget(anthropic));
 
     expect(rendered.extension).toBe("yaml");
     expect(rendered.content).toContain("DOMAIN,api.anthropic.com");
@@ -78,7 +78,7 @@ describe("generators", () => {
   });
 
   it("renders sing-box source rule set json without unsupported ASN rules", () => {
-    const rendered = render("sing-box", providerToTarget(anthropic), { policy: "AI" });
+    const rendered = render("sing-box", providerToTarget(anthropic));
     const parsed = JSON.parse(rendered.content);
 
     expect(parsed.version).toBe(3);
@@ -89,32 +89,38 @@ describe("generators", () => {
     expect(parsed.rules[0]).not.toHaveProperty("ip_asn");
   });
 
-  it("renders quantumult x with policy", () => {
-    const rendered = render("quantumult-x", providerToTarget(anthropic), {
-      policy: "AI Proxy"
-    });
+  it("renders quantumult x without per-line policy", () => {
+    const rendered = render("quantumult-x", providerToTarget(anthropic));
 
-    expect(rendered.content).toContain("HOST,api.anthropic.com,AI Proxy");
-    expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,AI Proxy,no-resolve");
-    expect(rendered.content).toContain("IP-ASN,399358,AI Proxy,no-resolve");
+    expect(rendered.content).toContain("HOST,api.anthropic.com\n");
+    expect(rendered.content).toContain("HOST-SUFFIX,anthropic.com\n");
+    expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,no-resolve");
+    expect(rendered.content).toContain("IP-ASN,399358,no-resolve");
+    expect(rendered.content).not.toMatch(/,AI(\s|$)/);
   });
 
-  it("renders shadowrocket with policy", () => {
-    const rendered = render("shadowrocket", providerToTarget(anthropic), {
-      policy: "AI Proxy"
-    });
+  it("renders shadowrocket without per-line policy", () => {
+    const rendered = render("shadowrocket", providerToTarget(anthropic));
 
     expect(rendered.extension).toBe("list");
-    expect(rendered.content).toContain("DOMAIN,api.anthropic.com,AI Proxy");
-    expect(rendered.content).toContain("DOMAIN-SUFFIX,anthropic.com,AI Proxy");
-    expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,AI Proxy,no-resolve");
-    expect(rendered.content).toContain("IP-CIDR6,2001:db8::/32,AI Proxy,no-resolve");
-    expect(rendered.content).toContain("IP-ASN,399358,AI Proxy,no-resolve");
+    expect(rendered.content).toContain("DOMAIN,api.anthropic.com\n");
+    expect(rendered.content).toContain("DOMAIN-SUFFIX,anthropic.com\n");
+    expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,no-resolve");
+    expect(rendered.content).toContain("IP-CIDR6,2001:db8::/32,no-resolve");
+    expect(rendered.content).toContain("IP-ASN,399358,no-resolve");
+  });
+
+  it("renders loon without per-line policy", () => {
+    const rendered = render("loon", providerToTarget(anthropic));
+
+    expect(rendered.content).toContain("DOMAIN,api.anthropic.com\n");
+    expect(rendered.content).toContain("DOMAIN-SUFFIX,anthropic.com\n");
+    expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,no-resolve");
   });
 
   it("aggregates providers into all", () => {
     const target = aggregateProviders([anthropic, cursor]);
-    const rendered = render("surge", target, { policy: "AI" });
+    const rendered = render("surge", target);
 
     expect(target.id).toBe("all");
     expect(rendered.content).toContain("# Anthropic / Core");
@@ -150,7 +156,7 @@ describe("generators", () => {
       }
     };
     const target = aggregateProviders([anthropic, duplicated]);
-    const rendered = render("surge", target, { policy: "AI" });
+    const rendered = render("surge", target);
 
     expect(rendered.content.match(/DOMAIN,api\.anthropic\.com/g)).toHaveLength(1);
   });

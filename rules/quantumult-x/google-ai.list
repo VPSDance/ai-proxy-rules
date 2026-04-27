@@ -1,0 +1,45 @@
+# AI Proxy Rules - Google AI
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,ai.google.dev
+HOST-SUFFIX,ai.studio
+HOST-SUFFIX,aistudio.google.com
+HOST-SUFFIX,antigravity.google
+HOST-SUFFIX,antigravity.google.com
+HOST-SUFFIX,bard.google.com
+HOST-SUFFIX,deepmind.com
+HOST-SUFFIX,deepmind.google
+HOST-SUFFIX,gemini.google
+HOST-SUFFIX,gemini.google.com
+HOST-SUFFIX,generativeai.google
+HOST-SUFFIX,generativelanguage.googleapis.com
+HOST-SUFFIX,notebooklm.google
+HOST-SUFFIX,notebooklm.google.com
+
+# Third-Party
+HOST,alkalicore-pa.clients6.google.com
+HOST,alkalimakersuite-pa.clients6.google.com
+HOST,antigravity-pa.googleapis.com
+HOST,antigravity.googleapis.com
+HOST,cloudaicompanion.googleapis.com
+HOST,cloudcode-pa.googleapis.com
+HOST,daily-cloudcode-pa.googleapis.com
+HOST,notebooklm-pa.googleapis.com
+HOST,notebooklm.googleapis.com
+HOST,webchannel-alkalimakersuite-pa.clients6.google.com
+HOST-SUFFIX,aicode.googleapis.com
+HOST-SUFFIX,aida.googleapis.com
+HOST-SUFFIX,aisandbox-pa.googleapis.com
+HOST-SUFFIX,antigravity-unleash.goog
+HOST-SUFFIX,geller-pa.googleapis.com
+HOST-SUFFIX,jules.google
+HOST-SUFFIX,jules.google.com
+HOST-SUFFIX,labs.google
+HOST-SUFFIX,labs.google.com
+HOST-SUFFIX,makersuite.google.com
+HOST-SUFFIX,opal.google
+HOST-SUFFIX,opal.google.com
+HOST-SUFFIX,proactivebackend-pa.googleapis.com
+HOST-SUFFIX,robinfrontend-pa.googleapis.com
+HOST-SUFFIX,stitch.withgoogle.com

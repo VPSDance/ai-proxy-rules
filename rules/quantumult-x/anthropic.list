@@ -2,32 +2,32 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,anthropic.com,AI
-HOST-SUFFIX,anthropic.com.cn,AI
-HOST-SUFFIX,clau.de,AI
-HOST-SUFFIX,claude.ai,AI
-HOST-SUFFIX,claude.com,AI
-HOST-SUFFIX,claudemcpclient.com,AI
-HOST-SUFFIX,claudeusercontent.com,AI
-HOST-SUFFIX,modelcontextprotocol.io,AI
+HOST-SUFFIX,anthropic.com
+HOST-SUFFIX,anthropic.com.cn
+HOST-SUFFIX,clau.de
+HOST-SUFFIX,claude.ai
+HOST-SUFFIX,claude.com
+HOST-SUFFIX,claudemcpclient.com
+HOST-SUFFIX,claudeusercontent.com
+HOST-SUFFIX,modelcontextprotocol.io
 
 # Network
-IP-CIDR,160.79.104.0/21,AI,no-resolve
-IP6-CIDR,2607:6bc0::/48,AI,no-resolve
-IP-ASN,399358,AI,no-resolve
+IP-CIDR,160.79.104.0/21,no-resolve
+IP6-CIDR,2607:6bc0::/48,no-resolve
+IP-ASN,399358,no-resolve
 
 # Third-Party
-HOST,anthropic-com.ghost.io,AI
-HOST,anthropic.auth0.com,AI
-HOST,anthropic.com.cdn.cloudflare.net,AI
-HOST,browser-intake-us5-datadoghq.com,AI
-HOST,cdn.growthbook.io,AI
-HOST,cdn.usefathom.com,AI
-HOST,servd-anthropic-website.b-cdn.net,AI
-HOST,storage.googleapis.com,AI
-HOST-SUFFIX,intercom.io,AI
-HOST-SUFFIX,intercomcdn.com,AI
-HOST-SUFFIX,sentry.io,AI
-HOST-SUFFIX,statsigapi.net,AI
-HOST-KEYWORD,datadog,AI
-HOST-KEYWORD,sift,AI
+HOST,anthropic-com.ghost.io
+HOST,anthropic.auth0.com
+HOST,anthropic.com.cdn.cloudflare.net
+HOST,browser-intake-us5-datadoghq.com
+HOST,cdn.growthbook.io
+HOST,cdn.usefathom.com
+HOST,servd-anthropic-website.b-cdn.net
+HOST,storage.googleapis.com
+HOST-SUFFIX,intercom.io
+HOST-SUFFIX,intercomcdn.com
+HOST-SUFFIX,sentry.io
+HOST-SUFFIX,statsigapi.net
+HOST-KEYWORD,datadog
+HOST-KEYWORD,sift

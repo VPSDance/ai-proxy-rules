@@ -16,7 +16,6 @@ interface GenerateOptions {
   output: string;
   provider: string;
   format: string;
-  policy: string;
 }
 
 const program = new Command();
@@ -33,7 +32,6 @@ program
   .option("-o, --output <dir>", "output directory", "rules")
   .option("-p, --provider <names>", "comma-separated provider names or all", "all")
   .option("-f, --format <names>", "comma-separated formats or all", "all")
-  .option("--policy <name>", "policy name for Quantumult X and Loon", "AI")
   .action(async (options: GenerateOptions) => {
     await generate(options);
   });
@@ -49,7 +47,7 @@ async function generate(options: GenerateOptions): Promise<void> {
 
   for (const target of targets) {
     for (const format of selectedFormats) {
-      const file = render(format, target, { policy: options.policy });
+      const file = render(format, target);
       const outDir = path.join(options.output, file.format);
       const outPath = path.join(outDir, `${target.id}.${file.extension}`);
       await mkdir(outDir, { recursive: true });
