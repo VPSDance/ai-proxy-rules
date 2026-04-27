@@ -36,6 +36,9 @@ HOST-KEYWORD,sift
 # Cerebras / Core
 HOST-SUFFIX,cerebras.ai
 
+# Cloudflare AI / Core
+HOST-SUFFIX,ai.cloudflare.com
+
 # Cohere / Core
 HOST-SUFFIX,cohere.ai
 HOST-SUFFIX,cohere.com
@@ -79,9 +82,15 @@ HOST-SUFFIX,cursor.com
 HOST-SUFFIX,cursor.sh
 HOST-SUFFIX,cursorapi.com
 
+# DeepInfra / Core
+HOST-SUFFIX,deepinfra.com
+
 # ElevenLabs / Core
 HOST-SUFFIX,elevenlabs.com
 HOST-SUFFIX,elevenlabs.io
+
+# Fireworks AI / Core
+HOST-SUFFIX,fireworks.ai
 
 # Google AI / Core
 HOST-SUFFIX,ai.google.dev
@@ -196,6 +205,14 @@ HOST-SUFFIX,pplx.ai
 # Poe / Core
 HOST-SUFFIX,poe.com
 HOST-SUFFIX,poecdn.net
+
+# Replicate / Core
+HOST-SUFFIX,replicate.com
+HOST-SUFFIX,replicate.delivery
+
+# Together AI / Core
+HOST-SUFFIX,together.ai
+HOST-SUFFIX,together.xyz
 
 # Trae / Core
 HOST-SUFFIX,abtestvm-sg.bytedance.com

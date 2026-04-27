@@ -1,0 +1,6 @@
+# AI Proxy Rules - Cloudflare AI
+# Cloudflare AI Gateway and Workers AI services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,ai.cloudflare.com

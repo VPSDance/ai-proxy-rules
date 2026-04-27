@@ -1,0 +1,9 @@
+provider: together-ai
+name: Together AI
+description: Together AI inference and developer services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - together.ai
+        - together.xyz

@@ -1,0 +1,7 @@
+# AI Proxy Rules - Together AI
+# Together AI inference and developer services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,together.ai
+HOST-SUFFIX,together.xyz

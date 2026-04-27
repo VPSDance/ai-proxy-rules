@@ -36,6 +36,9 @@ DOMAIN-KEYWORD,sift
 # Cerebras / Core
 DOMAIN-SUFFIX,cerebras.ai
 
+# Cloudflare AI / Core
+DOMAIN-SUFFIX,ai.cloudflare.com
+
 # Cohere / Core
 DOMAIN-SUFFIX,cohere.ai
 DOMAIN-SUFFIX,cohere.com
@@ -79,9 +82,15 @@ DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
 
+# DeepInfra / Core
+DOMAIN-SUFFIX,deepinfra.com
+
 # ElevenLabs / Core
 DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-SUFFIX,elevenlabs.io
+
+# Fireworks AI / Core
+DOMAIN-SUFFIX,fireworks.ai
 
 # Google AI / Core
 DOMAIN-SUFFIX,ai.google.dev
@@ -196,6 +205,14 @@ DOMAIN-SUFFIX,pplx.ai
 # Poe / Core
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,poecdn.net
+
+# Replicate / Core
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicate.delivery
+
+# Together AI / Core
+DOMAIN-SUFFIX,together.ai
+DOMAIN-SUFFIX,together.xyz
 
 # Trae / Core
 DOMAIN-SUFFIX,abtestvm-sg.bytedance.com

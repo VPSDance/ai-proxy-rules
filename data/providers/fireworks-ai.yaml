@@ -1,0 +1,8 @@
+provider: fireworks-ai
+name: Fireworks AI
+description: Fireworks AI inference and developer services.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - fireworks.ai

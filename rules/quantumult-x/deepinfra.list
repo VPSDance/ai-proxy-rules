@@ -1,0 +1,6 @@
+# AI Proxy Rules - DeepInfra
+# DeepInfra AI inference services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,deepinfra.com

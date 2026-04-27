@@ -1,0 +1,8 @@
+provider: deepinfra
+name: DeepInfra
+description: DeepInfra AI inference services.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - deepinfra.com
