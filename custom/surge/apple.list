@@ -1,0 +1,19 @@
+# USER-AGENT,com.apple.* // Safari com.apple.WebKit.Networking
+PROCESS-NAME,App Store
+PROCESS-NAME,AppStore
+USER-AGENT,*AppStore*
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple.cn
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,akamaiedge.net
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,edgekey.net
+DOMAIN-SUFFIX,aaplimg.com
+PROCESS-NAME,*appstoreagent
+PROCESS-NAME,*storedownloadd
+USER-AGENT,com.apple.appstored*
