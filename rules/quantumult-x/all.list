@@ -43,8 +43,11 @@ HOST-SUFFIX,openaicom.imgix.net,AI
 HOST-KEYWORD,openai,AI
 
 # OpenAI / Network
+IP-CIDR,199.47.142.0/23,AI,no-resolve
 IP-CIDR,24.199.123.28/32,AI,no-resolve
 IP-CIDR,64.23.132.171/32,AI,no-resolve
+IP6-CIDR,2604:f20::/32,AI,no-resolve
+IP-ASN,401518,AI,no-resolve
 
 # OpenAI / Third-Party
 HOST,browser-intake-datadoghq.com,AI

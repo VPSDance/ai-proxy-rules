@@ -88,4 +88,4 @@ GitHub Actions 会在影响规则生成的文件变化时自动运行检查和�
 - https://github.com/xiaolai/anthropic-claude-surge-rules-set
 - https://ip.net.coffee/claude/site.html
 - https://docs.anthropic.com/en/api/ip-addresses
-- https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/OpenAI
+- https://github.com/blackmatrix7/ios_rule_script

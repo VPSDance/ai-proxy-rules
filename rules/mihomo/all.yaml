@@ -42,8 +42,11 @@ payload:
   - DOMAIN-KEYWORD,openai
 
   # OpenAI / Network
+  - IP-CIDR,199.47.142.0/23,no-resolve
   - IP-CIDR,24.199.123.28/32,no-resolve
   - IP-CIDR,64.23.132.171/32,no-resolve
+  - IP-CIDR6,2604:f20::/32,no-resolve
+  - IP-ASN,401518,no-resolve
 
   # OpenAI / Third-Party
   - DOMAIN,browser-intake-datadoghq.com
