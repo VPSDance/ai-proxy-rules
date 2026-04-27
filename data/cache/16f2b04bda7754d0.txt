@@ -6,8 +6,8 @@
 <link rel="icon" type="image/png" href="/favicon-16.png?v=8" sizes="16x16">
 <link rel="icon" type="image/png" href="/favicon-32.png?v=8" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=8">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C8X91YXEH5" type="59620cae11234c2fca372571-text/javascript"></script>
-<script type="59620cae11234c2fca372571-text/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C8X91YXEH5" type="5ad2f387d286597ca04ecb27-text/javascript"></script>
+<script type="5ad2f387d286597ca04ecb27-text/javascript">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -440,7 +440,7 @@ geosite:category-ntp</pre>
 </div>
 
 <footer style="text-align:center;padding:30px 0 20px;color:#8b949e;font-size:0.82em">&copy; 2026 <a href="https://net.coffee/" target="_blank" rel="nofollow noopener noreferrer" title="首页" style="color:#8b949e;text-decoration:none">Net.Coffee</a> · <a href="https://ip.net.coffee/" style="color:#8b949e;text-decoration:none">IP查询</a> · <a href="https://ip.net.coffee/claude/" style="color:#8b949e;text-decoration:none">Claude AI 检测</a> · <a href="https://ip.net.coffee/ip/" style="color:#8b949e;text-decoration:none">IP评分</a></footer>
-<script type="59620cae11234c2fca372571-text/javascript">
+<script type="5ad2f387d286597ca04ecb27-text/javascript">
 (function(){
   document.querySelectorAll('.format-tabs').forEach(function(tabs){
     var buttons = tabs.querySelectorAll('.tab-btn');
@@ -455,5 +455,5 @@ geosite:category-ntp</pre>
   });
 })();
 </script>
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="59620cae11234c2fca372571-|49" defer></script></body>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="5ad2f387d286597ca04ecb27-|49" defer></script></body>
 </html>
