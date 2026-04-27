@@ -1,0 +1,8 @@
+provider: ideogram
+name: Ideogram
+description: Ideogram AI image generation.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - ideogram.ai

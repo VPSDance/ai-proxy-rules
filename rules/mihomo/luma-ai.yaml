@@ -1,0 +1,7 @@
+# AI Proxy Rules - Luma AI
+# Luma AI (Dream Machine video, Genie 3D).
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,lumalabs.ai

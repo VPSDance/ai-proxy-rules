@@ -1,0 +1,8 @@
+provider: luma-ai
+name: Luma AI
+description: Luma AI (Dream Machine video, Genie 3D).
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - lumalabs.ai

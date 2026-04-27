@@ -1,0 +1,8 @@
+provider: lmstudio
+name: LM Studio
+description: LM Studio (desktop UI for local LLMs).
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - lmstudio.ai

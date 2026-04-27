@@ -53,6 +53,12 @@ HOST-KEYWORD,sift
 # Augment Code / Core
 HOST-SUFFIX,augmentcode.com
 
+# Black Forest Labs / Core
+HOST-SUFFIX,bfl.ai
+
+# Bolt.new / Core
+HOST-SUFFIX,bolt.new
+
 # ByteDance AI / Core
 HOST-SUFFIX,abtestvm-sg.bytedance.com
 HOST-SUFFIX,bytegate-sg.byteintlapi.com
@@ -71,6 +77,9 @@ HOST-SUFFIX,tron-sg.bytelemon.com
 
 # Cerebras / Core
 HOST-SUFFIX,cerebras.ai
+
+# Character.AI / Core
+HOST-SUFFIX,character.ai
 
 # Cloudflare AI / Core
 HOST-SUFFIX,ai.cloudflare.com
@@ -191,6 +200,9 @@ HOST-SUFFIX,hf.co
 HOST-SUFFIX,hf.space
 HOST-SUFFIX,huggingface.co
 
+# Ideogram / Core
+HOST-SUFFIX,ideogram.ai
+
 # JetBrains AI / Core
 HOST-SUFFIX,grazie.ai
 HOST-SUFFIX,grazie.aws.intellij.net
@@ -201,6 +213,15 @@ HOST-SUFFIX,kiro.dev
 
 # LangChain / Core
 HOST-SUFFIX,langchain.com
+
+# LM Studio / Core
+HOST-SUFFIX,lmstudio.ai
+
+# Lovable / Core
+HOST-SUFFIX,lovable.dev
+
+# Luma AI / Core
+HOST-SUFFIX,lumalabs.ai
 
 # Manus / Core
 HOST-SUFFIX,manus.im
@@ -216,6 +237,9 @@ HOST-SUFFIX,midjourney.com
 
 # Mistral AI / Core
 HOST-SUFFIX,mistral.ai
+
+# Ollama / Core
+HOST-SUFFIX,ollama.com
 
 # OpenAI / Core
 HOST-SUFFIX,ai.com
@@ -259,6 +283,12 @@ HOST-SUFFIX,perplexity.ai
 HOST-SUFFIX,perplexity.com
 HOST-SUFFIX,pplx.ai
 
+# Phind / Core
+HOST-SUFFIX,phind.com
+
+# Pika / Core
+HOST-SUFFIX,pika.art
+
 # Poe / Core
 HOST-SUFFIX,poe.com
 HOST-SUFFIX,poecdn.net
@@ -283,6 +313,9 @@ HOST-SUFFIX,ampcode.com
 HOST-SUFFIX,ampworkers.com
 HOST-SUFFIX,cody.dev
 HOST-SUFFIX,sourcegraph.com
+
+# Stability AI / Core
+HOST-SUFFIX,stability.ai
 
 # Suno / Core
 HOST-SUFFIX,suno.ai
@@ -309,3 +342,6 @@ HOST-SUFFIX,windsurf.com
 HOST-SUFFIX,grok.com
 HOST-SUFFIX,grok.x.com
 HOST-SUFFIX,x.ai
+
+# You.com / Core
+HOST-SUFFIX,you.com

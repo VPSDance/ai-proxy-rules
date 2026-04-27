@@ -1,0 +1,8 @@
+provider: phind
+name: Phind
+description: Phind AI search for developers.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - phind.com

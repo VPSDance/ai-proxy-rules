@@ -1,0 +1,8 @@
+provider: ollama
+name: Ollama
+description: Ollama (run open-source LLMs locally).
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - ollama.com

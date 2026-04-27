@@ -1,0 +1,7 @@
+# AI Proxy Rules - Lovable
+# Lovable AI app builder.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,lovable.dev

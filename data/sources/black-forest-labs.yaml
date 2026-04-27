@@ -1,0 +1,8 @@
+provider: black-forest-labs
+name: Black Forest Labs
+description: Black Forest Labs / FLUX image generation.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - bfl.ai

@@ -1,0 +1,6 @@
+# AI Proxy Rules - Stability AI
+# Stability AI (Stable Diffusion).
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,stability.ai

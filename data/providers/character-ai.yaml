@@ -1,0 +1,8 @@
+provider: character-ai
+name: Character.AI
+description: Character.AI roleplay chat.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - character.ai

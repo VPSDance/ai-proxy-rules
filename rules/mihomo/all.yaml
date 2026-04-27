@@ -54,6 +54,12 @@ payload:
   # Augment Code / Core
   - DOMAIN-SUFFIX,augmentcode.com
 
+  # Black Forest Labs / Core
+  - DOMAIN-SUFFIX,bfl.ai
+
+  # Bolt.new / Core
+  - DOMAIN-SUFFIX,bolt.new
+
   # ByteDance AI / Core
   - DOMAIN-SUFFIX,abtestvm-sg.bytedance.com
   - DOMAIN-SUFFIX,bytegate-sg.byteintlapi.com
@@ -72,6 +78,9 @@ payload:
 
   # Cerebras / Core
   - DOMAIN-SUFFIX,cerebras.ai
+
+  # Character.AI / Core
+  - DOMAIN-SUFFIX,character.ai
 
   # Cloudflare AI / Core
   - DOMAIN-SUFFIX,ai.cloudflare.com
@@ -192,6 +201,9 @@ payload:
   - DOMAIN-SUFFIX,hf.space
   - DOMAIN-SUFFIX,huggingface.co
 
+  # Ideogram / Core
+  - DOMAIN-SUFFIX,ideogram.ai
+
   # JetBrains AI / Core
   - DOMAIN-SUFFIX,grazie.ai
   - DOMAIN-SUFFIX,grazie.aws.intellij.net
@@ -202,6 +214,15 @@ payload:
 
   # LangChain / Core
   - DOMAIN-SUFFIX,langchain.com
+
+  # LM Studio / Core
+  - DOMAIN-SUFFIX,lmstudio.ai
+
+  # Lovable / Core
+  - DOMAIN-SUFFIX,lovable.dev
+
+  # Luma AI / Core
+  - DOMAIN-SUFFIX,lumalabs.ai
 
   # Manus / Core
   - DOMAIN-SUFFIX,manus.im
@@ -217,6 +238,9 @@ payload:
 
   # Mistral AI / Core
   - DOMAIN-SUFFIX,mistral.ai
+
+  # Ollama / Core
+  - DOMAIN-SUFFIX,ollama.com
 
   # OpenAI / Core
   - DOMAIN-SUFFIX,ai.com
@@ -261,6 +285,12 @@ payload:
   - DOMAIN-SUFFIX,perplexity.com
   - DOMAIN-SUFFIX,pplx.ai
 
+  # Phind / Core
+  - DOMAIN-SUFFIX,phind.com
+
+  # Pika / Core
+  - DOMAIN-SUFFIX,pika.art
+
   # Poe / Core
   - DOMAIN-SUFFIX,poe.com
   - DOMAIN-SUFFIX,poecdn.net
@@ -285,6 +315,9 @@ payload:
   - DOMAIN-SUFFIX,ampworkers.com
   - DOMAIN-SUFFIX,cody.dev
   - DOMAIN-SUFFIX,sourcegraph.com
+
+  # Stability AI / Core
+  - DOMAIN-SUFFIX,stability.ai
 
   # Suno / Core
   - DOMAIN-SUFFIX,suno.ai
@@ -311,3 +344,6 @@ payload:
   - DOMAIN-SUFFIX,grok.com
   - DOMAIN-SUFFIX,grok.x.com
   - DOMAIN-SUFFIX,x.ai
+
+  # You.com / Core
+  - DOMAIN-SUFFIX,you.com

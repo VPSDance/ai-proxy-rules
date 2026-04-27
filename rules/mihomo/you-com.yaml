@@ -1,0 +1,7 @@
+# AI Proxy Rules - You.com
+# You.com AI search.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,you.com

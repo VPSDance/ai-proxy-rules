@@ -1,0 +1,8 @@
+provider: pika
+name: Pika
+description: Pika AI video generation.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - pika.art

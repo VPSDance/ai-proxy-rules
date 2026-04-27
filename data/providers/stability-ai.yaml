@@ -1,0 +1,8 @@
+provider: stability-ai
+name: Stability AI
+description: Stability AI (Stable Diffusion).
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - stability.ai

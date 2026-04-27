@@ -1,0 +1,8 @@
+provider: bolt
+name: Bolt.new
+description: StackBlitz Bolt.new (AI app builder).
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - bolt.new
