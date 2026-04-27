@@ -48,25 +48,6 @@ rules/   生成后的规则文件
 data/providers/<provider>.yaml
 ```
 
-示例：
-
-```yaml
-provider: anthropic
-name: Anthropic
-description: Anthropic and Claude services.
-groups:
-  - name: Core
-    rules:
-      domainSuffix:
-        - anthropic.com
-        - claude.ai
-
-  - name: Third-Party
-    rules:
-      domain:
-        - cdn.usefathom.com
-```
-
 字段说明：
 
 - `domain`: 精确域名。
