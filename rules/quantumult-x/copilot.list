@@ -4,12 +4,10 @@
 HOST,openai-api.arkoselabs.com,AI
 HOST,openaicomproductionae4b.blob.core.windows.net,AI
 HOST,production-openaicom-storage.azureedge.net,AI
-HOST-SUFFIX,chatgpt.com,AI
 HOST-SUFFIX,copilot.microsoft.com,AI
 HOST-SUFFIX,githubcopilot.com,AI
 HOST-SUFFIX,oaistatic.com,AI
 HOST-SUFFIX,oaiusercontent.com,AI
-HOST-SUFFIX,openai.com,AI
 HOST-SUFFIX,openaiapi-site.azureedge.net,AI
 HOST-SUFFIX,openaicom.imgix.net,AI
 

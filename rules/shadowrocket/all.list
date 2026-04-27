@@ -35,12 +35,10 @@ DOMAIN-KEYWORD,sift,AI
 DOMAIN,openai-api.arkoselabs.com,AI
 DOMAIN,openaicomproductionae4b.blob.core.windows.net,AI
 DOMAIN,production-openaicom-storage.azureedge.net,AI
-DOMAIN-SUFFIX,chatgpt.com,AI
 DOMAIN-SUFFIX,copilot.microsoft.com,AI
 DOMAIN-SUFFIX,githubcopilot.com,AI
 DOMAIN-SUFFIX,oaistatic.com,AI
 DOMAIN-SUFFIX,oaiusercontent.com,AI
-DOMAIN-SUFFIX,openai.com,AI
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net,AI
 DOMAIN-SUFFIX,openaicom.imgix.net,AI
 
@@ -88,7 +86,9 @@ IP-ASN,14061,AI,no-resolve
 # OpenAI / Core
 DOMAIN-SUFFIX,ai.com,AI
 DOMAIN-SUFFIX,chat.com,AI
+DOMAIN-SUFFIX,chatgpt.com,AI
 DOMAIN-SUFFIX,crixet.com,AI
+DOMAIN-SUFFIX,openai.com,AI
 DOMAIN-SUFFIX,sora.com,AI
 DOMAIN-KEYWORD,openai,AI
 

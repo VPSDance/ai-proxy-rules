@@ -16,8 +16,6 @@ groups:
       domainSuffix:
         - copilot.microsoft.com
         - githubcopilot.com
-        - openai.com
-        - chatgpt.com
         - oaistatic.com
         - oaiusercontent.com
         - openaiapi-site.azureedge.net
@@ -60,5 +58,8 @@ groups:
     fromSource: true
 patch:
   remove:
+    domainSuffix:
+      - chatgpt.com
+      - openai.com
     asn:
       - 20473

@@ -9,12 +9,10 @@ groups:
         - openaicomproductionae4b.blob.core.windows.net
         - production-openaicom-storage.azureedge.net
       domainSuffix:
-        - chatgpt.com
         - copilot.microsoft.com
         - githubcopilot.com
         - oaistatic.com
         - oaiusercontent.com
-        - openai.com
         - openaiapi-site.azureedge.net
         - openaicom.imgix.net
   - name: Network
