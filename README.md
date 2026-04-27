@@ -1,6 +1,6 @@
 # AI Proxy Rules
 
-AI 服务代理规则集合。上游来源和本地补丁维护在 `sources/`，同步到 `data/` 后生成多个代理客户端可直接引用的 `rules/` 文件。
+AI 服务代理规则集合，生成多个代理客户端可直接引用的 `rules/` 文件。
 
 当前已支持：
 
@@ -43,26 +43,6 @@ data/    Provider 数据源
 scripts/ 同步与生成脚本
 rules/   自动生成的规则文件
 ```
-
-## 数据源
-
-每个 provider 有两层 YAML：
-
-```text
-sources/providers/<provider>.yaml
-data/providers/<provider>.yaml
-```
-
-`sources/` 定义上游 URL、HTML selector、导入类型和本地补丁；`data/` 是同步后的规范化数据。
-
-字段说明：
-
-- `domain`: 精确域名。
-- `domainSuffix`: 域名后缀。
-- `domainKeyword`: 域名关键字。
-- `ipCidr`: IPv4 CIDR。
-- `ipCidr6`: IPv6 CIDR。
-- `asn`: 自治系统号，仅输出到支持 ASN 规则的客户端。
 
 ## 维护
 
