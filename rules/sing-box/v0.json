@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "v0.app",
+        "v0.dev"
+      ]
+    }
+  ]
+}

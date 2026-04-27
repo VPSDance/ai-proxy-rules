@@ -1,0 +1,8 @@
+provider: dify
+name: Dify
+description: Dify LLM application development platform.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - dify.ai

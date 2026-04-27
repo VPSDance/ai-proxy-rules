@@ -1,0 +1,8 @@
+# AI Proxy Rules - Suno
+# Suno AI music generation.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,suno.ai
+  - DOMAIN-SUFFIX,suno.com

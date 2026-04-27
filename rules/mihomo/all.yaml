@@ -60,6 +60,9 @@ payload:
   # Cloudflare AI / Core
   - DOMAIN-SUFFIX,ai.cloudflare.com
 
+  # CodeRabbit / Core
+  - DOMAIN-SUFFIX,coderabbit.ai
+
   # Cohere / Core
   - DOMAIN-SUFFIX,cohere.ai
   - DOMAIN-SUFFIX,cohere.com
@@ -97,6 +100,9 @@ payload:
   - DOMAIN-SUFFIX,stripe.com
   - IP-ASN,14061,no-resolve
 
+  # Coze / Core
+  - DOMAIN-SUFFIX,coze.com
+
   # Cursor / Core
   - DOMAIN-SUFFIX,cursor-cdn.com
   - DOMAIN-SUFFIX,cursor.com
@@ -105,6 +111,15 @@ payload:
 
   # DeepInfra / Core
   - DOMAIN-SUFFIX,deepinfra.com
+
+  # DeepSeek / Core
+  - DOMAIN-SUFFIX,deepseek.com
+
+  # Devin / Core
+  - DOMAIN-SUFFIX,devin.ai
+
+  # Dify / Core
+  - DOMAIN-SUFFIX,dify.ai
 
   # ElevenLabs / Core
   - DOMAIN-SUFFIX,elevenlabs.com
@@ -172,6 +187,9 @@ payload:
   # Kiro / Core
   - DOMAIN-SUFFIX,kiro.dev
 
+  # LangChain / Core
+  - DOMAIN-SUFFIX,langchain.com
+
   # Manus / Core
   - DOMAIN-SUFFIX,manus.im
   - DOMAIN-SUFFIX,manuscdn.com
@@ -180,6 +198,9 @@ payload:
   - DOMAIN,ai.meta.com
   - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,meta.ai
+
+  # Midjourney / Core
+  - DOMAIN-SUFFIX,midjourney.com
 
   # Mistral AI / Core
   - DOMAIN-SUFFIX,mistral.ai
@@ -242,11 +263,19 @@ payload:
   - DOMAIN-SUFFIX,replit.com
   - DOMAIN-SUFFIX,replit.dev
 
+  # Runway / Core
+  - DOMAIN-SUFFIX,runway.com
+  - DOMAIN-SUFFIX,runwayml.com
+
   # Sourcegraph / Core
   - DOMAIN-SUFFIX,ampcode.com
   - DOMAIN-SUFFIX,ampworkers.com
   - DOMAIN-SUFFIX,cody.dev
   - DOMAIN-SUFFIX,sourcegraph.com
+
+  # Suno / Core
+  - DOMAIN-SUFFIX,suno.ai
+  - DOMAIN-SUFFIX,suno.com
 
   # Tabnine / Core
   - DOMAIN-SUFFIX,tabnine.com
@@ -265,6 +294,10 @@ payload:
   - DOMAIN-SUFFIX,trae-api-sg.mchost.guru
   - DOMAIN-SUFFIX,trae.ai
   - DOMAIN-SUFFIX,tron-sg.bytelemon.com
+
+  # v0 / Core
+  - DOMAIN-SUFFIX,v0.app
+  - DOMAIN-SUFFIX,v0.dev
 
   # Windsurf / Core
   - DOMAIN-SUFFIX,codeium.com

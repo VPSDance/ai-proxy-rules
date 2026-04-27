@@ -1,0 +1,9 @@
+provider: runway
+name: Runway
+description: Runway AI video generation.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - runway.com
+        - runwayml.com

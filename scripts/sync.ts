@@ -44,7 +44,8 @@ async function sync(options: SyncOptions): Promise<void> {
   for (const sourceFile of sourceFiles) {
     const provider = await loadSourceProvider(sourceFile);
     const normalized = await buildProviderData(provider, path.dirname(sourceFile), {
-      fetcher: (url) => cache.fetch(url)
+      fetcher: (url) => cache.fetch(url),
+      cache
     });
     const outPath = path.join(options.output, `${provider.provider}.yaml`);
 

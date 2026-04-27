@@ -1,0 +1,8 @@
+provider: langchain
+name: LangChain
+description: LangChain (LangSmith / LangGraph).
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - langchain.com

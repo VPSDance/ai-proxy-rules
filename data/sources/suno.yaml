@@ -1,0 +1,9 @@
+provider: suno
+name: Suno
+description: Suno AI music generation.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - suno.ai
+        - suno.com

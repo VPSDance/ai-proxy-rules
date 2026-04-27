@@ -1,0 +1,7 @@
+# AI Proxy Rules - Runway
+# Runway AI video generation.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,runway.com
+DOMAIN-SUFFIX,runwayml.com

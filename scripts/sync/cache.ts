@@ -24,33 +24,39 @@ export class FetchCache {
   constructor(private cacheDir: string) {}
 
   async fetch(url: string): Promise<string> {
-    this.usedKeys.add(this.cacheKey(url));
-    try {
+    return this.cached(url, async () => {
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error(`HTTP ${response.status} ${response.statusText}`);
       }
-      const text = await response.text();
-      await this.write(url, text);
+      return response.text();
+    });
+  }
+
+  async cached(key: string, fresh: () => Promise<string>): Promise<string> {
+    this.usedKeys.add(this.cacheKey(key));
+    try {
+      const text = await fresh();
+      await this.write(key, text);
       return text;
     } catch (error) {
-      const cached = await this.read(url);
-      if (cached !== null) {
+      const cachedEntry = await this.read(key);
+      if (cachedEntry !== null) {
         this.warnings.push({
-          url,
+          url: key,
           reason: error instanceof Error ? error.message : String(error),
-          cachedAt: cached.cachedAt
+          cachedAt: cachedEntry.cachedAt
         });
-        if (cached.cachedAt) {
-          const ageDays = (Date.now() - new Date(cached.cachedAt).getTime()) / 86_400_000;
+        if (cachedEntry.cachedAt) {
+          const ageDays = (Date.now() - new Date(cachedEntry.cachedAt).getTime()) / 86_400_000;
           if (ageDays > STALE_CACHE_DAYS) {
-            this.staleWarnings.push({ url, ageDays: Math.floor(ageDays) });
+            this.staleWarnings.push({ url: key, ageDays: Math.floor(ageDays) });
           }
         }
-        return cached.text;
+        return cachedEntry.text;
       }
       throw new Error(
-        `Failed to fetch ${url} and no cache available: ${
+        `Failed to fetch ${key} and no cache available: ${
           error instanceof Error ? error.message : String(error)
         }`
       );

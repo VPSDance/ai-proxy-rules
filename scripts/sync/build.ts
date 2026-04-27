@@ -104,8 +104,13 @@ export interface SourceProviderData {
 
 export type Fetcher = (url: string) => Promise<string>;
 
+export interface ContentCache {
+  cached(key: string, fresh: () => Promise<string>): Promise<string>;
+}
+
 export interface BuildContext {
   fetcher?: Fetcher;
+  cache?: ContentCache;
 }
 
 export async function buildProviderData(
@@ -114,7 +119,7 @@ export async function buildProviderData(
   context: BuildContext = {}
 ): Promise<SourceProviderData> {
   const fetcher = context.fetcher ?? defaultFetcher;
-  const sourceRules = await loadSourceRules(provider.sources, baseDir, fetcher);
+  const sourceRules = await loadSourceRules(provider.sources, baseDir, fetcher, context.cache);
   const removeRules = normalizePartialRuleSet(provider.patch.remove);
   const explicitRules = mergeRuleSets(
     provider.groups.map((group) => normalizePartialRuleSet(group.include))
@@ -163,12 +168,13 @@ function resolveFromSourceKeys(value: boolean | RuleKey[]): RuleKey[] {
 async function loadSourceRules(
   sources: SourceConfig[],
   baseDir: string,
-  fetcher: Fetcher
+  fetcher: Fetcher,
+  cache?: ContentCache
 ): Promise<RuleSet> {
   const textCache = new Map<string, Promise<string>>();
   const rules = await Promise.all(
     sources.map(async (source) => {
-      const text = await loadSourceText(source, baseDir, fetcher);
+      const text = await loadSourceText(source, baseDir, fetcher, cache);
       const parsed = await parseSourceRules(text, source.parser as SourceParser, {
         sourceUrl: source.type === "remote-text" || source.type === "remote-html" ? source.url : undefined,
         followIncludes: source.followIncludes,
@@ -198,23 +204,29 @@ async function loadSourceRules(
 async function loadSourceText(
   source: SourceConfig,
   baseDir: string,
-  fetcher: Fetcher
+  fetcher: Fetcher,
+  cache?: ContentCache
 ): Promise<string> {
   if (source.type === "local-text") {
     return readFile(path.resolve(baseDir, source.path), "utf8");
   }
 
-  const text = await fetcher(source.url);
   if (source.type === "remote-text") {
-    return text;
+    return fetcher(source.url);
   }
 
-  const $ = load(text);
-  const nodes = $(source.selector);
+  const cacheKey = `html-extract:${source.url}#${source.selector}`;
+  const fresh = async () => extractHtml(await defaultFetcher(source.url), source.url, source.selector);
+
+  return cache ? cache.cached(cacheKey, fresh) : fresh();
+}
+
+function extractHtml(html: string, url: string, selector: string): string {
+  const $ = load(html);
+  const nodes = $(selector);
   if (nodes.length === 0) {
-    throw new Error(`Selector "${source.selector}" matched no nodes in ${source.url}`);
+    throw new Error(`Selector "${selector}" matched no nodes in ${url}`);
   }
-
   return nodes
     .map((_, element) => $(element).text())
     .get()

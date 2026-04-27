@@ -1,0 +1,8 @@
+provider: deepseek
+name: DeepSeek
+description: DeepSeek AI.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - deepseek.com

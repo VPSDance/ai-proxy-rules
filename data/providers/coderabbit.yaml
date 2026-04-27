@@ -1,0 +1,8 @@
+provider: coderabbit
+name: CodeRabbit
+description: CodeRabbit AI code review.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - coderabbit.ai

@@ -1,0 +1,8 @@
+provider: coze
+name: Coze
+description: ByteDance Coze AI agent platform (overseas).
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - coze.com

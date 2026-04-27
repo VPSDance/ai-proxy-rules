@@ -1,0 +1,9 @@
+provider: v0
+name: v0
+description: Vercel v0 (UI generation).
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - v0.app
+        - v0.dev

@@ -1,0 +1,8 @@
+# AI Proxy Rules - v0
+# Vercel v0 (UI generation).
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,v0.app
+  - DOMAIN-SUFFIX,v0.dev

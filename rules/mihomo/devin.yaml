@@ -1,0 +1,7 @@
+# AI Proxy Rules - Devin
+# Cognition Devin (autonomous coding agent).
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,devin.ai
