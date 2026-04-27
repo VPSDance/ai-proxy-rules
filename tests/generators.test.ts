@@ -123,6 +123,16 @@ describe("generators", () => {
     expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,no-resolve");
   });
 
+  it("renders stash like surge (without per-line policy)", () => {
+    const rendered = render("stash", providerToTarget(anthropic));
+
+    expect(rendered.extension).toBe("list");
+    expect(rendered.content).toContain("DOMAIN,api.anthropic.com\n");
+    expect(rendered.content).toContain("DOMAIN-SUFFIX,anthropic.com\n");
+    expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,no-resolve");
+    expect(rendered.content).toContain("IP-ASN,399358,no-resolve");
+  });
+
   it("emits domain-regex only in formats with first-class regex support", () => {
     const provider: ProviderSource = {
       provider: "regex-test",
@@ -157,7 +167,7 @@ describe("generators", () => {
     const singBox = JSON.parse(render("sing-box", target).content);
     expect(singBox.rules[0].domain_regex).toEqual(["^example-\\d+\\.foo\\.com$"]);
 
-    for (const format of ["surge", "loon", "shadowrocket", "quantumult-x"] as const) {
+    for (const format of ["surge", "loon", "shadowrocket", "stash", "quantumult-x"] as const) {
       expect(render(format, target).content).not.toContain("REGEX");
     }
   });

@@ -4,7 +4,8 @@ export const formats = [
   "sing-box",
   "quantumult-x",
   "loon",
-  "shadowrocket"
+  "shadowrocket",
+  "stash"
 ] as const;
 
 export type Format = (typeof formats)[number];

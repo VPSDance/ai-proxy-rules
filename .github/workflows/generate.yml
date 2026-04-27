@@ -42,6 +42,7 @@ jobs:
       - run: pnpm sync
       - run: pnpm guard
       - run: pnpm check
+      - run: pnpm check:readme
       - run: pnpm test
       - run: pnpm generate
       - name: Commit generated data and rules

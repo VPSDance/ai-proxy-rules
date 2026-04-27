@@ -1,0 +1,7 @@
+# AI Proxy Rules - Manus
+# Manus AI agent services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,manus.im
+DOMAIN-SUFFIX,manuscdn.com

@@ -40,6 +40,12 @@ export function render(format: Format, target: RenderTarget): RenderedFile {
         extension: "list",
         content: renderShadowrocket(target)
       };
+    case "stash":
+      return {
+        format,
+        extension: "list",
+        content: renderStash(target)
+      };
   }
 }
 
@@ -112,6 +118,20 @@ function renderLoon(target: RenderTarget): string {
 }
 
 function renderShadowrocket(target: RenderTarget): string {
+  return withHeader(
+    target,
+    renderGroupedLines(target, (rules) => [
+      ...rules.domain.map((value) => `DOMAIN,${value}`),
+      ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
+      ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
+      ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
+      ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`),
+      ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
+    ])
+  );
+}
+
+function renderStash(target: RenderTarget): string {
   return withHeader(
     target,
     renderGroupedLines(target, (rules) => [
