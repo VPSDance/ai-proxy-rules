@@ -56,30 +56,39 @@ async function sync(options: SyncOptions): Promise<void> {
     console.log(filePath);
   }
 
+  const removed = await cache.pruneOrphans();
+  if (options.provider === "all" && removed.length > 0) {
+    const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+    const tag = isGithubActions ? "::notice::" : "[notice] ";
+    console.log(`${tag}Pruned ${removed.length} orphan cache entry/entries.`);
+  }
+
   reportCacheWarnings(cache);
 }
 
 function reportCacheWarnings(cache: FetchCache): void {
   const warnings = cache.getWarnings();
-  if (warnings.length === 0) {
-    return;
-  }
-
+  const staleWarnings = cache.getStaleWarnings();
   const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+  const warn = (msg: string) => {
+    if (isGithubActions) {
+      console.log(`::warning::${msg}`);
+    } else {
+      console.warn(`[warning] ${msg}`);
+    }
+  };
+
   for (const warning of warnings) {
     const cachedHint = warning.cachedAt ? ` (cached at ${warning.cachedAt})` : "";
-    const message = `Upstream fetch failed for ${warning.url}: ${warning.reason}. Using cached copy${cachedHint}.`;
-    if (isGithubActions) {
-      console.log(`::warning::${message}`);
-    } else {
-      console.warn(`[warning] ${message}`);
-    }
+    warn(`Upstream fetch failed for ${warning.url}: ${warning.reason}. Using cached copy${cachedHint}.`);
   }
 
-  if (isGithubActions) {
-    console.log(`::warning::${warnings.length} upstream source(s) served from cache. Investigate and refresh when convenient.`);
-  } else {
-    console.warn(`[warning] ${warnings.length} upstream source(s) served from cache.`);
+  for (const stale of staleWarnings) {
+    warn(`Cached copy of ${stale.url} is ${stale.ageDays} days old; upstream may be permanently down.`);
+  }
+
+  if (warnings.length > 0) {
+    warn(`${warnings.length} upstream source(s) served from cache. Investigate and refresh when convenient.`);
   }
 }
 

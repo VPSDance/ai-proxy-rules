@@ -6,6 +6,7 @@
   "scripts": {
     "check": "tsc --noEmit",
     "generate": "tsx scripts/cli.ts generate",
+    "guard": "tsx scripts/guard.ts",
     "sync": "tsx scripts/sync.ts",
     "test": "vitest run"
   },

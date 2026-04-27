@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, stat, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 export interface CacheWarning {
@@ -8,13 +8,23 @@ export interface CacheWarning {
   cachedAt?: string;
 }
 
+export interface StaleCacheWarning {
+  url: string;
+  ageDays: number;
+}
+
+const STALE_CACHE_DAYS = 30;
+
 export class FetchCache {
   private warnings: CacheWarning[] = [];
+  private staleWarnings: StaleCacheWarning[] = [];
   private indexCache: Record<string, string> | null = null;
+  private usedKeys = new Set<string>();
 
   constructor(private cacheDir: string) {}
 
   async fetch(url: string): Promise<string> {
+    this.usedKeys.add(this.cacheKey(url));
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -31,6 +41,12 @@ export class FetchCache {
           reason: error instanceof Error ? error.message : String(error),
           cachedAt: cached.cachedAt
         });
+        if (cached.cachedAt) {
+          const ageDays = (Date.now() - new Date(cached.cachedAt).getTime()) / 86_400_000;
+          if (ageDays > STALE_CACHE_DAYS) {
+            this.staleWarnings.push({ url, ageDays: Math.floor(ageDays) });
+          }
+        }
         return cached.text;
       }
       throw new Error(
@@ -41,8 +57,54 @@ export class FetchCache {
     }
   }
 
+  async pruneOrphans(): Promise<string[]> {
+    const removed: string[] = [];
+    const index = await this.readIndex();
+    let indexChanged = false;
+
+    for (const key of Object.keys(index)) {
+      if (!this.usedKeys.has(key)) {
+        const file = path.join(this.cacheDir, `${key}.txt`);
+        await unlink(file).catch(() => undefined);
+        removed.push(index[key] ?? key);
+        delete index[key];
+        indexChanged = true;
+      }
+    }
+
+    if (indexChanged) {
+      this.indexCache = index;
+      await writeFile(
+        this.indexFile(),
+        `${JSON.stringify(sortKeys(index), null, 2)}\n`,
+        "utf8"
+      );
+    }
+
+    const expectedKeys = new Set(Object.keys(index));
+    const expectedKeys2 = new Set([...expectedKeys].map((k) => `${k}.txt`));
+    expectedKeys2.add("_index.json");
+    try {
+      const entries = await readdir(this.cacheDir);
+      for (const entry of entries) {
+        if (!expectedKeys2.has(entry)) {
+          await unlink(path.join(this.cacheDir, entry)).catch(() => undefined);
+          removed.push(entry);
+        }
+      }
+    } catch {
+      // cache dir may not exist yet
+    }
+
+    return removed;
+  }
+
   getWarnings(): CacheWarning[] {
     return [...this.warnings];
+  }
+
+  getStaleWarnings(): StaleCacheWarning[] {
+    return [...this.staleWarnings];
   }
 
   private cacheKey(url: string): string {

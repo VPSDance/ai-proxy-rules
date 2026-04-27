@@ -98,7 +98,9 @@ scripts/        同步与生成脚本
 rules/          自动生成的规则文件
 ```
 
-`data/cache/` 是 fetch 兜底层：每次 sync 把上游响应原文按 URL 哈希落盘。某个上游临时不可达（404 / 超时 / 限速）时，自动回退到上次缓存版本，工作流仍然绿色，但会在 GitHub Actions 摘要里以 `::warning::` 提示，方便事后修复，不会因一次故障让规则文件回滚成空。
+`data/cache/` 是 fetch 兜底层：每次 sync 把上游响应原文按 URL 哈希落盘。某个上游临时不可达（404 / 超时 / 限速）时，自动回退到上次缓存版本，工作流仍然绿色，但会在 GitHub Actions 摘要里以 `::warning::` 提示，方便事后修复，不会因一次故障让规则文件回滚成空。当某条缓存连续超过 30 天没刷新成功，会升级为"上游可能永久失效"提醒。每次 sync 还会清理已不在 source 配置里的孤立缓存。
+
+`pnpm guard` 在 sync 之后比较新数据 vs 上次提交：任何 provider 规则数下降超过 30% 就 fail，避免上游被劫持/重写或 parser 出 bug 时悄悄把规则刷空。
 
 ## 维护
 
@@ -120,6 +122,7 @@ pnpm generate
 ```bash
 pnpm check
 pnpm test
+pnpm guard      # 检查 sync 后是否有 provider 规则锐减
 ```
 
 GitHub Actions 会在影响规则生成的文件变化时自动运行同步、检查和生成，并在 `data/` 或 `rules/` 有变化时提交生成结果。
