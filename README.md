@@ -6,6 +6,8 @@
 
 AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 等多源合并去重，按 provider 拆分订阅；针对 OpenAI / Anthropic 等热门服务汇集多个上游，补全遗漏并修复部分规则。覆盖 Clash / Mihomo / sing-box / Surge / Shadowrocket / Loon / Stash / Quantumult X。
 
+> **范围说明**：本仓库面向"国内用户访问海外 AI 服务"场景，因此不收录已可直连的国内服务（DeepSeek / 豆包 / Kimi / 通义 / 智谱等）。
+
 规则覆盖范围：
 
 - OpenAI / ChatGPT (`openai`)
