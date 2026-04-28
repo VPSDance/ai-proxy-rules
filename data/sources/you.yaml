@@ -1,8 +1,8 @@
-provider: you-com
+provider: you
 name: You.com
 description: You.com AI search.
 groups:
   - name: Core
-    rules:
+    include:
       domainSuffix:
         - you.com

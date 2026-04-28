@@ -67,7 +67,13 @@ const fromSourceSchema = z
   .default(false);
 
 export const sourceProviderSchema = z.object({
-  provider: z.string().min(1).regex(/^[a-z0-9][a-z0-9-]*$/),
+  provider: z
+    .string()
+    .min(1)
+    .regex(/^[a-z0-9][a-z0-9-]*$/)
+    .refine((value) => value !== "all", {
+      message: '"all" is reserved for the aggregated rule set',
+    }),
   name: z.string().min(1),
   description: z.string().optional(),
   sources: z.array(sourceSchema).default([]),
