@@ -1,0 +1,6 @@
+# AI Proxy Rules - Jasper
+# Jasper AI marketing / writing assistant.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,jasper.ai

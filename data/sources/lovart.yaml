@@ -1,0 +1,9 @@
+provider: lovart
+name: Lovart
+description: Lovart AI image generation.
+category: media
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - lovart.ai

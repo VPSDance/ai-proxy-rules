@@ -1,0 +1,8 @@
+# AI Proxy Rules - Dia Browser
+# The Browser Company Dia (AI-first browser).
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,diabrowser.com
+  - DOMAIN-SUFFIX,diabrowser.engineering

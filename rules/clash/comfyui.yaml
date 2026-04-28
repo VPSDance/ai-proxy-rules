@@ -1,0 +1,8 @@
+# AI Proxy Rules - ComfyUI
+# ComfyUI image generation workflow.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,comfy.org
+  - DOMAIN-SUFFIX,comfyregistry.org

@@ -1,0 +1,12 @@
+provider: comfyui
+name: ComfyUI
+description: ComfyUI image generation workflow.
+categories: []
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - comfy.org
+        - comfyregistry.org

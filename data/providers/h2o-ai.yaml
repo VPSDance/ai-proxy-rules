@@ -1,0 +1,11 @@
+provider: h2o-ai
+name: H2O.ai
+description: H2O.ai (open-source ML / LLM platform).
+categories: []
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - h2o.ai

@@ -1,0 +1,9 @@
+provider: duck-ai
+name: DuckDuckGo AI
+description: DuckDuckGo AI Chat (anonymous LLM chat).
+category: assistant
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - duck.ai

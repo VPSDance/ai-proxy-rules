@@ -1,0 +1,11 @@
+provider: jasper
+name: Jasper
+description: Jasper AI marketing / writing assistant.
+categories: []
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - jasper.ai

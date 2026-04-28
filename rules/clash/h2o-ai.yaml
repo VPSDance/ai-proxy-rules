@@ -1,0 +1,7 @@
+# AI Proxy Rules - H2O.ai
+# H2O.ai (open-source ML / LLM platform).
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,h2o.ai

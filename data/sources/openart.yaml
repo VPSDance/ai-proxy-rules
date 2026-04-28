@@ -1,0 +1,9 @@
+provider: openart
+name: OpenArt
+description: OpenArt AI image generation.
+category: media
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - openart.ai

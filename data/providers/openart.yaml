@@ -1,0 +1,11 @@
+provider: openart
+name: OpenArt
+description: OpenArt AI image generation.
+categories: []
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - openart.ai

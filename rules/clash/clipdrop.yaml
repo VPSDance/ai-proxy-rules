@@ -1,0 +1,7 @@
+# AI Proxy Rules - ClipDrop
+# ClipDrop (Stability AI image editing tools).
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,clipdrop.co

@@ -1,0 +1,13 @@
+provider: youmind
+name: YouMind
+description: YouMind AI note-taking / knowledge workspace.
+categories: []
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - youmind.ai
+        - youmind.com
+        - youmind.site

@@ -1,0 +1,11 @@
+provider: youmind
+name: YouMind
+description: YouMind AI note-taking / knowledge workspace.
+category: productivity
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - youmind.ai
+        - youmind.com
+        - youmind.site

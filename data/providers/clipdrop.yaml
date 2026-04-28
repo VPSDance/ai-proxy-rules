@@ -1,0 +1,11 @@
+provider: clipdrop
+name: ClipDrop
+description: ClipDrop (Stability AI image editing tools).
+categories: []
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - clipdrop.co

@@ -1,0 +1,7 @@
+# AI Proxy Rules - DuckDuckGo AI
+# DuckDuckGo AI Chat (anonymous LLM chat).
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,duck.ai

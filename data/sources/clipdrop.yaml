@@ -1,0 +1,9 @@
+provider: clipdrop
+name: ClipDrop
+description: ClipDrop (Stability AI image editing tools).
+category: media
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - clipdrop.co

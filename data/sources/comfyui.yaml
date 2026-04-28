@@ -1,0 +1,10 @@
+provider: comfyui
+name: ComfyUI
+description: ComfyUI image generation workflow.
+category: media
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - comfy.org
+        - comfyregistry.org

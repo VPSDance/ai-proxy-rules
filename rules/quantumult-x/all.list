@@ -88,6 +88,9 @@ HOST-SUFFIX,character.ai
 # Civitai / Core
 HOST-SUFFIX,civitai.com
 
+# ClipDrop / Core
+HOST-SUFFIX,clipdrop.co
+
 # Cloudflare AI / Core
 HOST-SUFFIX,ai.cloudflare.com
 
@@ -97,6 +100,10 @@ HOST-SUFFIX,coderabbit.ai
 # Cohere / Core
 HOST-SUFFIX,cohere.ai
 HOST-SUFFIX,cohere.com
+
+# ComfyUI / Core
+HOST-SUFFIX,comfy.org
+HOST-SUFFIX,comfyregistry.org
 
 # Continue / Core
 HOST-SUFFIX,continue.dev
@@ -152,8 +159,15 @@ HOST-SUFFIX,descript.com
 # Devin / Core
 HOST-SUFFIX,devin.ai
 
+# Dia Browser / Core
+HOST-SUFFIX,diabrowser.com
+HOST-SUFFIX,diabrowser.engineering
+
 # Dify / Core
 HOST-SUFFIX,dify.ai
+
+# DuckDuckGo AI / Core
+HOST-SUFFIX,duck.ai
 
 # ElevenLabs / Core
 HOST-SUFFIX,elevenlabs.com
@@ -217,6 +231,9 @@ HOST-SUFFIX,grammarly.com
 # Groq / Core
 HOST-SUFFIX,groq.com
 
+# H2O.ai / Core
+HOST-SUFFIX,h2o.ai
+
 # HeyGen / Core
 HOST-SUFFIX,heygen.com
 
@@ -231,6 +248,9 @@ HOST-SUFFIX,ideogram.ai
 # Inflection / Pi / Core
 HOST-SUFFIX,inflection.ai
 HOST-SUFFIX,pi.ai
+
+# Jasper / Core
+HOST-SUFFIX,jasper.ai
 
 # JetBrains AI / Core
 HOST-SUFFIX,grazie.ai
@@ -251,6 +271,9 @@ HOST-SUFFIX,lmstudio.ai
 
 # Lovable / Core
 HOST-SUFFIX,lovable.dev
+
+# Lovart / Core
+HOST-SUFFIX,lovart.ai
 
 # Luma AI / Core
 HOST-SUFFIX,lumalabs.ai
@@ -304,6 +327,9 @@ HOST-SUFFIX,api.statsig.com
 HOST-SUFFIX,host.livekit.cloud
 HOST-SUFFIX,openai.com.cdn.cloudflare.net
 HOST-SUFFIX,turn.livekit.cloud
+
+# OpenArt / Core
+HOST-SUFFIX,openart.ai
 
 # OpenRouter / Core
 HOST-SUFFIX,openrouter.ai
@@ -389,3 +415,8 @@ HOST-SUFFIX,x.ai
 
 # You.com / Core
 HOST-SUFFIX,you.com
+
+# YouMind / Core
+HOST-SUFFIX,youmind.ai
+HOST-SUFFIX,youmind.com
+HOST-SUFFIX,youmind.site

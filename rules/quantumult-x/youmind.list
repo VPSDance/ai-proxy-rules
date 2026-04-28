@@ -1,0 +1,8 @@
+# AI Proxy Rules - YouMind
+# YouMind AI note-taking / knowledge workspace.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,youmind.ai
+HOST-SUFFIX,youmind.com
+HOST-SUFFIX,youmind.site

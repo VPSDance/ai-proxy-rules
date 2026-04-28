@@ -1,0 +1,11 @@
+provider: lovart
+name: Lovart
+description: Lovart AI image generation.
+categories: []
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - lovart.ai

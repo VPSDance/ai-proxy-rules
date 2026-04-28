@@ -1,0 +1,12 @@
+provider: dia-browser
+name: Dia Browser
+description: The Browser Company Dia (AI-first browser).
+categories: []
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - diabrowser.com
+        - diabrowser.engineering
