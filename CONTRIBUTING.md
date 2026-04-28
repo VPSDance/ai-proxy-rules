@@ -1,82 +1,67 @@
 # Contributing
 
-欢迎补充新的 AI 服务规则、修复上游变更、增加新客户端格式。
+欢迎补充新的 AI 服务规则、修复上游变更、增加客户端格式。
 
-## 加一个 Provider
+## 新增或修改 Provider
 
-1. 在 `data/sources/` 下创建 `<id>.yaml`，`<id>` 用小写 + 连字符（如 `foo-ai`），与文件名一致：
+主要维护入口是 `data/sources/<provider>.yaml`。`<provider>` 使用小写 + 连字符，并和文件名保持一致。
 
-   ```yaml
-   provider: foo-ai
-   name: Foo AI
-   description: One-line description shown in rule file headers.
-   groups:
-     - name: Core
-       include:
-         domainSuffix:
-           - foo.ai
-   ```
+最小示例：
 
-2. 如果有可信上游（v2fly、blackmatrix7、SkywalkerJi 等），换成远程 source 让规则跟着上游每日更新：
+```yaml
+provider: foo-ai
+name: Foo AI
+description: Foo AI services.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - foo.ai
+```
 
-   ```yaml
-   sources:
-     - name: v2fly
-       type: remote-text
-       url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/foo-ai
-       parser: domain-list-community
-   groups:
-     - name: Core
-       fromSource: true
-   ```
+如果有公开规则来源，可以放到 `sources` 里自动同步：
 
-   - 远程 URL 用 `cdn.jsdelivr.net/gh/...` 而不是 `raw.githubusercontent.com`，国内拉取更快。
-   - parser 选 `classical`（Surge 风 `DOMAIN,xxx,POLICY`）、`clash-yaml`（`payload:` 列表）、或 `domain-list-community`（v2fly 格式，自动按 `@!cn` 标签过滤）。
+```yaml
+sources:
+  - name: v2fly
+    type: remote-text
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/foo-ai
+    parser: domain-list-community
+groups:
+  - name: Core
+    fromSource: true
+```
 
-3. 上游里掺杂了不属于本服务的域名（被 OpenAI 文件里漏带 datadog、Copilot 文件里掺 ChatGPT 等），用 `patch.remove` 剔除：
+常用 parser：
 
-   ```yaml
-   patch:
-     remove:
-       domainSuffix:
-         - unwanted.com
-       domainKeyword:
-         - colab
-   ```
+- `classical`：Surge / Clash classical 规则，如 `DOMAIN-SUFFIX,foo.ai`
+- `clash-yaml`：带 `payload:` 的 YAML 规则
+- `domain-list-community`：v2fly/domain-list-community 格式
 
-4. 跑本地 pipeline：
+如果上游包含无关规则，用 `patch.remove` 剔除。对容易被误删的手工规则或 patch，请加简短注释说明原因。
 
-   ```bash
-   pnpm install
-   pnpm sync       # 拉上游 + 生成 data/providers/<id>.yaml
-   pnpm guard      # 拦截规则数大幅减少（防误删/上游被劫持）
-   pnpm check      # tsc 类型检查
-   pnpm test       # vitest
-   pnpm generate   # 输出 rules/*/<id>.*
-   ```
+## 本地检查
 
-5. 在 `README.md` 规则覆盖范围列表里加一行，按知名度顺序插入。
+提交前建议跑：
 
-6. 提 PR。
+```bash
+pnpm install
+pnpm sync
+pnpm guard
+pnpm check
+pnpm check:metadata
+pnpm check:readme
+pnpm test
+pnpm generate
+pnpm status
+```
 
-## 修一个失效上游
+新增 provider 时，同时更新 `README.md` 的规则覆盖范围列表。
 
-只改 `data/sources/<id>.yaml` 即可。常见操作：
+## 新增客户端格式
 
-- 上游搬家：换 `url`
-- 上游解析失败：换 `parser`，或对 domain-list-community 加 `followIncludes: false`（避免递归 include 引入无关分类）
-- 上游噪声：在 `patch.remove` 里增删条目
+1. 在 `scripts/types.ts` 的 `formats` 里加入格式名。
+2. 在 `scripts/generators/index.ts` 增加渲染逻辑。
+3. 在 `tests/generators.test.ts` 加断言。
+4. 更新 README 的客户端格式列表。
 
-跑 `pnpm sync && pnpm guard && pnpm generate` 验证。
-
-## 加一个客户端格式
-
-1. `scripts/types.ts`：往 `formats` 数组里加新格式名。
-2. `scripts/generators/index.ts`：在 `render` switch 里加分支，写一个 `renderFoo(target)` 函数。规则集订阅文件**不要**附 policy 名字。
-3. `tests/generators.test.ts`：加对应断言。
-4. README 的"支持的客户端格式"列表加一行。
-
-## 缓存与守门机制
-
-- `data/cache/` 是每次 sync 落盘的上游响应，URL hash 命名。上游临时挂时自动 fallback，workflow 不会 fail；超过 30 天没刷新成功会升级为 stale 警告。
-- `pnpm guard` 在 sync 后比较新数据 vs `HEAD`，任意 provider 规则数下降超 30% 就 fail，避免上游被劫持/parser 故障导致规则被悄悄刷空。

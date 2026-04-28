@@ -5,24 +5,21 @@ title: "[Provider] <服务名>"
 labels: provider-request
 ---
 
-## 服务名 / 网站
+## 服务名
 
 例如：`Foo AI` — https://foo.ai/
 
 ## 主要域名
 
-列出该服务对外用户访问的关键域名（不需要列后端的 CDN）：
+列出最关键的域名即可：
 
 - foo.ai
 - api.foo.ai
 
-## 是否有现成上游
+## 参考资料（可选）
 
-- [ ] v2fly/domain-list-community (`data/<id>`)
-- [ ] blackmatrix7/ios_rule_script (`rule/Shadowrocket/<Name>/`)
-- [ ] SkywalkerJi/Clash-Rules (`AI/<Name>.yaml`)
-- [ ] 没有，建议手写
+官网文档、已有规则链接、抓包信息等。
 
 ## 备注
 
-任何其他信息（产品类别、是否需要 patch.remove 哪些上游噪声等）。
+产品类别、使用场景、可能需要排除的无关规则等。
