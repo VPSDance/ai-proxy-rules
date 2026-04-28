@@ -1,11 +1,14 @@
 import { describe, expect, it } from "vitest";
-import { aggregateProviders, mergeRuleSets, providerToTarget } from "../scripts/data.js";
+import { aggregateProviders, aggregateProvidersByCategory, mergeRuleSets, providerToTarget } from "../scripts/data.js";
 import { render } from "../scripts/generators/index.js";
 import type { ProviderSource } from "../scripts/types.js";
 
 const anthropic: ProviderSource = {
   provider: "anthropic",
   name: "Anthropic",
+  category: "assistant",
+  aliases: [],
+  allowDangerousDomainSuffix: [],
   groups: [
     {
       name: "Core",
@@ -46,6 +49,9 @@ const anthropic: ProviderSource = {
 const fixtureIde: ProviderSource = {
   provider: "fixture-ide",
   name: "Fixture IDE",
+  category: "coding",
+  aliases: [],
+  allowDangerousDomainSuffix: [],
   groups: [
     {
       name: "Core",
@@ -181,6 +187,14 @@ describe("generators", () => {
     expect(rendered.content).toContain("# Fixture IDE / Core");
     expect(rendered.content).toContain("DOMAIN,api.anthropic.com");
     expect(rendered.content).toContain("DOMAIN,api.fixture-ide.test");
+  });
+
+  it("aggregates providers by category", () => {
+    const targets = aggregateProvidersByCategory([anthropic, fixtureIde]);
+
+    expect(targets.map((target) => target.id)).toEqual(["assistant", "coding"]);
+    expect(render("surge", targets[0]!).content).toContain("DOMAIN,api.anthropic.com");
+    expect(render("surge", targets[1]!).content).toContain("DOMAIN,api.fixture-ide.test");
   });
 
   it("deduplicates rendered all rules across provider groups", () => {

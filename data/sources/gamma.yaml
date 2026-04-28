@@ -1,6 +1,7 @@
 provider: gamma
 name: Gamma
 description: Gamma AI presentation / slides.
+category: productivity
 groups:
   - name: Core
     include:

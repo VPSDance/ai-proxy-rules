@@ -1,6 +1,9 @@
 provider: copilot
 name: Copilot
 description: Microsoft Copilot and related services.
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

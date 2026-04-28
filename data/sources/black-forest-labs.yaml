@@ -1,6 +1,7 @@
 provider: black-forest-labs
 name: Black Forest Labs
 description: Black Forest Labs / FLUX image generation.
+category: media
 groups:
   - name: Core
     include:

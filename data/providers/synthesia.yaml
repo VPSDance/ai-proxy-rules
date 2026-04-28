@@ -1,6 +1,9 @@
 provider: synthesia
 name: Synthesia
 description: Synthesia AI video avatar generation.
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

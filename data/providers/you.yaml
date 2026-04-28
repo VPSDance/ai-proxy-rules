@@ -1,6 +1,9 @@
 provider: you
 name: You.com
 description: You.com AI search.
+category: search
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

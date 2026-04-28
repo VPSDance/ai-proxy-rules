@@ -1,6 +1,7 @@
 provider: langchain
 name: LangChain
 description: LangChain (LangSmith / LangGraph).
+category: agent
 groups:
   - name: Core
     include:

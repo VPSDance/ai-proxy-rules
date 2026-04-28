@@ -1,6 +1,7 @@
 provider: groq
 name: Groq
 description: Groq AI inference services.
+category: inference
 sources:
   - name: v2fly
     type: remote-text

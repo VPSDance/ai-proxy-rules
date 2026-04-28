@@ -1,6 +1,9 @@
 provider: huggingface
 name: Hugging Face
 description: Hugging Face model hub, spaces, and inference services.
+category: inference
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

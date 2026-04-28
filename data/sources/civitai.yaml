@@ -1,6 +1,7 @@
 provider: civitai
 name: Civitai
 description: Civitai (open image model hub).
+category: media
 groups:
   - name: Core
     include:

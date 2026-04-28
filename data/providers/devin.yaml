@@ -1,6 +1,9 @@
 provider: devin
 name: Devin
 description: Cognition Devin (autonomous coding agent).
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

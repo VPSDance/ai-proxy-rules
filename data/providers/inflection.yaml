@@ -1,6 +1,9 @@
 provider: inflection
 name: Inflection / Pi
 description: Inflection AI (Pi personal chat).
+category: assistant
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

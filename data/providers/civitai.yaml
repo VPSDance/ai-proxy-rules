@@ -1,6 +1,9 @@
 provider: civitai
 name: Civitai
 description: Civitai (open image model hub).
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

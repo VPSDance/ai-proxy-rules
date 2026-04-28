@@ -1,6 +1,7 @@
 provider: devin
 name: Devin
 description: Cognition Devin (autonomous coding agent).
+category: coding
 groups:
   - name: Core
     include:

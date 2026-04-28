@@ -14,7 +14,7 @@ import {
   type RuleKey
 } from "../rules.js";
 import { parseSourceRules, type SourceParser } from "./parsers.js";
-import type { RuleGroup, RuleSet } from "../types.js";
+import { providerCategories, type RuleGroup, type RuleSet } from "../types.js";
 
 const partialRulesSchema = z
   .object({
@@ -76,6 +76,9 @@ export const sourceProviderSchema = z.object({
     }),
   name: z.string().min(1),
   description: z.string().optional(),
+  category: z.enum(providerCategories).default("assistant"),
+  aliases: z.array(z.string().min(1)).default([]),
+  allowDangerousDomainSuffix: z.array(z.string().min(1)).default([]),
   sources: z.array(sourceSchema).default([]),
   groups: z
     .array(
@@ -93,7 +96,8 @@ export const sourceProviderSchema = z.object({
     .default({})
 });
 
-export type SourceProvider = z.infer<typeof sourceProviderSchema>;
+export type SourceProvider = z.input<typeof sourceProviderSchema>;
+type NormalizedSourceProvider = z.output<typeof sourceProviderSchema>;
 type SourceConfig = z.infer<typeof sourceSchema>;
 
 export interface OutputGroup {
@@ -105,6 +109,9 @@ export interface SourceProviderData {
   provider: string;
   name: string;
   description?: string;
+  category: NormalizedSourceProvider["category"];
+  aliases: string[];
+  allowDangerousDomainSuffix: string[];
   groups: OutputGroup[];
 }
 
@@ -124,17 +131,18 @@ export async function buildProviderData(
   baseDir: string,
   context: BuildContext = {}
 ): Promise<SourceProviderData> {
+  const normalizedProvider = sourceProviderSchema.parse(provider);
   const fetcher = context.fetcher ?? defaultFetcher;
-  const sourceRules = await loadSourceRules(provider.sources, baseDir, fetcher, context.cache);
-  const removeRules = normalizePartialRuleSet(provider.patch.remove);
+  const sourceRules = await loadSourceRules(normalizedProvider.sources, baseDir, fetcher, context.cache);
+  const removeRules = normalizePartialRuleSet(normalizedProvider.patch.remove);
   const explicitRules = mergeRuleSets(
-    provider.groups.map((group) => normalizePartialRuleSet(group.include))
+    normalizedProvider.groups.map((group) => normalizePartialRuleSet(group.include))
   );
   let remainingSourceRules = subtractRuleSet(subtractRuleSet(sourceRules, removeRules), explicitRules);
 
   const groups: RuleGroup[] = [];
 
-  for (const group of provider.groups) {
+  for (const group of normalizedProvider.groups) {
     const includeRules = normalizePartialRuleSet(group.include);
     const requestedKeys = resolveFromSourceKeys(group.fromSource);
     const sourceGroupRules = pickRuleKeys(remainingSourceRules, requestedKeys);
@@ -154,9 +162,12 @@ export async function buildProviderData(
   const normalizedGroups = compactGroups(removeCoveredDomains(groups.map((group) => group.rules)), groups);
 
   return {
-    provider: provider.provider,
-    name: provider.name,
-    description: provider.description,
+    provider: normalizedProvider.provider,
+    name: normalizedProvider.name,
+    description: normalizedProvider.description,
+    category: normalizedProvider.category,
+    aliases: normalizedProvider.aliases,
+    allowDangerousDomainSuffix: normalizedProvider.allowDangerousDomainSuffix,
     groups: normalizedGroups
   };
 }

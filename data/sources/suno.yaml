@@ -1,6 +1,7 @@
 provider: suno
 name: Suno
 description: Suno AI music generation.
+category: media
 groups:
   - name: Core
     include:

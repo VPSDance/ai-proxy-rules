@@ -1,6 +1,9 @@
 provider: pika
 name: Pika
 description: Pika AI video generation.
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

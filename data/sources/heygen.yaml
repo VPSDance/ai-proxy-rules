@@ -1,6 +1,7 @@
 provider: heygen
 name: HeyGen
 description: HeyGen AI avatar video generation.
+category: media
 groups:
   - name: Core
     include:

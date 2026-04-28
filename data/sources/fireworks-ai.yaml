@@ -1,6 +1,7 @@
 provider: fireworks-ai
 name: Fireworks AI
 description: Fireworks AI inference and developer services.
+category: inference
 groups:
   - name: Core
     include:

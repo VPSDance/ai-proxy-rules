@@ -1,6 +1,7 @@
 provider: manus
 name: Manus
 description: Manus AI agent services.
+category: agent
 sources:
   - name: v2fly
     type: remote-text

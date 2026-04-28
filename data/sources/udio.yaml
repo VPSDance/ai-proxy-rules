@@ -1,6 +1,7 @@
 provider: udio
 name: Udio
 description: Udio AI music generation.
+category: media
 groups:
   - name: Core
     include:

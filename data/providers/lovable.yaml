@@ -1,6 +1,9 @@
 provider: lovable
 name: Lovable
 description: Lovable AI app builder.
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

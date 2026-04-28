@@ -1,0 +1,12 @@
+# AI Proxy Rules - AI Productivity Tools
+# Aggregated productivity AI provider rules.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Gamma / Core
+DOMAIN-SUFFIX,gamma.app
+
+# Grammarly / Core
+DOMAIN-SUFFIX,grammarly.com
+
+# Otter.ai / Core
+DOMAIN-SUFFIX,otter.ai

@@ -1,0 +1,130 @@
+# AI Proxy Rules - AI Coding Tools
+# Aggregated coding AI provider rules.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Amazon Q Developer / Core
+DOMAIN,aws-language-servers.us-east-1.amazonaws.com
+DOMAIN,aws-toolkit-language-servers.amazonaws.com
+DOMAIN,client-telemetry.us-east-1.amazonaws.com
+DOMAIN,codewhisperer.us-east-1.amazonaws.com
+DOMAIN,cognito-identity.us-east-1.amazonaws.com
+DOMAIN,idetoolkits-hostedfiles.amazonaws.com
+DOMAIN,idetoolkits.amazonwebservices.com
+DOMAIN,q-developer-integration.us-east-1.api.aws
+DOMAIN-SUFFIX,aws.dev
+DOMAIN-SUFFIX,awsapps.com
+DOMAIN-SUFFIX,awsstatic.com
+DOMAIN-SUFFIX,console.aws.a2z.com
+DOMAIN-SUFFIX,q.eu-central-1.amazonaws.com
+DOMAIN-SUFFIX,q.us-east-1.amazonaws.com
+DOMAIN-SUFFIX,sso.amazonaws.com
+
+# Augment Code / Core
+DOMAIN-SUFFIX,augmentcode.com
+
+# Bolt.new / Core
+DOMAIN-SUFFIX,bolt.new
+
+# ByteDance AI / Core
+DOMAIN-SUFFIX,abtestvm-sg.bytedance.com
+DOMAIN-SUFFIX,bytegate-sg.byteintlapi.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,cici.com
+DOMAIN-SUFFIX,ciciai.com
+DOMAIN-SUFFIX,ciciaicdn.com
+DOMAIN-SUFFIX,coze.com
+DOMAIN-SUFFIX,lf3-static.bytednsdoc.com
+DOMAIN-SUFFIX,marscode.com
+DOMAIN-SUFFIX,sf16-short-sg.bytedapm.com
+DOMAIN-SUFFIX,starling.zijieapi.com
+DOMAIN-SUFFIX,trae-api-sg.mchost.guru
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,tron-sg.bytelemon.com
+
+# CodeRabbit / Core
+DOMAIN-SUFFIX,coderabbit.ai
+
+# Continue / Core
+DOMAIN-SUFFIX,continue.dev
+
+# Copilot / Core
+DOMAIN,location.microsoft.com
+DOMAIN,odc.officeapps.live.com
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,githubcopilot.com
+
+# Copilot / Third-Party
+DOMAIN,api.msn.com
+DOMAIN,api.statsig.com
+DOMAIN,assets.msn.com
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,gateway.bingviz.microsoft.net
+DOMAIN,gateway.bingviz.microsoftapp.net
+DOMAIN,in.appcenter.ms
+DOMAIN,self.events.data.microsoft.com
+DOMAIN,static.cloudflareinsights.com
+DOMAIN,sydney.bing.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,api.microsoftapp.net
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,edgeservices.bing.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,observeit.net
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
+IP-ASN,14061,no-resolve
+
+# Cursor / Core
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+
+# Devin / Core
+DOMAIN-SUFFIX,devin.ai
+
+# JetBrains AI / Core
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+DOMAIN-SUFFIX,jetbrains.ai
+
+# Kiro / Core
+DOMAIN-SUFFIX,kiro.dev
+
+# Lovable / Core
+DOMAIN-SUFFIX,lovable.dev
+
+# Replit / Core
+DOMAIN-SUFFIX,repl.co
+DOMAIN-SUFFIX,repl.it
+DOMAIN-SUFFIX,replit.app
+DOMAIN-SUFFIX,replit.com
+DOMAIN-SUFFIX,replit.dev
+
+# Sourcegraph / Core
+DOMAIN-SUFFIX,ampcode.com
+DOMAIN-SUFFIX,ampworkers.com
+DOMAIN-SUFFIX,cody.dev
+DOMAIN-SUFFIX,sourcegraph.com
+
+# Tabnine / Core
+DOMAIN-SUFFIX,tabnine.com
+
+# v0 / Core
+DOMAIN-SUFFIX,v0.app
+DOMAIN-SUFFIX,v0.dev
+
+# Windsurf / Core
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,codeiumdata.com
+DOMAIN-SUFFIX,windsurf.build
+DOMAIN-SUFFIX,windsurf.com

@@ -90,6 +90,41 @@ groups:
     expect(result.inspected).toEqual([]);
   });
 
+  it("flags dangerous broad domain suffixes", async () => {
+    await writeFile(
+      path.join(dir, "wide.yaml"),
+      "provider: wide\nname: Wide\ngroups:\n  - name: Core\n    rules:\n      domainSuffix: [google.com]\n",
+      "utf8"
+    );
+    const result = await evaluateGuard({
+      input: dir,
+      threshold: 30,
+      ref: "HEAD",
+      getFileAtRef: async () => null
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.dangerousSuffixFailures).toHaveLength(1);
+    expect(result.dangerousSuffixFailures[0]?.suffixes).toEqual(["google.com"]);
+  });
+
+  it("allows explicitly approved dangerous broad domain suffixes", async () => {
+    await writeFile(
+      path.join(dir, "wide.yaml"),
+      "provider: wide\nname: Wide\nallowDangerousDomainSuffix: [google.com]\ngroups:\n  - name: Core\n    rules:\n      domainSuffix: [google.com]\n",
+      "utf8"
+    );
+    const result = await evaluateGuard({
+      input: dir,
+      threshold: 30,
+      ref: "HEAD",
+      getFileAtRef: async () => null
+    });
+
+    expect(result.ok).toBe(true);
+    expect(result.dangerousSuffixFailures).toEqual([]);
+  });
+
   it("rejects invalid threshold", async () => {
     await expect(
       evaluateGuard({ input: dir, threshold: -1, ref: "HEAD", getFileAtRef: async () => null })

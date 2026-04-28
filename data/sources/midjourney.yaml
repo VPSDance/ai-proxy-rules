@@ -1,6 +1,7 @@
 provider: midjourney
 name: Midjourney
 description: Midjourney AI image generation.
+category: media
 groups:
   - name: Core
     include:

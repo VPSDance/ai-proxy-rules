@@ -1,6 +1,7 @@
 provider: pika
 name: Pika
 description: Pika AI video generation.
+category: media
 groups:
   - name: Core
     include:

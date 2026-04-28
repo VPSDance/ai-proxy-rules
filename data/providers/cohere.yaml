@@ -1,6 +1,9 @@
 provider: cohere
 name: Cohere
 description: Cohere AI services.
+category: inference
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

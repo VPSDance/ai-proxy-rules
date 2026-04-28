@@ -1,6 +1,7 @@
 provider: runway
 name: Runway
 description: Runway AI video generation.
+category: media
 groups:
   - name: Core
     include:

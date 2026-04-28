@@ -1,6 +1,7 @@
 provider: bytedance-ai
 name: ByteDance AI
 description: ByteDance AI products overseas (Trae, Coze, MarsCode, Cici).
+category: coding
 sources:
   - name: skywalkerji
     type: remote-text

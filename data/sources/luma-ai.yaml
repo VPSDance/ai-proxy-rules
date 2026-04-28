@@ -1,6 +1,7 @@
 provider: luma-ai
 name: Luma AI
 description: Luma AI (Dream Machine video, Genie 3D).
+category: media
 groups:
   - name: Core
     include:

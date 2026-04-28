@@ -1,6 +1,9 @@
 provider: phind
 name: Phind
 description: Phind AI search for developers.
+category: search
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

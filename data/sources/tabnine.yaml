@@ -1,6 +1,7 @@
 provider: tabnine
 name: Tabnine
 description: Tabnine AI coding assistant and agent services.
+category: coding
 groups:
   - name: Core
     include:

@@ -1,6 +1,9 @@
 provider: recraft
 name: Recraft
 description: Recraft AI image / vector generation.
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

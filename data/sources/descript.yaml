@@ -1,6 +1,7 @@
 provider: descript
 name: Descript
 description: Descript AI audio / video editor.
+category: media
 groups:
   - name: Core
     include:

@@ -1,6 +1,9 @@
 provider: grammarly
 name: Grammarly
 description: Grammarly AI writing assistant.
+category: productivity
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

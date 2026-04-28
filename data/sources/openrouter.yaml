@@ -1,6 +1,7 @@
 provider: openrouter
 name: OpenRouter
 description: OpenRouter AI model routing services.
+category: inference
 groups:
   - name: Core
     include:

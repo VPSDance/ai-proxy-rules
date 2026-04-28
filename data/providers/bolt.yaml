@@ -1,6 +1,9 @@
 provider: bolt
 name: Bolt.new
 description: StackBlitz Bolt.new (AI app builder).
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

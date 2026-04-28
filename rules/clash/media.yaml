@@ -1,0 +1,59 @@
+# AI Proxy Rules - AI Media Tools
+# Aggregated media AI provider rules.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Adobe Firefly / Core
+  - DOMAIN-SUFFIX,firefly.adobe.com
+  - DOMAIN-SUFFIX,firefly.adobe.io
+
+  # Black Forest Labs / Core
+  - DOMAIN-SUFFIX,bfl.ai
+
+  # Civitai / Core
+  - DOMAIN-SUFFIX,civitai.com
+
+  # Descript / Core
+  - DOMAIN-SUFFIX,descript.com
+
+  # ElevenLabs / Core
+  - DOMAIN-SUFFIX,elevenlabs.com
+  - DOMAIN-SUFFIX,elevenlabs.io
+
+  # HeyGen / Core
+  - DOMAIN-SUFFIX,heygen.com
+
+  # Ideogram / Core
+  - DOMAIN-SUFFIX,ideogram.ai
+
+  # Leonardo AI / Core
+  - DOMAIN-SUFFIX,leonardo.ai
+
+  # Luma AI / Core
+  - DOMAIN-SUFFIX,lumalabs.ai
+
+  # Midjourney / Core
+  - DOMAIN-SUFFIX,midjourney.com
+
+  # Pika / Core
+  - DOMAIN-SUFFIX,pika.art
+
+  # Recraft / Core
+  - DOMAIN-SUFFIX,recraft.ai
+
+  # Runway / Core
+  - DOMAIN-SUFFIX,runway.com
+  - DOMAIN-SUFFIX,runwayml.com
+
+  # Stability AI / Core
+  - DOMAIN-SUFFIX,stability.ai
+
+  # Suno / Core
+  - DOMAIN-SUFFIX,suno.ai
+  - DOMAIN-SUFFIX,suno.com
+
+  # Synthesia / Core
+  - DOMAIN-SUFFIX,synthesia.io
+
+  # Udio / Core
+  - DOMAIN-SUFFIX,udio.com

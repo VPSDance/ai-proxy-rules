@@ -113,6 +113,8 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/stash/<provider>.
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/<provider>.list
 ```
 
+也可以把 `<provider>` 换成场景汇总 id：`assistant`、`coding`、`inference`、`media`、`search`、`agent`、`local`、`productivity`。
+
 例如 Anthropic / Claude 的 Clash 规则：
 
 ```text

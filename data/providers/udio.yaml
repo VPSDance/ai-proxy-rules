@@ -1,6 +1,9 @@
 provider: udio
 name: Udio
 description: Udio AI music generation.
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

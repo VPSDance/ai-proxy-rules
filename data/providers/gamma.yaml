@@ -1,6 +1,9 @@
 provider: gamma
 name: Gamma
 description: Gamma AI presentation / slides.
+category: productivity
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

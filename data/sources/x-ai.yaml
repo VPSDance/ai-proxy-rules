@@ -1,6 +1,7 @@
 provider: x-ai
 name: xAI
 description: xAI and Grok.
+category: assistant
 sources:
   - name: v2fly
     type: remote-text

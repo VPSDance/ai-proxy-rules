@@ -1,6 +1,7 @@
 provider: windsurf
 name: Windsurf
 description: Windsurf (formerly Codeium) AI IDE.
+category: coding
 sources:
   - name: v2fly
     type: remote-text

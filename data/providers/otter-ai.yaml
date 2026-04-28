@@ -1,6 +1,9 @@
 provider: otter-ai
 name: Otter.ai
 description: Otter.ai meeting transcription.
+category: productivity
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

@@ -1,6 +1,7 @@
 provider: openai
 name: OpenAI
 description: OpenAI and ChatGPT services.
+category: assistant
 sources:
   - name: blackmatrix7
     type: remote-text

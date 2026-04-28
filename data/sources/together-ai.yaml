@@ -1,6 +1,7 @@
 provider: together-ai
 name: Together AI
 description: Together AI inference and developer services.
+category: inference
 groups:
   - name: Core
     include:

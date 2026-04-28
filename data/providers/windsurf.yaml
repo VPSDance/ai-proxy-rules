@@ -1,6 +1,9 @@
 provider: windsurf
 name: Windsurf
 description: Windsurf (formerly Codeium) AI IDE.
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

@@ -1,6 +1,7 @@
 provider: elevenlabs
 name: ElevenLabs
 description: ElevenLabs voice AI services.
+category: media
 sources:
   - name: v2fly
     type: remote-text

@@ -1,6 +1,7 @@
 provider: genspark
 name: Genspark
 description: Genspark AI search / agent.
+category: search
 groups:
   - name: Core
     include:

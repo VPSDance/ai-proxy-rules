@@ -4,6 +4,7 @@ import path from "node:path";
 import { Command } from "commander";
 import {
   aggregateProviders,
+  aggregateProvidersByCategory,
   loadAllProviders,
   loadProvider,
   providerToTarget
@@ -80,7 +81,7 @@ function buildTargets(providers: ProviderSource[], providerOption: string): Rend
   const providerNames = parseCsv(providerOption);
 
   if (providerNames.includes("all") || providers.length > 1) {
-    return [...providerTargets, aggregateProviders(providers)];
+    return [...providerTargets, ...aggregateProvidersByCategory(providers), aggregateProviders(providers)];
   }
 
   return providerTargets;

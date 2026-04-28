@@ -1,6 +1,7 @@
 provider: recraft
 name: Recraft
 description: Recraft AI image / vector generation.
+category: media
 groups:
   - name: Core
     include:

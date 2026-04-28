@@ -1,6 +1,9 @@
 provider: ideogram
 name: Ideogram
 description: Ideogram AI image generation.
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

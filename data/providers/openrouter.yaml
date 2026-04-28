@@ -1,6 +1,9 @@
 provider: openrouter
 name: OpenRouter
 description: OpenRouter AI model routing services.
+category: inference
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

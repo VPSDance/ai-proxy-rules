@@ -1,0 +1,38 @@
+# AI Proxy Rules - AI Inference Providers
+# Aggregated inference AI provider rules.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Cerebras / Core
+DOMAIN-SUFFIX,cerebras.ai
+
+# Cloudflare AI / Core
+DOMAIN-SUFFIX,ai.cloudflare.com
+
+# Cohere / Core
+DOMAIN-SUFFIX,cohere.ai
+DOMAIN-SUFFIX,cohere.com
+
+# DeepInfra / Core
+DOMAIN-SUFFIX,deepinfra.com
+
+# Fireworks AI / Core
+DOMAIN-SUFFIX,fireworks.ai
+
+# Groq / Core
+DOMAIN-SUFFIX,groq.com
+
+# Hugging Face / Core
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,hf.space
+DOMAIN-SUFFIX,huggingface.co
+
+# OpenRouter / Core
+DOMAIN-SUFFIX,openrouter.ai
+
+# Replicate / Core
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicate.delivery
+
+# Together AI / Core
+DOMAIN-SUFFIX,together.ai
+DOMAIN-SUFFIX,together.xyz

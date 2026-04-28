@@ -1,6 +1,9 @@
 provider: cursor
 name: Cursor
 description: Cursor AI code editor.
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

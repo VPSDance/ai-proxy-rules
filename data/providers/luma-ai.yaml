@@ -1,6 +1,9 @@
 provider: luma-ai
 name: Luma AI
 description: Luma AI (Dream Machine video, Genie 3D).
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

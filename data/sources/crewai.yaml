@@ -1,6 +1,7 @@
 provider: crewai
 name: CrewAI
 description: CrewAI multi-agent framework.
+category: agent
 groups:
   - name: Core
     include:

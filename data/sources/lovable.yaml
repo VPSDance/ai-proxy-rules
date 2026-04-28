@@ -1,6 +1,7 @@
 provider: lovable
 name: Lovable
 description: Lovable AI app builder.
+category: coding
 groups:
   - name: Core
     include:

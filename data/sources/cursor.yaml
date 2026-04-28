@@ -1,6 +1,7 @@
 provider: cursor
 name: Cursor
 description: Cursor AI code editor.
+category: coding
 sources:
   - name: v2fly
     type: remote-text

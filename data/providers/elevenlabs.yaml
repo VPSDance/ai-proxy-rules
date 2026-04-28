@@ -1,6 +1,9 @@
 provider: elevenlabs
 name: ElevenLabs
 description: ElevenLabs voice AI services.
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

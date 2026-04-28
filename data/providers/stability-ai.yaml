@@ -1,6 +1,9 @@
 provider: stability-ai
 name: Stability AI
 description: Stability AI (Stable Diffusion).
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

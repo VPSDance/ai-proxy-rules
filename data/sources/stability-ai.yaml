@@ -1,6 +1,7 @@
 provider: stability-ai
 name: Stability AI
 description: Stability AI (Stable Diffusion).
+category: media
 groups:
   - name: Core
     include:

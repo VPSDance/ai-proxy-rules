@@ -1,6 +1,9 @@
 provider: sourcegraph
 name: Sourcegraph
 description: Sourcegraph Cody and Amp AI coding services.
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

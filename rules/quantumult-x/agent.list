@@ -1,0 +1,16 @@
+# AI Proxy Rules - AI Agent Platforms
+# Aggregated agent AI provider rules.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# CrewAI / Core
+HOST-SUFFIX,crewai.com
+
+# Dify / Core
+HOST-SUFFIX,dify.ai
+
+# LangChain / Core
+HOST-SUFFIX,langchain.com
+
+# Manus / Core
+HOST-SUFFIX,manus.im
+HOST-SUFFIX,manuscdn.com

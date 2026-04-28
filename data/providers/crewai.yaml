@@ -1,6 +1,9 @@
 provider: crewai
 name: CrewAI
 description: CrewAI multi-agent framework.
+category: agent
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

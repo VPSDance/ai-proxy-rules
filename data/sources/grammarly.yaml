@@ -1,6 +1,7 @@
 provider: grammarly
 name: Grammarly
 description: Grammarly AI writing assistant.
+category: productivity
 groups:
   - name: Core
     include:

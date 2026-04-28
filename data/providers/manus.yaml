@@ -1,6 +1,9 @@
 provider: manus
 name: Manus
 description: Manus AI agent services.
+category: agent
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

@@ -1,6 +1,9 @@
 provider: x-ai
 name: xAI
 description: xAI and Grok.
+category: assistant
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

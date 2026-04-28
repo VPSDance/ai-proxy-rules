@@ -1,0 +1,130 @@
+# AI Proxy Rules - AI Coding Tools
+# Aggregated coding AI provider rules.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Amazon Q Developer / Core
+HOST,aws-language-servers.us-east-1.amazonaws.com
+HOST,aws-toolkit-language-servers.amazonaws.com
+HOST,client-telemetry.us-east-1.amazonaws.com
+HOST,codewhisperer.us-east-1.amazonaws.com
+HOST,cognito-identity.us-east-1.amazonaws.com
+HOST,idetoolkits-hostedfiles.amazonaws.com
+HOST,idetoolkits.amazonwebservices.com
+HOST,q-developer-integration.us-east-1.api.aws
+HOST-SUFFIX,aws.dev
+HOST-SUFFIX,awsapps.com
+HOST-SUFFIX,awsstatic.com
+HOST-SUFFIX,console.aws.a2z.com
+HOST-SUFFIX,q.eu-central-1.amazonaws.com
+HOST-SUFFIX,q.us-east-1.amazonaws.com
+HOST-SUFFIX,sso.amazonaws.com
+
+# Augment Code / Core
+HOST-SUFFIX,augmentcode.com
+
+# Bolt.new / Core
+HOST-SUFFIX,bolt.new
+
+# ByteDance AI / Core
+HOST-SUFFIX,abtestvm-sg.bytedance.com
+HOST-SUFFIX,bytegate-sg.byteintlapi.com
+HOST-SUFFIX,byteoversea.com
+HOST-SUFFIX,cici.com
+HOST-SUFFIX,ciciai.com
+HOST-SUFFIX,ciciaicdn.com
+HOST-SUFFIX,coze.com
+HOST-SUFFIX,lf3-static.bytednsdoc.com
+HOST-SUFFIX,marscode.com
+HOST-SUFFIX,sf16-short-sg.bytedapm.com
+HOST-SUFFIX,starling.zijieapi.com
+HOST-SUFFIX,trae-api-sg.mchost.guru
+HOST-SUFFIX,trae.ai
+HOST-SUFFIX,tron-sg.bytelemon.com
+
+# CodeRabbit / Core
+HOST-SUFFIX,coderabbit.ai
+
+# Continue / Core
+HOST-SUFFIX,continue.dev
+
+# Copilot / Core
+HOST,location.microsoft.com
+HOST,odc.officeapps.live.com
+HOST-SUFFIX,copilot.microsoft.com
+HOST-SUFFIX,githubcopilot.com
+
+# Copilot / Third-Party
+HOST,api.msn.com
+HOST,api.statsig.com
+HOST,assets.msn.com
+HOST,browser-intake-datadoghq.com
+HOST,gateway.bingviz.microsoft.net
+HOST,gateway.bingviz.microsoftapp.net
+HOST,in.appcenter.ms
+HOST,self.events.data.microsoft.com
+HOST,static.cloudflareinsights.com
+HOST,sydney.bing.com
+HOST-SUFFIX,algolia.net
+HOST-SUFFIX,api.microsoftapp.net
+HOST-SUFFIX,auth0.com
+HOST-SUFFIX,bing-shopping.microsoft-falcon.io
+HOST-SUFFIX,challenges.cloudflare.com
+HOST-SUFFIX,client-api.arkoselabs.com
+HOST-SUFFIX,edgeservices.bing.com
+HOST-SUFFIX,events.statsigapi.net
+HOST-SUFFIX,featuregates.org
+HOST-SUFFIX,identrust.com
+HOST-SUFFIX,intercom.io
+HOST-SUFFIX,intercomcdn.com
+HOST-SUFFIX,launchdarkly.com
+HOST-SUFFIX,observeit.net
+HOST-SUFFIX,segment.io
+HOST-SUFFIX,sentry.io
+HOST-SUFFIX,stripe.com
+IP-ASN,14061,no-resolve
+
+# Cursor / Core
+HOST-SUFFIX,cursor-cdn.com
+HOST-SUFFIX,cursor.com
+HOST-SUFFIX,cursor.sh
+HOST-SUFFIX,cursorapi.com
+
+# Devin / Core
+HOST-SUFFIX,devin.ai
+
+# JetBrains AI / Core
+HOST-SUFFIX,grazie.ai
+HOST-SUFFIX,grazie.aws.intellij.net
+HOST-SUFFIX,jetbrains.ai
+
+# Kiro / Core
+HOST-SUFFIX,kiro.dev
+
+# Lovable / Core
+HOST-SUFFIX,lovable.dev
+
+# Replit / Core
+HOST-SUFFIX,repl.co
+HOST-SUFFIX,repl.it
+HOST-SUFFIX,replit.app
+HOST-SUFFIX,replit.com
+HOST-SUFFIX,replit.dev
+
+# Sourcegraph / Core
+HOST-SUFFIX,ampcode.com
+HOST-SUFFIX,ampworkers.com
+HOST-SUFFIX,cody.dev
+HOST-SUFFIX,sourcegraph.com
+
+# Tabnine / Core
+HOST-SUFFIX,tabnine.com
+
+# v0 / Core
+HOST-SUFFIX,v0.app
+HOST-SUFFIX,v0.dev
+
+# Windsurf / Core
+HOST-SUFFIX,codeium.com
+HOST-SUFFIX,codeiumdata.com
+HOST-SUFFIX,windsurf.build
+HOST-SUFFIX,windsurf.com

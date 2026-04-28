@@ -3,7 +3,7 @@ import path from "node:path";
 import { parse } from "yaml";
 import { z } from "zod";
 import { emptyRuleSet, mergeRuleSets, normalizeRuleSet } from "./rules.js";
-import type { ProviderSource, RenderTarget, RuleGroup, RuleSet } from "./types.js";
+import { providerCategories, type ProviderCategory, type ProviderSource, type RenderTarget, type RuleGroup, type RuleSet } from "./types.js";
 
 const rulesSchema = z
   .object({
@@ -29,6 +29,9 @@ const providerSchema = z.object({
   provider: z.string().min(1).regex(/^[a-z0-9][a-z0-9-]*$/),
   name: z.string().min(1),
   description: z.string().optional(),
+  category: z.enum(providerCategories).default("assistant"),
+  aliases: z.array(z.string().min(1)).default([]),
+  allowDangerousDomainSuffix: z.array(z.string().min(1)).default([]),
   rules: rulesSchema.optional(),
   groups: z
     .array(
@@ -75,11 +78,45 @@ export function aggregateProviders(providers: ProviderSource[]): RenderTarget {
   };
 }
 
+export function aggregateProvidersByCategory(providers: ProviderSource[]): RenderTarget[] {
+  const byCategory = new Map<ProviderCategory, ProviderSource[]>();
+  for (const provider of providers) {
+    const category = provider.category ?? "assistant";
+    const categoryProviders = byCategory.get(category) ?? [];
+    categoryProviders.push(provider);
+    byCategory.set(category, categoryProviders);
+  }
+
+  return providerCategories.flatMap((category) => {
+      const categoryProviders = byCategory.get(category) ?? [];
+      if (categoryProviders.length === 0) {
+        return [];
+      }
+
+      const groups = categoryProviders.flatMap((provider) =>
+        provider.groups.map((group) => ({
+          name: `${provider.name} / ${group.name}`,
+          rules: group.rules
+        }))
+      );
+
+      return [{
+        id: category,
+        name: categoryName(category),
+        description: `Aggregated ${category} AI provider rules.`,
+        category,
+        groups,
+        rules: mergeRuleSets(categoryProviders.map((provider) => provider.rules))
+      }];
+    });
+}
+
 export function providerToTarget(provider: ProviderSource): RenderTarget {
   return {
     id: provider.provider,
     name: provider.name,
     description: provider.description,
+    category: provider.category,
     groups: provider.groups,
     rules: provider.rules
   };
@@ -107,9 +144,33 @@ async function parseProviderFile(filePath: string): Promise<ProviderSource> {
     provider: parsed.provider,
     name: parsed.name,
     description: parsed.description,
+    category: parsed.category,
+    aliases: parsed.aliases,
+    allowDangerousDomainSuffix: parsed.allowDangerousDomainSuffix,
     groups,
     rules: mergeRuleSets(groups.map((group) => group.rules))
   };
+}
+
+function categoryName(category: ProviderCategory): string {
+  switch (category) {
+    case "assistant":
+      return "AI Assistants";
+    case "coding":
+      return "AI Coding Tools";
+    case "inference":
+      return "AI Inference Providers";
+    case "media":
+      return "AI Media Tools";
+    case "search":
+      return "AI Search Tools";
+    case "agent":
+      return "AI Agent Platforms";
+    case "local":
+      return "Local AI Tools";
+    case "productivity":
+      return "AI Productivity Tools";
+  }
 }
 
 function normalizeRuleGroups(groups: RuleGroup[]): RuleGroup[] {

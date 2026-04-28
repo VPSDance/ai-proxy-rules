@@ -1,6 +1,9 @@
 provider: anthropic
 name: Anthropic
 description: Anthropic and Claude services.
+category: assistant
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

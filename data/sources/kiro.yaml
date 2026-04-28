@@ -1,6 +1,7 @@
 provider: kiro
 name: Kiro
 description: AWS Kiro agentic IDE and CLI services.
+category: coding
 groups:
   - name: Core
     include:

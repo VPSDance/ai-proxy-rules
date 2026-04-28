@@ -1,6 +1,7 @@
 provider: copilot
 name: Copilot
 description: Microsoft Copilot and related services.
+category: coding
 sources:
   - name: blackmatrix7
     type: remote-text

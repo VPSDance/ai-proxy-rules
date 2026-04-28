@@ -1,6 +1,7 @@
 provider: augment-code
 name: Augment Code
 description: Augment Code IDE extension, Auggie CLI, and coding agent services.
+category: coding
 groups:
   - name: Core
     include:

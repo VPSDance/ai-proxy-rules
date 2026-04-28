@@ -1,6 +1,7 @@
 provider: dify
 name: Dify
 description: Dify LLM application development platform.
+category: agent
 groups:
   - name: Core
     include:

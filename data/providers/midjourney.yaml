@@ -1,6 +1,9 @@
 provider: midjourney
 name: Midjourney
 description: Midjourney AI image generation.
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

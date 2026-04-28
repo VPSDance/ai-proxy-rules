@@ -45,9 +45,18 @@ async function guard(options: GuardOptions): Promise<void> {
     }
   }
 
+  for (const fail of result.dangerousSuffixFailures) {
+    const message = `${fail.relPath}: ${fail.provider} includes dangerous broad domain suffix(es): ${fail.suffixes.join(", ")}`;
+    if (isGithubActions) {
+      console.log(`::error::${message}`);
+    } else {
+      console.error(`[guard] ${message}`);
+    }
+  }
+
   if (!result.ok) {
     throw new Error(
-      `Guard failed: ${result.failures.length} provider(s) lost more than ${options.threshold}% of rules. Review the diff and either fix the upstream issue or rerun with --threshold to override.`
+      `Guard failed: ${result.failures.length} provider(s) lost more than ${options.threshold}% of rules and ${result.dangerousSuffixFailures.length} provider(s) included dangerous broad domain suffixes. Review the diff and source data.`
     );
   }
 }

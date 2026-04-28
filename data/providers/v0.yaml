@@ -1,6 +1,9 @@
 provider: v0
 name: v0
 description: Vercel v0 (UI generation).
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

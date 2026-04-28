@@ -1,6 +1,9 @@
 provider: bytedance-ai
 name: ByteDance AI
 description: ByteDance AI products overseas (Trae, Coze, MarsCode, Cici).
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

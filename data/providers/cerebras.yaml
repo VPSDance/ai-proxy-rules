@@ -1,6 +1,9 @@
 provider: cerebras
 name: Cerebras
 description: Cerebras AI inference services.
+category: inference
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

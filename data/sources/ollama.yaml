@@ -1,6 +1,7 @@
 provider: ollama
 name: Ollama
 description: Ollama (run open-source LLMs locally).
+category: local
 groups:
   - name: Core
     include:

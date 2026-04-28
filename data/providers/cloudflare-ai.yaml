@@ -1,6 +1,9 @@
 provider: cloudflare-ai
 name: Cloudflare AI
 description: Cloudflare AI Gateway and Workers AI services.
+category: inference
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

@@ -1,6 +1,9 @@
 provider: ollama
 name: Ollama
 description: Ollama (run open-source LLMs locally).
+category: local
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

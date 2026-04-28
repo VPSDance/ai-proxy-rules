@@ -1,6 +1,9 @@
 provider: adobe-firefly
 name: Adobe Firefly
 description: Adobe Firefly image/video generation (Firefly entry only; shared Adobe CDNs not included).
+category: media
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

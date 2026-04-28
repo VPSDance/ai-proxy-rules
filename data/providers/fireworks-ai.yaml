@@ -1,6 +1,9 @@
 provider: fireworks-ai
 name: Fireworks AI
 description: Fireworks AI inference and developer services.
+category: inference
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:

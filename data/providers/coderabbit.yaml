@@ -1,6 +1,9 @@
 provider: coderabbit
 name: CodeRabbit
 description: CodeRabbit AI code review.
+category: coding
+aliases: []
+allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:
