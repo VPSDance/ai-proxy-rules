@@ -37,6 +37,9 @@ DOMAIN-KEYWORD,sift
 # Cerebras / Core
 DOMAIN-SUFFIX,cerebras.ai
 
+# Chutes / Core
+DOMAIN-SUFFIX,chutes.ai
+
 # Cloudflare AI / Core
 DOMAIN-SUFFIX,ai.cloudflare.com
 

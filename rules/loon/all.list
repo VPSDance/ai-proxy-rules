@@ -86,6 +86,9 @@ DOMAIN-SUFFIX,cerebras.ai
 # Character.AI / Core
 DOMAIN-SUFFIX,character.ai
 
+# Chutes / Core
+DOMAIN-SUFFIX,chutes.ai
+
 # Civitai / Core
 DOMAIN-SUFFIX,civitai.com
 
@@ -170,6 +173,9 @@ DOMAIN-SUFFIX,dify.ai
 # DuckDuckGo AI / Core
 DOMAIN-SUFFIX,duck.ai
 
+# Eigent / Core
+DOMAIN-SUFFIX,eigent.ai
+
 # ElevenLabs / Core
 DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-SUFFIX,elevenlabs.io
@@ -234,6 +240,9 @@ DOMAIN-SUFFIX,groq.com
 
 # H2O.ai / Core
 DOMAIN-SUFFIX,h2o.ai
+
+# Hermes Agent / Core
+DOMAIN-SUFFIX,hermes-agent.nousresearch.com
 
 # HeyGen / Core
 DOMAIN-SUFFIX,heygen.com
@@ -331,6 +340,9 @@ DOMAIN-SUFFIX,turn.livekit.cloud
 
 # OpenArt / Core
 DOMAIN-SUFFIX,openart.ai
+
+# OpenClaw / Core
+DOMAIN-SUFFIX,openclaw.ai
 
 # OpenRouter / Core
 DOMAIN-SUFFIX,openrouter.ai

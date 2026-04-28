@@ -1,0 +1,6 @@
+# AI Proxy Rules - Eigent
+# Eigent multi-agent workforce desktop application.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,eigent.ai

@@ -87,6 +87,9 @@ payload:
   # Character.AI / Core
   - DOMAIN-SUFFIX,character.ai
 
+  # Chutes / Core
+  - DOMAIN-SUFFIX,chutes.ai
+
   # Civitai / Core
   - DOMAIN-SUFFIX,civitai.com
 
@@ -171,6 +174,9 @@ payload:
   # DuckDuckGo AI / Core
   - DOMAIN-SUFFIX,duck.ai
 
+  # Eigent / Core
+  - DOMAIN-SUFFIX,eigent.ai
+
   # ElevenLabs / Core
   - DOMAIN-SUFFIX,elevenlabs.com
   - DOMAIN-SUFFIX,elevenlabs.io
@@ -235,6 +241,9 @@ payload:
 
   # H2O.ai / Core
   - DOMAIN-SUFFIX,h2o.ai
+
+  # Hermes Agent / Core
+  - DOMAIN-SUFFIX,hermes-agent.nousresearch.com
 
   # HeyGen / Core
   - DOMAIN-SUFFIX,heygen.com
@@ -333,6 +342,9 @@ payload:
 
   # OpenArt / Core
   - DOMAIN-SUFFIX,openart.ai
+
+  # OpenClaw / Core
+  - DOMAIN-SUFFIX,openclaw.ai
 
   # OpenRouter / Core
   - DOMAIN-SUFFIX,openrouter.ai

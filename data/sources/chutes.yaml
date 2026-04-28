@@ -1,0 +1,11 @@
+provider: chutes
+name: Chutes
+description: Chutes serverless AI compute and inference platform.
+categories:
+  - model
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - chutes.ai
+

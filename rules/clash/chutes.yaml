@@ -1,0 +1,7 @@
+# AI Proxy Rules - Chutes
+# Chutes serverless AI compute and inference platform.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,chutes.ai

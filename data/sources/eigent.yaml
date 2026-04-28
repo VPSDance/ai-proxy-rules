@@ -1,0 +1,9 @@
+provider: eigent
+name: Eigent
+description: Eigent multi-agent workforce desktop application.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - eigent.ai
+

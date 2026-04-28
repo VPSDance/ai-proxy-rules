@@ -1,0 +1,9 @@
+provider: openclaw
+name: OpenClaw
+description: OpenClaw open-source personal AI assistant.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - openclaw.ai
+

@@ -1,0 +1,11 @@
+provider: hermes-agent
+name: Hermes Agent
+description: Hermes Agent autonomous AI agent by Nous Research.
+categories: []
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - hermes-agent.nousresearch.com
