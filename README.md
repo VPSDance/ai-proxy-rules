@@ -122,19 +122,19 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/stash/<provider>.
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/<provider>.list
 ```
 
-如果不想按单个 AI 服务挑选，也可以直接订阅场景规则。目前支持：
-
-- `coding`：编程 / IDE / CLI
-- `model`：模型 API 平台
-- `media`：图 / 视频 / 音频生成
-
-把上面链接里的 `<provider>` 换成场景名称即可，例如 `rules/clash/coding.yaml`。聊天、搜索等未单独拆分场景，直接订阅 `all` 全集或对应服务规则。
-
 例如 Anthropic / Claude 的 Clash 规则：
 
 ```text
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/anthropic.yaml
 ```
+
+也可以订阅场景规则，把 `<provider>` 换成：
+
+- `coding`：编程 / IDE / CLI
+- `model`：模型 API 平台
+- `media`：图 / 视频 / 音频生成
+
+未列出的场景，直接用具体 provider 或 `all`。
 
 > 国内 jsDelivr 偶尔不稳定时，可把 `cdn.jsdelivr.net` 替换为 `testingcf.jsdelivr.net`、`fastly.jsdelivr.net` 或 `cdn.jsdmirror.com` 等镜像。
 
