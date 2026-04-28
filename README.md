@@ -126,7 +126,7 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/anthropic.y
 
 也可以订阅场景规则，把 `<provider>` 换成：
 
-- `coding`：编程 / IDE / CLI，例如 Copilot、Cursor、Claude Code、Kiro
+- `coding`：编程 / IDE / CLI，例如 Codex、Copilot、Cursor、Claude Code
 - `model`：模型 API 平台，例如 OpenAI、Anthropic、OpenRouter、Groq
 - `media`：图 / 视频 / 音频生成，例如 Midjourney、Runway、Suno、ElevenLabs
 
