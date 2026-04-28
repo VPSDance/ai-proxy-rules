@@ -6,8 +6,10 @@
   "scripts": {
     "check": "tsc --noEmit",
     "check:readme": "tsx scripts/check-readme.ts",
+    "diff-summary": "tsx scripts/diff-summary.ts",
     "generate": "tsx scripts/cli.ts generate",
     "guard": "tsx scripts/guard.ts",
+    "status": "tsx scripts/status.ts",
     "sync": "tsx scripts/sync.ts",
     "test": "vitest run"
   },

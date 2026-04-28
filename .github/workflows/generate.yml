@@ -45,15 +45,17 @@ jobs:
       - run: pnpm check:readme
       - run: pnpm test
       - run: pnpm generate
+      - run: pnpm status
       - name: Commit generated data and rules
         if: github.event_name != 'pull_request'
         run: |
           git config user.name "vps.dance"
           git config user.email "dancevps@gmail.com"
-          git add data rules
+          SUMMARY=$(pnpm -s diff-summary || echo "no rule changes")
+          git add data rules STATUS.md 2>/dev/null || git add data rules
           if git diff --cached --quiet; then
             echo "No generated changes"
           else
-            git commit -m "Update generated data and rules"
+            git commit -m "Update rules: $SUMMARY"
             git push
           fi
