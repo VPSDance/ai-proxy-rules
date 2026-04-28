@@ -1,0 +1,7 @@
+# AI Proxy Rules - Adobe Firefly
+# Adobe Firefly image/video generation (Firefly entry only; shared Adobe CDNs not included).
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,firefly.adobe.com
+HOST-SUFFIX,firefly.adobe.io

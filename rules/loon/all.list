@@ -2,6 +2,10 @@
 # Aggregated AI provider rules.
 # https://github.com/VPSDance/ai-proxy-rules
 
+# Adobe Firefly / Core
+DOMAIN-SUFFIX,firefly.adobe.com
+DOMAIN-SUFFIX,firefly.adobe.io
+
 # Amazon Q Developer / Core
 DOMAIN,aws-language-servers.us-east-1.amazonaws.com
 DOMAIN,aws-toolkit-language-servers.amazonaws.com
@@ -206,6 +210,9 @@ DOMAIN-SUFFIX,opal.google.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
 DOMAIN-SUFFIX,stitch.withgoogle.com
+
+# Grammarly / Core
+DOMAIN-SUFFIX,grammarly.com
 
 # Groq / Core
 DOMAIN-SUFFIX,groq.com

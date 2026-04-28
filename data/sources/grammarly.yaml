@@ -1,0 +1,8 @@
+provider: grammarly
+name: Grammarly
+description: Grammarly AI writing assistant.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - grammarly.com

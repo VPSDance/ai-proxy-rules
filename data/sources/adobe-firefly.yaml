@@ -1,0 +1,9 @@
+provider: adobe-firefly
+name: Adobe Firefly
+description: Adobe Firefly image/video generation (Firefly entry only; shared Adobe CDNs not included).
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - firefly.adobe.com
+        - firefly.adobe.io
