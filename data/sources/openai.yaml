@@ -5,6 +5,9 @@ categories:
   - chat
   - coding
   - model
+aliases:
+  - chatgpt
+  - codex
 sources:
   - name: blackmatrix7
     type: remote-text

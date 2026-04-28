@@ -3,6 +3,7 @@ import os from "node:os";
 import path from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { evaluateGuard, countRulesFromText } from "../scripts/checks/guard.js";
+import { checkMetadata } from "../scripts/checks/metadata.js";
 import { checkReadme, collectReadmeIds } from "../scripts/checks/readme.js";
 
 describe("guard", () => {
@@ -190,5 +191,63 @@ describe("check-readme", () => {
     const text = `# Heading\n\nintro mentioning (\`fake\`)\n\n规则覆盖范围：\n\n- A (\`alpha\`)\n- B (\`beta-test\`)\n\n支持的客户端格式：\n\n- Surge (\`surge\`)\n`;
     const ids = collectReadmeIds(text);
     expect([...ids].sort()).toEqual(["alpha", "beta-test"]);
+  });
+});
+
+describe("check-metadata", () => {
+  let sourcesDir: string;
+
+  beforeEach(async () => {
+    const root = await mkdtemp(path.join(os.tmpdir(), "check-metadata-"));
+    sourcesDir = path.join(root, "sources");
+    await import("node:fs/promises").then(({ mkdir }) => mkdir(sourcesDir));
+  });
+
+  it("accepts valid categories and aliases", async () => {
+    await writeFile(
+      path.join(sourcesDir, "openai.yaml"),
+      "provider: openai\nname: OpenAI\ncategories: [chat, coding, model]\naliases: [chatgpt, codex]\ngroups: [{name: Core, include: {domainSuffix: [openai.com]}}]\n",
+      "utf8"
+    );
+
+    const result = await checkMetadata(sourcesDir);
+    expect(result.ok).toBe(true);
+    expect(result.errors).toEqual([]);
+  });
+
+  it("requires at least one valid category", async () => {
+    await writeFile(
+      path.join(sourcesDir, "empty.yaml"),
+      "provider: empty\nname: Empty\ncategories: []\ngroups: [{name: Core, include: {domainSuffix: [empty.example]}}]\n",
+      "utf8"
+    );
+    await writeFile(
+      path.join(sourcesDir, "wrong.yaml"),
+      "provider: wrong\nname: Wrong\ncategories: [unknown]\ngroups: [{name: Core, include: {domainSuffix: [wrong.example]}}]\n",
+      "utf8"
+    );
+
+    const result = await checkMetadata(sourcesDir);
+    expect(result.ok).toBe(false);
+    expect(result.errors.join("\n")).toContain("categories must contain at least one category");
+    expect(result.errors.join("\n")).toContain('invalid category "unknown"');
+  });
+
+  it("rejects duplicate aliases and alias collisions", async () => {
+    await writeFile(
+      path.join(sourcesDir, "alpha.yaml"),
+      "provider: alpha\nname: Alpha\ncategories: [chat]\naliases: [same, same]\ngroups: [{name: Core, include: {domainSuffix: [alpha.example]}}]\n",
+      "utf8"
+    );
+    await writeFile(
+      path.join(sourcesDir, "beta.yaml"),
+      "provider: beta\nname: Beta\ncategories: [chat]\naliases: [same]\ngroups: [{name: Core, include: {domainSuffix: [beta.example]}}]\n",
+      "utf8"
+    );
+
+    const result = await checkMetadata(sourcesDir);
+    expect(result.ok).toBe(false);
+    expect(result.errors.join("\n")).toContain('duplicate alias "same"');
+    expect(result.errors.join("\n")).toContain('alias "same" is already used by provider "alpha"');
   });
 });

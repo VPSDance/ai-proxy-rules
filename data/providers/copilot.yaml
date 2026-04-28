@@ -3,7 +3,9 @@ name: Copilot
 description: Microsoft Copilot and related services.
 categories:
   - coding
-aliases: []
+aliases:
+  - github-copilot
+  - microsoft-copilot
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

@@ -3,7 +3,8 @@ name: Inflection / Pi
 description: Inflection AI (Pi personal chat).
 categories:
   - chat
-aliases: []
+aliases:
+  - pi
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

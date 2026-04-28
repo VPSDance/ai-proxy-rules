@@ -3,6 +3,9 @@ name: Copilot
 description: Microsoft Copilot and related services.
 categories:
   - coding
+aliases:
+  - github-copilot
+  - microsoft-copilot
 sources:
   - name: blackmatrix7
     type: remote-text

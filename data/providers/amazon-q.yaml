@@ -3,7 +3,8 @@ name: Amazon Q Developer
 description: Amazon Q Developer IDE assistant and coding services.
 categories:
   - coding
-aliases: []
+aliases:
+  - q-developer
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

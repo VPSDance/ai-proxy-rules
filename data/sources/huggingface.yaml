@@ -3,6 +3,8 @@ name: Hugging Face
 description: Hugging Face model hub, spaces, and inference services.
 categories:
   - model
+aliases:
+  - hugging-face
 sources:
   - name: v2fly
     type: remote-text

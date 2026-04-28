@@ -3,6 +3,8 @@ name: Amazon Q Developer
 description: Amazon Q Developer IDE assistant and coding services.
 categories:
   - coding
+aliases:
+  - q-developer
 groups:
   - name: Core
     include:

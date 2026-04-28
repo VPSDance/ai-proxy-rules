@@ -3,7 +3,9 @@ name: Augment Code
 description: Augment Code IDE extension, Auggie CLI, and coding agent services.
 categories:
   - coding
-aliases: []
+aliases:
+  - augment
+  - auggie
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

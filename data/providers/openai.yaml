@@ -5,7 +5,9 @@ categories:
   - chat
   - coding
   - model
-aliases: []
+aliases:
+  - chatgpt
+  - codex
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

@@ -3,7 +3,8 @@ name: Windsurf
 description: Windsurf (formerly Codeium) AI IDE.
 categories:
   - coding
-aliases: []
+aliases:
+  - codeium
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

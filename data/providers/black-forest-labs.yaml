@@ -3,7 +3,8 @@ name: Black Forest Labs
 description: Black Forest Labs / FLUX image generation.
 categories:
   - media
-aliases: []
+aliases:
+  - flux
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

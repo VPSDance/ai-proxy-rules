@@ -5,6 +5,9 @@ categories:
   - chat
   - coding
   - model
+aliases:
+  - claude
+  - claude-code
 sources:
   - name: net-coffee
     type: remote-html

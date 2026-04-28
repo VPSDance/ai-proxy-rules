@@ -3,6 +3,11 @@ name: ByteDance AI
 description: ByteDance AI products overseas (Trae, Coze, MarsCode, Cici).
 categories:
   - coding
+aliases:
+  - trae
+  - coze
+  - marscode
+  - cici
 sources:
   - name: skywalkerji
     type: remote-text

@@ -3,6 +3,9 @@ name: JetBrains AI
 description: JetBrains AI Assistant / Junie / Grazie.
 categories:
   - coding
+aliases:
+  - grazie
+  - junie
 sources:
   - name: v2fly
     type: remote-text

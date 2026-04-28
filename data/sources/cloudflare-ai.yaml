@@ -3,6 +3,9 @@ name: Cloudflare AI
 description: Cloudflare AI Gateway and Workers AI services.
 categories:
   - model
+aliases:
+  - workers-ai
+  - ai-gateway
 groups:
   - name: Core
     include:

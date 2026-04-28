@@ -3,6 +3,8 @@ name: LM Studio
 description: LM Studio (desktop UI for local LLMs).
 categories:
   - model
+aliases:
+  - lm-studio
 groups:
   - name: Core
     include:

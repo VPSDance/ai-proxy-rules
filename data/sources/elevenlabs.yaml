@@ -3,6 +3,8 @@ name: ElevenLabs
 description: ElevenLabs voice AI services.
 categories:
   - media
+aliases:
+  - eleven-labs
 sources:
   - name: v2fly
     type: remote-text

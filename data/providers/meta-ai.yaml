@@ -3,7 +3,8 @@ name: Meta AI
 description: Meta AI products (Meta AI chat, Llama).
 categories:
   - chat
-aliases: []
+aliases:
+  - llama
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

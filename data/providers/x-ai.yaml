@@ -3,7 +3,8 @@ name: xAI
 description: xAI and Grok.
 categories:
   - chat
-aliases: []
+aliases:
+  - grok
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

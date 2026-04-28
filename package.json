@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "check": "tsc --noEmit",
+    "check:metadata": "tsx scripts/check-metadata.ts",
     "check:readme": "tsx scripts/check-readme.ts",
     "diff-summary": "tsx scripts/diff-summary.ts",
     "generate": "tsx scripts/cli.ts generate",

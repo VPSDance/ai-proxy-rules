@@ -3,7 +3,9 @@ name: JetBrains AI
 description: JetBrains AI Assistant / Junie / Grazie.
 categories:
   - coding
-aliases: []
+aliases:
+  - grazie
+  - junie
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

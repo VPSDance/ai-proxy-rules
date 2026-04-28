@@ -5,7 +5,9 @@ categories:
   - chat
   - coding
   - model
-aliases: []
+aliases:
+  - claude
+  - claude-code
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

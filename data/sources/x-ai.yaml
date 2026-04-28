@@ -3,6 +3,8 @@ name: xAI
 description: xAI and Grok.
 categories:
   - chat
+aliases:
+  - grok
 sources:
   - name: v2fly
     type: remote-text

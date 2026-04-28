@@ -3,7 +3,8 @@ name: Stability AI
 description: Stability AI (Stable Diffusion).
 categories:
   - media
-aliases: []
+aliases:
+  - stable-diffusion
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

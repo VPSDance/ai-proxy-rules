@@ -4,7 +4,8 @@ description: Mistral AI (Le Chat, La Plateforme).
 categories:
   - chat
   - model
-aliases: []
+aliases:
+  - le-chat
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

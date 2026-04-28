@@ -3,7 +3,8 @@ name: Otter.ai
 description: Otter.ai meeting transcription.
 categories:
   - chat
-aliases: []
+aliases:
+  - otter
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

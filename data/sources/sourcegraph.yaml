@@ -3,6 +3,9 @@ name: Sourcegraph
 description: Sourcegraph Cody and Amp AI coding services.
 categories:
   - coding
+aliases:
+  - cody
+  - amp
 groups:
   - name: Core
     include:

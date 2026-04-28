@@ -3,6 +3,8 @@ name: v0
 description: Vercel v0 (UI generation).
 categories:
   - coding
+aliases:
+  - vercel-v0
 groups:
   - name: Core
     include:

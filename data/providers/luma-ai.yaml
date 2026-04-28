@@ -3,7 +3,8 @@ name: Luma AI
 description: Luma AI (Dream Machine video, Genie 3D).
 categories:
   - media
-aliases: []
+aliases:
+  - dream-machine
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

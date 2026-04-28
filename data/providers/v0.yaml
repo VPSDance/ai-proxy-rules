@@ -3,7 +3,8 @@ name: v0
 description: Vercel v0 (UI generation).
 categories:
   - coding
-aliases: []
+aliases:
+  - vercel-v0
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

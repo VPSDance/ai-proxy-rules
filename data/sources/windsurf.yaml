@@ -3,6 +3,8 @@ name: Windsurf
 description: Windsurf (formerly Codeium) AI IDE.
 categories:
   - coding
+aliases:
+  - codeium
 sources:
   - name: v2fly
     type: remote-text

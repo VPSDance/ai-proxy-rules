@@ -3,6 +3,8 @@ name: Stability AI
 description: Stability AI (Stable Diffusion).
 categories:
   - media
+aliases:
+  - stable-diffusion
 groups:
   - name: Core
     include:

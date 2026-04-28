@@ -3,7 +3,8 @@ name: ElevenLabs
 description: ElevenLabs voice AI services.
 categories:
   - media
-aliases: []
+aliases:
+  - eleven-labs
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

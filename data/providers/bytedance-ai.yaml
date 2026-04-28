@@ -3,7 +3,11 @@ name: ByteDance AI
 description: ByteDance AI products overseas (Trae, Coze, MarsCode, Cici).
 categories:
   - coding
-aliases: []
+aliases:
+  - trae
+  - coze
+  - marscode
+  - cici
 allowDangerousDomainSuffix: []
 groups:
   - name: Core

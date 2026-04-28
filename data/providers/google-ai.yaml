@@ -5,7 +5,11 @@ categories:
   - chat
   - coding
   - model
-aliases: []
+aliases:
+  - gemini
+  - ai-studio
+  - notebooklm
+  - antigravity
 allowDangerousDomainSuffix: []
 groups:
   - name: Core
