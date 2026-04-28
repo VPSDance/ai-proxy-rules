@@ -1,0 +1,8 @@
+provider: descript
+name: Descript
+description: Descript AI audio / video editor.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - descript.com

@@ -1,0 +1,8 @@
+provider: genspark
+name: Genspark
+description: Genspark AI search / agent.
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - genspark.ai

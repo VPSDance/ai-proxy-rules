@@ -1,0 +1,8 @@
+provider: gamma
+name: Gamma
+description: Gamma AI presentation / slides.
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - gamma.app

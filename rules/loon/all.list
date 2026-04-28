@@ -142,8 +142,8 @@ DOMAIN-SUFFIX,cursorapi.com
 # DeepInfra / Core
 DOMAIN-SUFFIX,deepinfra.com
 
-# DeepSeek / Core
-DOMAIN-SUFFIX,deepseek.com
+# Descript / Core
+DOMAIN-SUFFIX,descript.com
 
 # Devin / Core
 DOMAIN-SUFFIX,devin.ai
@@ -157,6 +157,12 @@ DOMAIN-SUFFIX,elevenlabs.io
 
 # Fireworks AI / Core
 DOMAIN-SUFFIX,fireworks.ai
+
+# Gamma / Core
+DOMAIN-SUFFIX,gamma.app
+
+# Genspark / Core
+DOMAIN-SUFFIX,genspark.ai
 
 # Google AI / Core
 DOMAIN-SUFFIX,ai.google.dev
@@ -345,6 +351,9 @@ DOMAIN-SUFFIX,stability.ai
 # Suno / Core
 DOMAIN-SUFFIX,suno.ai
 DOMAIN-SUFFIX,suno.com
+
+# Synthesia / Core
+DOMAIN-SUFFIX,synthesia.io
 
 # Tabnine / Core
 DOMAIN-SUFFIX,tabnine.com

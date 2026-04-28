@@ -1,0 +1,7 @@
+# AI Proxy Rules - Synthesia
+# Synthesia AI video avatar generation.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN-SUFFIX,synthesia.io

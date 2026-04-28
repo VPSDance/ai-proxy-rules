@@ -142,8 +142,8 @@ HOST-SUFFIX,cursorapi.com
 # DeepInfra / Core
 HOST-SUFFIX,deepinfra.com
 
-# DeepSeek / Core
-HOST-SUFFIX,deepseek.com
+# Descript / Core
+HOST-SUFFIX,descript.com
 
 # Devin / Core
 HOST-SUFFIX,devin.ai
@@ -157,6 +157,12 @@ HOST-SUFFIX,elevenlabs.io
 
 # Fireworks AI / Core
 HOST-SUFFIX,fireworks.ai
+
+# Gamma / Core
+HOST-SUFFIX,gamma.app
+
+# Genspark / Core
+HOST-SUFFIX,genspark.ai
 
 # Google AI / Core
 HOST-SUFFIX,ai.google.dev
@@ -345,6 +351,9 @@ HOST-SUFFIX,stability.ai
 # Suno / Core
 HOST-SUFFIX,suno.ai
 HOST-SUFFIX,suno.com
+
+# Synthesia / Core
+HOST-SUFFIX,synthesia.io
 
 # Tabnine / Core
 HOST-SUFFIX,tabnine.com
