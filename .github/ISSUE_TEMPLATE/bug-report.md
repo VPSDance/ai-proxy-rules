@@ -1,23 +1,38 @@
 ---
-name: Bug 反馈
-about: 规则错误、域名漏掉、上游解析有问题等
-title: "[Bug] "
+name: 规则问题
+about: 反馈域名缺失、误收、订阅不可用或生成错误
+title: "[规则问题] "
 labels: bug
 ---
 
-## 现象
+## 问题类型
 
-哪个 provider，哪一条规则有问题（多/少/写错/被错收进其他 provider）。
+选择或保留相关项：
 
-## 期望
+- 缺少域名
+- 多收 / 误收域名
+- 订阅链接不可用
+- 规则格式有问题
+- 其他
 
-应该是什么样。
+## 涉及的规则
 
-## 客户端
+例如：`openai`、`anthropic`、`all`、`coding`。
 
-- 客户端：Surge / Clash / Mihomo / sing-box / Loon / Shadowrocket / Stash / Quantumult X
-- 订阅 URL（如 `cdn.jsdelivr.net/.../rules/<format>/<provider>.<ext>`）：
+如果只在某个客户端出问题，也可以写客户端名称：Surge / Clash / Mihomo / sing-box / Loon / Shadowrocket / Stash / Quantumult X。
 
-## 复现步骤 / 日志（可选）
+## 具体问题
 
-如果是上游解析问题或 cache fallback 异常，贴一段最相关的日志或 GitHub Actions run 链接。
+描述看到的现象，或贴出相关域名 / 规则行。
+
+```text
+
+```
+
+## 期望结果
+
+应该新增、删除或修正什么。
+
+## 参考资料（可选）
+
+订阅 URL、日志、截图、GitHub Actions 链接、官方文档等。

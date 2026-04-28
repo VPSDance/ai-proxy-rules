@@ -1,5 +1,1 @@
-blank_issues_enabled: false
-contact_links:
-  - name: 用法 / 一般问题
-    url: https://github.com/VPSDance/ai-proxy-rules/discussions
-    about: 直接订阅规则、客户端配置等讨论请到 Discussions。
+blank_issues_enabled: true
