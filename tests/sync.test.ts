@@ -19,7 +19,7 @@ describe("source sync parsers", () => {
     expect(parsed.asn).toEqual([401518]);
   });
 
-  it("parses mihomo yaml payload rules", async () => {
+  it("parses clash yaml payload rules", async () => {
     const parsed = await parseSourceRules(
       `
 payload:
@@ -27,7 +27,7 @@ payload:
   - DOMAIN-KEYWORD,openai
   - IP-ASN,20473
 `,
-      "mihomo-yaml"
+      "clash-yaml"
     );
 
     expect(parsed.domain).toEqual(["browser-intake-datadoghq.com"]);

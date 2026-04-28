@@ -5,7 +5,7 @@ sources:
   - name: blackmatrix7
     type: remote-text
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
-    parser: mihomo-yaml
+    parser: clash-yaml
     importAsn: false
   - name: v2fly
     type: remote-text

@@ -5,7 +5,7 @@ sources:
   - name: skywalkerji
     type: remote-text
     url: https://cdn.jsdelivr.net/gh/SkywalkerJi/Clash-Rules@master/AI/Trae.yaml
-    parser: mihomo-yaml
+    parser: clash-yaml
 groups:
   - name: Core
     include:

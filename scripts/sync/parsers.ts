@@ -2,7 +2,7 @@ import { parse } from "yaml";
 import { emptyRuleSet, normalizeRuleSet } from "../rules.js";
 import type { RuleSet } from "../types.js";
 
-export type SourceParser = "classical" | "mihomo-yaml" | "domain-list-community";
+export type SourceParser = "classical" | "clash-yaml" | "domain-list-community";
 
 export interface ParseSourceOptions {
   sourceUrl?: string;
@@ -15,8 +15,8 @@ export async function parseSourceRules(
   parser: SourceParser,
   options: ParseSourceOptions = {}
 ): Promise<RuleSet> {
-  if (parser === "mihomo-yaml") {
-    return parseMihomoYamlRules(text);
+  if (parser === "clash-yaml") {
+    return parseClashYamlRules(text);
   }
 
   if (parser === "domain-list-community") {
@@ -81,7 +81,7 @@ export function parseClassicalRules(text: string): RuleSet {
   return normalizeRuleSet(rules);
 }
 
-function parseMihomoYamlRules(text: string): RuleSet {
+function parseClashYamlRules(text: string): RuleSet {
   const parsed = parse(text) as unknown;
 
   if (isPayloadObject(parsed)) {
@@ -92,7 +92,7 @@ function parseMihomoYamlRules(text: string): RuleSet {
     return parseClassicalRules(parsed.join("\n"));
   }
 
-  throw new Error("Mihomo YAML source must contain a string payload list.");
+  throw new Error("Clash YAML source must contain a string payload list.");
 }
 
 export async function parseDomainListCommunityRules(

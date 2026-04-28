@@ -38,7 +38,7 @@ const partialRulesSchema = z
 
 const commonSourceFields = {
   name: z.string().min(1),
-  parser: z.enum(["classical", "mihomo-yaml", "domain-list-community"]),
+  parser: z.enum(["classical", "clash-yaml", "domain-list-community"]),
   followIncludes: z.boolean().default(true),
   importAsn: z.boolean().default(true)
 };

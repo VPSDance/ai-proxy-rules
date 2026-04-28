@@ -31,7 +31,7 @@
    ```
 
    - 远程 URL 用 `cdn.jsdelivr.net/gh/...` 而不是 `raw.githubusercontent.com`，国内拉取更快。
-   - parser 选 `classical`（Surge 风 `DOMAIN,xxx,POLICY`）、`mihomo-yaml`（`payload:` 列表）、或 `domain-list-community`（v2fly 格式，自动按 `@!cn` 标签过滤）。
+   - parser 选 `classical`（Surge 风 `DOMAIN,xxx,POLICY`）、`clash-yaml`（`payload:` 列表）、或 `domain-list-community`（v2fly 格式，自动按 `@!cn` 标签过滤）。
 
 3. 上游里掺杂了不属于本服务的域名（被 OpenAI 文件里漏带 datadog、Copilot 文件里掺 ChatGPT 等），用 `patch.remove` 剔除：
 
