@@ -40,6 +40,7 @@ groups:
   - name: Network
     include:
       asn:
+        # OpenAI-owned ASN; replaces broad hosting ASN 20473 from upstream.
         - 401518
       ipCidr:
         - 199.47.142.0/23
@@ -57,4 +58,5 @@ groups:
 patch:
   remove:
     asn:
+      # Vultr ASN from upstream references; too broad for OpenAI-specific routing.
       - 20473

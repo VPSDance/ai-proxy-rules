@@ -41,6 +41,8 @@ groups:
     include:
       asn:
         - 399358
+      # Prefer the wider net-coffee ranges for Claude availability and account-risk mitigation.
+      # The official narrower ranges are removed below to avoid duplicate overlapping CIDRs.
       ipCidr:
         - 160.79.104.0/21
       ipCidr6:
@@ -57,11 +59,13 @@ groups:
       domainSuffix:
         - statsigapi.net
       domainKeyword:
+        # Keep net-coffee's broader Sentry coverage; Claude may use Sentry subdomains beyond sentry.io.
         - sentry
     fromSource: true
 patch:
   remove:
     domain:
+      # Covered by broader DOMAIN-SUFFIX rules in Core.
       - api.anthropic.com
       - cdn.anthropic.com
       - console.anthropic.com
@@ -69,8 +73,11 @@ patch:
       - mcp.anthropic.com
       - workbench.anthropic.com
     domainSuffix:
+      # Not Anthropic-specific.
       - time.apple.com
     ipCidr6:
+      # Covered by 2607:6bc0::/32 above.
       - 2607:6bc0::/48
     ipCidr:
+      # Covered by 160.79.104.0/21 above.
       - 160.79.104.0/23
