@@ -1,8 +1,7 @@
 provider: x-ai
 name: xAI
 description: xAI and Grok.
-categories:
-  - chat
+categories: []
 aliases:
   - grok
 allowDangerousDomainSuffix: []

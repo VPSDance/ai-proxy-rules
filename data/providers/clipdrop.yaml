@@ -1,7 +1,8 @@
 provider: clipdrop
 name: ClipDrop
 description: ClipDrop (Stability AI image editing tools).
-categories: []
+categories:
+  - media
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

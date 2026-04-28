@@ -1,8 +1,7 @@
 provider: poe
 name: Poe
 description: Poe AI chat.
-categories:
-  - chat
+categories: []
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

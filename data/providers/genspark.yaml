@@ -1,8 +1,7 @@
 provider: genspark
 name: Genspark
 description: Genspark AI search / agent.
-categories:
-  - search
+categories: []
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

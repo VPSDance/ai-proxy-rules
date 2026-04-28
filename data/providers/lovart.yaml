@@ -1,7 +1,8 @@
 provider: lovart
 name: Lovart
 description: Lovart AI image generation.
-categories: []
+categories:
+  - media
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

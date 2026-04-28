@@ -1,8 +1,7 @@
 provider: perplexity
 name: Perplexity
 description: Perplexity AI search.
-categories:
-  - search
+categories: []
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

@@ -206,7 +206,7 @@ describe("check-metadata", () => {
   it("accepts valid categories and aliases", async () => {
     await writeFile(
       path.join(sourcesDir, "openai.yaml"),
-      "provider: openai\nname: OpenAI\ncategories: [chat, coding, model]\naliases: [chatgpt, codex]\ngroups: [{name: Core, include: {domainSuffix: [openai.com]}}]\n",
+      "provider: openai\nname: OpenAI\ncategories: [coding, model]\naliases: [chatgpt, codex]\ngroups: [{name: Core, include: {domainSuffix: [openai.com]}}]\n",
       "utf8"
     );
 
@@ -215,10 +215,10 @@ describe("check-metadata", () => {
     expect(result.errors).toEqual([]);
   });
 
-  it("requires at least one valid category", async () => {
+  it("treats categories as optional but rejects unknown values", async () => {
     await writeFile(
-      path.join(sourcesDir, "empty.yaml"),
-      "provider: empty\nname: Empty\ncategories: []\ngroups: [{name: Core, include: {domainSuffix: [empty.example]}}]\n",
+      path.join(sourcesDir, "no-cat.yaml"),
+      "provider: no-cat\nname: NoCat\ngroups: [{name: Core, include: {domainSuffix: [no-cat.example]}}]\n",
       "utf8"
     );
     await writeFile(
@@ -229,19 +229,19 @@ describe("check-metadata", () => {
 
     const result = await checkMetadata(sourcesDir);
     expect(result.ok).toBe(false);
-    expect(result.errors.join("\n")).toContain("categories must contain at least one category");
+    expect(result.errors.join("\n")).not.toContain("categories must contain at least one");
     expect(result.errors.join("\n")).toContain('invalid category "unknown"');
   });
 
   it("rejects duplicate aliases and alias collisions", async () => {
     await writeFile(
       path.join(sourcesDir, "alpha.yaml"),
-      "provider: alpha\nname: Alpha\ncategories: [chat]\naliases: [same, same]\ngroups: [{name: Core, include: {domainSuffix: [alpha.example]}}]\n",
+      "provider: alpha\nname: Alpha\ncategories: [coding]\naliases: [same, same]\ngroups: [{name: Core, include: {domainSuffix: [alpha.example]}}]\n",
       "utf8"
     );
     await writeFile(
       path.join(sourcesDir, "beta.yaml"),
-      "provider: beta\nname: Beta\ncategories: [chat]\naliases: [same]\ngroups: [{name: Core, include: {domainSuffix: [beta.example]}}]\n",
+      "provider: beta\nname: Beta\ncategories: [coding]\naliases: [same]\ngroups: [{name: Core, include: {domainSuffix: [beta.example]}}]\n",
       "utf8"
     );
 

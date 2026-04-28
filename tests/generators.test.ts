@@ -6,7 +6,7 @@ import type { ProviderSource } from "../scripts/types.js";
 const anthropic: ProviderSource = {
   provider: "anthropic",
   name: "Anthropic",
-  categories: ["chat", "coding", "model"],
+  categories: ["coding", "model"],
   aliases: [],
   allowDangerousDomainSuffix: [],
   groups: [
@@ -192,10 +192,9 @@ describe("generators", () => {
   it("aggregates providers by category", () => {
     const targets = aggregateProvidersByCategory([anthropic, fixtureIde]);
 
-    expect(targets.map((target) => target.id)).toEqual(["chat", "coding", "model"]);
-    expect(render("surge", targets[0]!).content).toContain("DOMAIN,api.anthropic.com");
-    expect(render("surge", targets[1]!).content).toContain("DOMAIN,api.fixture-ide.test");
-    expect(render("surge", targets[2]!).content).toContain("DOMAIN,api.anthropic.com");
+    expect(targets.map((target) => target.id)).toEqual(["coding", "model"]);
+    expect(render("surge", targets[0]!).content).toContain("DOMAIN,api.fixture-ide.test");
+    expect(render("surge", targets[1]!).content).toContain("DOMAIN,api.anthropic.com");
   });
 
   it("deduplicates rendered all rules across provider groups", () => {

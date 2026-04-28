@@ -1,8 +1,6 @@
 provider: perplexity
 name: Perplexity
 description: Perplexity AI search.
-categories:
-  - search
 sources:
   - name: v2fly
     type: remote-text

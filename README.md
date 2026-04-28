@@ -122,7 +122,7 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/stash/<provider>.
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/<provider>.list
 ```
 
-也可以把 `<provider>` 换成场景汇总 id：`chat`（聊天助手 / 通用 AI）、`coding`（AI 编程 / IDE / CLI）、`model`（模型服务 / API 平台）、`media`（图片 / 视频 / 音频生成）、`search`（AI 搜索）。
+也可以把 `<provider>` 换成场景汇总 id：`coding`（编程 / IDE / CLI）、`model`（模型 API 平台）、`media`(图 / 视频 / 音频生成)。聊天 / 搜索类工具直接用单 provider 或 `all`。
 
 例如 Anthropic / Claude 的 Clash 规则：
 

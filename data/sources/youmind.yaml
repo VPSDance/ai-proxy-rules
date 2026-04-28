@@ -1,7 +1,6 @@
 provider: youmind
 name: YouMind
 description: YouMind AI note-taking / knowledge workspace.
-category: productivity
 groups:
   - name: Core
     include:

@@ -1,7 +1,6 @@
 provider: dia-browser
 name: Dia Browser
 description: The Browser Company Dia (AI-first browser).
-category: assistant
 groups:
   - name: Core
     include:

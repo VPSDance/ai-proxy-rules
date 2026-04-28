@@ -1,8 +1,6 @@
 provider: poe
 name: Poe
 description: Poe AI chat.
-categories:
-  - chat
 sources:
   - name: v2fly
     type: remote-text

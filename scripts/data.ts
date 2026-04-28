@@ -154,16 +154,12 @@ async function parseProviderFile(filePath: string): Promise<ProviderSource> {
 
 function categoryName(category: ProviderCategory): string {
   switch (category) {
-    case "chat":
-      return "AI Chat";
     case "coding":
       return "AI Coding Tools";
     case "model":
       return "AI Model Services";
     case "media":
       return "AI Media Tools";
-    case "search":
-      return "AI Search Tools";
   }
 }
 

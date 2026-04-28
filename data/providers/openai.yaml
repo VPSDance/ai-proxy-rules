@@ -1,10 +1,7 @@
 provider: openai
 name: OpenAI
-description: OpenAI and ChatGPT services.
-categories:
-  - chat
-  - coding
-  - model
+description: OpenAI and ChatGPT services. - coding - model
+categories: []
 aliases:
   - chatgpt
   - codex

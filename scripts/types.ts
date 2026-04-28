@@ -52,11 +52,9 @@ export interface RenderedFile {
 }
 
 export const providerCategories = [
-  "chat",
   "coding",
   "model",
-  "media",
-  "search"
+  "media"
 ] as const;
 
 export type ProviderCategory = (typeof providerCategories)[number];

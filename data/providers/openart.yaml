@@ -1,7 +1,8 @@
 provider: openart
 name: OpenArt
 description: OpenArt AI image generation.
-categories: []
+categories:
+  - media
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

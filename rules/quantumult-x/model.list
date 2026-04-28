@@ -2,37 +2,6 @@
 # Aggregated model AI provider rules.
 # https://github.com/VPSDance/ai-proxy-rules
 
-# Anthropic / Core
-HOST-SUFFIX,anthropic.com
-HOST-SUFFIX,anthropic.com.cn
-HOST-SUFFIX,clau.de
-HOST-SUFFIX,claude.ai
-HOST-SUFFIX,claude.com
-HOST-SUFFIX,claudemcpclient.com
-HOST-SUFFIX,claudeusercontent.com
-HOST-SUFFIX,modelcontextprotocol.io
-
-# Anthropic / Network
-IP-CIDR,160.79.104.0/21,no-resolve
-IP6-CIDR,2607:6bc0::/48,no-resolve
-IP-ASN,399358,no-resolve
-
-# Anthropic / Third-Party
-HOST,anthropic-com.ghost.io
-HOST,anthropic.auth0.com
-HOST,anthropic.com.cdn.cloudflare.net
-HOST,browser-intake-us5-datadoghq.com
-HOST,cdn.growthbook.io
-HOST,cdn.usefathom.com
-HOST,servd-anthropic-website.b-cdn.net
-HOST,storage.googleapis.com
-HOST-SUFFIX,intercom.io
-HOST-SUFFIX,intercomcdn.com
-HOST-SUFFIX,sentry.io
-HOST-SUFFIX,statsigapi.net
-HOST-KEYWORD,datadog
-HOST-KEYWORD,sift
-
 # Cerebras / Core
 HOST-SUFFIX,cerebras.ai
 
@@ -49,51 +18,11 @@ HOST-SUFFIX,deepinfra.com
 # Fireworks AI / Core
 HOST-SUFFIX,fireworks.ai
 
-# Google AI / Core
-HOST-SUFFIX,ai.google.dev
-HOST-SUFFIX,ai.studio
-HOST-SUFFIX,aistudio.google.com
-HOST-SUFFIX,antigravity.google
-HOST-SUFFIX,antigravity.google.com
-HOST-SUFFIX,bard.google.com
-HOST-SUFFIX,deepmind.com
-HOST-SUFFIX,deepmind.google
-HOST-SUFFIX,gemini.google
-HOST-SUFFIX,gemini.google.com
-HOST-SUFFIX,generativeai.google
-HOST-SUFFIX,generativelanguage.googleapis.com
-HOST-SUFFIX,notebooklm.google
-HOST-SUFFIX,notebooklm.google.com
-
-# Google AI / Third-Party
-HOST,alkalicore-pa.clients6.google.com
-HOST,alkalimakersuite-pa.clients6.google.com
-HOST,antigravity-pa.googleapis.com
-HOST,antigravity.googleapis.com
-HOST,cloudaicompanion.googleapis.com
-HOST,cloudcode-pa.googleapis.com
-HOST,daily-cloudcode-pa.googleapis.com
-HOST,notebooklm-pa.googleapis.com
-HOST,notebooklm.googleapis.com
-HOST,webchannel-alkalimakersuite-pa.clients6.google.com
-HOST-SUFFIX,aicode.googleapis.com
-HOST-SUFFIX,aida.googleapis.com
-HOST-SUFFIX,aisandbox-pa.googleapis.com
-HOST-SUFFIX,antigravity-unleash.goog
-HOST-SUFFIX,geller-pa.googleapis.com
-HOST-SUFFIX,jules.google
-HOST-SUFFIX,jules.google.com
-HOST-SUFFIX,labs.google
-HOST-SUFFIX,labs.google.com
-HOST-SUFFIX,makersuite.google.com
-HOST-SUFFIX,opal.google
-HOST-SUFFIX,opal.google.com
-HOST-SUFFIX,proactivebackend-pa.googleapis.com
-HOST-SUFFIX,robinfrontend-pa.googleapis.com
-HOST-SUFFIX,stitch.withgoogle.com
-
 # Groq / Core
 HOST-SUFFIX,groq.com
+
+# H2O.ai / Core
+HOST-SUFFIX,h2o.ai
 
 # Hugging Face / Core
 HOST-SUFFIX,hf.co
@@ -103,55 +32,8 @@ HOST-SUFFIX,huggingface.co
 # LM Studio / Core
 HOST-SUFFIX,lmstudio.ai
 
-# Mistral AI / Core
-HOST-SUFFIX,mistral.ai
-
 # Ollama / Core
 HOST-SUFFIX,ollama.com
-
-# OpenAI / Core
-HOST-SUFFIX,ai.com
-HOST-SUFFIX,chat.com
-HOST-SUFFIX,chatgpt.com
-HOST-SUFFIX,chatgpt.livekit.cloud
-HOST-SUFFIX,crixet.com
-HOST-SUFFIX,oaistatic.com
-HOST-SUFFIX,oaiusercontent.com
-HOST-SUFFIX,openai.com
-HOST-SUFFIX,openaiapi-site.azureedge.net
-HOST-SUFFIX,openaicom.imgix.net
-HOST-SUFFIX,sora.com
-HOST-KEYWORD,chatgpt-async-webps-prod
-HOST-KEYWORD,openai
-
-# OpenAI / Network
-IP-CIDR,199.47.142.0/23,no-resolve
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
-IP6-CIDR,2604:f20::/32,no-resolve
-IP-ASN,401518,no-resolve
-
-# OpenAI / Third-Party
-HOST,browser-intake-datadoghq.com
-HOST,openai-api.arkoselabs.com
-HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-HOST,openaicomproductionae4b.blob.core.windows.net
-HOST,production-openaicom-storage.azureedge.net
-HOST,static.cloudflareinsights.com
-HOST-SUFFIX,algolia.net
-HOST-SUFFIX,api.statsig.com
-HOST-SUFFIX,auth0.com
-HOST-SUFFIX,client-api.arkoselabs.com
-HOST-SUFFIX,events.statsigapi.net
-HOST-SUFFIX,featuregates.org
-HOST-SUFFIX,host.livekit.cloud
-HOST-SUFFIX,identrust.com
-HOST-SUFFIX,launchdarkly.com
-HOST-SUFFIX,observeit.net
-HOST-SUFFIX,openai.com.cdn.cloudflare.net
-HOST-SUFFIX,segment.io
-HOST-SUFFIX,stripe.com
-HOST-SUFFIX,turn.livekit.cloud
 
 # OpenRouter / Core
 HOST-SUFFIX,openrouter.ai

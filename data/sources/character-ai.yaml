@@ -1,8 +1,6 @@
 provider: character-ai
 name: Character.AI
 description: Character.AI roleplay chat.
-categories:
-  - chat
 groups:
   - name: Core
     include:

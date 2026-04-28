@@ -1,7 +1,8 @@
 provider: openart
 name: OpenArt
 description: OpenArt AI image generation.
-category: media
+categories:
+  - media
 groups:
   - name: Core
     include:

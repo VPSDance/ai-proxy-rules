@@ -1,8 +1,6 @@
 provider: anthropic
 name: Anthropic
 description: Anthropic and Claude services.
-categories:
-  - chat
   - coding
   - model
 aliases:

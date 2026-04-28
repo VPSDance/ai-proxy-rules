@@ -1,7 +1,8 @@
 provider: comfyui
 name: ComfyUI
 description: ComfyUI image generation workflow.
-category: media
+categories:
+  - media
 groups:
   - name: Core
     include:

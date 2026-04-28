@@ -1,8 +1,6 @@
 provider: inflection
 name: Inflection / Pi
 description: Inflection AI (Pi personal chat).
-categories:
-  - chat
 aliases:
   - pi
 groups:

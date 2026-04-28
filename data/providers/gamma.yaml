@@ -1,8 +1,7 @@
 provider: gamma
 name: Gamma
 description: Gamma AI presentation / slides.
-categories:
-  - chat
+categories: []
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

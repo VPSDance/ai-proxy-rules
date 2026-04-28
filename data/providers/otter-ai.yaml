@@ -1,8 +1,7 @@
 provider: otter-ai
 name: Otter.ai
 description: Otter.ai meeting transcription.
-categories:
-  - chat
+categories: []
 aliases:
   - otter
 allowDangerousDomainSuffix: []

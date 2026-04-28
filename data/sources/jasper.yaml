@@ -1,7 +1,6 @@
 provider: jasper
 name: Jasper
 description: Jasper AI marketing / writing assistant.
-category: productivity
 groups:
   - name: Core
     include:

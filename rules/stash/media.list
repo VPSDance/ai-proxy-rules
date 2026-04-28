@@ -12,6 +12,13 @@ DOMAIN-SUFFIX,bfl.ai
 # Civitai / Core
 DOMAIN-SUFFIX,civitai.com
 
+# ClipDrop / Core
+DOMAIN-SUFFIX,clipdrop.co
+
+# ComfyUI / Core
+DOMAIN-SUFFIX,comfy.org
+DOMAIN-SUFFIX,comfyregistry.org
+
 # Descript / Core
 DOMAIN-SUFFIX,descript.com
 
@@ -28,11 +35,17 @@ DOMAIN-SUFFIX,ideogram.ai
 # Leonardo AI / Core
 DOMAIN-SUFFIX,leonardo.ai
 
+# Lovart / Core
+DOMAIN-SUFFIX,lovart.ai
+
 # Luma AI / Core
 DOMAIN-SUFFIX,lumalabs.ai
 
 # Midjourney / Core
 DOMAIN-SUFFIX,midjourney.com
+
+# OpenArt / Core
+DOMAIN-SUFFIX,openart.ai
 
 # Pika / Core
 DOMAIN-SUFFIX,pika.art

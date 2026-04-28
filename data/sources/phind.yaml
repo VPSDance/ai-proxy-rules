@@ -1,8 +1,6 @@
 provider: phind
 name: Phind
 description: Phind AI search for developers.
-categories:
-  - search
 groups:
   - name: Core
     include:

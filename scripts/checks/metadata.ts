@@ -45,19 +45,21 @@ export async function checkMetadata(sourcesDir: string): Promise<MetadataCheckRe
     }
     providerIds.add(id);
 
-    if (!Array.isArray(parsed.categories) || parsed.categories.length === 0) {
-      errors.push(`${relPath}: categories must contain at least one category`);
-    } else {
-      const seenCategories = new Set<string>();
-      for (const category of parsed.categories) {
-        if (typeof category !== "string" || !categorySet.has(category)) {
-          errors.push(`${relPath}: invalid category "${String(category)}"`);
-          continue;
+    if (parsed.categories !== undefined) {
+      if (!Array.isArray(parsed.categories)) {
+        errors.push(`${relPath}: categories must be an array when present`);
+      } else {
+        const seenCategories = new Set<string>();
+        for (const category of parsed.categories) {
+          if (typeof category !== "string" || !categorySet.has(category)) {
+            errors.push(`${relPath}: invalid category "${String(category)}"`);
+            continue;
+          }
+          if (seenCategories.has(category)) {
+            errors.push(`${relPath}: duplicate category "${category}"`);
+          }
+          seenCategories.add(category);
         }
-        if (seenCategories.has(category)) {
-          errors.push(`${relPath}: duplicate category "${category}"`);
-        }
-        seenCategories.add(category);
       }
     }
 

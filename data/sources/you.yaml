@@ -1,8 +1,6 @@
 provider: you
 name: You.com
 description: You.com AI search.
-categories:
-  - search
 groups:
   - name: Core
     include:

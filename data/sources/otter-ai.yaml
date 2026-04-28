@@ -1,8 +1,6 @@
 provider: otter-ai
 name: Otter.ai
 description: Otter.ai meeting transcription.
-categories:
-  - chat
 aliases:
   - otter
 groups:

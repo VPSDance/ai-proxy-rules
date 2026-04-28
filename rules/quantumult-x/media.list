@@ -12,6 +12,13 @@ HOST-SUFFIX,bfl.ai
 # Civitai / Core
 HOST-SUFFIX,civitai.com
 
+# ClipDrop / Core
+HOST-SUFFIX,clipdrop.co
+
+# ComfyUI / Core
+HOST-SUFFIX,comfy.org
+HOST-SUFFIX,comfyregistry.org
+
 # Descript / Core
 HOST-SUFFIX,descript.com
 
@@ -28,11 +35,17 @@ HOST-SUFFIX,ideogram.ai
 # Leonardo AI / Core
 HOST-SUFFIX,leonardo.ai
 
+# Lovart / Core
+HOST-SUFFIX,lovart.ai
+
 # Luma AI / Core
 HOST-SUFFIX,lumalabs.ai
 
 # Midjourney / Core
 HOST-SUFFIX,midjourney.com
+
+# OpenArt / Core
+HOST-SUFFIX,openart.ai
 
 # Pika / Core
 HOST-SUFFIX,pika.art

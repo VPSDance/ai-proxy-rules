@@ -1,7 +1,8 @@
 provider: lovart
 name: Lovart
 description: Lovart AI image generation.
-category: media
+categories:
+  - media
 groups:
   - name: Core
     include:

@@ -1,8 +1,6 @@
 provider: gamma
 name: Gamma
 description: Gamma AI presentation / slides.
-categories:
-  - chat
 groups:
   - name: Core
     include:
