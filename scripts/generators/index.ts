@@ -86,7 +86,7 @@ function renderSingBox(target: RenderTarget): string {
   assignIfAny(rule, "domain_regex", target.rules.domainRegex);
   assignIfAny(rule, "ip_cidr", [...target.rules.ipCidr, ...target.rules.ipCidr6]);
 
-  return `${JSON.stringify({ version: 3, rules: [rule] }, null, 2)}\n`;
+  return `${JSON.stringify({ version: 2, rules: [rule] }, null, 2)}\n`;
 }
 
 function renderQuantumultX(target: RenderTarget): string {

@@ -92,7 +92,7 @@ describe("generators", () => {
     const rendered = render("sing-box", providerToTarget(anthropic));
     const parsed = JSON.parse(rendered.content);
 
-    expect(parsed.version).toBe(3);
+    expect(parsed.version).toBe(2);
     expect(parsed.rules[0].domain).toEqual(["api.anthropic.com"]);
     expect(parsed.rules[0].domain_suffix).toEqual(["anthropic.com"]);
     expect(parsed.rules[0].ip_cidr).toEqual(["203.0.113.0/24", "2001:db8::/32"]);
