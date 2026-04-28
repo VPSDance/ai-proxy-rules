@@ -112,7 +112,7 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/all.
 
 只需要某一个 AI 服务时，把 `<provider>` 换成上面括号里的 id，例如 `anthropic`、`openai`、`copilot`、`cursor` 或 `huggingface`：
 
-```text
+```bash
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/<provider>.yaml
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/sing-box/<provider>.json
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/<provider>.list
@@ -120,19 +120,15 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/shadowrocket/<pro
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/<provider>.list
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/stash/<provider>.list
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/<provider>.list
-```
-
-例如 Anthropic / Claude 的 Clash 规则：
-
-```text
+# 例如 Anthropic / Claude 的 Clash 规则：
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/anthropic.yaml
 ```
 
 也可以订阅场景规则，把 `<provider>` 换成：
 
-- `coding`：编程 / IDE / CLI
-- `model`：模型 API 平台
-- `media`：图 / 视频 / 音频生成
+- `coding`：编程 / IDE / CLI，例如 Copilot、Cursor、Claude Code、Kiro
+- `model`：模型 API 平台，例如 OpenAI、Anthropic、OpenRouter、Groq
+- `media`：图 / 视频 / 音频生成，例如 Midjourney、Runway、Suno、ElevenLabs
 
 未列出的场景，直接用具体 provider 或 `all`。
 
