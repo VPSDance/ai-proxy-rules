@@ -1,5 +1,5 @@
 # AI Proxy Rules - Anthropic
-# Anthropic and Claude services. - coding - model
+# Anthropic and Claude services.
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
@@ -13,7 +13,7 @@ DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,modelcontextprotocol.io
 
 # Network
-IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR,160.79.104.0/23,no-resolve
 IP-CIDR6,2607:6bc0::/48,no-resolve
 IP-ASN,399358,no-resolve
 

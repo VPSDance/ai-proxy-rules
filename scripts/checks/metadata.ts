@@ -46,8 +46,8 @@ export async function checkMetadata(sourcesDir: string): Promise<MetadataCheckRe
     providerIds.add(id);
 
     if (parsed.categories !== undefined) {
-      if (!Array.isArray(parsed.categories)) {
-        errors.push(`${relPath}: categories must be an array when present`);
+      if (!Array.isArray(parsed.categories) || parsed.categories.length === 0) {
+        errors.push(`${relPath}: categories must contain at least one category when present`);
       } else {
         const seenCategories = new Set<string>();
         for (const category of parsed.categories) {

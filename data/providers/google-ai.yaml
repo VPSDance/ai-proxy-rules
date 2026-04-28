@@ -1,7 +1,9 @@
 provider: google-ai
 name: Google AI
-description: Google AI product family (Gemini, AI Studio, NotebookLM, Labs, DeepMind, etc.). - coding - model
-categories: []
+description: Google AI product family (Gemini, AI Studio, NotebookLM, Labs, DeepMind, etc.).
+categories:
+  - coding
+  - model
 aliases:
   - gemini
   - ai-studio

@@ -1,6 +1,7 @@
 provider: mistral-ai
 name: Mistral AI
 description: Mistral AI (Le Chat, La Plateforme).
+categories:
   - model
 aliases:
   - le-chat

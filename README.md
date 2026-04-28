@@ -4,7 +4,7 @@
 [![providers](https://img.shields.io/github/directory-file-count/VPSDance/ai-proxy-rules/data/sources?type=file&extension=yaml&label=providers)](./STATUS.md)
 [![last update](https://img.shields.io/github/last-commit/VPSDance/ai-proxy-rules/main?label=last%20update)](https://github.com/VPSDance/ai-proxy-rules/commits/main)
 
-AI 服务分流规则聚合，每日自动更新，多源合并去重并修正上游错误。直接订阅 `rules/` 文件，覆盖 Clash / Mihomo / sing-box / Surge / Shadowrocket / Loon / Stash / Quantumult X。
+AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 等多源合并去重，按 provider 拆分订阅；针对 OpenAI / Anthropic 等热门服务汇集多个上游，补全遗漏并修复部分规则。覆盖 Clash / Mihomo / sing-box / Surge / Shadowrocket / Loon / Stash / Quantumult X。
 
 规则覆盖范围：
 
@@ -122,7 +122,7 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/stash/<provider>.
 https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/<provider>.list
 ```
 
-也可以把 `<provider>` 换成场景汇总 id：`coding`（编程 / IDE / CLI）、`model`（模型 API 平台）、`media`(图 / 视频 / 音频生成)。聊天 / 搜索类工具直接用单 provider 或 `all`。
+也可以把 `<provider>` 换成场景汇总 id：`coding`（编程 / IDE / CLI）、`model`（模型 API 平台）、`media`（图 / 视频 / 音频生成）。其他场景订阅 `all` 全集或单个 `<provider>` 即可。
 
 例如 Anthropic / Claude 的 Clash 规则：
 

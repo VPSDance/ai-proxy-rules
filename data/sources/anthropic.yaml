@@ -1,6 +1,7 @@
 provider: anthropic
 name: Anthropic
 description: Anthropic and Claude services.
+categories:
   - coding
   - model
 aliases:
@@ -41,7 +42,7 @@ groups:
       asn:
         - 399358
       ipCidr:
-        - 160.79.104.0/21
+        - 160.79.104.0/23
       ipCidr6:
         - 2607:6bc0::/48
     fromSource:
@@ -72,4 +73,4 @@ patch:
     ipCidr6:
       - 2607:6bc0::/32
     ipCidr:
-      - 160.79.104.0/23
+      - 160.79.104.0/21
