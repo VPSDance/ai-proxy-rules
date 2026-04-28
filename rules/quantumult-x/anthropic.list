@@ -13,8 +13,8 @@ HOST-SUFFIX,claudeusercontent.com
 HOST-SUFFIX,modelcontextprotocol.io
 
 # Network
-IP-CIDR,160.79.104.0/23,no-resolve
-IP6-CIDR,2607:6bc0::/48,no-resolve
+IP-CIDR,160.79.104.0/21,no-resolve
+IP6-CIDR,2607:6bc0::/32,no-resolve
 IP-ASN,399358,no-resolve
 
 # Third-Party
@@ -31,4 +31,5 @@ HOST-SUFFIX,intercomcdn.com
 HOST-SUFFIX,sentry.io
 HOST-SUFFIX,statsigapi.net
 HOST-KEYWORD,datadog
+HOST-KEYWORD,sentry
 HOST-KEYWORD,sift

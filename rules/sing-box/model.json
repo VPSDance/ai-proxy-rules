@@ -119,18 +119,19 @@
         "chatgpt-async-webps-prod",
         "datadog",
         "openai",
+        "sentry",
         "sift"
       ],
       "domain_regex": [
         "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
       ],
       "ip_cidr": [
-        "160.79.104.0/23",
+        "160.79.104.0/21",
         "199.47.142.0/23",
         "24.199.123.28/32",
         "64.23.132.171/32",
         "2604:f20::/32",
-        "2607:6bc0::/48"
+        "2607:6bc0::/32"
       ]
     }
   ]

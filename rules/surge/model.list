@@ -13,8 +13,8 @@ DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,modelcontextprotocol.io
 
 # Anthropic / Network
-IP-CIDR,160.79.104.0/23,no-resolve
-IP-CIDR6,2607:6bc0::/48,no-resolve
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
 IP-ASN,399358,no-resolve
 
 # Anthropic / Third-Party
@@ -31,6 +31,7 @@ DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-KEYWORD,datadog
+DOMAIN-KEYWORD,sentry
 DOMAIN-KEYWORD,sift
 
 # Cerebras / Core

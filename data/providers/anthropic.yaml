@@ -23,9 +23,9 @@ groups:
   - name: Network
     rules:
       ipCidr:
-        - 160.79.104.0/23
+        - 160.79.104.0/21
       ipCidr6:
-        - 2607:6bc0::/48
+        - 2607:6bc0::/32
       asn:
         - 399358
   - name: Third-Party
@@ -46,4 +46,5 @@ groups:
         - statsigapi.net
       domainKeyword:
         - datadog
+        - sentry
         - sift
