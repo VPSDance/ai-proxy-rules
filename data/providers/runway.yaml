@@ -1,7 +1,8 @@
 provider: runway
 name: Runway
 description: Runway AI video generation.
-category: media
+categories:
+  - media
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

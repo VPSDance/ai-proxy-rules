@@ -1,9 +1,0 @@
-# AI Proxy Rules - Local AI Tools
-# Aggregated local AI provider rules.
-# https://github.com/VPSDance/ai-proxy-rules
-
-# LM Studio / Core
-HOST-SUFFIX,lmstudio.ai
-
-# Ollama / Core
-HOST-SUFFIX,ollama.com

@@ -1,7 +1,8 @@
 provider: sourcegraph
 name: Sourcegraph
 description: Sourcegraph Cody and Amp AI coding services.
-category: coding
+categories:
+  - coding
 groups:
   - name: Core
     include:

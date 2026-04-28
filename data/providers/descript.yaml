@@ -1,7 +1,8 @@
 provider: descript
 name: Descript
 description: Descript AI audio / video editor.
-category: media
+categories:
+  - media
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

@@ -1,7 +1,8 @@
 provider: deepinfra
 name: DeepInfra
 description: DeepInfra AI inference services.
-category: inference
+categories:
+  - model
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

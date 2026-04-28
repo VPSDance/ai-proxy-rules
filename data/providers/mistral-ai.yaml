@@ -1,7 +1,9 @@
 provider: mistral-ai
 name: Mistral AI
 description: Mistral AI (Le Chat, La Plateforme).
-category: assistant
+categories:
+  - chat
+  - model
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

@@ -1,7 +1,8 @@
 provider: lmstudio
 name: LM Studio
 description: LM Studio (desktop UI for local LLMs).
-category: local
+categories:
+  - model
 groups:
   - name: Core
     include:

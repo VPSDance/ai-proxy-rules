@@ -1,5 +1,5 @@
-# AI Proxy Rules - AI Assistants
-# Aggregated assistant AI provider rules.
+# AI Proxy Rules - AI Model Services
+# Aggregated model AI provider rules.
 # https://github.com/VPSDance/ai-proxy-rules
 
 payload:
@@ -34,8 +34,21 @@ payload:
   - DOMAIN-KEYWORD,datadog
   - DOMAIN-KEYWORD,sift
 
-  # Character.AI / Core
-  - DOMAIN-SUFFIX,character.ai
+  # Cerebras / Core
+  - DOMAIN-SUFFIX,cerebras.ai
+
+  # Cloudflare AI / Core
+  - DOMAIN-SUFFIX,ai.cloudflare.com
+
+  # Cohere / Core
+  - DOMAIN-SUFFIX,cohere.ai
+  - DOMAIN-SUFFIX,cohere.com
+
+  # DeepInfra / Core
+  - DOMAIN-SUFFIX,deepinfra.com
+
+  # Fireworks AI / Core
+  - DOMAIN-SUFFIX,fireworks.ai
 
   # Google AI / Core
   - DOMAIN-SUFFIX,ai.google.dev
@@ -80,17 +93,22 @@ payload:
   - DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
   - DOMAIN-SUFFIX,stitch.withgoogle.com
 
-  # Inflection / Pi / Core
-  - DOMAIN-SUFFIX,inflection.ai
-  - DOMAIN-SUFFIX,pi.ai
+  # Groq / Core
+  - DOMAIN-SUFFIX,groq.com
 
-  # Meta AI / Core
-  - DOMAIN,ai.meta.com
-  - DOMAIN-SUFFIX,llama.com
-  - DOMAIN-SUFFIX,meta.ai
+  # Hugging Face / Core
+  - DOMAIN-SUFFIX,hf.co
+  - DOMAIN-SUFFIX,hf.space
+  - DOMAIN-SUFFIX,huggingface.co
+
+  # LM Studio / Core
+  - DOMAIN-SUFFIX,lmstudio.ai
 
   # Mistral AI / Core
   - DOMAIN-SUFFIX,mistral.ai
+
+  # Ollama / Core
+  - DOMAIN-SUFFIX,ollama.com
 
   # OpenAI / Core
   - DOMAIN-SUFFIX,ai.com
@@ -137,11 +155,13 @@ payload:
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
 
-  # Poe / Core
-  - DOMAIN-SUFFIX,poe.com
-  - DOMAIN-SUFFIX,poecdn.net
+  # OpenRouter / Core
+  - DOMAIN-SUFFIX,openrouter.ai
 
-  # xAI / Core
-  - DOMAIN-SUFFIX,grok.com
-  - DOMAIN-SUFFIX,grok.x.com
-  - DOMAIN-SUFFIX,x.ai
+  # Replicate / Core
+  - DOMAIN-SUFFIX,replicate.com
+  - DOMAIN-SUFFIX,replicate.delivery
+
+  # Together AI / Core
+  - DOMAIN-SUFFIX,together.ai
+  - DOMAIN-SUFFIX,together.xyz

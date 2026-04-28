@@ -29,7 +29,7 @@ const providerSchema = z.object({
   provider: z.string().min(1).regex(/^[a-z0-9][a-z0-9-]*$/),
   name: z.string().min(1),
   description: z.string().optional(),
-  category: z.enum(providerCategories).default("assistant"),
+  categories: z.array(z.enum(providerCategories)).default([]),
   aliases: z.array(z.string().min(1)).default([]),
   allowDangerousDomainSuffix: z.array(z.string().min(1)).default([]),
   rules: rulesSchema.optional(),
@@ -81,10 +81,11 @@ export function aggregateProviders(providers: ProviderSource[]): RenderTarget {
 export function aggregateProvidersByCategory(providers: ProviderSource[]): RenderTarget[] {
   const byCategory = new Map<ProviderCategory, ProviderSource[]>();
   for (const provider of providers) {
-    const category = provider.category ?? "assistant";
-    const categoryProviders = byCategory.get(category) ?? [];
-    categoryProviders.push(provider);
-    byCategory.set(category, categoryProviders);
+    for (const category of provider.categories ?? []) {
+      const categoryProviders = byCategory.get(category) ?? [];
+      categoryProviders.push(provider);
+      byCategory.set(category, categoryProviders);
+    }
   }
 
   return providerCategories.flatMap((category) => {
@@ -116,7 +117,6 @@ export function providerToTarget(provider: ProviderSource): RenderTarget {
     id: provider.provider,
     name: provider.name,
     description: provider.description,
-    category: provider.category,
     groups: provider.groups,
     rules: provider.rules
   };
@@ -144,7 +144,7 @@ async function parseProviderFile(filePath: string): Promise<ProviderSource> {
     provider: parsed.provider,
     name: parsed.name,
     description: parsed.description,
-    category: parsed.category,
+    categories: parsed.categories,
     aliases: parsed.aliases,
     allowDangerousDomainSuffix: parsed.allowDangerousDomainSuffix,
     groups,
@@ -154,22 +154,16 @@ async function parseProviderFile(filePath: string): Promise<ProviderSource> {
 
 function categoryName(category: ProviderCategory): string {
   switch (category) {
-    case "assistant":
-      return "AI Assistants";
+    case "chat":
+      return "AI Chat";
     case "coding":
       return "AI Coding Tools";
-    case "inference":
-      return "AI Inference Providers";
+    case "model":
+      return "AI Model Services";
     case "media":
       return "AI Media Tools";
     case "search":
       return "AI Search Tools";
-    case "agent":
-      return "AI Agent Platforms";
-    case "local":
-      return "Local AI Tools";
-    case "productivity":
-      return "AI Productivity Tools";
   }
 }
 

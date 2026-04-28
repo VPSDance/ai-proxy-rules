@@ -1,7 +1,8 @@
 provider: jetbrains-ai
 name: JetBrains AI
 description: JetBrains AI Assistant / Junie / Grazie.
-category: coding
+categories:
+  - coding
 sources:
   - name: v2fly
     type: remote-text

@@ -1,7 +1,8 @@
 provider: amazon-q
 name: Amazon Q Developer
 description: Amazon Q Developer IDE assistant and coding services.
-category: coding
+categories:
+  - coding
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

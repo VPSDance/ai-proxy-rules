@@ -1,7 +1,8 @@
 provider: midjourney
 name: Midjourney
 description: Midjourney AI image generation.
-category: media
+categories:
+  - media
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

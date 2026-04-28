@@ -1,7 +1,10 @@
 provider: google-ai
 name: Google AI
 description: Google AI product family (Gemini, AI Studio, NotebookLM, Labs, DeepMind, etc.).
-category: assistant
+categories:
+  - chat
+  - coding
+  - model
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

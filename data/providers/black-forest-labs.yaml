@@ -1,7 +1,8 @@
 provider: black-forest-labs
 name: Black Forest Labs
 description: Black Forest Labs / FLUX image generation.
-category: media
+categories:
+  - media
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

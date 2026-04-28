@@ -1,7 +1,8 @@
 provider: inflection
 name: Inflection / Pi
 description: Inflection AI (Pi personal chat).
-category: assistant
+categories:
+  - chat
 groups:
   - name: Core
     include:

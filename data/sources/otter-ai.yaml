@@ -1,7 +1,8 @@
 provider: otter-ai
 name: Otter.ai
 description: Otter.ai meeting transcription.
-category: productivity
+categories:
+  - chat
 groups:
   - name: Core
     include:

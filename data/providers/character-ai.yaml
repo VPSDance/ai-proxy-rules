@@ -1,7 +1,8 @@
 provider: character-ai
 name: Character.AI
 description: Character.AI roleplay chat.
-category: assistant
+categories:
+  - chat
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

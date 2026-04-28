@@ -1,7 +1,8 @@
 provider: replit
 name: Replit
 description: Replit AI Agent, Assistant, workspace, and app deployment services.
-category: coding
+categories:
+  - coding
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

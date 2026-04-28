@@ -1,7 +1,8 @@
 provider: adobe-firefly
 name: Adobe Firefly
 description: Adobe Firefly image/video generation (Firefly entry only; shared Adobe CDNs not included).
-category: media
+categories:
+  - media
 groups:
   - name: Core
     include:

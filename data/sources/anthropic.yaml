@@ -1,7 +1,10 @@
 provider: anthropic
 name: Anthropic
 description: Anthropic and Claude services.
-category: assistant
+categories:
+  - chat
+  - coding
+  - model
 sources:
   - name: net-coffee
     type: remote-html

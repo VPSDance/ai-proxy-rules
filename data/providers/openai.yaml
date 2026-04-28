@@ -1,7 +1,10 @@
 provider: openai
 name: OpenAI
 description: OpenAI and ChatGPT services.
-category: assistant
+categories:
+  - chat
+  - coding
+  - model
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

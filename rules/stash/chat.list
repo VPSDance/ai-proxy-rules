@@ -1,5 +1,5 @@
-# AI Proxy Rules - AI Assistants
-# Aggregated assistant AI provider rules.
+# AI Proxy Rules - AI Chat
+# Aggregated chat AI provider rules.
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Anthropic / Core
@@ -35,6 +35,9 @@ DOMAIN-KEYWORD,sift
 
 # Character.AI / Core
 DOMAIN-SUFFIX,character.ai
+
+# Gamma / Core
+DOMAIN-SUFFIX,gamma.app
 
 # Google AI / Core
 DOMAIN-SUFFIX,ai.google.dev
@@ -78,6 +81,9 @@ DOMAIN-SUFFIX,opal.google.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
 DOMAIN-SUFFIX,stitch.withgoogle.com
+
+# Grammarly / Core
+DOMAIN-SUFFIX,grammarly.com
 
 # Inflection / Pi / Core
 DOMAIN-SUFFIX,inflection.ai
@@ -134,6 +140,9 @@ DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
+
+# Otter.ai / Core
+DOMAIN-SUFFIX,otter.ai
 
 # Poe / Core
 DOMAIN-SUFFIX,poe.com

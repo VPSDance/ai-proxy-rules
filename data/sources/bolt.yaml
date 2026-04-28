@@ -1,7 +1,8 @@
 provider: bolt
 name: Bolt.new
 description: StackBlitz Bolt.new (AI app builder).
-category: coding
+categories:
+  - coding
 groups:
   - name: Core
     include:

@@ -1,7 +1,8 @@
 provider: suno
 name: Suno
 description: Suno AI music generation.
-category: media
+categories:
+  - media
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

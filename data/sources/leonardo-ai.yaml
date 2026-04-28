@@ -1,7 +1,8 @@
 provider: leonardo-ai
 name: Leonardo AI
 description: Leonardo AI image generation.
-category: media
+categories:
+  - media
 groups:
   - name: Core
     include:

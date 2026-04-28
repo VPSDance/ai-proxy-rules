@@ -73,10 +73,10 @@ export const sourceProviderSchema = z.object({
     .regex(/^[a-z0-9][a-z0-9-]*$/)
     .refine((value) => value !== "all", {
       message: '"all" is reserved for the aggregated rule set',
-    }),
+  }),
   name: z.string().min(1),
   description: z.string().optional(),
-  category: z.enum(providerCategories).default("assistant"),
+  categories: z.array(z.enum(providerCategories)).default([]),
   aliases: z.array(z.string().min(1)).default([]),
   allowDangerousDomainSuffix: z.array(z.string().min(1)).default([]),
   sources: z.array(sourceSchema).default([]),
@@ -109,7 +109,7 @@ export interface SourceProviderData {
   provider: string;
   name: string;
   description?: string;
-  category: NormalizedSourceProvider["category"];
+  categories: NormalizedSourceProvider["categories"];
   aliases: string[];
   allowDangerousDomainSuffix: string[];
   groups: OutputGroup[];
@@ -165,7 +165,7 @@ export async function buildProviderData(
     provider: normalizedProvider.provider,
     name: normalizedProvider.name,
     description: normalizedProvider.description,
-    category: normalizedProvider.category,
+    categories: normalizedProvider.categories,
     aliases: normalizedProvider.aliases,
     allowDangerousDomainSuffix: normalizedProvider.allowDangerousDomainSuffix,
     groups: normalizedGroups

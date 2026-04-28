@@ -1,7 +1,8 @@
 provider: kiro
 name: Kiro
 description: AWS Kiro agentic IDE and CLI services.
-category: coding
+categories:
+  - coding
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

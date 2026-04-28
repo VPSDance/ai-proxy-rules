@@ -29,7 +29,7 @@ export interface ProviderSource {
   provider: string;
   name: string;
   description?: string;
-  category?: ProviderCategory;
+  categories?: ProviderCategory[];
   aliases?: string[];
   allowDangerousDomainSuffix?: string[];
   groups: RuleGroup[];
@@ -52,14 +52,11 @@ export interface RenderedFile {
 }
 
 export const providerCategories = [
-  "assistant",
+  "chat",
   "coding",
-  "inference",
+  "model",
   "media",
-  "search",
-  "agent",
-  "local",
-  "productivity"
+  "search"
 ] as const;
 
 export type ProviderCategory = (typeof providerCategories)[number];

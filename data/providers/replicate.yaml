@@ -1,7 +1,8 @@
 provider: replicate
 name: Replicate
 description: Replicate model hosting, inference, and output delivery services.
-category: inference
+categories:
+  - model
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

@@ -1,7 +1,8 @@
 provider: ideogram
 name: Ideogram
 description: Ideogram AI image generation.
-category: media
+categories:
+  - media
 groups:
   - name: Core
     include:

@@ -1,7 +1,8 @@
 provider: huggingface
 name: Hugging Face
 description: Hugging Face model hub, spaces, and inference services.
-category: inference
+categories:
+  - model
 sources:
   - name: v2fly
     type: remote-text

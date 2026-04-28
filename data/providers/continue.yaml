@@ -1,7 +1,8 @@
 provider: continue
 name: Continue
 description: Continue (open-source AI coding assistant).
-category: coding
+categories:
+  - coding
 aliases: []
 allowDangerousDomainSuffix: []
 groups:

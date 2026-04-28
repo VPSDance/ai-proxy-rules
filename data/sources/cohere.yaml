@@ -1,7 +1,8 @@
 provider: cohere
 name: Cohere
 description: Cohere AI services.
-category: inference
+categories:
+  - model
 groups:
   - name: Core
     include:
