@@ -1,13 +1,13 @@
 # STATUS
 
 Last generated: 2026-04-29
-Providers: 82 · Total rules: 287
+Providers: 82 · Total rules: 288
 
 | Provider | ID | Categories | Aliases | Rules | Sources |
 |---|---|---|---|---:|---|
 | Adobe Firefly | `adobe-firefly` | media | - | 2 | _handwritten_ |
 | Amazon Q Developer | `amazon-q` | coding | q-developer | 15 | _handwritten_ |
-| Anthropic | `anthropic` | coding, model | claude, claude-code | 26 | net-coffee, fetched 2026-04-29; xiaolai, fetched 2026-04-29; v2fly, fetched 2026-04-29 |
+| Anthropic | `anthropic` | coding, model | claude, claude-code | 27 | net-coffee, fetched 2026-04-29; xiaolai, fetched 2026-04-29; v2fly, fetched 2026-04-29 |
 | Augment Code | `augment-code` | coding | augment, auggie | 1 | _handwritten_ |
 | Black Forest Labs | `black-forest-labs` | media | flux | 1 | _handwritten_ |
 | Bolt.new | `bolt` | coding | - | 1 | _handwritten_ |
