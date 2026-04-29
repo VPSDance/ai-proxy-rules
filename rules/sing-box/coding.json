@@ -108,6 +108,7 @@
         "dify.ai",
         "edgeservices.bing.com",
         "events.statsigapi.net",
+        "factory.ai",
         "featuregates.org",
         "geller-pa.googleapis.com",
         "gemini.google",
@@ -174,7 +175,8 @@
         "v0.app",
         "v0.dev",
         "windsurf.build",
-        "windsurf.com"
+        "windsurf.com",
+        "zed.dev"
       ],
       "domain_keyword": [
         "chatgpt-async-webps-prod",

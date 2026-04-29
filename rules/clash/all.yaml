@@ -181,6 +181,9 @@ payload:
   - DOMAIN-SUFFIX,elevenlabs.com
   - DOMAIN-SUFFIX,elevenlabs.io
 
+  # Factory / Core
+  - DOMAIN-SUFFIX,factory.ai
+
   # Fireworks AI / Core
   - DOMAIN-SUFFIX,fireworks.ai
 
@@ -276,6 +279,9 @@ payload:
 
   # Leonardo AI / Core
   - DOMAIN-SUFFIX,leonardo.ai
+
+  # LMArena / Core
+  - DOMAIN-SUFFIX,lmarena.ai
 
   # LM Studio / Core
   - DOMAIN-SUFFIX,lmstudio.ai
@@ -435,3 +441,6 @@ payload:
   - DOMAIN-SUFFIX,youmind.ai
   - DOMAIN-SUFFIX,youmind.com
   - DOMAIN-SUFFIX,youmind.site
+
+  # Zed / Core
+  - DOMAIN-SUFFIX,zed.dev

@@ -180,6 +180,9 @@ DOMAIN-SUFFIX,eigent.ai
 DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-SUFFIX,elevenlabs.io
 
+# Factory / Core
+DOMAIN-SUFFIX,factory.ai
+
 # Fireworks AI / Core
 DOMAIN-SUFFIX,fireworks.ai
 
@@ -275,6 +278,9 @@ DOMAIN-SUFFIX,langchain.com
 
 # Leonardo AI / Core
 DOMAIN-SUFFIX,leonardo.ai
+
+# LMArena / Core
+DOMAIN-SUFFIX,lmarena.ai
 
 # LM Studio / Core
 DOMAIN-SUFFIX,lmstudio.ai
@@ -433,3 +439,6 @@ DOMAIN-SUFFIX,you.com
 DOMAIN-SUFFIX,youmind.ai
 DOMAIN-SUFFIX,youmind.com
 DOMAIN-SUFFIX,youmind.site
+
+# Zed / Core
+DOMAIN-SUFFIX,zed.dev

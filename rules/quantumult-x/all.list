@@ -180,6 +180,9 @@ HOST-SUFFIX,eigent.ai
 HOST-SUFFIX,elevenlabs.com
 HOST-SUFFIX,elevenlabs.io
 
+# Factory / Core
+HOST-SUFFIX,factory.ai
+
 # Fireworks AI / Core
 HOST-SUFFIX,fireworks.ai
 
@@ -275,6 +278,9 @@ HOST-SUFFIX,langchain.com
 
 # Leonardo AI / Core
 HOST-SUFFIX,leonardo.ai
+
+# LMArena / Core
+HOST-SUFFIX,lmarena.ai
 
 # LM Studio / Core
 HOST-SUFFIX,lmstudio.ai
@@ -433,3 +439,6 @@ HOST-SUFFIX,you.com
 HOST-SUFFIX,youmind.ai
 HOST-SUFFIX,youmind.com
 HOST-SUFFIX,youmind.site
+
+# Zed / Core
+HOST-SUFFIX,zed.dev

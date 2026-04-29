@@ -127,6 +127,9 @@ HOST-SUFFIX,devin.ai
 # Dify / Core
 HOST-SUFFIX,dify.ai
 
+# Factory / Core
+HOST-SUFFIX,factory.ai
+
 # Google AI / Core
 HOST-SUFFIX,ai.google.dev
 HOST-SUFFIX,ai.studio
@@ -245,3 +248,6 @@ HOST-SUFFIX,codeium.com
 HOST-SUFFIX,codeiumdata.com
 HOST-SUFFIX,windsurf.build
 HOST-SUFFIX,windsurf.com
+
+# Zed / Core
+HOST-SUFFIX,zed.dev

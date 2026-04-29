@@ -1,0 +1,12 @@
+provider: lmarena
+name: LMArena
+description: LMArena model evaluation and chat services.
+categories:
+  - model
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - lmarena.ai

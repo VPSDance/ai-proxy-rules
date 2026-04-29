@@ -107,6 +107,9 @@ HOST-SUFFIX,hf.co
 HOST-SUFFIX,hf.space
 HOST-SUFFIX,huggingface.co
 
+# LMArena / Core
+HOST-SUFFIX,lmarena.ai
+
 # LM Studio / Core
 HOST-SUFFIX,lmstudio.ai
 

@@ -1,0 +1,10 @@
+provider: lmarena
+name: LMArena
+description: LMArena model evaluation and chat services.
+categories:
+  - model
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - lmarena.ai

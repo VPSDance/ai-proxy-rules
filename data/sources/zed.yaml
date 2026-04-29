@@ -1,0 +1,10 @@
+provider: zed
+name: Zed
+description: Zed editor and AI coding services.
+categories:
+  - coding
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - zed.dev

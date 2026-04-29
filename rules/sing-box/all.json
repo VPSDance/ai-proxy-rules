@@ -130,6 +130,7 @@
         "elevenlabs.com",
         "elevenlabs.io",
         "events.statsigapi.net",
+        "factory.ai",
         "featuregates.org",
         "firefly.adobe.com",
         "firefly.adobe.io",
@@ -172,6 +173,7 @@
         "leonardo.ai",
         "lf3-static.bytednsdoc.com",
         "llama.com",
+        "lmarena.ai",
         "lmstudio.ai",
         "lovable.dev",
         "lovart.ai",
@@ -252,7 +254,8 @@
         "you.com",
         "youmind.ai",
         "youmind.com",
-        "youmind.site"
+        "youmind.site",
+        "zed.dev"
       ],
       "domain_keyword": [
         "chatgpt-async-webps-prod",

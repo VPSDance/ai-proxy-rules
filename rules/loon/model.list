@@ -107,6 +107,9 @@ DOMAIN-SUFFIX,hf.co
 DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,huggingface.co
 
+# LMArena / Core
+DOMAIN-SUFFIX,lmarena.ai
+
 # LM Studio / Core
 DOMAIN-SUFFIX,lmstudio.ai
 

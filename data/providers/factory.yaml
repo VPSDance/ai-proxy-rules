@@ -1,0 +1,12 @@
+provider: factory
+name: Factory
+description: Factory AI software development agents and coding services.
+categories:
+  - coding
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - factory.ai

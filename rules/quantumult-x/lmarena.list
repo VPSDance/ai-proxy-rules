@@ -1,0 +1,6 @@
+# AI Proxy Rules - LMArena
+# LMArena model evaluation and chat services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,lmarena.ai

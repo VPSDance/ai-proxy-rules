@@ -1,0 +1,6 @@
+# AI Proxy Rules - Zed
+# Zed editor and AI coding services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,zed.dev

@@ -1,0 +1,6 @@
+# AI Proxy Rules - Factory
+# Factory AI software development agents and coding services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,factory.ai

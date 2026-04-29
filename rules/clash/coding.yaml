@@ -128,6 +128,9 @@ payload:
   # Dify / Core
   - DOMAIN-SUFFIX,dify.ai
 
+  # Factory / Core
+  - DOMAIN-SUFFIX,factory.ai
+
   # Google AI / Core
   - DOMAIN-SUFFIX,ai.google.dev
   - DOMAIN-SUFFIX,ai.studio
@@ -247,3 +250,6 @@ payload:
   - DOMAIN-SUFFIX,codeiumdata.com
   - DOMAIN-SUFFIX,windsurf.build
   - DOMAIN-SUFFIX,windsurf.com
+
+  # Zed / Core
+  - DOMAIN-SUFFIX,zed.dev
