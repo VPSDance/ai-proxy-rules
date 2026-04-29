@@ -22,7 +22,7 @@ on:
       - "tsconfig.json"
       - ".github/workflows/generate.yml"
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 23 * * *"
   workflow_dispatch:
 
 permissions:
