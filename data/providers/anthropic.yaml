@@ -18,6 +18,7 @@ groups:
         - claude.ai
         - claude.com
         - claudemcpclient.com
+        - claudemcpcontent.com
         - claudeusercontent.com
         - modelcontextprotocol.io
   - name: Network
@@ -40,7 +41,6 @@ groups:
         - servd-anthropic-website.b-cdn.net
         - storage.googleapis.com
       domainSuffix:
-        - claudemcpcontent.com
         - intercom.io
         - intercomcdn.com
         - sentry.io

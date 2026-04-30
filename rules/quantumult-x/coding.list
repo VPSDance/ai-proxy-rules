@@ -26,6 +26,7 @@ HOST-SUFFIX,clau.de
 HOST-SUFFIX,claude.ai
 HOST-SUFFIX,claude.com
 HOST-SUFFIX,claudemcpclient.com
+HOST-SUFFIX,claudemcpcontent.com
 HOST-SUFFIX,claudeusercontent.com
 HOST-SUFFIX,modelcontextprotocol.io
 
@@ -43,7 +44,6 @@ HOST,cdn.growthbook.io
 HOST,cdn.usefathom.com
 HOST,servd-anthropic-website.b-cdn.net
 HOST,storage.googleapis.com
-HOST-SUFFIX,claudemcpcontent.com
 HOST-SUFFIX,intercom.io
 HOST-SUFFIX,intercomcdn.com
 HOST-SUFFIX,sentry.io

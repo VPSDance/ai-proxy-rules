@@ -57,11 +57,13 @@ async function sync(options: SyncOptions): Promise<void> {
     console.log(filePath);
   }
 
-  const removed = await cache.pruneOrphans();
-  if (options.provider === "all" && removed.length > 0) {
-    const isGithubActions = process.env.GITHUB_ACTIONS === "true";
-    const tag = isGithubActions ? "::notice::" : "[notice] ";
-    console.log(`${tag}Pruned ${removed.length} orphan cache entry/entries.`);
+  if (isFullSync(options.provider)) {
+    const removed = await cache.pruneOrphans();
+    if (removed.length > 0) {
+      const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+      const tag = isGithubActions ? "::notice::" : "[notice] ";
+      console.log(`${tag}Pruned ${removed.length} orphan cache entry/entries.`);
+    }
   }
 
   reportCacheWarnings(cache);
@@ -128,4 +130,8 @@ function parseCsv(value: string): string[] {
     .split(",")
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function isFullSync(providerOption: string): boolean {
+  return parseCsv(providerOption).includes("all");
 }
