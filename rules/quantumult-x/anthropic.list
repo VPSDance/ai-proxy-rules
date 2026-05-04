@@ -5,13 +5,22 @@
 # Core
 HOST-SUFFIX,anthropic.com
 HOST-SUFFIX,anthropic.com.cn
+HOST-SUFFIX,antspace.dev
 HOST-SUFFIX,clau.de
 HOST-SUFFIX,claude.ai
+HOST-SUFFIX,claude.app
 HOST-SUFFIX,claude.com
+HOST-SUFFIX,claude.new
+HOST-SUFFIX,claude.site
 HOST-SUFFIX,claudemcpclient.com
 HOST-SUFFIX,claudemcpcontent.com
+HOST-SUFFIX,claudepages.dev
+HOST-SUFFIX,claudestudio.com
 HOST-SUFFIX,claudeusercontent.com
+HOST-SUFFIX,modelcontextprotocol.com
 HOST-SUFFIX,modelcontextprotocol.io
+HOST-SUFFIX,modelcontextprotocol.net
+HOST-SUFFIX,modelcontextprotocol.org
 
 # Network
 IP-CIDR,160.79.104.0/21,no-resolve
@@ -27,9 +36,17 @@ HOST,cdn.growthbook.io
 HOST,cdn.usefathom.com
 HOST,servd-anthropic-website.b-cdn.net
 HOST,storage.googleapis.com
+HOST-SUFFIX,anthropic.team
+HOST-SUFFIX,chatbotclaude.com
 HOST-SUFFIX,intercom.io
 HOST-SUFFIX,intercomcdn.com
+HOST-SUFFIX,interface.feedback
+HOST-SUFFIX,lcicat.org
+HOST-SUFFIX,lcicollections.org
+HOST-SUFFIX,mcpservertest.online
+HOST-SUFFIX,muthos.com
 HOST-SUFFIX,sentry.io
+HOST-SUFFIX,sillylittleguy.org
 HOST-SUFFIX,statsigapi.net
 HOST-KEYWORD,datadog
 HOST-KEYWORD,sentry

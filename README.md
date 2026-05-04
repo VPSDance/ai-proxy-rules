@@ -182,6 +182,8 @@ GitHub Actions 会在影响规则生成的文件变化时自动运行同步、�
 - https://github.com/xiaolai/anthropic-claude-surge-rules-set
 - https://ip.net.coffee/claude/site.html
 - https://docs.anthropic.com/en/api/ip-addresses
+- https://bgp.he.net/net/160.79.104.0/23#_dnsrecords
+- https://bgp.he.net/net/2607:6bc0::/48#_dnsrecords
 - https://github.com/blackmatrix7/ios_rule_script
 - https://github.com/v2fly/domain-list-community
 - https://github.com/SkywalkerJi/Clash-Rules

@@ -30,12 +30,21 @@ groups:
       domainSuffix:
         - anthropic.com
         - anthropic.com.cn
+        - antspace.dev
         - claude.ai
+        - claude.app
         - claude.com
+        - claudepages.dev
         - claudemcpclient.com
         - claudemcpcontent.com
+        - claudestudio.com
         - claudeusercontent.com
         - clau.de
+        - claude.new
+        - claude.site
+        - modelcontextprotocol.com
+        - modelcontextprotocol.net
+        - modelcontextprotocol.org
         - modelcontextprotocol.io
 
   - name: Network
@@ -58,6 +67,14 @@ groups:
         - cdn.growthbook.io
         - storage.googleapis.com
       domainSuffix:
+        - anthropic.team
+        - chatbotclaude.com
+        - interface.feedback
+        - lcicat.org
+        - lcicollections.org
+        - mcpservertest.online
+        - muthos.com
+        - sillylittleguy.org
         - statsigapi.net
       domainKeyword:
         # Keep net-coffee's broader Sentry coverage; Claude may use Sentry subdomains beyond sentry.io.

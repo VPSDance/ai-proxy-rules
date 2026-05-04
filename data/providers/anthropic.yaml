@@ -14,13 +14,22 @@ groups:
       domainSuffix:
         - anthropic.com
         - anthropic.com.cn
+        - antspace.dev
         - clau.de
         - claude.ai
+        - claude.app
         - claude.com
+        - claude.new
+        - claude.site
         - claudemcpclient.com
         - claudemcpcontent.com
+        - claudepages.dev
+        - claudestudio.com
         - claudeusercontent.com
+        - modelcontextprotocol.com
         - modelcontextprotocol.io
+        - modelcontextprotocol.net
+        - modelcontextprotocol.org
   - name: Network
     rules:
       ipCidr:
@@ -41,9 +50,17 @@ groups:
         - servd-anthropic-website.b-cdn.net
         - storage.googleapis.com
       domainSuffix:
+        - anthropic.team
+        - chatbotclaude.com
         - intercom.io
         - intercomcdn.com
+        - interface.feedback
+        - lcicat.org
+        - lcicollections.org
+        - mcpservertest.online
+        - muthos.com
         - sentry.io
+        - sillylittleguy.org
         - statsigapi.net
       domainKeyword:
         - datadog
