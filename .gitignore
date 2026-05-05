@@ -2,3 +2,14 @@ node_modules/
 coverage/
 *.log
 .DS_Store
+
+# Local editor and AI assistant state
+.claude/
+.codex/
+.agents/
+.cursor/
+.continue/
+.vscode/
+.idea/
+.zed/
+.windsurf/

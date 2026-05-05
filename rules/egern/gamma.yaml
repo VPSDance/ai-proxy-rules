@@ -1,0 +1,6 @@
+# AI Proxy Rules - Gamma
+# Gamma AI presentation / slides.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "gamma.app"

@@ -1,0 +1,9 @@
+# AI Proxy Rules - Meta AI
+# Meta AI products (Meta AI chat, Llama).
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_set:
+  - "ai.meta.com"
+domain_suffix_set:
+  - "llama.com"
+  - "meta.ai"

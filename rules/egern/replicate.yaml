@@ -1,0 +1,7 @@
+# AI Proxy Rules - Replicate
+# Replicate model hosting, inference, and output delivery services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "replicate.com"
+  - "replicate.delivery"

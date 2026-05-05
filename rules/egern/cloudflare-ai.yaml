@@ -1,0 +1,6 @@
+# AI Proxy Rules - Cloudflare AI
+# Cloudflare AI Gateway and Workers AI services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "ai.cloudflare.com"

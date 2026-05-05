@@ -1,0 +1,6 @@
+# AI Proxy Rules - Cerebras
+# Cerebras AI inference services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "cerebras.ai"

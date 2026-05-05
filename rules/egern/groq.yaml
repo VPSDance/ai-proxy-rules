@@ -1,0 +1,6 @@
+# AI Proxy Rules - Groq
+# Groq AI inference services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "groq.com"

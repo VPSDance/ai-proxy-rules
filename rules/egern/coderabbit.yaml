@@ -1,0 +1,6 @@
+# AI Proxy Rules - CodeRabbit
+# CodeRabbit AI code review.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "coderabbit.ai"

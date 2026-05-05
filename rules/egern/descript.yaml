@@ -1,0 +1,6 @@
+# AI Proxy Rules - Descript
+# Descript AI audio / video editor.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "descript.com"

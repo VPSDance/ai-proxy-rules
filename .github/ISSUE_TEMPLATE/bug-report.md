@@ -19,7 +19,7 @@ labels: bug
 
 例如：`openai`、`anthropic`、`all`、`coding`。
 
-如果只在某个客户端出问题，也可以写客户端名称：Surge / Clash / Mihomo / sing-box / Loon / Shadowrocket / Stash / Quantumult X。
+如果只在某个客户端出问题，也可以写客户端名称：Surge / Clash / Mihomo / sing-box / Loon / Shadowrocket / Stash / Quantumult X / Egern。
 
 ## 具体问题
 

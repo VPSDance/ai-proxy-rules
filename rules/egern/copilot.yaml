@@ -1,0 +1,40 @@
+# AI Proxy Rules - Copilot
+# Microsoft Copilot and related services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+no_resolve: true
+domain_set:
+  - "api.msn.com"
+  - "api.statsig.com"
+  - "assets.msn.com"
+  - "browser-intake-datadoghq.com"
+  - "gateway.bingviz.microsoft.net"
+  - "gateway.bingviz.microsoftapp.net"
+  - "in.appcenter.ms"
+  - "location.microsoft.com"
+  - "odc.officeapps.live.com"
+  - "self.events.data.microsoft.com"
+  - "static.cloudflareinsights.com"
+  - "sydney.bing.com"
+domain_suffix_set:
+  - "algolia.net"
+  - "api.microsoftapp.net"
+  - "auth0.com"
+  - "bing-shopping.microsoft-falcon.io"
+  - "challenges.cloudflare.com"
+  - "client-api.arkoselabs.com"
+  - "copilot.microsoft.com"
+  - "edgeservices.bing.com"
+  - "events.statsigapi.net"
+  - "featuregates.org"
+  - "githubcopilot.com"
+  - "identrust.com"
+  - "intercom.io"
+  - "intercomcdn.com"
+  - "launchdarkly.com"
+  - "observeit.net"
+  - "segment.io"
+  - "sentry.io"
+  - "stripe.com"
+asn_set:
+  - "AS14061"

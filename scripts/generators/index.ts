@@ -46,6 +46,12 @@ export function render(format: Format, target: RenderTarget): RenderedFile {
         extension: "list",
         content: renderStash(target)
       };
+    case "egern":
+      return {
+        format,
+        extension: "yaml",
+        content: renderEgern(target)
+      };
   }
 }
 
@@ -145,6 +151,31 @@ function renderStash(target: RenderTarget): string {
   );
 }
 
+function renderEgern(target: RenderTarget): string {
+  const rule: Record<string, Array<string | number>> = {};
+  const hasIpRules =
+    target.rules.ipCidr.length > 0 || target.rules.ipCidr6.length > 0 || target.rules.asn.length > 0;
+
+  assignIfAny(rule, "domain_set", target.rules.domain);
+  assignIfAny(rule, "domain_suffix_set", target.rules.domainSuffix);
+  assignIfAny(rule, "domain_keyword_set", target.rules.domainKeyword);
+  assignIfAny(rule, "domain_regex_set", target.rules.domainRegex);
+  assignIfAny(rule, "ip_cidr_set", target.rules.ipCidr);
+  assignIfAny(rule, "ip_cidr6_set", target.rules.ipCidr6);
+  assignIfAny(
+    rule,
+    "asn_set",
+    target.rules.asn.map((value) => `AS${value}`)
+  );
+
+  return [
+    ...headerLines(target),
+    ...(hasIpRules ? ["no_resolve: true"] : []),
+    ...renderYamlMap(rule),
+    ""
+  ].join("\n");
+}
+
 function withHeader(target: RenderTarget, lines: string[]): string {
   return [...headerLines(target), ...lines, ""].join("\n");
 }
@@ -187,8 +218,33 @@ function renderGroupedLines(
   return lines;
 }
 
-function assignIfAny(target: Record<string, string[]>, key: string, values: string[]): void {
+function assignIfAny<T extends string | number>(
+  target: Record<string, T[]>,
+  key: string,
+  values: T[]
+): void {
   if (values.length > 0) {
     target[key] = values;
   }
+}
+
+function renderYamlMap(rule: Record<string, Array<string | number>>): string[] {
+  const lines: string[] = [];
+
+  for (const [key, values] of Object.entries(rule)) {
+    lines.push(`${key}:`);
+    for (const value of values) {
+      lines.push(`  - ${quoteYamlValue(value)}`);
+    }
+  }
+
+  return lines;
+}
+
+function quoteYamlValue(value: string | number): string {
+  if (typeof value === "number") {
+    return String(value);
+  }
+
+  return JSON.stringify(value);
 }

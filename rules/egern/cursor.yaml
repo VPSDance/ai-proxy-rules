@@ -1,0 +1,9 @@
+# AI Proxy Rules - Cursor
+# Cursor AI code editor.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "cursor-cdn.com"
+  - "cursor.com"
+  - "cursor.sh"
+  - "cursorapi.com"

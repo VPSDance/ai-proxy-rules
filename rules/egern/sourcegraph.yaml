@@ -1,0 +1,9 @@
+# AI Proxy Rules - Sourcegraph
+# Sourcegraph Cody and Amp AI coding services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "ampcode.com"
+  - "ampworkers.com"
+  - "cody.dev"
+  - "sourcegraph.com"

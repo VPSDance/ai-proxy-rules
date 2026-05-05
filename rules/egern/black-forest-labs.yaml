@@ -1,0 +1,6 @@
+# AI Proxy Rules - Black Forest Labs
+# Black Forest Labs / FLUX image generation.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "bfl.ai"

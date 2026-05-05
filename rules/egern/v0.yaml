@@ -1,0 +1,7 @@
+# AI Proxy Rules - v0
+# Vercel v0 (UI generation).
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "v0.app"
+  - "v0.dev"

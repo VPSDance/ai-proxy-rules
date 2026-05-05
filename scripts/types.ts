@@ -5,7 +5,8 @@ export const formats = [
   "quantumult-x",
   "loon",
   "shadowrocket",
-  "stash"
+  "stash",
+  "egern"
 ] as const;
 
 export type Format = (typeof formats)[number];

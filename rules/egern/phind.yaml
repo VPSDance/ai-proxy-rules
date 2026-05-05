@@ -1,0 +1,6 @@
+# AI Proxy Rules - Phind
+# Phind AI search for developers.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "phind.com"

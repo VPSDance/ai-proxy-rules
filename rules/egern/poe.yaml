@@ -1,0 +1,7 @@
+# AI Proxy Rules - Poe
+# Poe AI chat.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "poe.com"
+  - "poecdn.net"

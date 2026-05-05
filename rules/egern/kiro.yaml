@@ -1,0 +1,8 @@
+# AI Proxy Rules - Kiro
+# AWS Kiro agentic IDE and CLI services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "kiro.dev"
+  - "q.eu-central-1.amazonaws.com"
+  - "q.us-east-1.amazonaws.com"

@@ -139,6 +139,19 @@ describe("generators", () => {
     expect(rendered.content).toContain("IP-ASN,399358,no-resolve");
   });
 
+  it("renders Egern YAML rule set", () => {
+    const rendered = render("egern", providerToTarget(anthropic));
+
+    expect(rendered.extension).toBe("yaml");
+    expect(rendered.content).toContain("no_resolve: true");
+    expect(rendered.content).toContain("domain_set:\n  - \"api.anthropic.com\"");
+    expect(rendered.content).toContain("domain_suffix_set:\n  - \"anthropic.com\"");
+    expect(rendered.content).toContain("domain_keyword_set:\n  - \"claude\"");
+    expect(rendered.content).toContain("ip_cidr_set:\n  - \"203.0.113.0/24\"");
+    expect(rendered.content).toContain("ip_cidr6_set:\n  - \"2001:db8::/32\"");
+    expect(rendered.content).toContain("asn_set:\n  - \"AS399358\"");
+  });
+
   it("emits domain-regex only in formats with first-class regex support", () => {
     const provider: ProviderSource = {
       provider: "regex-test",
@@ -172,6 +185,9 @@ describe("generators", () => {
     expect(render("clash", target).content).toContain("DOMAIN-REGEX,^example-\\d+\\.foo\\.com$");
     const singBox = JSON.parse(render("sing-box", target).content);
     expect(singBox.rules[0].domain_regex).toEqual(["^example-\\d+\\.foo\\.com$"]);
+
+    const egern = render("egern", target).content;
+    expect(egern).toContain("domain_regex_set:\n  - \"^example-\\\\d+\\\\.foo\\\\.com$\"");
 
     for (const format of ["surge", "loon", "shadowrocket", "stash", "quantumult-x"] as const) {
       expect(render(format, target).content).not.toContain("REGEX");
