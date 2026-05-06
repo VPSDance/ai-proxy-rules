@@ -13,6 +13,9 @@ HOST,api.msn.com
 HOST,api.statsig.com
 HOST,assets.msn.com
 HOST,browser-intake-datadoghq.com
+HOST,copilot-proxy.githubusercontent.com
+HOST,copilot-workspace.githubnext.com
+HOST,copilotprodattachments.blob.core.windows.net
 HOST,gateway.bingviz.microsoft.net
 HOST,gateway.bingviz.microsoftapp.net
 HOST,in.appcenter.ms

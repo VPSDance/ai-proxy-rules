@@ -25,6 +25,9 @@ groups:
         - api.statsig.com
         - assets.msn.com
         - browser-intake-datadoghq.com
+        - copilot-proxy.githubusercontent.com
+        - copilot-workspace.githubnext.com
+        - copilotprodattachments.blob.core.windows.net
         - gateway.bingviz.microsoft.net
         - gateway.bingviz.microsoftapp.net
         - in.appcenter.ms
