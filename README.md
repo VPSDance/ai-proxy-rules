@@ -144,6 +144,18 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/anthropic.y
 
 未列出的场景，直接用具体 provider 或 `all`。
 
+## 多代理分流组合
+
+多数客户端会按规则顺序从上到下匹配。需要让少数服务走专用代理、其余 AI 服务走另一个代理时，把具体 provider 放在前面，把 `all` 放在后面即可：
+
+```text
+openai    -> AI-US
+anthropic -> AI-US
+all       -> AI-SG
+```
+
+`all` 只会处理前面未命中的 AI 流量。
+
 > 国内 jsDelivr 偶尔不稳定时，可把 `cdn.jsdelivr.net` 替换为 `testingcf.jsdelivr.net`、`fastly.jsdelivr.net` 或 `cdn.jsdmirror.com` 等镜像。
 
 ## 目录结构
