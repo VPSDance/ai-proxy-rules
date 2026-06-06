@@ -364,6 +364,7 @@ payload:
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN-SUFFIX,api.statsig.com
   - DOMAIN-SUFFIX,host.livekit.cloud
+  - DOMAIN-SUFFIX,oaistatsig.com
   - DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$

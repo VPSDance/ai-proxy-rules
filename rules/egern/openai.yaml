@@ -28,6 +28,7 @@ domain_suffix_set:
   - "intercomcdn.com"
   - "launchdarkly.com"
   - "oaistatic.com"
+  - "oaistatsig.com"
   - "oaiusercontent.com"
   - "observeit.net"
   - "openai.com"

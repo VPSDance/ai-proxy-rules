@@ -111,6 +111,7 @@ domain_suffix_set:
   - "notebooklm.google"
   - "notebooklm.google.com"
   - "oaistatic.com"
+  - "oaistatsig.com"
   - "oaiusercontent.com"
   - "observeit.net"
   - "ollama.com"

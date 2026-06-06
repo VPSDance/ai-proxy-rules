@@ -176,6 +176,7 @@ DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,segment.io
