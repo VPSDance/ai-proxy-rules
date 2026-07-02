@@ -1,7 +1,7 @@
 # STATUS
 
 Last generated: 2026-07-02
-Providers: 82 · Total rules: 310
+Providers: 82 · Total rules: 311
 
 | Provider | ID | Categories | Aliases | Rules | Sources |
 |---|---|---|---|---:|---|
@@ -61,7 +61,7 @@ Providers: 82 · Total rules: 310
 | Midjourney | `midjourney` | media | - | 1 | _handwritten_ |
 | Mistral AI | `mistral-ai` | model | le-chat | 1 | _handwritten_ |
 | Ollama | `ollama` | model | - | 1 | _handwritten_ |
-| OpenAI | `openai` | coding, model | chatgpt, codex | 44 | blackmatrix7, fetched 2026-07-02; v2fly, fetched 2026-07-02 |
+| OpenAI | `openai` | coding, model | chatgpt, codex | 45 | blackmatrix7, fetched 2026-07-02; v2fly, fetched 2026-07-02 |
 | OpenArt | `openart` | media | - | 1 | _handwritten_ |
 | OpenClaw | `openclaw` | - | - | 1 | _handwritten_ |
 | OpenRouter | `openrouter` | model | - | 1 | _handwritten_ |
