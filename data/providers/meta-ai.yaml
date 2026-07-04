@@ -11,5 +11,6 @@ groups:
       domain:
         - ai.meta.com
       domainSuffix:
+        - atmeta.com
         - llama.com
         - meta.ai

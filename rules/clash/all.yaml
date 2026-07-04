@@ -323,6 +323,7 @@ payload:
 
   # Meta AI / Core
   - DOMAIN,ai.meta.com
+  - DOMAIN-SUFFIX,atmeta.com
   - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,meta.ai
 
