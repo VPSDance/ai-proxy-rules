@@ -171,6 +171,7 @@ HOST,static.cloudflareinsights.com
 HOST-SUFFIX,algolia.net
 HOST-SUFFIX,api.statsig.com
 HOST-SUFFIX,auth0.com
+HOST-SUFFIX,chatgpt.site
 HOST-SUFFIX,client-api.arkoselabs.com
 HOST-SUFFIX,events.statsigapi.net
 HOST-SUFFIX,featuregates.org

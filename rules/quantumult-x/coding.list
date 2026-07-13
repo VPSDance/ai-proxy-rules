@@ -242,6 +242,7 @@ HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 HOST,openaicomproductionae4b.blob.core.windows.net
 HOST,production-openaicom-storage.azureedge.net
 HOST-SUFFIX,api.statsig.com
+HOST-SUFFIX,chatgpt.site
 HOST-SUFFIX,host.livekit.cloud
 HOST-SUFFIX,oaistatsig.com
 HOST-SUFFIX,openai.com.cdn.cloudflare.net

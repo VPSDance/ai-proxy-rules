@@ -365,6 +365,7 @@ payload:
   - DOMAIN,openaicomproductionae4b.blob.core.windows.net
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN-SUFFIX,api.statsig.com
+  - DOMAIN-SUFFIX,chatgpt.site
   - DOMAIN-SUFFIX,host.livekit.cloud
   - DOMAIN-SUFFIX,oaistatsig.com
   - DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net

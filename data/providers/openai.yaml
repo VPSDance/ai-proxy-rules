@@ -50,6 +50,7 @@ groups:
         - algolia.net
         - api.statsig.com
         - auth0.com
+        - chatgpt.site
         - client-api.arkoselabs.com
         - events.statsigapi.net
         - featuregates.org
