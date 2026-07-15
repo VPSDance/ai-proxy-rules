@@ -150,6 +150,7 @@ domain_suffix_set:
   - "firefly.adobe.com"
   - "firefly.adobe.io"
   - "fireworks.ai"
+  - "flow.google"
   - "gamma.app"
   - "geller-pa.googleapis.com"
   - "gemini.google"

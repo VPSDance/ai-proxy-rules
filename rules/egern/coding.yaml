@@ -124,6 +124,7 @@ domain_suffix_set:
   - "events.statsigapi.net"
   - "factory.ai"
   - "featuregates.org"
+  - "flow.google"
   - "geller-pa.googleapis.com"
   - "gemini.google"
   - "gemini.google.com"
