@@ -45,6 +45,10 @@ payload:
   # Midjourney / Core
   - DOMAIN-SUFFIX,midjourney.com
 
+  # MiniMax / Core
+  - DOMAIN,api.minimax.io
+  - DOMAIN,api.minimaxi.com
+
   # OpenArt / Core
   - DOMAIN-SUFFIX,openart.ai
 

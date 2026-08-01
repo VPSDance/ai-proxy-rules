@@ -13,6 +13,7 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 - OpenAI / ChatGPT (`openai`)
 - Anthropic / Claude (`anthropic`)
 - Google AI / Gemini / AI Studio / NotebookLM / Antigravity (`google-ai`)
+- MiniMax (`minimax`)
 - xAI / Grok (`x-ai`)
 - Meta AI / Llama (`meta-ai`)
 - Mistral AI / Le Chat (`mistral-ai`)

@@ -1,0 +1,15 @@
+provider: minimax
+name: MiniMax
+description: MiniMax API services.
+categories:
+  - model
+  - media
+aliases:
+  - hailuo
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domain:
+        - api.minimax.io
+        - api.minimaxi.com

@@ -134,6 +134,10 @@ payload:
   # LM Studio / Core
   - DOMAIN-SUFFIX,lmstudio.ai
 
+  # MiniMax / Core
+  - DOMAIN,api.minimax.io
+  - DOMAIN,api.minimaxi.com
+
   # Mistral AI / Core
   - DOMAIN-SUFFIX,mistral.ai
 

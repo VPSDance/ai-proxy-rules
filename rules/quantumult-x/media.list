@@ -44,6 +44,10 @@ HOST-SUFFIX,lumalabs.ai
 # Midjourney / Core
 HOST-SUFFIX,midjourney.com
 
+# MiniMax / Core
+HOST,api.minimax.io
+HOST,api.minimaxi.com
+
 # OpenArt / Core
 HOST-SUFFIX,openart.ai
 

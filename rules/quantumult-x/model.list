@@ -133,6 +133,10 @@ HOST-SUFFIX,lmarena.ai
 # LM Studio / Core
 HOST-SUFFIX,lmstudio.ai
 
+# MiniMax / Core
+HOST,api.minimax.io
+HOST,api.minimaxi.com
+
 # Mistral AI / Core
 HOST-SUFFIX,mistral.ai
 

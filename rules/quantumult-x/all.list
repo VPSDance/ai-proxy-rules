@@ -330,6 +330,10 @@ HOST-SUFFIX,meta.ai
 # Midjourney / Core
 HOST-SUFFIX,midjourney.com
 
+# MiniMax / Core
+HOST,api.minimax.io
+HOST,api.minimaxi.com
+
 # Mistral AI / Core
 HOST-SUFFIX,mistral.ai
 

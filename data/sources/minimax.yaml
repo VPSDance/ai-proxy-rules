@@ -1,0 +1,14 @@
+provider: minimax
+name: MiniMax
+description: MiniMax API services.
+categories:
+  - model
+  - media
+aliases:
+  - hailuo
+groups:
+  - name: Core
+    include:
+      domain:
+        - api.minimax.io
+        - api.minimaxi.com

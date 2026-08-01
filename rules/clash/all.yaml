@@ -331,6 +331,10 @@ payload:
   # Midjourney / Core
   - DOMAIN-SUFFIX,midjourney.com
 
+  # MiniMax / Core
+  - DOMAIN,api.minimax.io
+  - DOMAIN,api.minimaxi.com
+
   # Mistral AI / Core
   - DOMAIN-SUFFIX,mistral.ai
 
