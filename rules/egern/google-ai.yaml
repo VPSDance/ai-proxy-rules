@@ -38,6 +38,7 @@ domain_suffix_set:
   - "labs.google"
   - "labs.google.com"
   - "makersuite.google.com"
+  - "notebook.google.com"
   - "notebooklm.google"
   - "notebooklm.google.com"
   - "opal.google"

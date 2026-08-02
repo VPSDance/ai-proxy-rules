@@ -42,6 +42,7 @@ payload:
   - DOMAIN-SUFFIX,labs.google
   - DOMAIN-SUFFIX,labs.google.com
   - DOMAIN-SUFFIX,makersuite.google.com
+  - DOMAIN-SUFFIX,notebook.google.com
   - DOMAIN-SUFFIX,opal.google
   - DOMAIN-SUFFIX,opal.google.com
   - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
