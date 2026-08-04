@@ -1,0 +1,10 @@
+# AI Proxy Rules - MiniMax
+# MiniMax API services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_set:
+  - "api.minimax.io"
+  - "api.minimaxi.com"
+domain_suffix_set:
+  - "hailuoai.com"
+  - "xingyeai.com"

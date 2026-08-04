@@ -1,0 +1,8 @@
+# AI Proxy Rules - Moonshot AI
+# Moonshot AI and Kimi web and API services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "kimi.com"
+  - "moonshot.ai"
+  - "moonshot.cn"

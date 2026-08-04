@@ -1,0 +1,26 @@
+# AI Proxy Rules - ByteDance AI (China)
+# ByteDance AI products for mainland China (Trae, MarsCode, and Coze).
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,coze.cn
+HOST-SUFFIX,cozeapp.net
+HOST-SUFFIX,cozebaas.cn
+HOST-SUFFIX,cozebuild.com
+HOST-SUFFIX,cozecdn.com
+HOST-SUFFIX,cozedeploy.com
+HOST-SUFFIX,cozefn.cn
+HOST-SUFFIX,cozeide.cn
+HOST-SUFFIX,cozesdk.com
+HOST-SUFFIX,doudou.com
+HOST-SUFFIX,marscode.cn
+HOST-SUFFIX,marscode.com.cn
+HOST-SUFFIX,mcbaas.work
+HOST-SUFFIX,mcdemo.show
+HOST-SUFFIX,mchost.guru
+HOST-SUFFIX,mcprev.cn
+HOST-SUFFIX,tcwqqdy.guru
+HOST-SUFFIX,trae.cn
+HOST-SUFFIX,trae.com.cn
+HOST-SUFFIX,trae.guru
+HOST-SUFFIX,yoma.cn

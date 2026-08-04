@@ -1,0 +1,25 @@
+provider: alibaba-ai
+name: Alibaba AI
+description: Alibaba Cloud Model Studio, DashScope, and Qwen services.
+scope: cn
+categories:
+  - model
+aliases:
+  - bailian
+  - dashscope
+  - qwen
+  - tongyi
+groups:
+  - name: Core
+    include:
+      domain:
+        - bailian.console.aliyun.com
+        - dashscope.aliyuncs.com
+      domainSuffix:
+        # v2fly/domain-list-community category-ai-cn: Qwen.
+        - qianwen.aliyun.com
+        - qianwen.com
+        - qwen.ai
+        - qwenlm.ai
+        - tongyi.aliyun.com
+        - tongyi.com

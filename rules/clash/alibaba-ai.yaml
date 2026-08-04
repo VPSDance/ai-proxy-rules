@@ -1,0 +1,14 @@
+# AI Proxy Rules - Alibaba AI
+# Alibaba Cloud Model Studio, DashScope, and Qwen services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+payload:
+  # Core
+  - DOMAIN,bailian.console.aliyun.com
+  - DOMAIN,dashscope.aliyuncs.com
+  - DOMAIN-SUFFIX,qianwen.aliyun.com
+  - DOMAIN-SUFFIX,qianwen.com
+  - DOMAIN-SUFFIX,qwen.ai
+  - DOMAIN-SUFFIX,qwenlm.ai
+  - DOMAIN-SUFFIX,tongyi.aliyun.com
+  - DOMAIN-SUFFIX,tongyi.com

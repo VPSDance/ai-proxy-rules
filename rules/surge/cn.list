@@ -1,0 +1,78 @@
+# AI Proxy Rules - China AI Providers
+# Aggregated China AI provider rules.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Alibaba AI / Core
+DOMAIN,bailian.console.aliyun.com
+DOMAIN,dashscope.aliyuncs.com
+DOMAIN-SUFFIX,qianwen.aliyun.com
+DOMAIN-SUFFIX,qianwen.com
+DOMAIN-SUFFIX,qwen.ai
+DOMAIN-SUFFIX,qwenlm.ai
+DOMAIN-SUFFIX,tongyi.aliyun.com
+DOMAIN-SUFFIX,tongyi.com
+
+# Baidu AI / Core
+DOMAIN,ernie.baidu.com
+DOMAIN,qianfan.baidubce.com
+DOMAIN,yiyan.baidu.com
+
+# ByteDance AI (China) / Core
+DOMAIN-SUFFIX,coze.cn
+DOMAIN-SUFFIX,cozeapp.net
+DOMAIN-SUFFIX,cozebaas.cn
+DOMAIN-SUFFIX,cozebuild.com
+DOMAIN-SUFFIX,cozecdn.com
+DOMAIN-SUFFIX,cozedeploy.com
+DOMAIN-SUFFIX,cozefn.cn
+DOMAIN-SUFFIX,cozeide.cn
+DOMAIN-SUFFIX,cozesdk.com
+DOMAIN-SUFFIX,doudou.com
+DOMAIN-SUFFIX,marscode.cn
+DOMAIN-SUFFIX,marscode.com.cn
+DOMAIN-SUFFIX,mcbaas.work
+DOMAIN-SUFFIX,mcdemo.show
+DOMAIN-SUFFIX,mchost.guru
+DOMAIN-SUFFIX,mcprev.cn
+DOMAIN-SUFFIX,tcwqqdy.guru
+DOMAIN-SUFFIX,trae.cn
+DOMAIN-SUFFIX,trae.com.cn
+DOMAIN-SUFFIX,trae.guru
+DOMAIN-SUFFIX,yoma.cn
+
+# DeepSeek / Core
+DOMAIN-SUFFIX,deepseek.com
+
+# MiniMax / Core
+DOMAIN,api.minimax.io
+DOMAIN,api.minimaxi.com
+DOMAIN-SUFFIX,hailuoai.com
+DOMAIN-SUFFIX,xingyeai.com
+
+# Moonshot AI / Core
+DOMAIN-SUFFIX,kimi.com
+DOMAIN-SUFFIX,moonshot.ai
+DOMAIN-SUFFIX,moonshot.cn
+
+# Tencent AI / Core
+DOMAIN,api.hunyuan.cloud.tencent.com
+DOMAIN,hunyuan.tencentcloudapi.com
+DOMAIN-SUFFIX,hunyuan.tencent.com
+DOMAIN-SUFFIX,yuanbao.tencent.com
+DOMAIN-SUFFIX,yuanqi.tencent.com
+
+# Volcengine AI / Core
+DOMAIN,ark.cn-beijing.volces.com
+DOMAIN-SUFFIX,doubao.com
+
+# Xiaomi AI / Core
+DOMAIN-SUFFIX,miaibox.com
+DOMAIN-SUFFIX,xiaoaiassist.com
+DOMAIN-SUFFIX,xiaomimimo.com
+
+# Zhipu AI / Core
+DOMAIN-SUFFIX,bigmodel.cn
+DOMAIN-SUFFIX,chatglm.cn
+DOMAIN-SUFFIX,z.ai
+DOMAIN-SUFFIX,zhipuai.cn
+DOMAIN-SUFFIX,zhipucn.com

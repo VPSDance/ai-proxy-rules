@@ -1,0 +1,14 @@
+provider: xiaomi-ai
+name: Xiaomi AI
+description: Xiaomi AI and MiMo services.
+scope: cn
+categories:
+  - model
+sources:
+  - name: v2fly
+    type: remote-text
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/xiaomi-ai
+    parser: domain-list-community
+groups:
+  - name: Core
+    fromSource: true

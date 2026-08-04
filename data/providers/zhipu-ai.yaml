@@ -1,0 +1,20 @@
+provider: zhipu-ai
+name: Zhipu AI
+description: Zhipu AI, GLM, and BigModel services.
+scope: cn
+categories:
+  - model
+aliases:
+  - glm
+  - chatglm
+  - bigmodel
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - bigmodel.cn
+        - chatglm.cn
+        - z.ai
+        - zhipuai.cn
+        - zhipucn.com

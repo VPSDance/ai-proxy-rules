@@ -1,0 +1,15 @@
+provider: xiaomi-ai
+name: Xiaomi AI
+description: Xiaomi AI and MiMo services.
+scope: cn
+categories:
+  - model
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - miaibox.com
+        - xiaoaiassist.com
+        - xiaomimimo.com

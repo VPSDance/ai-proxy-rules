@@ -1,0 +1,18 @@
+provider: baidu-ai
+name: Baidu AI
+description: Baidu Qianfan and ERNIE AI platform services.
+scope: cn
+categories:
+  - model
+aliases:
+  - qianfan
+  - ernie
+  - wenxin
+groups:
+  - name: Core
+    include:
+      domain:
+        - qianfan.baidubce.com
+        - ernie.baidu.com
+        # v2fly/domain-list-community category-ai-cn: ERNIE Bot.
+        - yiyan.baidu.com

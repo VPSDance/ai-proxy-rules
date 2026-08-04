@@ -1,0 +1,9 @@
+# AI Proxy Rules - MiniMax
+# MiniMax API services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST,api.minimax.io
+HOST,api.minimaxi.com
+HOST-SUFFIX,hailuoai.com
+HOST-SUFFIX,xingyeai.com

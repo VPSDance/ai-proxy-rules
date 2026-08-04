@@ -1,0 +1,30 @@
+provider: bytedance-ai-cn
+name: ByteDance AI (China)
+description: ByteDance AI products for mainland China (Trae, MarsCode, and Coze).
+scope: cn
+categories:
+  - coding
+aliases:
+  - trae-cn
+  - coze-cn
+  - marscode-cn
+sources:
+  - name: v2fly-trae
+    type: remote-text
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/trae
+    parser: domain-list-community
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        # Coze domains from v2fly/domain-list-community data/doubao.
+        - coze.cn
+        - cozeapp.net
+        - cozebaas.cn
+        - cozebuild.com
+        - cozecdn.com
+        - cozedeploy.com
+        - cozefn.cn
+        - cozeide.cn
+        - cozesdk.com
+    fromSource: true

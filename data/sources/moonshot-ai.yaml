@@ -1,0 +1,17 @@
+provider: moonshot-ai
+name: Moonshot AI
+description: Moonshot AI and Kimi web and API services.
+scope: cn
+categories:
+  - model
+aliases:
+  - kimi
+  - moonshot
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        # v2fly/domain-list-community category-ai-cn: Moonshot AI.
+        - kimi.com
+        - moonshot.ai
+        - moonshot.cn

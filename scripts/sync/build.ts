@@ -14,7 +14,7 @@ import {
   type RuleKey
 } from "../rules.js";
 import { parseSourceRules, type SourceParser } from "./parsers.js";
-import { providerCategories, type RuleGroup, type RuleSet } from "../types.js";
+import { providerCategories, providerScopes, type RuleGroup, type RuleSet } from "../types.js";
 
 const partialRulesSchema = z
   .object({
@@ -71,11 +71,12 @@ export const sourceProviderSchema = z.object({
     .string()
     .min(1)
     .regex(/^[a-z0-9][a-z0-9-]*$/)
-    .refine((value) => value !== "all", {
-      message: '"all" is reserved for the aggregated rule set',
+    .refine((value) => !new Set(["all", "global", "cn", ...providerCategories]).has(value), {
+      message: "Provider id is reserved for an aggregated rule set",
   }),
   name: z.string().min(1),
   description: z.string().optional(),
+  scope: z.enum(providerScopes).optional(),
   categories: z.array(z.enum(providerCategories)).default([]),
   aliases: z.array(z.string().min(1)).default([]),
   allowDangerousDomainSuffix: z.array(z.string().min(1)).default([]),
@@ -109,6 +110,7 @@ export interface SourceProviderData {
   provider: string;
   name: string;
   description?: string;
+  scope?: (typeof providerScopes)[number];
   categories: NormalizedSourceProvider["categories"];
   aliases: string[];
   allowDangerousDomainSuffix: string[];
@@ -165,6 +167,7 @@ export async function buildProviderData(
     provider: normalizedProvider.provider,
     name: normalizedProvider.name,
     description: normalizedProvider.description,
+    scope: normalizedProvider.scope,
     categories: normalizedProvider.categories,
     aliases: normalizedProvider.aliases,
     allowDangerousDomainSuffix: normalizedProvider.allowDangerousDomainSuffix,

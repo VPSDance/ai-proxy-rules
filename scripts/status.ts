@@ -39,6 +39,7 @@ interface SourceEntry {
 interface Row {
   id: string;
   name: string;
+  scope: string;
   categories: string[];
   aliases: string[];
   rules: number;
@@ -59,12 +60,14 @@ async function run(options: StatusOptions): Promise<void> {
     const sourceParsed = parse(await readFile(sourcePath, "utf8")) as {
       provider?: string;
       name?: string;
+      scope?: string;
       categories?: string[];
       aliases?: string[];
       sources?: Array<{ name?: string; url?: string; type?: string; selector?: string }>;
     };
     const id = sourceParsed.provider ?? fileName.replace(/\.ya?ml$/i, "");
     const name = sourceParsed.name ?? id;
+    const scope = sourceParsed.scope ?? "global";
     const categories = sourceParsed.categories ?? [];
     const aliases = sourceParsed.aliases ?? [];
 
@@ -91,7 +94,7 @@ async function run(options: StatusOptions): Promise<void> {
       sourceEntries.push(entry);
     }
 
-    rows.push({ id, name, categories, aliases, rules, sources: sourceEntries });
+    rows.push({ id, name, scope, categories, aliases, rules, sources: sourceEntries });
   }
 
   await writeFile(options.output, renderMarkdown(rows), "utf8");
@@ -117,8 +120,8 @@ function renderMarkdown(rows: Row[]): string {
   lines.push(`Last generated: ${new Date().toISOString().slice(0, 10)}`);
   lines.push(`Providers: ${rows.length} · Total rules: ${totalRules}`);
   lines.push("");
-  lines.push("| Provider | ID | Categories | Aliases | Rules | Sources |");
-  lines.push("|---|---|---|---|---:|---|");
+  lines.push("| Provider | ID | Scope | Categories | Aliases | Rules | Sources |");
+  lines.push("|---|---|---|---|---|---:|---|");
   for (const row of rows) {
     const categories = row.categories.length > 0 ? row.categories.join(", ") : "-";
     const aliases = row.aliases.length > 0 ? row.aliases.join(", ") : "-";
@@ -136,7 +139,7 @@ function renderMarkdown(rows: Row[]): string {
             return parts.join(", ");
           })
           .join("; ");
-    lines.push(`| ${row.name} | \`${row.id}\` | ${categories} | ${aliases} | ${row.rules} | ${sources} |`);
+    lines.push(`| ${row.name} | \`${row.id}\` | ${row.scope} | ${categories} | ${aliases} | ${row.rules} | ${sources} |`);
   }
   lines.push("");
   return lines.join("\n");

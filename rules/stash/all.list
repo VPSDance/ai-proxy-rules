@@ -6,6 +6,16 @@
 DOMAIN-SUFFIX,firefly.adobe.com
 DOMAIN-SUFFIX,firefly.adobe.io
 
+# Alibaba AI / Core
+DOMAIN,bailian.console.aliyun.com
+DOMAIN,dashscope.aliyuncs.com
+DOMAIN-SUFFIX,qianwen.aliyun.com
+DOMAIN-SUFFIX,qianwen.com
+DOMAIN-SUFFIX,qwen.ai
+DOMAIN-SUFFIX,qwenlm.ai
+DOMAIN-SUFFIX,tongyi.aliyun.com
+DOMAIN-SUFFIX,tongyi.com
+
 # Amazon Q Developer / Core
 DOMAIN,aws-language-servers.us-east-1.amazonaws.com
 DOMAIN,aws-toolkit-language-servers.amazonaws.com
@@ -76,6 +86,11 @@ DOMAIN-KEYWORD,sift
 # Augment Code / Core
 DOMAIN-SUFFIX,augmentcode.com
 
+# Baidu AI / Core
+DOMAIN,ernie.baidu.com
+DOMAIN,qianfan.baidubce.com
+DOMAIN,yiyan.baidu.com
+
 # Black Forest Labs / Core
 DOMAIN-SUFFIX,bfl.ai
 
@@ -97,6 +112,29 @@ DOMAIN-SUFFIX,starling.zijieapi.com
 DOMAIN-SUFFIX,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,trae.ai
 DOMAIN-SUFFIX,tron-sg.bytelemon.com
+
+# ByteDance AI (China) / Core
+DOMAIN-SUFFIX,coze.cn
+DOMAIN-SUFFIX,cozeapp.net
+DOMAIN-SUFFIX,cozebaas.cn
+DOMAIN-SUFFIX,cozebuild.com
+DOMAIN-SUFFIX,cozecdn.com
+DOMAIN-SUFFIX,cozedeploy.com
+DOMAIN-SUFFIX,cozefn.cn
+DOMAIN-SUFFIX,cozeide.cn
+DOMAIN-SUFFIX,cozesdk.com
+DOMAIN-SUFFIX,doudou.com
+DOMAIN-SUFFIX,marscode.cn
+DOMAIN-SUFFIX,marscode.com.cn
+DOMAIN-SUFFIX,mcbaas.work
+DOMAIN-SUFFIX,mcdemo.show
+DOMAIN-SUFFIX,mchost.guru
+DOMAIN-SUFFIX,mcprev.cn
+DOMAIN-SUFFIX,tcwqqdy.guru
+DOMAIN-SUFFIX,trae.cn
+DOMAIN-SUFFIX,trae.com.cn
+DOMAIN-SUFFIX,trae.guru
+DOMAIN-SUFFIX,yoma.cn
 
 # Cerebras / Core
 DOMAIN-SUFFIX,cerebras.ai
@@ -177,6 +215,9 @@ DOMAIN-SUFFIX,cursorapi.com
 
 # DeepInfra / Core
 DOMAIN-SUFFIX,deepinfra.com
+
+# DeepSeek / Core
+DOMAIN-SUFFIX,deepseek.com
 
 # Descript / Core
 DOMAIN-SUFFIX,descript.com
@@ -331,8 +372,19 @@ DOMAIN-SUFFIX,meta.ai
 # Midjourney / Core
 DOMAIN-SUFFIX,midjourney.com
 
+# MiniMax / Core
+DOMAIN,api.minimax.io
+DOMAIN,api.minimaxi.com
+DOMAIN-SUFFIX,hailuoai.com
+DOMAIN-SUFFIX,xingyeai.com
+
 # Mistral AI / Core
 DOMAIN-SUFFIX,mistral.ai
+
+# Moonshot AI / Core
+DOMAIN-SUFFIX,kimi.com
+DOMAIN-SUFFIX,moonshot.ai
+DOMAIN-SUFFIX,moonshot.cn
 
 # Ollama / Core
 DOMAIN-SUFFIX,ollama.com
@@ -438,6 +490,13 @@ DOMAIN-SUFFIX,synthesia.io
 # Tabnine / Core
 DOMAIN-SUFFIX,tabnine.com
 
+# Tencent AI / Core
+DOMAIN,api.hunyuan.cloud.tencent.com
+DOMAIN,hunyuan.tencentcloudapi.com
+DOMAIN-SUFFIX,hunyuan.tencent.com
+DOMAIN-SUFFIX,yuanbao.tencent.com
+DOMAIN-SUFFIX,yuanqi.tencent.com
+
 # Together AI / Core
 DOMAIN-SUFFIX,together.ai
 DOMAIN-SUFFIX,together.xyz
@@ -448,6 +507,10 @@ DOMAIN-SUFFIX,udio.com
 # v0 / Core
 DOMAIN-SUFFIX,v0.app
 DOMAIN-SUFFIX,v0.dev
+
+# Volcengine AI / Core
+DOMAIN,ark.cn-beijing.volces.com
+DOMAIN-SUFFIX,doubao.com
 
 # Windsurf / Core
 DOMAIN-SUFFIX,codeium.com
@@ -461,6 +524,11 @@ DOMAIN-SUFFIX,grok.x.com
 DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,x.ai
 
+# Xiaomi AI / Core
+DOMAIN-SUFFIX,miaibox.com
+DOMAIN-SUFFIX,xiaoaiassist.com
+DOMAIN-SUFFIX,xiaomimimo.com
+
 # You.com / Core
 DOMAIN-SUFFIX,you.com
 
@@ -471,3 +539,10 @@ DOMAIN-SUFFIX,youmind.site
 
 # Zed / Core
 DOMAIN-SUFFIX,zed.dev
+
+# Zhipu AI / Core
+DOMAIN-SUFFIX,bigmodel.cn
+DOMAIN-SUFFIX,chatglm.cn
+DOMAIN-SUFFIX,z.ai
+DOMAIN-SUFFIX,zhipuai.cn
+DOMAIN-SUFFIX,zhipucn.com

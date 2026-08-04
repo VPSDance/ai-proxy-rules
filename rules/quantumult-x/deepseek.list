@@ -1,0 +1,6 @@
+# AI Proxy Rules - DeepSeek
+# DeepSeek web and API services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,deepseek.com

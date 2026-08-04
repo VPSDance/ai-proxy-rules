@@ -215,6 +215,24 @@ describe("check-metadata", () => {
     expect(result.errors).toEqual([]);
   });
 
+  it("accepts known scopes and rejects unknown scopes", async () => {
+    await writeFile(
+      path.join(sourcesDir, "cn-provider.yaml"),
+      "provider: cn-provider\nname: CN Provider\nscope: cn\ngroups: [{name: Core, include: {domainSuffix: [cn.example]}}]\n",
+      "utf8"
+    );
+    await writeFile(
+      path.join(sourcesDir, "wrong-scope.yaml"),
+      "provider: wrong-scope\nname: Wrong Scope\nscope: local\ngroups: [{name: Core, include: {domainSuffix: [wrong.example]}}]\n",
+      "utf8"
+    );
+
+    const result = await checkMetadata(sourcesDir);
+    expect(result.ok).toBe(false);
+    expect(result.errors.join("\n")).toContain('invalid scope "local"');
+    expect(result.errors.join("\n")).not.toContain('invalid scope "cn"');
+  });
+
   it("treats categories as optional but rejects unknown values", async () => {
     await writeFile(
       path.join(sourcesDir, "no-cat.yaml"),

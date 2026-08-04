@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "api.hunyuan.cloud.tencent.com",
+        "hunyuan.tencentcloudapi.com"
+      ],
+      "domain_suffix": [
+        "hunyuan.tencent.com",
+        "yuanbao.tencent.com",
+        "yuanqi.tencent.com"
+      ]
+    }
+  ]
+}

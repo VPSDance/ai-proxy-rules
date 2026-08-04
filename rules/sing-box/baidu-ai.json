@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "ernie.baidu.com",
+        "qianfan.baidubce.com",
+        "yiyan.baidu.com"
+      ]
+    }
+  ]
+}

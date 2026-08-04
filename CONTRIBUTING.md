@@ -19,6 +19,8 @@ groups:
         - foo.ai
 ```
 
+Provider 默认属于 `global`。中国 AI API 平台请显式设置 `scope: cn`；同一个 provider 的完整域名都保留在 provider 规则中。`all` 聚合全部 provider，`global` 和 `cn` 按 scope 隔离，`coding` / `model` / `media` 场景聚合仅包含 `global` provider。
+
 如果有公开规则来源，可以放到 `sources` 里自动同步：
 
 ```yaml
@@ -64,4 +66,3 @@ pnpm status
 2. 在 `scripts/generators/index.ts` 增加渲染逻辑。
 3. 在 `tests/generators.test.ts` 加断言。
 4. 更新 README 的客户端格式列表。
-

@@ -1,0 +1,8 @@
+# AI Proxy Rules - Volcengine AI
+# Volcengine Ark and Doubao AI platform services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_set:
+  - "ark.cn-beijing.volces.com"
+domain_suffix_set:
+  - "doubao.com"

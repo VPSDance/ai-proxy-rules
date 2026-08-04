@@ -4,6 +4,7 @@ import path from "node:path";
 import { Command } from "commander";
 import {
   aggregateProviders,
+  aggregateProvidersByScope,
   aggregateProvidersByCategory,
   loadAllProviders,
   loadProvider,
@@ -81,7 +82,13 @@ function buildTargets(providers: ProviderSource[], providerOption: string): Rend
   const providerNames = parseCsv(providerOption);
 
   if (providerNames.includes("all") || providers.length > 1) {
-    return [...providerTargets, ...aggregateProvidersByCategory(providers), aggregateProviders(providers)];
+    return [
+      ...providerTargets,
+      ...aggregateProvidersByCategory(providers),
+      aggregateProvidersByScope(providers, "cn", "cn", "China AI Providers", "Aggregated China AI provider rules."),
+      aggregateProvidersByScope(providers, "global", "global", "Global AI Providers", "Aggregated global AI provider rules."),
+      aggregateProviders(providers)
+    ];
   }
 
   return providerTargets;

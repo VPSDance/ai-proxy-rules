@@ -1,10 +1,11 @@
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { parse } from "yaml";
-import { providerCategories } from "../types.js";
+import { providerCategories, providerScopes } from "../types.js";
 
-const reservedIds = new Set(["all", ...providerCategories]);
+const reservedIds = new Set(["all", "global", "cn", ...providerCategories]);
 const categorySet = new Set<string>(providerCategories);
+const scopeSet = new Set<string>(providerScopes);
 
 export interface MetadataCheckResult {
   ok: boolean;
@@ -29,6 +30,7 @@ export async function checkMetadata(sourcesDir: string): Promise<MetadataCheckRe
       provider?: unknown;
       categories?: unknown;
       aliases?: unknown;
+      scope?: unknown;
     } | null;
 
     if (!parsed || typeof parsed.provider !== "string" || parsed.provider.length === 0) {
@@ -44,6 +46,10 @@ export async function checkMetadata(sourcesDir: string): Promise<MetadataCheckRe
       errors.push(`${relPath}: duplicate provider id "${id}"`);
     }
     providerIds.add(id);
+
+    if (parsed.scope !== undefined && (typeof parsed.scope !== "string" || !scopeSet.has(parsed.scope))) {
+      errors.push(`${relPath}: invalid scope "${String(parsed.scope)}"`);
+    }
 
     if (parsed.categories !== undefined) {
       if (!Array.isArray(parsed.categories) || parsed.categories.length === 0) {

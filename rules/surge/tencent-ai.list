@@ -1,0 +1,10 @@
+# AI Proxy Rules - Tencent AI
+# Tencent Hunyuan, Yuanbao, and Yuanqi AI services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN,api.hunyuan.cloud.tencent.com
+DOMAIN,hunyuan.tencentcloudapi.com
+DOMAIN-SUFFIX,hunyuan.tencent.com
+DOMAIN-SUFFIX,yuanbao.tencent.com
+DOMAIN-SUFFIX,yuanqi.tencent.com

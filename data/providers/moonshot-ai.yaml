@@ -1,0 +1,17 @@
+provider: moonshot-ai
+name: Moonshot AI
+description: Moonshot AI and Kimi web and API services.
+scope: cn
+categories:
+  - model
+aliases:
+  - kimi
+  - moonshot
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - kimi.com
+        - moonshot.ai
+        - moonshot.cn

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { aggregateProviders, aggregateProvidersByCategory, mergeRuleSets, providerToTarget } from "../scripts/data.js";
+import { aggregateProviders, aggregateProvidersByCategory, aggregateProvidersByScope, mergeRuleSets, providerToTarget } from "../scripts/data.js";
 import { render } from "../scripts/generators/index.js";
 import type { ProviderSource } from "../scripts/types.js";
 
@@ -69,6 +69,38 @@ const fixtureIde: ProviderSource = {
   rules: {
     domain: ["api.fixture-ide.test"],
     domainSuffix: ["fixture-ide.test"],
+    domainKeyword: [],
+    domainRegex: [],
+    ipCidr: [],
+    ipCidr6: [],
+    asn: []
+  }
+};
+
+const minimax: ProviderSource = {
+  provider: "minimax",
+  name: "MiniMax",
+  scope: "cn",
+  categories: ["model", "media"],
+  aliases: ["hailuo"],
+  allowDangerousDomainSuffix: [],
+  groups: [
+    {
+      name: "Core",
+      rules: {
+        domain: ["api.minimax.io", "api.minimaxi.com"],
+        domainSuffix: [],
+        domainKeyword: [],
+        domainRegex: [],
+        ipCidr: [],
+        ipCidr6: [],
+        asn: []
+      }
+    }
+  ],
+  rules: {
+    domain: ["api.minimax.io", "api.minimaxi.com"],
+    domainSuffix: [],
     domainKeyword: [],
     domainRegex: [],
     ipCidr: [],
@@ -195,7 +227,7 @@ describe("generators", () => {
   });
 
   it("aggregates providers into all", () => {
-    const target = aggregateProviders([anthropic, fixtureIde]);
+    const target = aggregateProviders([anthropic, fixtureIde, minimax]);
     const rendered = render("surge", target);
 
     expect(target.id).toBe("all");
@@ -203,14 +235,39 @@ describe("generators", () => {
     expect(rendered.content).toContain("# Fixture IDE / Core");
     expect(rendered.content).toContain("DOMAIN,api.anthropic.com");
     expect(rendered.content).toContain("DOMAIN,api.fixture-ide.test");
+    expect(rendered.content).toContain("DOMAIN,api.minimax.io");
+  });
+
+  it("aggregates global and cn providers into separate scope targets", () => {
+    const providers = [anthropic, minimax];
+    const global = aggregateProvidersByScope(
+      providers,
+      "global",
+      "global",
+      "Global AI Providers",
+      "Aggregated global AI provider rules."
+    );
+    const cn = aggregateProvidersByScope(
+      providers,
+      "cn",
+      "cn",
+      "China AI Providers",
+      "Aggregated China AI provider rules."
+    );
+
+    expect(global.rules.domain).toContain("api.anthropic.com");
+    expect(global.rules.domain).not.toContain("api.minimax.io");
+    expect(cn.rules.domain).toEqual(["api.minimax.io", "api.minimaxi.com"]);
+    expect(providerToTarget(minimax).rules.domain).toEqual(["api.minimax.io", "api.minimaxi.com"]);
   });
 
   it("aggregates providers by category", () => {
-    const targets = aggregateProvidersByCategory([anthropic, fixtureIde]);
+    const targets = aggregateProvidersByCategory([anthropic, fixtureIde, minimax]);
 
     expect(targets.map((target) => target.id)).toEqual(["coding", "model"]);
     expect(render("surge", targets[0]!).content).toContain("DOMAIN,api.fixture-ide.test");
     expect(render("surge", targets[1]!).content).toContain("DOMAIN,api.anthropic.com");
+    expect(targets.some((target) => target.rules.domain.includes("api.minimax.io"))).toBe(false);
   });
 
   it("deduplicates rendered all rules across provider groups", () => {

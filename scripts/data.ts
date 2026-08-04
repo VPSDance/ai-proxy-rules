@@ -3,7 +3,7 @@ import path from "node:path";
 import { parse } from "yaml";
 import { z } from "zod";
 import { emptyRuleSet, mergeRuleSets, normalizeRuleSet } from "./rules.js";
-import { providerCategories, type ProviderCategory, type ProviderSource, type RenderTarget, type RuleGroup, type RuleSet } from "./types.js";
+import { providerCategories, providerScopes, type ProviderCategory, type ProviderScope, type ProviderSource, type RenderTarget, type RuleGroup, type RuleSet } from "./types.js";
 
 const rulesSchema = z
   .object({
@@ -29,6 +29,7 @@ const providerSchema = z.object({
   provider: z.string().min(1).regex(/^[a-z0-9][a-z0-9-]*$/),
   name: z.string().min(1),
   description: z.string().optional(),
+  scope: z.enum(providerScopes).default("global"),
   categories: z.array(z.enum(providerCategories)).default([]),
   aliases: z.array(z.string().min(1)).default([]),
   allowDangerousDomainSuffix: z.array(z.string().min(1)).default([]),
@@ -62,6 +63,26 @@ export async function loadAllProviders(inputDir: string): Promise<ProviderSource
 }
 
 export function aggregateProviders(providers: ProviderSource[]): RenderTarget {
+  return aggregateProviderSet(providers, "all", "All AI Providers", "Aggregated AI provider rules.");
+}
+
+export function aggregateProvidersByScope(
+  providers: ProviderSource[],
+  scope: ProviderScope,
+  id: string,
+  name: string,
+  description: string
+): RenderTarget {
+  const scopedProviders = providers.filter((provider) => (provider.scope ?? "global") === scope);
+  return aggregateProviderSet(scopedProviders, id, name, description);
+}
+
+function aggregateProviderSet(
+  providers: ProviderSource[],
+  id: string,
+  name: string,
+  description: string
+): RenderTarget {
   const groups = providers.flatMap((provider) =>
     provider.groups.map((group) => ({
       name: `${provider.name} / ${group.name}`,
@@ -70,9 +91,9 @@ export function aggregateProviders(providers: ProviderSource[]): RenderTarget {
   );
 
   return {
-    id: "all",
-    name: "All AI Providers",
-    description: "Aggregated AI provider rules.",
+    id,
+    name,
+    description,
     groups,
     rules: mergeRuleSets(providers.map((provider) => provider.rules))
   };
@@ -80,7 +101,7 @@ export function aggregateProviders(providers: ProviderSource[]): RenderTarget {
 
 export function aggregateProvidersByCategory(providers: ProviderSource[]): RenderTarget[] {
   const byCategory = new Map<ProviderCategory, ProviderSource[]>();
-  for (const provider of providers) {
+  for (const provider of providers.filter((provider) => (provider.scope ?? "global") === "global")) {
     for (const category of provider.categories ?? []) {
       const categoryProviders = byCategory.get(category) ?? [];
       categoryProviders.push(provider);
@@ -144,6 +165,7 @@ async function parseProviderFile(filePath: string): Promise<ProviderSource> {
     provider: parsed.provider,
     name: parsed.name,
     description: parsed.description,
+    scope: parsed.scope,
     categories: parsed.categories,
     aliases: parsed.aliases,
     allowDangerousDomainSuffix: parsed.allowDangerousDomainSuffix,

@@ -1,0 +1,14 @@
+provider: deepseek
+name: DeepSeek
+description: DeepSeek web and API services.
+scope: cn
+categories:
+  - model
+sources:
+  - name: v2fly
+    type: remote-text
+    url: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@master/data/deepseek
+    parser: domain-list-community
+groups:
+  - name: Core
+    fromSource: true

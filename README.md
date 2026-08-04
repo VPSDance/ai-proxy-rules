@@ -4,11 +4,11 @@
 [![providers](https://img.shields.io/github/directory-file-count/VPSDance/ai-proxy-rules/data/sources?type=file&extension=yaml&label=providers)](./STATUS.md)
 [![last update](https://img.shields.io/github/last-commit/VPSDance/ai-proxy-rules/main?label=last%20update)](https://github.com/VPSDance/ai-proxy-rules/commits/main)
 
-AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 等多源合并去重，按 provider 拆分订阅；针对 OpenAI / Anthropic 等热门服务汇集多个上游，补全遗漏并修复部分规则。覆盖 Clash / Mihomo / sing-box / Surge / Shadowrocket / Loon / Stash / Quantumult X / Egern。
-
-> **范围说明**：本仓库面向"国内用户访问海外 AI 服务"场景，因此不收录已可直连的国内服务（DeepSeek / 豆包 / Kimi / 通义 / 智谱等）。
+AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 等多源合并去重，按 provider 拆分订阅；针对 OpenAI / Anthropic 等热门服务汇集多个上游，补全遗漏并修复部分规则。海外 AI 服务与中国 AI API 平台分别聚合，覆盖 Clash / Mihomo / sing-box / Surge / Shadowrocket / Loon / Stash / Quantumult X / Egern。
 
 规则覆盖范围：
+
+### 海外 AI 服务：`global`
 
 - OpenAI / ChatGPT (`openai`)
 - Anthropic / Claude (`anthropic`)
@@ -18,6 +18,19 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 - Mistral AI / Le Chat (`mistral-ai`)
 - Cohere (`cohere`)
 - LMArena (`lmarena`)
+- Hugging Face (`huggingface`)
+- Groq (`groq`)
+- OpenRouter (`openrouter`)
+- Together AI (`together-ai`)
+- Fireworks AI (`fireworks-ai`)
+- Replicate (`replicate`)
+- DeepInfra (`deepinfra`)
+- Cerebras (`cerebras`)
+- Chutes (`chutes`)
+- Cloudflare AI (`cloudflare-ai`)
+- H2O.ai (`h2o-ai`)
+- Ollama (`ollama`)
+- LM Studio (`lmstudio`)
 - GitHub Copilot (`copilot`)
 - Cursor (`cursor`)
 - Zed (`zed`)
@@ -37,7 +50,10 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 - Lovable (`lovable`)
 - Continue (`continue`)
 - CodeRabbit (`coderabbit`)
-- Phind (`phind`)
+- Manus (`manus`)
+- Dify (`dify`)
+- LangChain (`langchain`)
+- CrewAI (`crewai`)
 - Midjourney (`midjourney`)
 - Stability AI (`stability-ai`)
 - Black Forest Labs / FLUX (`black-forest-labs`)
@@ -58,17 +74,8 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 - HeyGen (`heygen`)
 - Synthesia (`synthesia`)
 - Descript (`descript`)
+- Phind (`phind`)
 - Gamma (`gamma`)
-- Hugging Face (`huggingface`)
-- Groq (`groq`)
-- OpenRouter (`openrouter`)
-- Together AI (`together-ai`)
-- Fireworks AI (`fireworks-ai`)
-- Replicate (`replicate`)
-- DeepInfra (`deepinfra`)
-- Cerebras (`cerebras`)
-- Chutes (`chutes`)
-- Cloudflare AI (`cloudflare-ai`)
 - Perplexity (`perplexity`)
 - You.com (`you`)
 - Genspark (`genspark`)
@@ -85,13 +92,19 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 - OpenClaw (`openclaw`)
 - Hermes Agent (`hermes-agent`)
 - Eigent (`eigent`)
-- Manus (`manus`)
-- Dify (`dify`)
-- LangChain (`langchain`)
-- CrewAI (`crewai`)
-- H2O.ai (`h2o-ai`)
-- Ollama (`ollama`)
-- LM Studio (`lmstudio`)
+
+### 中国 AI 服务：`cn`
+
+- Alibaba Cloud Model Studio / Qwen (`alibaba-ai`)：阿里云百炼 / 通义千问
+- Baidu Qianfan / ERNIE (`baidu-ai`)：百度千帆 / 文心一言
+- DeepSeek (`deepseek`)：深度求索
+- MiniMax (`minimax`)：稀宇科技 / 海螺 AI / 星野
+- Moonshot AI / Kimi (`moonshot-ai`)：月之暗面 / Kimi
+- Tencent Hunyuan / Yuanbao / Yuanqi (`tencent-ai`)：腾讯混元 / 元宝 / 元器
+- Volcengine Ark / Doubao (`volcengine-ai`)：火山引擎方舟 / 豆包
+- Xiaomi AI / MiMo (`xiaomi-ai`)：小米 AI / MiMo
+- Zhipu AI / GLM (`zhipu-ai`)：智谱 AI / GLM
+- ByteDance AI (China) / Trae / Coze / MarsCode (`bytedance-ai-cn`)：字节跳动 / Trae / 扣子 / MarsCode
 
 支持的客户端格式：
 
@@ -108,17 +121,25 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 
 把下面地址填到客户端的规则订阅、rule-set 或 rule-providers 配置里。
 
-需要同时覆盖所有 AI 服务时，使用 `all`：
+需要覆盖海外 AI 服务时，使用 `global`：
 
 ```text
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/all.yaml
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/sing-box/all.json
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/all.list
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/shadowrocket/all.list
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/all.list
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/stash/all.list
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/all.list
-https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/egern/all.yaml
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/global.yaml
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/sing-box/global.json
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/global.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/shadowrocket/global.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/loon/global.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/stash/global.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/quantumult-x/global.list
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/egern/global.yaml
+```
+
+中国 AI API 平台使用 `cn`，例如：
+
+```text
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/cn.yaml
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/sing-box/cn.json
+https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/surge/cn.list
 ```
 
 只需要某一个 AI 服务时，把 `<provider>` 换成上面括号里的 id，例如 `anthropic`、`openai`、`copilot`、`cursor` 或 `huggingface`：
@@ -142,19 +163,19 @@ https://cdn.jsdelivr.net/gh/VPSDance/ai-proxy-rules@main/rules/clash/anthropic.y
 - `model`：模型 API 平台，例如 OpenAI、Anthropic、OpenRouter、Groq
 - `media`：图 / 视频 / 音频生成，例如 Midjourney、Runway、Suno、ElevenLabs
 
-未列出的场景，直接用具体 provider 或 `all`。
+未列出的场景可以使用具体 provider；需要覆盖全部 AI 服务时使用 `all`。
 
-## 多代理分流组合
+## 分流示例
 
-多数客户端会按规则顺序从上到下匹配。需要让少数服务走专用代理、其余 AI 服务走另一个代理时，把具体 provider 放在前面，把 `all` 放在后面即可：
+需要让少数服务走专用代理、中国 AI 服务直连、其余海外 AI 服务走另一个代理时，把具体服务放在聚合规则前面：
 
 ```text
-openai    -> AI-US
-anthropic -> AI-US
-all       -> AI-SG
+openai -> AI-US
+cn     -> DIRECT
+global -> AI-PROXY
 ```
 
-`all` 只会处理前面未命中的 AI 流量。
+需要让所有 AI 服务使用同一策略时，直接使用 `all`。
 
 > 国内 jsDelivr 偶尔不稳定时，可把 `cdn.jsdelivr.net` 替换为 `testingcf.jsdelivr.net`、`fastly.jsdelivr.net` 或 `cdn.jsdmirror.com` 等镜像。
 

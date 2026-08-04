@@ -1,0 +1,10 @@
+# AI Proxy Rules - Zhipu AI
+# Zhipu AI, GLM, and BigModel services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,bigmodel.cn
+HOST-SUFFIX,chatglm.cn
+HOST-SUFFIX,z.ai
+HOST-SUFFIX,zhipuai.cn
+HOST-SUFFIX,zhipucn.com

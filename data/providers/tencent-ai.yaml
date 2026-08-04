@@ -1,0 +1,22 @@
+provider: tencent-ai
+name: Tencent AI
+description: Tencent Hunyuan, Yuanbao, and Yuanqi AI services.
+scope: cn
+categories:
+  - model
+  - media
+aliases:
+  - hunyuan
+  - yuanbao
+  - yuanqi
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domain:
+        - api.hunyuan.cloud.tencent.com
+        - hunyuan.tencentcloudapi.com
+      domainSuffix:
+        - hunyuan.tencent.com
+        - yuanbao.tencent.com
+        - yuanqi.tencent.com

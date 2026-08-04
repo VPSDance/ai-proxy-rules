@@ -1,0 +1,8 @@
+# AI Proxy Rules - Baidu AI
+# Baidu Qianfan and ERNIE AI platform services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST,ernie.baidu.com
+HOST,qianfan.baidubce.com
+HOST,yiyan.baidu.com

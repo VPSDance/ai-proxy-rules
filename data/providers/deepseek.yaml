@@ -1,0 +1,13 @@
+provider: deepseek
+name: DeepSeek
+description: DeepSeek web and API services.
+scope: cn
+categories:
+  - model
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - deepseek.com

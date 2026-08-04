@@ -1,0 +1,19 @@
+provider: minimax
+name: MiniMax
+description: MiniMax API services.
+scope: cn
+categories:
+  - model
+  - media
+aliases:
+  - hailuo
+groups:
+  - name: Core
+    include:
+      domain:
+        - api.minimax.io
+        - api.minimaxi.com
+      domainSuffix:
+        # v2fly/domain-list-community category-ai-cn: MiniMax.
+        - hailuoai.com
+        - xingyeai.com

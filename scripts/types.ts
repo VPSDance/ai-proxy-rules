@@ -30,6 +30,7 @@ export interface ProviderSource {
   provider: string;
   name: string;
   description?: string;
+  scope?: ProviderScope;
   categories?: ProviderCategory[];
   aliases?: string[];
   allowDangerousDomainSuffix?: string[];
@@ -59,3 +60,7 @@ export const providerCategories = [
 ] as const;
 
 export type ProviderCategory = (typeof providerCategories)[number];
+
+export const providerScopes = ["global", "cn"] as const;
+
+export type ProviderScope = (typeof providerScopes)[number];

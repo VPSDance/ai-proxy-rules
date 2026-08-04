@@ -1,0 +1,17 @@
+provider: volcengine-ai
+name: Volcengine AI
+description: Volcengine Ark and Doubao AI platform services.
+scope: cn
+categories:
+  - model
+aliases:
+  - ark
+  - doubao
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domain:
+        - ark.cn-beijing.volces.com
+      domainSuffix:
+        - doubao.com

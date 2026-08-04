@@ -1,0 +1,10 @@
+# AI Proxy Rules - Zhipu AI
+# Zhipu AI, GLM, and BigModel services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+domain_suffix_set:
+  - "bigmodel.cn"
+  - "chatglm.cn"
+  - "z.ai"
+  - "zhipuai.cn"
+  - "zhipucn.com"

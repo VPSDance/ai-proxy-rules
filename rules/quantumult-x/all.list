@@ -6,6 +6,16 @@
 HOST-SUFFIX,firefly.adobe.com
 HOST-SUFFIX,firefly.adobe.io
 
+# Alibaba AI / Core
+HOST,bailian.console.aliyun.com
+HOST,dashscope.aliyuncs.com
+HOST-SUFFIX,qianwen.aliyun.com
+HOST-SUFFIX,qianwen.com
+HOST-SUFFIX,qwen.ai
+HOST-SUFFIX,qwenlm.ai
+HOST-SUFFIX,tongyi.aliyun.com
+HOST-SUFFIX,tongyi.com
+
 # Amazon Q Developer / Core
 HOST,aws-language-servers.us-east-1.amazonaws.com
 HOST,aws-toolkit-language-servers.amazonaws.com
@@ -76,6 +86,11 @@ HOST-KEYWORD,sift
 # Augment Code / Core
 HOST-SUFFIX,augmentcode.com
 
+# Baidu AI / Core
+HOST,ernie.baidu.com
+HOST,qianfan.baidubce.com
+HOST,yiyan.baidu.com
+
 # Black Forest Labs / Core
 HOST-SUFFIX,bfl.ai
 
@@ -97,6 +112,29 @@ HOST-SUFFIX,starling.zijieapi.com
 HOST-SUFFIX,trae-api-sg.mchost.guru
 HOST-SUFFIX,trae.ai
 HOST-SUFFIX,tron-sg.bytelemon.com
+
+# ByteDance AI (China) / Core
+HOST-SUFFIX,coze.cn
+HOST-SUFFIX,cozeapp.net
+HOST-SUFFIX,cozebaas.cn
+HOST-SUFFIX,cozebuild.com
+HOST-SUFFIX,cozecdn.com
+HOST-SUFFIX,cozedeploy.com
+HOST-SUFFIX,cozefn.cn
+HOST-SUFFIX,cozeide.cn
+HOST-SUFFIX,cozesdk.com
+HOST-SUFFIX,doudou.com
+HOST-SUFFIX,marscode.cn
+HOST-SUFFIX,marscode.com.cn
+HOST-SUFFIX,mcbaas.work
+HOST-SUFFIX,mcdemo.show
+HOST-SUFFIX,mchost.guru
+HOST-SUFFIX,mcprev.cn
+HOST-SUFFIX,tcwqqdy.guru
+HOST-SUFFIX,trae.cn
+HOST-SUFFIX,trae.com.cn
+HOST-SUFFIX,trae.guru
+HOST-SUFFIX,yoma.cn
 
 # Cerebras / Core
 HOST-SUFFIX,cerebras.ai
@@ -177,6 +215,9 @@ HOST-SUFFIX,cursorapi.com
 
 # DeepInfra / Core
 HOST-SUFFIX,deepinfra.com
+
+# DeepSeek / Core
+HOST-SUFFIX,deepseek.com
 
 # Descript / Core
 HOST-SUFFIX,descript.com
@@ -331,8 +372,19 @@ HOST-SUFFIX,meta.ai
 # Midjourney / Core
 HOST-SUFFIX,midjourney.com
 
+# MiniMax / Core
+HOST,api.minimax.io
+HOST,api.minimaxi.com
+HOST-SUFFIX,hailuoai.com
+HOST-SUFFIX,xingyeai.com
+
 # Mistral AI / Core
 HOST-SUFFIX,mistral.ai
+
+# Moonshot AI / Core
+HOST-SUFFIX,kimi.com
+HOST-SUFFIX,moonshot.ai
+HOST-SUFFIX,moonshot.cn
 
 # Ollama / Core
 HOST-SUFFIX,ollama.com
@@ -438,6 +490,13 @@ HOST-SUFFIX,synthesia.io
 # Tabnine / Core
 HOST-SUFFIX,tabnine.com
 
+# Tencent AI / Core
+HOST,api.hunyuan.cloud.tencent.com
+HOST,hunyuan.tencentcloudapi.com
+HOST-SUFFIX,hunyuan.tencent.com
+HOST-SUFFIX,yuanbao.tencent.com
+HOST-SUFFIX,yuanqi.tencent.com
+
 # Together AI / Core
 HOST-SUFFIX,together.ai
 HOST-SUFFIX,together.xyz
@@ -448,6 +507,10 @@ HOST-SUFFIX,udio.com
 # v0 / Core
 HOST-SUFFIX,v0.app
 HOST-SUFFIX,v0.dev
+
+# Volcengine AI / Core
+HOST,ark.cn-beijing.volces.com
+HOST-SUFFIX,doubao.com
 
 # Windsurf / Core
 HOST-SUFFIX,codeium.com
@@ -461,6 +524,11 @@ HOST-SUFFIX,grok.x.com
 HOST-SUFFIX,grokipedia.com
 HOST-SUFFIX,x.ai
 
+# Xiaomi AI / Core
+HOST-SUFFIX,miaibox.com
+HOST-SUFFIX,xiaoaiassist.com
+HOST-SUFFIX,xiaomimimo.com
+
 # You.com / Core
 HOST-SUFFIX,you.com
 
@@ -471,3 +539,10 @@ HOST-SUFFIX,youmind.site
 
 # Zed / Core
 HOST-SUFFIX,zed.dev
+
+# Zhipu AI / Core
+HOST-SUFFIX,bigmodel.cn
+HOST-SUFFIX,chatglm.cn
+HOST-SUFFIX,z.ai
+HOST-SUFFIX,zhipuai.cn
+HOST-SUFFIX,zhipucn.com

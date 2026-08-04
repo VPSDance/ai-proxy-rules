@@ -1,0 +1,8 @@
+# AI Proxy Rules - Xiaomi AI
+# Xiaomi AI and MiMo services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,miaibox.com
+DOMAIN-SUFFIX,xiaoaiassist.com
+DOMAIN-SUFFIX,xiaomimimo.com
