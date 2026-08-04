@@ -13,6 +13,6 @@ groups:
   - name: Core
     rules:
       domain:
-        - qianfan.baidubce.com
         - ernie.baidu.com
+        - qianfan.baidubce.com
         - yiyan.baidu.com
