@@ -17,6 +17,7 @@ const anthropic: ProviderSource = {
         domainSuffix: ["anthropic.com"],
         domainKeyword: ["claude"],
         domainRegex: [],
+        processName: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []
@@ -29,6 +30,7 @@ const anthropic: ProviderSource = {
         domainSuffix: [],
         domainKeyword: [],
         domainRegex: [],
+        processName: [],
         ipCidr: ["203.0.113.0/24"],
         ipCidr6: ["2001:db8::/32"],
         asn: [399358]
@@ -40,6 +42,7 @@ const anthropic: ProviderSource = {
     domainSuffix: ["anthropic.com"],
     domainKeyword: ["claude"],
     domainRegex: [],
+    processName: [],
     ipCidr: ["203.0.113.0/24"],
     ipCidr6: ["2001:db8::/32"],
     asn: [399358]
@@ -60,6 +63,7 @@ const fixtureIde: ProviderSource = {
         domainSuffix: ["fixture-ide.test"],
         domainKeyword: [],
         domainRegex: [],
+        processName: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []
@@ -71,6 +75,7 @@ const fixtureIde: ProviderSource = {
     domainSuffix: ["fixture-ide.test"],
     domainKeyword: [],
     domainRegex: [],
+    processName: [],
     ipCidr: [],
     ipCidr6: [],
     asn: []
@@ -92,6 +97,7 @@ const minimax: ProviderSource = {
         domainSuffix: [],
         domainKeyword: [],
         domainRegex: [],
+        processName: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []
@@ -103,6 +109,7 @@ const minimax: ProviderSource = {
     domainSuffix: [],
     domainKeyword: [],
     domainRegex: [],
+    processName: [],
     ipCidr: [],
     ipCidr6: [],
     asn: []
@@ -196,6 +203,7 @@ describe("generators", () => {
             domainSuffix: [],
             domainKeyword: [],
             domainRegex: ["^example-\\d+\\.foo\\.com$"],
+            processName: [],
             ipCidr: [],
             ipCidr6: [],
             asn: []
@@ -207,6 +215,7 @@ describe("generators", () => {
         domainSuffix: [],
         domainKeyword: [],
         domainRegex: ["^example-\\d+\\.foo\\.com$"],
+        processName: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []
@@ -224,6 +233,50 @@ describe("generators", () => {
     for (const format of ["surge", "loon", "shadowrocket", "stash", "quantumult-x"] as const) {
       expect(render(format, target).content).not.toContain("REGEX");
     }
+  });
+
+  it("renders exact process names only in supported formats", () => {
+    const provider: ProviderSource = {
+      provider: "process-test",
+      name: "Process Test",
+      groups: [
+        {
+          name: "Core",
+          rules: {
+            domain: [],
+            domainSuffix: [],
+            domainKeyword: [],
+            domainRegex: [],
+            processName: ["Claude.exe", "Claude", "claude"],
+            ipCidr: [],
+            ipCidr6: [],
+            asn: []
+          }
+        }
+      ],
+      rules: {
+        domain: [],
+        domainSuffix: [],
+        domainKeyword: [],
+        domainRegex: [],
+        processName: ["Claude.exe", "Claude", "claude"],
+        ipCidr: [],
+        ipCidr6: [],
+        asn: []
+      }
+    };
+    const target = providerToTarget(provider);
+
+    for (const format of ["surge", "clash", "loon", "shadowrocket", "stash"] as const) {
+      expect(render(format, target).content).toContain("PROCESS-NAME,Claude.exe");
+    }
+
+    expect(JSON.parse(render("sing-box", target).content).rules[0].process_name).toEqual([
+      "Claude.exe", "Claude", "claude"
+    ]);
+    // These clients currently have no process-name rule-set syntax.
+    expect(render("egern", target).content).not.toContain("process_name");
+    expect(render("quantumult-x", target).content).not.toContain("PROCESS-NAME");
   });
 
   it("aggregates providers into all", () => {
@@ -282,6 +335,7 @@ describe("generators", () => {
             domainSuffix: [],
             domainKeyword: [],
             domainRegex: [],
+            processName: [],
             ipCidr: [],
             ipCidr6: [],
             asn: []
@@ -293,6 +347,7 @@ describe("generators", () => {
         domainSuffix: [],
         domainKeyword: [],
         domainRegex: [],
+        processName: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []
@@ -312,6 +367,7 @@ describe("generators", () => {
         domainSuffix: [],
         domainKeyword: [],
         domainRegex: [],
+        processName: [],
         ipCidr: [],
         ipCidr6: [],
         asn: []

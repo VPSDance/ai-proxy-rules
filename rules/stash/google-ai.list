@@ -17,6 +17,9 @@ DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google.com
+PROCESS-NAME,Antigravity
+PROCESS-NAME,Antigravity.exe
+PROCESS-NAME,antigravity
 
 # Third-Party
 DOMAIN,alkalicore-pa.clients6.google.com

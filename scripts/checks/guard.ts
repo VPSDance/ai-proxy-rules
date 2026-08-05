@@ -125,6 +125,7 @@ export function countRulesFromText(text: string): number {
             domainSuffix?: unknown[];
             domainKeyword?: unknown[];
             domainRegex?: unknown[];
+            processName?: unknown[];
             ipCidr?: unknown[];
             ipCidr6?: unknown[];
             asn?: unknown[];
@@ -145,6 +146,7 @@ export function countRulesFromText(text: string): number {
     count += rules.domainSuffix?.length ?? 0;
     count += rules.domainKeyword?.length ?? 0;
     count += rules.domainRegex?.length ?? 0;
+    count += rules.processName?.length ?? 0;
     count += rules.ipCidr?.length ?? 0;
     count += rules.ipCidr6?.length ?? 0;
     count += rules.asn?.length ?? 0;

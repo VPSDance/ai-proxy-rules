@@ -26,6 +26,13 @@ groups:
       domainKeyword:
         - chatgpt-async-webps-prod
         - openai
+      processName:
+        - ChatGPT
+        - ChatGPT.exe
+        - Codex
+        - Codex.exe
+        - chatgpt
+        - codex
   - name: Network
     rules:
       ipCidr:

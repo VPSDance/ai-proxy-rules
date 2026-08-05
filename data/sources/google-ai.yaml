@@ -38,6 +38,10 @@ groups:
         - generativelanguage.googleapis.com
         - notebooklm.google
         - notebooklm.google.com
+      processName:
+        - Antigravity.exe
+        - Antigravity
+        - antigravity
 
   - name: Third-Party
     fromSource: true

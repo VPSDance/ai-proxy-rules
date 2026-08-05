@@ -61,6 +61,9 @@ export function parseClassicalRules(text: string): RuleSet {
       case "HOST-WILDCARD":
         rules.domainRegex.push(value);
         break;
+      case "PROCESS-NAME":
+        rules.processName.push(value);
+        break;
       case "IP-CIDR":
         rules.ipCidr.push(value);
         break;
@@ -212,6 +215,7 @@ function mergeInto(target: RuleSet, source: RuleSet): void {
   target.domainSuffix.push(...source.domainSuffix);
   target.domainKeyword.push(...source.domainKeyword);
   target.domainRegex.push(...source.domainRegex);
+  target.processName.push(...source.processName);
   target.ipCidr.push(...source.ipCidr);
   target.ipCidr6.push(...source.ipCidr6);
   target.asn.push(...source.asn);

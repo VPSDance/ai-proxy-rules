@@ -28,6 +28,10 @@ groups:
         - generativelanguage.googleapis.com
         - notebooklm.google
         - notebooklm.google.com
+      processName:
+        - Antigravity
+        - Antigravity.exe
+        - antigravity
   - name: Third-Party
     rules:
       domain:

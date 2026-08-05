@@ -21,6 +21,11 @@ DOMAIN-SUFFIX,modelcontextprotocol.com
 DOMAIN-SUFFIX,modelcontextprotocol.io
 DOMAIN-SUFFIX,modelcontextprotocol.net
 DOMAIN-SUFFIX,modelcontextprotocol.org
+PROCESS-NAME,Claude
+PROCESS-NAME,Claude.exe
+PROCESS-NAME,claude
+PROCESS-NAME,claude.exe
+PROCESS-NAME,cowork-svc.exe
 
 # Network
 IP-CIDR,160.79.104.0/21,no-resolve

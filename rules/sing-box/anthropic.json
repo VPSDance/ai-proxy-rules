@@ -49,6 +49,13 @@
         "sentry",
         "sift"
       ],
+      "process_name": [
+        "Claude",
+        "Claude.exe",
+        "claude",
+        "claude.exe",
+        "cowork-svc.exe"
+      ],
       "ip_cidr": [
         "160.79.104.0/21",
         "2607:6bc0::/32"

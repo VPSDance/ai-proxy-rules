@@ -30,6 +30,12 @@ groups:
         - modelcontextprotocol.io
         - modelcontextprotocol.net
         - modelcontextprotocol.org
+      processName:
+        - Claude
+        - Claude.exe
+        - claude
+        - claude.exe
+        - cowork-svc.exe
   - name: Network
     rules:
       ipCidr:

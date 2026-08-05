@@ -46,6 +46,12 @@ groups:
         - modelcontextprotocol.net
         - modelcontextprotocol.org
         - modelcontextprotocol.io
+      processName:
+        - Claude.exe
+        - claude.exe
+        - cowork-svc.exe
+        - Claude
+        - claude
 
   - name: Network
     include:

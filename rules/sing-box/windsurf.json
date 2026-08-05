@@ -7,6 +7,11 @@
         "codeiumdata.com",
         "windsurf.build",
         "windsurf.com"
+      ],
+      "process_name": [
+        "Windsurf",
+        "Windsurf.exe",
+        "windsurf"
       ]
     }
   ]

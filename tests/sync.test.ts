@@ -10,11 +10,13 @@ describe("source sync parsers", () => {
   it("parses classical rules and ignores policy options", () => {
     const parsed = parseClassicalRules(`
       DOMAIN-SUFFIX,openai.com,AI
+      PROCESS-NAME,ChatGPT.exe,AI
       IP-CIDR,24.199.123.28/32,AI,no-resolve
       IP-ASN,AS401518,no-resolve
     `);
 
     expect(parsed.domainSuffix).toEqual(["openai.com"]);
+    expect(parsed.processName).toEqual(["ChatGPT.exe"]);
     expect(parsed.ipCidr).toEqual(["24.199.123.28/32"]);
     expect(parsed.asn).toEqual([401518]);
   });

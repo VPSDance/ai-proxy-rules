@@ -5,3 +5,6 @@
 payload:
   # Core
   - DOMAIN-SUFFIX,augmentcode.com
+  - PROCESS-NAME,Augment
+  - PROCESS-NAME,Augment.exe
+  - PROCESS-NAME,augment

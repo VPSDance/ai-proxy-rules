@@ -22,6 +22,11 @@ payload:
   - DOMAIN-SUFFIX,modelcontextprotocol.io
   - DOMAIN-SUFFIX,modelcontextprotocol.net
   - DOMAIN-SUFFIX,modelcontextprotocol.org
+  - PROCESS-NAME,Claude
+  - PROCESS-NAME,Claude.exe
+  - PROCESS-NAME,claude
+  - PROCESS-NAME,claude.exe
+  - PROCESS-NAME,cowork-svc.exe
 
   # Anthropic / Network
   - IP-CIDR,160.79.104.0/21,no-resolve
@@ -87,6 +92,9 @@ payload:
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
   - DOMAIN-SUFFIX,notebooklm.google
   - DOMAIN-SUFFIX,notebooklm.google.com
+  - PROCESS-NAME,Antigravity
+  - PROCESS-NAME,Antigravity.exe
+  - PROCESS-NAME,antigravity
 
   # Google AI / Third-Party
   - DOMAIN,alkalicore-pa.clients6.google.com
@@ -155,6 +163,12 @@ payload:
   - DOMAIN-SUFFIX,sora.com
   - DOMAIN-KEYWORD,chatgpt-async-webps-prod
   - DOMAIN-KEYWORD,openai
+  - PROCESS-NAME,ChatGPT
+  - PROCESS-NAME,ChatGPT.exe
+  - PROCESS-NAME,Codex
+  - PROCESS-NAME,Codex.exe
+  - PROCESS-NAME,chatgpt
+  - PROCESS-NAME,codex
 
   # OpenAI / Network
   - IP-CIDR,199.47.142.0/23,no-resolve

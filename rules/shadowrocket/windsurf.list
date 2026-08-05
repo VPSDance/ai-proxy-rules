@@ -7,3 +7,6 @@ DOMAIN-SUFFIX,codeium.com
 DOMAIN-SUFFIX,codeiumdata.com
 DOMAIN-SUFFIX,windsurf.build
 DOMAIN-SUFFIX,windsurf.com
+PROCESS-NAME,Windsurf
+PROCESS-NAME,Windsurf.exe
+PROCESS-NAME,windsurf

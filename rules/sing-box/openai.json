@@ -51,6 +51,14 @@
       "domain_regex": [
         "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
       ],
+      "process_name": [
+        "ChatGPT",
+        "ChatGPT.exe",
+        "Codex",
+        "Codex.exe",
+        "chatgpt",
+        "codex"
+      ],
       "ip_cidr": [
         "199.47.142.0/23",
         "24.199.123.28/32",

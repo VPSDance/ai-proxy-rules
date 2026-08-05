@@ -7,6 +7,11 @@
         "cursor.com",
         "cursor.sh",
         "cursorapi.com"
+      ],
+      "process_name": [
+        "Cursor",
+        "Cursor.exe",
+        "cursor"
       ]
     }
   ]

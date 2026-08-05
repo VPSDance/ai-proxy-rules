@@ -47,6 +47,11 @@
         "proactivebackend-pa.googleapis.com",
         "robinfrontend-pa.googleapis.com",
         "stitch.withgoogle.com"
+      ],
+      "process_name": [
+        "Antigravity",
+        "Antigravity.exe",
+        "antigravity"
       ]
     }
   ]

@@ -17,7 +17,12 @@ groups:
     include:
       domainSuffix:
         - foo.ai
+      processName:
+        - Foo.exe
+        - Foo
 ```
+
+`processName` 使用精确匹配。桌面应用在不同平台上的进程名可能不同，请只添加已确认的名称，并分别列出 Windows、macOS 和 Linux 变体；不要添加 `node`、`python`、`java` 等通用运行时进程。
 
 Provider 默认属于 `global`。中国 AI API 平台请显式设置 `scope: cn`；同一个 provider 的完整域名都保留在 provider 规则中。`all` 聚合全部 provider，`global` 和 `cn` 按 scope 隔离，`coding` / `model` / `media` 场景聚合仅包含 `global` provider。
 

@@ -4,6 +4,11 @@
     {
       "domain_suffix": [
         "augmentcode.com"
+      ],
+      "process_name": [
+        "Augment",
+        "Augment.exe",
+        "augment"
       ]
     }
   ]

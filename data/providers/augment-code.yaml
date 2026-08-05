@@ -12,3 +12,7 @@ groups:
     rules:
       domainSuffix:
         - augmentcode.com
+      processName:
+        - Augment
+        - Augment.exe
+        - augment

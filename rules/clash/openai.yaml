@@ -17,6 +17,12 @@ payload:
   - DOMAIN-SUFFIX,sora.com
   - DOMAIN-KEYWORD,chatgpt-async-webps-prod
   - DOMAIN-KEYWORD,openai
+  - PROCESS-NAME,ChatGPT
+  - PROCESS-NAME,ChatGPT.exe
+  - PROCESS-NAME,Codex
+  - PROCESS-NAME,Codex.exe
+  - PROCESS-NAME,chatgpt
+  - PROCESS-NAME,codex
 
   # Network
   - IP-CIDR,199.47.142.0/23,no-resolve

@@ -14,3 +14,7 @@ groups:
         - codeiumdata.com
         - windsurf.build
         - windsurf.com
+      processName:
+        - Windsurf
+        - Windsurf.exe
+        - windsurf

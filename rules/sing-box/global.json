@@ -296,6 +296,31 @@
       "domain_regex": [
         "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
       ],
+      "process_name": [
+        "Antigravity",
+        "Antigravity.exe",
+        "Augment",
+        "Augment.exe",
+        "ChatGPT",
+        "ChatGPT.exe",
+        "Claude",
+        "Claude.exe",
+        "Codex",
+        "Codex.exe",
+        "Cursor",
+        "Cursor.exe",
+        "Windsurf",
+        "Windsurf.exe",
+        "antigravity",
+        "augment",
+        "chatgpt",
+        "claude",
+        "claude.exe",
+        "codex",
+        "cowork-svc.exe",
+        "cursor",
+        "windsurf"
+      ],
       "ip_cidr": [
         "160.79.104.0/21",
         "199.47.142.0/23",

@@ -12,4 +12,9 @@ sources:
     parser: domain-list-community
 groups:
   - name: Core
+    include:
+      processName:
+        - Windsurf.exe
+        - Windsurf
+        - windsurf
     fromSource: true

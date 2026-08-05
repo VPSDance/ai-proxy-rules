@@ -11,3 +11,7 @@ groups:
     include:
       domainSuffix:
         - augmentcode.com
+      processName:
+        - Augment.exe
+        - Augment
+        - augment

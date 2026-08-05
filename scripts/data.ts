@@ -11,6 +11,7 @@ const rulesSchema = z
     domainSuffix: z.array(z.string()).default([]),
     domainKeyword: z.array(z.string()).default([]),
     domainRegex: z.array(z.string()).default([]),
+    processName: z.array(z.string()).default([]),
     ipCidr: z.array(z.string()).default([]),
     ipCidr6: z.array(z.string()).default([]),
     asn: z.array(z.coerce.number().int().positive()).default([])
@@ -20,6 +21,7 @@ const rulesSchema = z
     domainSuffix: [],
     domainKeyword: [],
     domainRegex: [],
+    processName: [],
     ipCidr: [],
     ipCidr6: [],
     asn: []

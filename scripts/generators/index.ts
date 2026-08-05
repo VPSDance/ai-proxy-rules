@@ -62,6 +62,7 @@ function renderSurge(target: RenderTarget): string {
       ...rules.domain.map((value) => `DOMAIN,${value}`),
       ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
       ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
+      ...rules.processName.map((value) => `PROCESS-NAME,${value}`),
       ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
       ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`),
       ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
@@ -75,6 +76,7 @@ function renderClash(target: RenderTarget): string {
     ...rules.domainSuffix.map((value) => `- DOMAIN-SUFFIX,${value}`),
     ...rules.domainKeyword.map((value) => `- DOMAIN-KEYWORD,${value}`),
     ...rules.domainRegex.map((value) => `- DOMAIN-REGEX,${value}`),
+    ...rules.processName.map((value) => `- PROCESS-NAME,${value}`),
     ...rules.ipCidr.map((value) => `- IP-CIDR,${value},no-resolve`),
     ...rules.ipCidr6.map((value) => `- IP-CIDR6,${value},no-resolve`),
     ...rules.asn.map((value) => `- IP-ASN,${value},no-resolve`)
@@ -90,6 +92,7 @@ function renderSingBox(target: RenderTarget): string {
   assignIfAny(rule, "domain_suffix", target.rules.domainSuffix);
   assignIfAny(rule, "domain_keyword", target.rules.domainKeyword);
   assignIfAny(rule, "domain_regex", target.rules.domainRegex);
+  assignIfAny(rule, "process_name", target.rules.processName);
   assignIfAny(rule, "ip_cidr", [...target.rules.ipCidr, ...target.rules.ipCidr6]);
 
   return `${JSON.stringify({ version: 2, rules: [rule] }, null, 2)}\n`;
@@ -116,6 +119,7 @@ function renderLoon(target: RenderTarget): string {
       ...rules.domain.map((value) => `DOMAIN,${value}`),
       ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
       ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
+      ...rules.processName.map((value) => `PROCESS-NAME,${value}`),
       ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
       ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`),
       ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
@@ -130,6 +134,7 @@ function renderShadowrocket(target: RenderTarget): string {
       ...rules.domain.map((value) => `DOMAIN,${value}`),
       ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
       ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
+      ...rules.processName.map((value) => `PROCESS-NAME,${value}`),
       ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
       ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`),
       ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
@@ -144,6 +149,7 @@ function renderStash(target: RenderTarget): string {
       ...rules.domain.map((value) => `DOMAIN,${value}`),
       ...rules.domainSuffix.map((value) => `DOMAIN-SUFFIX,${value}`),
       ...rules.domainKeyword.map((value) => `DOMAIN-KEYWORD,${value}`),
+      ...rules.processName.map((value) => `PROCESS-NAME,${value}`),
       ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
       ...rules.ipCidr6.map((value) => `IP-CIDR6,${value},no-resolve`),
       ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
@@ -156,6 +162,7 @@ function renderEgern(target: RenderTarget): string {
   const hasIpRules =
     target.rules.ipCidr.length > 0 || target.rules.ipCidr6.length > 0 || target.rules.asn.length > 0;
 
+  // Egern does not currently support process-name rules. Add processName here if its rule-set format gains support.
   assignIfAny(rule, "domain_set", target.rules.domain);
   assignIfAny(rule, "domain_suffix_set", target.rules.domainSuffix);
   assignIfAny(rule, "domain_keyword_set", target.rules.domainKeyword);

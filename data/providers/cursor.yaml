@@ -13,3 +13,7 @@ groups:
         - cursor.com
         - cursor.sh
         - cursorapi.com
+      processName:
+        - Cursor
+        - Cursor.exe
+        - cursor

@@ -53,6 +53,11 @@ payload:
   - DOMAIN-SUFFIX,modelcontextprotocol.io
   - DOMAIN-SUFFIX,modelcontextprotocol.net
   - DOMAIN-SUFFIX,modelcontextprotocol.org
+  - PROCESS-NAME,Claude
+  - PROCESS-NAME,Claude.exe
+  - PROCESS-NAME,claude
+  - PROCESS-NAME,claude.exe
+  - PROCESS-NAME,cowork-svc.exe
 
   # Anthropic / Network
   - IP-CIDR,160.79.104.0/21,no-resolve
@@ -86,6 +91,9 @@ payload:
 
   # Augment Code / Core
   - DOMAIN-SUFFIX,augmentcode.com
+  - PROCESS-NAME,Augment
+  - PROCESS-NAME,Augment.exe
+  - PROCESS-NAME,augment
 
   # Baidu AI / Core
   - DOMAIN,ernie.baidu.com
@@ -213,6 +221,9 @@ payload:
   - DOMAIN-SUFFIX,cursor.com
   - DOMAIN-SUFFIX,cursor.sh
   - DOMAIN-SUFFIX,cursorapi.com
+  - PROCESS-NAME,Cursor
+  - PROCESS-NAME,Cursor.exe
+  - PROCESS-NAME,cursor
 
   # DeepInfra / Core
   - DOMAIN-SUFFIX,deepinfra.com
@@ -270,6 +281,9 @@ payload:
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
   - DOMAIN-SUFFIX,notebooklm.google
   - DOMAIN-SUFFIX,notebooklm.google.com
+  - PROCESS-NAME,Antigravity
+  - PROCESS-NAME,Antigravity.exe
+  - PROCESS-NAME,antigravity
 
   # Google AI / Third-Party
   - DOMAIN,alkalicore-pa.clients6.google.com
@@ -404,6 +418,12 @@ payload:
   - DOMAIN-SUFFIX,sora.com
   - DOMAIN-KEYWORD,chatgpt-async-webps-prod
   - DOMAIN-KEYWORD,openai
+  - PROCESS-NAME,ChatGPT
+  - PROCESS-NAME,ChatGPT.exe
+  - PROCESS-NAME,Codex
+  - PROCESS-NAME,Codex.exe
+  - PROCESS-NAME,chatgpt
+  - PROCESS-NAME,codex
 
   # OpenAI / Network
   - IP-CIDR,199.47.142.0/23,no-resolve
@@ -519,6 +539,9 @@ payload:
   - DOMAIN-SUFFIX,codeiumdata.com
   - DOMAIN-SUFFIX,windsurf.build
   - DOMAIN-SUFFIX,windsurf.com
+  - PROCESS-NAME,Windsurf
+  - PROCESS-NAME,Windsurf.exe
+  - PROCESS-NAME,windsurf
 
   # xAI / Core
   - DOMAIN-SUFFIX,grok.com

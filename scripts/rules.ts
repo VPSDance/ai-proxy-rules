@@ -5,6 +5,7 @@ export const ruleKeys = [
   "domainSuffix",
   "domainKeyword",
   "domainRegex",
+  "processName",
   "ipCidr",
   "ipCidr6",
   "asn"
@@ -18,6 +19,7 @@ export function emptyRuleSet(): RuleSet {
     domainSuffix: [],
     domainKeyword: [],
     domainRegex: [],
+    processName: [],
     ipCidr: [],
     ipCidr6: [],
     asn: []
@@ -30,6 +32,7 @@ export function mergeRuleSets(ruleSets: RuleSet[]): RuleSet {
     domainSuffix: ruleSets.flatMap((rules) => rules.domainSuffix),
     domainKeyword: ruleSets.flatMap((rules) => rules.domainKeyword),
     domainRegex: ruleSets.flatMap((rules) => rules.domainRegex),
+    processName: ruleSets.flatMap((rules) => rules.processName),
     ipCidr: ruleSets.flatMap((rules) => rules.ipCidr),
     ipCidr6: ruleSets.flatMap((rules) => rules.ipCidr6),
     asn: ruleSets.flatMap((rules) => rules.asn)
@@ -42,6 +45,7 @@ export function normalizeRuleSet(rules: RuleSet): RuleSet {
     domainSuffix: normalizeDnsRules(rules.domainSuffix),
     domainKeyword: normalizeTextRules(rules.domainKeyword),
     domainRegex: normalizeTextRules(rules.domainRegex),
+    processName: normalizeTextRules(rules.processName),
     ipCidr: normalizeTextRules(rules.ipCidr),
     ipCidr6: normalizeTextRules(rules.ipCidr6),
     asn: normalizeAsnRules(rules.asn)
@@ -57,6 +61,7 @@ export function subtractRuleSet(source: RuleSet, remove: RuleSet): RuleSet {
     domainSuffix: removeValues(normalizedSource.domainSuffix, normalizedRemove.domainSuffix),
     domainKeyword: removeValues(normalizedSource.domainKeyword, normalizedRemove.domainKeyword),
     domainRegex: removeValues(normalizedSource.domainRegex, normalizedRemove.domainRegex),
+    processName: removeValues(normalizedSource.processName, normalizedRemove.processName),
     ipCidr: removeValues(normalizedSource.ipCidr, normalizedRemove.ipCidr),
     ipCidr6: removeValues(normalizedSource.ipCidr6, normalizedRemove.ipCidr6),
     asn: removeValues(normalizedSource.asn, normalizedRemove.asn)
