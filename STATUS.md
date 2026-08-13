@@ -1,6 +1,6 @@
 # STATUS
 
-Last generated: 2026-08-12
+Last generated: 2026-08-13
 Providers: 92 · Total rules: 394
 
 | Provider | ID | Scope | Categories | Aliases | Rules | Sources |
@@ -8,14 +8,14 @@ Providers: 92 · Total rules: 394
 | Adobe Firefly | `adobe-firefly` | global | media | - | 2 | _handwritten_ |
 | Alibaba AI | `alibaba-ai` | cn | model | bailian, dashscope, qwen, tongyi | 8 | _handwritten_ |
 | Amazon Q Developer | `amazon-q` | global | coding | q-developer | 15 | _handwritten_ |
-| Anthropic | `anthropic` | global | coding, model | claude, claude-code | 49 | net-coffee, fetched 2026-08-12; xiaolai, fetched 2026-08-12; v2fly, fetched 2026-08-12 |
+| Anthropic | `anthropic` | global | coding, model | claude, claude-code | 49 | net-coffee, fetched 2026-08-13; xiaolai, fetched 2026-08-13; v2fly, fetched 2026-08-13 |
 | Augment Code | `augment-code` | global | coding | augment, auggie | 4 | _handwritten_ |
 | Baidu AI | `baidu-ai` | cn | model | qianfan, ernie, wenxin | 3 | _handwritten_ |
 | Black Forest Labs | `black-forest-labs` | global | media | flux | 1 | _handwritten_ |
 | Bolt.new | `bolt` | global | coding | - | 1 | _handwritten_ |
-| ByteDance AI (China) | `bytedance-ai-cn` | cn | coding | trae-cn, coze-cn, marscode-cn | 21 | v2fly-trae, fetched 2026-08-12 |
-| ByteDance AI | `bytedance-ai` | global | coding | trae, coze, marscode, cici | 14 | skywalkerji, fetched 2026-08-12 |
-| Cerebras | `cerebras` | global | model | - | 1 | v2fly, fetched 2026-08-12 |
+| ByteDance AI (China) | `bytedance-ai-cn` | cn | coding | trae-cn, coze-cn, marscode-cn | 21 | v2fly-trae, fetched 2026-08-13 |
+| ByteDance AI | `bytedance-ai` | global | coding | trae, coze, marscode, cici | 14 | skywalkerji, fetched 2026-08-13 |
+| Cerebras | `cerebras` | global | model | - | 1 | v2fly, fetched 2026-08-13 |
 | Character.AI | `character-ai` | global | - | - | 1 | _handwritten_ |
 | Chutes | `chutes` | global | model | - | 1 | _handwritten_ |
 | Civitai | `civitai` | global | media | - | 1 | _handwritten_ |
@@ -25,33 +25,33 @@ Providers: 92 · Total rules: 394
 | Cohere | `cohere` | global | model | - | 2 | _handwritten_ |
 | ComfyUI | `comfyui` | global | media | - | 2 | _handwritten_ |
 | Continue | `continue` | global | coding | - | 1 | _handwritten_ |
-| Copilot | `copilot` | global | coding | github-copilot, microsoft-copilot | 35 | blackmatrix7, fetched 2026-08-12; v2fly, fetched 2026-08-12 |
+| Copilot | `copilot` | global | coding | github-copilot, microsoft-copilot | 35 | blackmatrix7, fetched 2026-08-13; v2fly, fetched 2026-08-13 |
 | CrewAI | `crewai` | global | coding | - | 1 | _handwritten_ |
-| Cursor | `cursor` | global | coding | - | 7 | v2fly, fetched 2026-08-12 |
+| Cursor | `cursor` | global | coding | - | 7 | v2fly, fetched 2026-08-13 |
 | DeepInfra | `deepinfra` | global | model | - | 1 | _handwritten_ |
-| DeepSeek | `deepseek` | cn | model | - | 1 | v2fly, fetched 2026-08-12 |
+| DeepSeek | `deepseek` | cn | model | - | 1 | v2fly, fetched 2026-08-13 |
 | Descript | `descript` | global | media | - | 1 | _handwritten_ |
 | Devin | `devin` | global | coding | - | 1 | _handwritten_ |
 | Dia Browser | `dia-browser` | global | - | - | 2 | _handwritten_ |
 | Dify | `dify` | global | coding | - | 1 | _handwritten_ |
 | DuckDuckGo AI | `duck-ai` | global | - | - | 1 | _handwritten_ |
 | Eigent | `eigent` | global | - | - | 1 | _handwritten_ |
-| ElevenLabs | `elevenlabs` | global | media | eleven-labs | 2 | v2fly, fetched 2026-08-12 |
+| ElevenLabs | `elevenlabs` | global | media | eleven-labs | 2 | v2fly, fetched 2026-08-13 |
 | Factory | `factory` | global | coding | - | 1 | _handwritten_ |
 | Fireworks AI | `fireworks-ai` | global | model | - | 1 | _handwritten_ |
 | Gamma | `gamma` | global | - | - | 1 | _handwritten_ |
 | Genspark | `genspark` | global | - | - | 1 | _handwritten_ |
-| Google AI | `google-ai` | global | coding, model | gemini, ai-studio, notebooklm, antigravity | 45 | blackmatrix7, fetched 2026-08-12; v2fly, fetched 2026-08-12 |
+| Google AI | `google-ai` | global | coding, model | gemini, ai-studio, notebooklm, antigravity | 45 | blackmatrix7, fetched 2026-08-13; v2fly, fetched 2026-08-13 |
 | Grammarly | `grammarly` | global | - | - | 1 | _handwritten_ |
-| Groq | `groq` | global | model | - | 1 | v2fly, fetched 2026-08-12 |
+| Groq | `groq` | global | model | - | 1 | v2fly, fetched 2026-08-13 |
 | H2O.ai | `h2o-ai` | global | model | - | 1 | _handwritten_ |
 | Hermes Agent | `hermes-agent` | global | - | - | 1 | _handwritten_ |
 | HeyGen | `heygen` | global | media | - | 1 | _handwritten_ |
-| Hugging Face | `huggingface` | global | model | hugging-face | 3 | v2fly, fetched 2026-08-12 |
+| Hugging Face | `huggingface` | global | model | hugging-face | 3 | v2fly, fetched 2026-08-13 |
 | Ideogram | `ideogram` | global | media | - | 1 | _handwritten_ |
 | Inflection / Pi | `inflection` | global | - | pi | 2 | _handwritten_ |
 | Jasper | `jasper` | global | - | - | 1 | _handwritten_ |
-| JetBrains AI | `jetbrains-ai` | global | coding | grazie, junie | 3 | v2fly, fetched 2026-08-12 |
+| JetBrains AI | `jetbrains-ai` | global | coding | grazie, junie | 3 | v2fly, fetched 2026-08-13 |
 | Kiro | `kiro` | global | coding | - | 3 | _handwritten_ |
 | LangChain | `langchain` | global | coding | - | 1 | _handwritten_ |
 | Leonardo AI | `leonardo-ai` | global | media | - | 1 | _handwritten_ |
@@ -60,22 +60,22 @@ Providers: 92 · Total rules: 394
 | Lovable | `lovable` | global | coding | - | 1 | _handwritten_ |
 | Lovart | `lovart` | global | media | - | 1 | _handwritten_ |
 | Luma AI | `luma-ai` | global | media | dream-machine | 1 | _handwritten_ |
-| Manus | `manus` | global | coding | - | 2 | v2fly, fetched 2026-08-12 |
-| Meta AI | `meta-ai` | global | - | llama | 4 | v2fly, fetched 2026-08-12 |
+| Manus | `manus` | global | coding | - | 2 | v2fly, fetched 2026-08-13 |
+| Meta AI | `meta-ai` | global | - | llama | 4 | v2fly, fetched 2026-08-13 |
 | Midjourney | `midjourney` | global | media | - | 1 | _handwritten_ |
 | MiniMax | `minimax` | cn | model, media | hailuo | 4 | _handwritten_ |
 | Mistral AI | `mistral-ai` | global | model | le-chat | 1 | _handwritten_ |
 | Moonshot AI | `moonshot-ai` | cn | model | kimi, moonshot | 3 | _handwritten_ |
 | Ollama | `ollama` | global | model | - | 1 | _handwritten_ |
-| OpenAI | `openai` | global | coding, model | chatgpt, codex | 52 | blackmatrix7, fetched 2026-08-12; v2fly, fetched 2026-08-12 |
+| OpenAI | `openai` | global | coding, model | chatgpt, codex | 52 | blackmatrix7, fetched 2026-08-13; v2fly, fetched 2026-08-13 |
 | OpenArt | `openart` | global | media | - | 1 | _handwritten_ |
 | OpenClaw | `openclaw` | global | - | - | 1 | _handwritten_ |
 | OpenRouter | `openrouter` | global | model | - | 1 | _handwritten_ |
 | Otter.ai | `otter-ai` | global | - | otter | 1 | _handwritten_ |
-| Perplexity | `perplexity` | global | - | - | 5 | v2fly, fetched 2026-08-12 |
+| Perplexity | `perplexity` | global | - | - | 5 | v2fly, fetched 2026-08-13 |
 | Phind | `phind` | global | - | - | 1 | _handwritten_ |
 | Pika | `pika` | global | media | - | 1 | _handwritten_ |
-| Poe | `poe` | global | - | - | 2 | v2fly, fetched 2026-08-12 |
+| Poe | `poe` | global | - | - | 2 | v2fly, fetched 2026-08-13 |
 | Recraft | `recraft` | global | media | - | 1 | _handwritten_ |
 | Replicate | `replicate` | global | model | - | 2 | _handwritten_ |
 | Replit | `replit` | global | coding | - | 5 | _handwritten_ |
@@ -90,9 +90,9 @@ Providers: 92 · Total rules: 394
 | Udio | `udio` | global | media | - | 1 | _handwritten_ |
 | v0 | `v0` | global | coding | vercel-v0 | 2 | _handwritten_ |
 | Volcengine AI | `volcengine-ai` | cn | model | ark, doubao | 2 | _handwritten_ |
-| Windsurf | `windsurf` | global | coding | codeium | 7 | v2fly, fetched 2026-08-12 |
-| xAI | `x-ai` | global | - | grok | 4 | v2fly, fetched 2026-08-12 |
-| Xiaomi AI | `xiaomi-ai` | cn | model | - | 3 | v2fly, fetched 2026-08-12 |
+| Windsurf | `windsurf` | global | coding | codeium | 7 | v2fly, fetched 2026-08-13 |
+| xAI | `x-ai` | global | - | grok | 4 | v2fly, fetched 2026-08-13 |
+| Xiaomi AI | `xiaomi-ai` | cn | model | - | 3 | v2fly, fetched 2026-08-13 |
 | You.com | `you` | global | - | - | 1 | _handwritten_ |
 | YouMind | `youmind` | global | - | - | 3 | _handwritten_ |
 | Zed | `zed` | global | coding | - | 1 | _handwritten_ |
