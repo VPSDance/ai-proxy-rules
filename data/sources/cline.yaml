@@ -1,0 +1,10 @@
+provider: cline
+name: Cline
+description: Cline coding agent, API, and cloud services.
+categories:
+  - coding
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - cline.bot

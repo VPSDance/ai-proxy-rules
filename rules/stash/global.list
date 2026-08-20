@@ -118,6 +118,9 @@ DOMAIN-SUFFIX,chutes.ai
 # Civitai / Core
 DOMAIN-SUFFIX,civitai.com
 
+# Cline / Core
+DOMAIN-SUFFIX,cline.bot
+
 # ClipDrop / Core
 DOMAIN-SUFFIX,clipdrop.co
 
@@ -134,6 +137,9 @@ DOMAIN-SUFFIX,cohere.com
 # ComfyUI / Core
 DOMAIN-SUFFIX,comfy.org
 DOMAIN-SUFFIX,comfyregistry.org
+
+# Command Code / Core
+DOMAIN-SUFFIX,commandcode.ai
 
 # Continue / Core
 DOMAIN-SUFFIX,continue.dev
@@ -308,6 +314,10 @@ DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,grazie.aws.intellij.net
 DOMAIN-SUFFIX,jetbrains.ai
 
+# Kilo / Core
+DOMAIN-SUFFIX,kilo.ai
+DOMAIN-SUFFIX,kilo.codes
+
 # Kiro / Core
 DOMAIN-SUFFIX,kiro.dev
 
@@ -398,6 +408,9 @@ DOMAIN-SUFFIX,openart.ai
 # OpenClaw / Core
 DOMAIN-SUFFIX,openclaw.ai
 
+# OpenCode / Core
+DOMAIN-SUFFIX,opencode.ai
+
 # OpenRouter / Core
 DOMAIN-SUFFIX,openrouter.ai
 
@@ -420,6 +433,9 @@ DOMAIN-SUFFIX,pika.art
 # Poe / Core
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,poecdn.net
+
+# Qoder / Core
+DOMAIN-SUFFIX,qoder.com
 
 # Recraft / Core
 DOMAIN-SUFFIX,recraft.ai

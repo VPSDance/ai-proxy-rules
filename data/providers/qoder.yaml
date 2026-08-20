@@ -1,0 +1,12 @@
+provider: qoder
+name: Qoder
+description: Qoder international AI coding IDE and agent services.
+categories:
+  - coding
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - qoder.com

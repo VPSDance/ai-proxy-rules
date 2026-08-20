@@ -37,6 +37,11 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 - Windsurf / Codeium (`windsurf`)
 - JetBrains AI / Grazie (`jetbrains-ai`)
 - Augment Code (`augment-code`)
+- Command Code (`command-code`)
+- OpenCode (`opencode`)
+- Cline (`cline`)
+- Kilo (`kilo`)
+- Qoder (`qoder`)
 - Factory (`factory`)
 - Sourcegraph / Amp / Cody (`sourcegraph`)
 - Tabnine (`tabnine`)
@@ -95,7 +100,7 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 
 ### 中国 AI 服务：`cn`
 
-- Alibaba Cloud Model Studio / Qwen (`alibaba-ai`)：阿里云百炼 / 通义千问
+- Alibaba Cloud Model Studio / Qwen / Qoder China (`alibaba-ai`)：阿里云百炼 / 通义千问 / Qoder 国内版
 - Baidu Qianfan / ERNIE (`baidu-ai`)：百度千帆 / 文心一言
 - DeepSeek (`deepseek`)：深度求索
 - MiniMax (`minimax`)：稀宇科技 / 海螺 AI / 星野

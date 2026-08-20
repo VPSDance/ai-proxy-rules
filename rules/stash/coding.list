@@ -99,8 +99,14 @@ DOMAIN-SUFFIX,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,trae.ai
 DOMAIN-SUFFIX,tron-sg.bytelemon.com
 
+# Cline / Core
+DOMAIN-SUFFIX,cline.bot
+
 # CodeRabbit / Core
 DOMAIN-SUFFIX,coderabbit.ai
+
+# Command Code / Core
+DOMAIN-SUFFIX,commandcode.ai
 
 # Continue / Core
 DOMAIN-SUFFIX,continue.dev
@@ -216,6 +222,10 @@ DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,grazie.aws.intellij.net
 DOMAIN-SUFFIX,jetbrains.ai
 
+# Kilo / Core
+DOMAIN-SUFFIX,kilo.ai
+DOMAIN-SUFFIX,kilo.codes
+
 # Kiro / Core
 DOMAIN-SUFFIX,kiro.dev
 
@@ -269,6 +279,12 @@ DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,turn.livekit.cloud
+
+# OpenCode / Core
+DOMAIN-SUFFIX,opencode.ai
+
+# Qoder / Core
+DOMAIN-SUFFIX,qoder.com
 
 # Replit / Core
 DOMAIN-SUFFIX,repl.co

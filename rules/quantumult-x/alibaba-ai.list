@@ -1,12 +1,15 @@
 # AI Proxy Rules - Alibaba AI
-# Alibaba Cloud Model Studio, DashScope, and Qwen services.
+# Alibaba Cloud Model Studio, DashScope, Qwen, and Qoder China services.
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
 HOST,bailian.console.aliyun.com
 HOST,dashscope.aliyuncs.com
+HOST,qodercn-jb.oss-cn-hangzhou.aliyuncs.com
 HOST-SUFFIX,qianwen.aliyun.com
 HOST-SUFFIX,qianwen.com
+HOST-SUFFIX,qoder.cn
+HOST-SUFFIX,qoder.com.cn
 HOST-SUFFIX,qwen.ai
 HOST-SUFFIX,qwenlm.ai
 HOST-SUFFIX,tongyi.aliyun.com

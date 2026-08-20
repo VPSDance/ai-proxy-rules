@@ -1,0 +1,14 @@
+provider: kilo
+name: Kilo
+description: Kilo coding agent and cloud engineering platform.
+categories:
+  - coding
+aliases:
+  - kilo-code
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - kilo.ai
+        - kilo.codes

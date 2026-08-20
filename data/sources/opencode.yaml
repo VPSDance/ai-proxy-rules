@@ -1,0 +1,10 @@
+provider: opencode
+name: OpenCode
+description: OpenCode coding agent and Zen hosted model services.
+categories:
+  - coding
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - opencode.ai

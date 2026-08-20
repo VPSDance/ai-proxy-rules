@@ -1,0 +1,6 @@
+# AI Proxy Rules - Command Code
+# Command Code AI coding agent, desktop app, CLI, and hosted model API.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,commandcode.ai

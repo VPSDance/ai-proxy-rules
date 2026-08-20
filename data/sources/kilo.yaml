@@ -1,0 +1,13 @@
+provider: kilo
+name: Kilo
+description: Kilo coding agent and cloud engineering platform.
+categories:
+  - coding
+aliases:
+  - kilo-code
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - kilo.ai
+        - kilo.codes

@@ -91,8 +91,14 @@ HOST-SUFFIX,trae-api-sg.mchost.guru
 HOST-SUFFIX,trae.ai
 HOST-SUFFIX,tron-sg.bytelemon.com
 
+# Cline / Core
+HOST-SUFFIX,cline.bot
+
 # CodeRabbit / Core
 HOST-SUFFIX,coderabbit.ai
+
+# Command Code / Core
+HOST-SUFFIX,commandcode.ai
 
 # Continue / Core
 HOST-SUFFIX,continue.dev
@@ -202,6 +208,10 @@ HOST-SUFFIX,grazie.ai
 HOST-SUFFIX,grazie.aws.intellij.net
 HOST-SUFFIX,jetbrains.ai
 
+# Kilo / Core
+HOST-SUFFIX,kilo.ai
+HOST-SUFFIX,kilo.codes
+
 # Kiro / Core
 HOST-SUFFIX,kiro.dev
 
@@ -249,6 +259,12 @@ HOST-SUFFIX,host.livekit.cloud
 HOST-SUFFIX,oaistatsig.com
 HOST-SUFFIX,openai.com.cdn.cloudflare.net
 HOST-SUFFIX,turn.livekit.cloud
+
+# OpenCode / Core
+HOST-SUFFIX,opencode.ai
+
+# Qoder / Core
+HOST-SUFFIX,qoder.com
 
 # Replit / Core
 HOST-SUFFIX,repl.co

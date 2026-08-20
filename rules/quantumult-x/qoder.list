@@ -1,0 +1,6 @@
+# AI Proxy Rules - Qoder
+# Qoder international AI coding IDE and agent services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,qoder.com

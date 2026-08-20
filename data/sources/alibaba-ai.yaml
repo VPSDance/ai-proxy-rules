@@ -1,12 +1,14 @@
 provider: alibaba-ai
 name: Alibaba AI
-description: Alibaba Cloud Model Studio, DashScope, and Qwen services.
+description: Alibaba Cloud Model Studio, DashScope, Qwen, and Qoder China services.
 scope: cn
 categories:
+  - coding
   - model
 aliases:
   - bailian
   - dashscope
+  - qoder-cn
   - qwen
   - tongyi
 groups:
@@ -15,10 +17,13 @@ groups:
       domain:
         - bailian.console.aliyun.com
         - dashscope.aliyuncs.com
+        - qodercn-jb.oss-cn-hangzhou.aliyuncs.com
       domainSuffix:
         # v2fly/domain-list-community category-ai-cn: Qwen.
         - qianwen.aliyun.com
         - qianwen.com
+        - qoder.cn
+        - qoder.com.cn
         - qwen.ai
         - qwenlm.ai
         - tongyi.aliyun.com

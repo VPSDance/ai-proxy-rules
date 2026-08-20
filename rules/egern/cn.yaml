@@ -12,6 +12,7 @@ domain_set:
   - "ernie.baidu.com"
   - "hunyuan.tencentcloudapi.com"
   - "qianfan.baidubce.com"
+  - "qodercn-jb.oss-cn-hangzhou.aliyuncs.com"
   - "yiyan.baidu.com"
 domain_suffix_set:
   - "bigmodel.cn"
@@ -42,6 +43,8 @@ domain_suffix_set:
   - "moonshot.cn"
   - "qianwen.aliyun.com"
   - "qianwen.com"
+  - "qoder.cn"
+  - "qoder.com.cn"
   - "qwen.ai"
   - "qwenlm.ai"
   - "tcwqqdy.guru"

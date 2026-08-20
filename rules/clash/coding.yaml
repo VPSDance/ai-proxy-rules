@@ -100,8 +100,14 @@ payload:
   - DOMAIN-SUFFIX,trae.ai
   - DOMAIN-SUFFIX,tron-sg.bytelemon.com
 
+  # Cline / Core
+  - DOMAIN-SUFFIX,cline.bot
+
   # CodeRabbit / Core
   - DOMAIN-SUFFIX,coderabbit.ai
+
+  # Command Code / Core
+  - DOMAIN-SUFFIX,commandcode.ai
 
   # Continue / Core
   - DOMAIN-SUFFIX,continue.dev
@@ -217,6 +223,10 @@ payload:
   - DOMAIN-SUFFIX,grazie.aws.intellij.net
   - DOMAIN-SUFFIX,jetbrains.ai
 
+  # Kilo / Core
+  - DOMAIN-SUFFIX,kilo.ai
+  - DOMAIN-SUFFIX,kilo.codes
+
   # Kiro / Core
   - DOMAIN-SUFFIX,kiro.dev
 
@@ -271,6 +281,12 @@ payload:
   - DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
+
+  # OpenCode / Core
+  - DOMAIN-SUFFIX,opencode.ai
+
+  # Qoder / Core
+  - DOMAIN-SUFFIX,qoder.com
 
   # Replit / Core
   - DOMAIN-SUFFIX,repl.co

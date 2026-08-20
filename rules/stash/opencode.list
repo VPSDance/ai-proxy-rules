@@ -1,0 +1,6 @@
+# AI Proxy Rules - OpenCode
+# OpenCode coding agent and Zen hosted model services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,opencode.ai

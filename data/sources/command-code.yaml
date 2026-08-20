@@ -1,0 +1,12 @@
+provider: command-code
+name: Command Code
+description: Command Code AI coding agent, desktop app, CLI, and hosted model API.
+categories:
+  - coding
+aliases:
+  - commandcode
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - commandcode.ai
