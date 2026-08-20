@@ -56,7 +56,7 @@ async function diffSummary(options: DiffOptions): Promise<string> {
   }
 
   if (changes.length === 0) {
-    return "no rule changes";
+    return "rule counts unchanged";
   }
 
   changes.sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta));
