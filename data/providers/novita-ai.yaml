@@ -1,0 +1,13 @@
+provider: novita-ai
+name: Novita AI
+description: Novita AI model APIs, GPU cloud, and agent sandbox services.
+categories:
+  - model
+aliases:
+  - novita
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - novita.ai

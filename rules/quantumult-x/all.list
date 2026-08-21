@@ -399,6 +399,9 @@ HOST-SUFFIX,kimi.com
 HOST-SUFFIX,moonshot.ai
 HOST-SUFFIX,moonshot.cn
 
+# Novita AI / Core
+HOST-SUFFIX,novita.ai
+
 # Ollama / Core
 HOST-SUFFIX,ollama.com
 

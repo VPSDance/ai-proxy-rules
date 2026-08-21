@@ -344,6 +344,9 @@ HOST-SUFFIX,midjourney.com
 # Mistral AI / Core
 HOST-SUFFIX,mistral.ai
 
+# Novita AI / Core
+HOST-SUFFIX,novita.ai
+
 # Ollama / Core
 HOST-SUFFIX,ollama.com
 

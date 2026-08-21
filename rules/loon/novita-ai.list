@@ -1,0 +1,6 @@
+# AI Proxy Rules - Novita AI
+# Novita AI model APIs, GPU cloud, and agent sandbox services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,novita.ai

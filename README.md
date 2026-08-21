@@ -23,6 +23,7 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 - OpenRouter (`openrouter`)
 - Together AI (`together-ai`)
 - Fireworks AI (`fireworks-ai`)
+- Novita AI (`novita-ai`)
 - Replicate (`replicate`)
 - DeepInfra (`deepinfra`)
 - Cerebras (`cerebras`)

@@ -413,6 +413,9 @@ DOMAIN-SUFFIX,kimi.com
 DOMAIN-SUFFIX,moonshot.ai
 DOMAIN-SUFFIX,moonshot.cn
 
+# Novita AI / Core
+DOMAIN-SUFFIX,novita.ai
+
 # Ollama / Core
 DOMAIN-SUFFIX,ollama.com
 
