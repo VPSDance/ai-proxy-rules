@@ -394,6 +394,10 @@ HOST-SUFFIX,xingyeai.com
 # Mistral AI / Core
 HOST-SUFFIX,mistral.ai
 
+# ModelScope / Core
+HOST-SUFFIX,modelscope.cn
+HOST-SUFFIX,modelscope.com
+
 # Moonshot AI / Core
 HOST-SUFFIX,kimi.com
 HOST-SUFFIX,moonshot.ai
@@ -472,6 +476,10 @@ HOST-SUFFIX,pika.art
 HOST-SUFFIX,poe.com
 HOST-SUFFIX,poecdn.net
 
+# PPIO / Core
+HOST-SUFFIX,ppio.cn
+HOST-SUFFIX,ppio.com
+
 # Qoder / Core
 HOST-SUFFIX,qoder.com
 
@@ -493,6 +501,10 @@ HOST-SUFFIX,replit.dev
 HOST-SUFFIX,runway.com
 HOST-SUFFIX,runwayml.com
 
+# SiliconFlow / Core
+HOST-SUFFIX,siliconflow.cn
+HOST-SUFFIX,siliconflow.com
+
 # Sourcegraph / Core
 HOST-SUFFIX,ampcode.com
 HOST-SUFFIX,ampworkers.com
@@ -501,6 +513,10 @@ HOST-SUFFIX,sourcegraph.com
 
 # Stability AI / Core
 HOST-SUFFIX,stability.ai
+
+# StepFun / Core
+HOST-SUFFIX,stepfun.ai
+HOST-SUFFIX,stepfun.com
 
 # Suno / Core
 HOST-SUFFIX,suno.ai

@@ -53,10 +53,26 @@ payload:
   - DOMAIN-SUFFIX,hailuoai.com
   - DOMAIN-SUFFIX,xingyeai.com
 
+  # ModelScope / Core
+  - DOMAIN-SUFFIX,modelscope.cn
+  - DOMAIN-SUFFIX,modelscope.com
+
   # Moonshot AI / Core
   - DOMAIN-SUFFIX,kimi.com
   - DOMAIN-SUFFIX,moonshot.ai
   - DOMAIN-SUFFIX,moonshot.cn
+
+  # PPIO / Core
+  - DOMAIN-SUFFIX,ppio.cn
+  - DOMAIN-SUFFIX,ppio.com
+
+  # SiliconFlow / Core
+  - DOMAIN-SUFFIX,siliconflow.cn
+  - DOMAIN-SUFFIX,siliconflow.com
+
+  # StepFun / Core
+  - DOMAIN-SUFFIX,stepfun.ai
+  - DOMAIN-SUFFIX,stepfun.com
 
   # Tencent AI / Core
   - DOMAIN,api.hunyuan.cloud.tencent.com

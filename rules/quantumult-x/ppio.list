@@ -1,0 +1,7 @@
+# AI Proxy Rules - PPIO
+# PPIO model APIs and GPU cloud services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+HOST-SUFFIX,ppio.cn
+HOST-SUFFIX,ppio.com

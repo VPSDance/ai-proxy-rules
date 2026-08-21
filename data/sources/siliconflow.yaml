@@ -1,0 +1,12 @@
+provider: siliconflow
+name: SiliconFlow
+description: SiliconFlow model APIs and inference platform services.
+scope: cn
+categories:
+  - model
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - siliconflow.cn
+        - siliconflow.com

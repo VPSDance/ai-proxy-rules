@@ -1,0 +1,12 @@
+provider: modelscope
+name: ModelScope
+description: ModelScope model community and inference API services.
+scope: cn
+categories:
+  - model
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - modelscope.cn
+        - modelscope.com

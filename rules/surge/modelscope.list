@@ -1,0 +1,7 @@
+# AI Proxy Rules - ModelScope
+# ModelScope model community and inference API services.
+# https://github.com/VPSDance/ai-proxy-rules
+
+# Core
+DOMAIN-SUFFIX,modelscope.cn
+DOMAIN-SUFFIX,modelscope.com

@@ -1,0 +1,12 @@
+provider: stepfun
+name: StepFun
+description: StepFun web and model API services.
+scope: cn
+categories:
+  - model
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - stepfun.ai
+        - stepfun.com

@@ -101,16 +101,20 @@ AI 服务分流规则聚合，每日自动更新。整合 v2fly、blackmatrix7 �
 
 ### 中国 AI 服务：`cn`
 
-- Alibaba Cloud Model Studio / Qwen / Qoder China (`alibaba-ai`)：阿里云百炼 / 通义千问 / Qoder 国内版
-- Baidu Qianfan / ERNIE (`baidu-ai`)：百度千帆 / 文心一言
 - DeepSeek (`deepseek`)：深度求索
 - MiniMax (`minimax`)：稀宇科技 / 海螺 AI / 星野
 - Moonshot AI / Kimi (`moonshot-ai`)：月之暗面 / Kimi
+- StepFun (`stepfun`)：阶跃星辰
+- Zhipu AI / GLM (`zhipu-ai`)：智谱 AI / GLM
+- SiliconFlow (`siliconflow`)：硅基流动
+- PPIO (`ppio`)：派欧云
+- Alibaba Cloud Model Studio / Qwen / Qoder China (`alibaba-ai`)：阿里云百炼 / 通义千问 / Qoder 国内版
+- ModelScope (`modelscope`)：魔搭社区
+- Baidu Qianfan / ERNIE (`baidu-ai`)：百度千帆 / 文心一言
 - Tencent Hunyuan / Yuanbao / Yuanqi (`tencent-ai`)：腾讯混元 / 元宝 / 元器
 - Volcengine Ark / Doubao (`volcengine-ai`)：火山引擎方舟 / 豆包
-- Xiaomi AI / MiMo (`xiaomi-ai`)：小米 AI / MiMo
-- Zhipu AI / GLM (`zhipu-ai`)：智谱 AI / GLM
 - ByteDance AI (China) / Trae / Coze / MarsCode (`bytedance-ai-cn`)：字节跳动 / Trae / 扣子 / MarsCode
+- Xiaomi AI / MiMo (`xiaomi-ai`)：小米 AI / MiMo
 
 支持的客户端格式：
 

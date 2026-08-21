@@ -1,0 +1,12 @@
+provider: ppio
+name: PPIO
+description: PPIO model APIs and GPU cloud services.
+scope: cn
+categories:
+  - model
+groups:
+  - name: Core
+    include:
+      domainSuffix:
+        - ppio.cn
+        - ppio.com

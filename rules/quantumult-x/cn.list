@@ -52,10 +52,26 @@ HOST,api.minimaxi.com
 HOST-SUFFIX,hailuoai.com
 HOST-SUFFIX,xingyeai.com
 
+# ModelScope / Core
+HOST-SUFFIX,modelscope.cn
+HOST-SUFFIX,modelscope.com
+
 # Moonshot AI / Core
 HOST-SUFFIX,kimi.com
 HOST-SUFFIX,moonshot.ai
 HOST-SUFFIX,moonshot.cn
+
+# PPIO / Core
+HOST-SUFFIX,ppio.cn
+HOST-SUFFIX,ppio.com
+
+# SiliconFlow / Core
+HOST-SUFFIX,siliconflow.cn
+HOST-SUFFIX,siliconflow.com
+
+# StepFun / Core
+HOST-SUFFIX,stepfun.ai
+HOST-SUFFIX,stepfun.com
 
 # Tencent AI / Core
 HOST,api.hunyuan.cloud.tencent.com

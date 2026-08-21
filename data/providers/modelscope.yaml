@@ -1,0 +1,14 @@
+provider: modelscope
+name: ModelScope
+description: ModelScope model community and inference API services.
+scope: cn
+categories:
+  - model
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - modelscope.cn
+        - modelscope.com

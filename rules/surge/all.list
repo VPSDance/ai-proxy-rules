@@ -408,6 +408,10 @@ DOMAIN-SUFFIX,xingyeai.com
 # Mistral AI / Core
 DOMAIN-SUFFIX,mistral.ai
 
+# ModelScope / Core
+DOMAIN-SUFFIX,modelscope.cn
+DOMAIN-SUFFIX,modelscope.com
+
 # Moonshot AI / Core
 DOMAIN-SUFFIX,kimi.com
 DOMAIN-SUFFIX,moonshot.ai
@@ -492,6 +496,10 @@ DOMAIN-SUFFIX,pika.art
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,poecdn.net
 
+# PPIO / Core
+DOMAIN-SUFFIX,ppio.cn
+DOMAIN-SUFFIX,ppio.com
+
 # Qoder / Core
 DOMAIN-SUFFIX,qoder.com
 
@@ -513,6 +521,10 @@ DOMAIN-SUFFIX,replit.dev
 DOMAIN-SUFFIX,runway.com
 DOMAIN-SUFFIX,runwayml.com
 
+# SiliconFlow / Core
+DOMAIN-SUFFIX,siliconflow.cn
+DOMAIN-SUFFIX,siliconflow.com
+
 # Sourcegraph / Core
 DOMAIN-SUFFIX,ampcode.com
 DOMAIN-SUFFIX,ampworkers.com
@@ -521,6 +533,10 @@ DOMAIN-SUFFIX,sourcegraph.com
 
 # Stability AI / Core
 DOMAIN-SUFFIX,stability.ai
+
+# StepFun / Core
+DOMAIN-SUFFIX,stepfun.ai
+DOMAIN-SUFFIX,stepfun.com
 
 # Suno / Core
 DOMAIN-SUFFIX,suno.ai

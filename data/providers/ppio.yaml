@@ -1,0 +1,14 @@
+provider: ppio
+name: PPIO
+description: PPIO model APIs and GPU cloud services.
+scope: cn
+categories:
+  - model
+aliases: []
+allowDangerousDomainSuffix: []
+groups:
+  - name: Core
+    rules:
+      domainSuffix:
+        - ppio.cn
+        - ppio.com
