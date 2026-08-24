@@ -86,16 +86,26 @@ function renderClash(target: RenderTarget): string {
 }
 
 function renderSingBox(target: RenderTarget): string {
-  const rule: Record<string, string[]> = {};
+  const rules: Array<Record<string, string[]>> = [];
 
-  assignIfAny(rule, "domain", target.rules.domain);
-  assignIfAny(rule, "domain_suffix", target.rules.domainSuffix);
-  assignIfAny(rule, "domain_keyword", target.rules.domainKeyword);
-  assignIfAny(rule, "domain_regex", target.rules.domainRegex);
-  assignIfAny(rule, "process_name", target.rules.processName);
-  assignIfAny(rule, "ip_cidr", [...target.rules.ipCidr, ...target.rules.ipCidr6]);
+  appendSingBoxRule(rules, "domain", target.rules.domain);
+  appendSingBoxRule(rules, "domain_suffix", target.rules.domainSuffix);
+  appendSingBoxRule(rules, "domain_keyword", target.rules.domainKeyword);
+  appendSingBoxRule(rules, "domain_regex", target.rules.domainRegex);
+  appendSingBoxRule(rules, "process_name", target.rules.processName);
+  appendSingBoxRule(rules, "ip_cidr", [...target.rules.ipCidr, ...target.rules.ipCidr6]);
 
-  return `${JSON.stringify({ version: 2, rules: [rule] }, null, 2)}\n`;
+  return `${JSON.stringify({ version: 2, rules }, null, 2)}\n`;
+}
+
+function appendSingBoxRule(
+  rules: Array<Record<string, string[]>>,
+  key: string,
+  values: string[]
+): void {
+  if (values.length > 0) {
+    rules.push({ [key]: values });
+  }
 }
 
 function renderQuantumultX(target: RenderTarget): string {

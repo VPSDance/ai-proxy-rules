@@ -28,7 +28,9 @@
         "static.cloudflareinsights.com",
         "storage.googleapis.com",
         "webchannel-alkalimakersuite-pa.clients6.google.com"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         "ai.cloudflare.com",
         "ai.com",
@@ -141,17 +143,23 @@
         "together.ai",
         "together.xyz",
         "turn.livekit.cloud"
-      ],
+      ]
+    },
+    {
       "domain_keyword": [
         "chatgpt-async-webps-prod",
         "datadog",
         "openai",
         "sentry",
         "sift"
-      ],
+      ]
+    },
+    {
       "domain_regex": [
         "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
-      ],
+      ]
+    },
+    {
       "process_name": [
         "Antigravity",
         "Antigravity.exe",
@@ -167,7 +175,9 @@
         "claude.exe",
         "codex",
         "cowork-svc.exe"
-      ],
+      ]
+    },
+    {
       "ip_cidr": [
         "160.79.104.0/21",
         "199.47.142.0/23",

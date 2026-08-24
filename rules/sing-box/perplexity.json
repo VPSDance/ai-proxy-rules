@@ -5,7 +5,9 @@
       "domain": [
         "ppl-ai-file-upload.s3.amazonaws.com",
         "pplx-res.cloudinary.com"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         "perplexity.ai",
         "perplexity.com",

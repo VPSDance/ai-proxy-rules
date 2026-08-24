@@ -11,7 +11,9 @@
         "cdn.usefathom.com",
         "servd-anthropic-website.b-cdn.net",
         "storage.googleapis.com"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         "anthropic.com",
         "anthropic.com.cn",
@@ -43,19 +45,25 @@
         "sentry.io",
         "sillylittleguy.org",
         "statsigapi.net"
-      ],
+      ]
+    },
+    {
       "domain_keyword": [
         "datadog",
         "sentry",
         "sift"
-      ],
+      ]
+    },
+    {
       "process_name": [
         "Claude",
         "Claude.exe",
         "claude",
         "claude.exe",
         "cowork-svc.exe"
-      ],
+      ]
+    },
+    {
       "ip_cidr": [
         "160.79.104.0/21",
         "2607:6bc0::/32"

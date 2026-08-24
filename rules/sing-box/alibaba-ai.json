@@ -6,7 +6,9 @@
         "bailian.console.aliyun.com",
         "dashscope.aliyuncs.com",
         "qodercn-jb.oss-cn-hangzhou.aliyuncs.com"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         "qianwen.aliyun.com",
         "qianwen.com",

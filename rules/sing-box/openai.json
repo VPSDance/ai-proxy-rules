@@ -10,7 +10,9 @@
         "openaicomproductionae4b.blob.core.windows.net",
         "production-openaicom-storage.azureedge.net",
         "static.cloudflareinsights.com"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         "ai.com",
         "algolia.net",
@@ -43,14 +45,20 @@
         "statsigapi.net",
         "stripe.com",
         "turn.livekit.cloud"
-      ],
+      ]
+    },
+    {
       "domain_keyword": [
         "chatgpt-async-webps-prod",
         "openai"
-      ],
+      ]
+    },
+    {
       "domain_regex": [
         "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
-      ],
+      ]
+    },
+    {
       "process_name": [
         "ChatGPT",
         "ChatGPT.exe",
@@ -58,7 +66,9 @@
         "Codex.exe",
         "chatgpt",
         "codex"
-      ],
+      ]
+    },
+    {
       "ip_cidr": [
         "199.47.142.0/23",
         "24.199.123.28/32",

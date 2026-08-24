@@ -63,7 +63,9 @@
         "sydney.bing.com",
         "webchannel-alkalimakersuite-pa.clients6.google.com",
         "yiyan.baidu.com"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         "abtestvm-sg.bytedance.com",
         "ai.cloudflare.com",
@@ -358,17 +360,23 @@
         "zed.dev",
         "zhipuai.cn",
         "zhipucn.com"
-      ],
+      ]
+    },
+    {
       "domain_keyword": [
         "chatgpt-async-webps-prod",
         "datadog",
         "openai",
         "sentry",
         "sift"
-      ],
+      ]
+    },
+    {
       "domain_regex": [
         "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
-      ],
+      ]
+    },
+    {
       "process_name": [
         "Antigravity",
         "Antigravity.exe",
@@ -393,7 +401,9 @@
         "cowork-svc.exe",
         "cursor",
         "windsurf"
-      ],
+      ]
+    },
+    {
       "ip_cidr": [
         "160.79.104.0/21",
         "199.47.142.0/23",

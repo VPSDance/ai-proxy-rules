@@ -18,7 +18,9 @@
         "self.events.data.microsoft.com",
         "static.cloudflareinsights.com",
         "sydney.bing.com"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         "algolia.net",
         "api.microsoftapp.net",

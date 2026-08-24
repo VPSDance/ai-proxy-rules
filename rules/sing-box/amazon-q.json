@@ -11,7 +11,9 @@
         "idetoolkits-hostedfiles.amazonaws.com",
         "idetoolkits.amazonwebservices.com",
         "q-developer-integration.us-east-1.api.aws"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         "aws.dev",
         "awsapps.com",

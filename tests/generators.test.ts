@@ -132,11 +132,14 @@ describe("generators", () => {
     const parsed = JSON.parse(rendered.content);
 
     expect(parsed.version).toBe(2);
-    expect(parsed.rules[0].domain).toEqual(["api.anthropic.com"]);
-    expect(parsed.rules[0].domain_suffix).toEqual(["anthropic.com"]);
-    expect(parsed.rules[0].ip_cidr).toEqual(["203.0.113.0/24", "2001:db8::/32"]);
-    expect(parsed.rules[0]).not.toHaveProperty("asn");
-    expect(parsed.rules[0]).not.toHaveProperty("ip_asn");
+    expect(parsed.rules).toEqual([
+      { domain: ["api.anthropic.com"] },
+      { domain_suffix: ["anthropic.com"] },
+      { domain_keyword: ["claude"] },
+      { ip_cidr: ["203.0.113.0/24", "2001:db8::/32"] }
+    ]);
+    expect(parsed.rules.every((rule: Record<string, string[]>) => !("asn" in rule))).toBe(true);
+    expect(parsed.rules.every((rule: Record<string, string[]>) => !("ip_asn" in rule))).toBe(true);
   });
 
   it("renders quantumult x without per-line policy", () => {
@@ -244,7 +247,7 @@ describe("generators", () => {
           name: "Core",
           rules: {
             domain: [],
-            domainSuffix: [],
+            domainSuffix: ["claude.ai"],
             domainKeyword: [],
             domainRegex: [],
             processName: ["Claude.exe", "Claude", "claude"],
@@ -256,7 +259,7 @@ describe("generators", () => {
       ],
       rules: {
         domain: [],
-        domainSuffix: [],
+        domainSuffix: ["claude.ai"],
         domainKeyword: [],
         domainRegex: [],
         processName: ["Claude.exe", "Claude", "claude"],
@@ -271,8 +274,9 @@ describe("generators", () => {
       expect(render(format, target).content).toContain("PROCESS-NAME,Claude.exe");
     }
 
-    expect(JSON.parse(render("sing-box", target).content).rules[0].process_name).toEqual([
-      "Claude.exe", "Claude", "claude"
+    expect(JSON.parse(render("sing-box", target).content).rules).toEqual([
+      { domain_suffix: ["claude.ai"] },
+      { process_name: ["Claude.exe", "Claude", "claude"] }
     ]);
     // These clients currently have no process-name rule-set syntax.
     expect(render("egern", target).content).not.toContain("process_name");

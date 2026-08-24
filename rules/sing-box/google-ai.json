@@ -13,7 +13,9 @@
         "notebooklm-pa.googleapis.com",
         "notebooklm.googleapis.com",
         "webchannel-alkalimakersuite-pa.clients6.google.com"
-      ],
+      ]
+    },
+    {
       "domain_suffix": [
         "ai.google.dev",
         "ai.studio",
@@ -47,7 +49,9 @@
         "proactivebackend-pa.googleapis.com",
         "robinfrontend-pa.googleapis.com",
         "stitch.withgoogle.com"
-      ],
+      ]
+    },
+    {
       "process_name": [
         "Antigravity",
         "Antigravity.exe",
