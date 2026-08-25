@@ -43,13 +43,13 @@ export async function collectSourceIds(sourcesDir: string): Promise<Set<string>>
 }
 
 export function collectReadmeIds(text: string): Set<string> {
-  const startMarker = "规则覆盖范围：";
-  const endMarker = "支持的客户端格式：";
+  const startMarker = "<!-- provider-list:start -->";
+  const endMarker = "<!-- provider-list:end -->";
   const startIdx = text.indexOf(startMarker);
   const endIdx = text.indexOf(endMarker);
 
   if (startIdx === -1 || endIdx === -1 || endIdx <= startIdx) {
-    throw new Error('Could not locate provider list section between "规则覆盖范围：" and "支持的客户端格式：" in README.');
+    throw new Error(`Could not locate provider list section between "${startMarker}" and "${endMarker}" in README.`);
   }
 
   const section = text.slice(startIdx + startMarker.length, endIdx);

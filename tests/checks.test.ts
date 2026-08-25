@@ -149,7 +149,7 @@ describe("check-readme", () => {
     await writeFile(path.join(sourcesDir, "beta.yaml"), "provider: beta\nname: B\ngroups: [{name: Core, include: {domainSuffix: [b.com]}}]\n", "utf8");
     await writeFile(
       readmeFile,
-      `# Title\n\n规则覆盖范围：\n\n- Alpha (\`alpha\`)\n- Beta (\`beta\`)\n\n支持的客户端格式：\n\n- Surge\n`,
+      `# Title\n\n<!-- provider-list:start -->\n\n- Alpha (\`alpha\`)\n- Beta (\`beta\`)\n\n<!-- provider-list:end -->\n\n- Surge\n`,
       "utf8"
     );
 
@@ -165,7 +165,7 @@ describe("check-readme", () => {
     await writeFile(path.join(sourcesDir, "ghost.yaml"), "provider: ghost\nname: G\ngroups: [{name: Core, include: {domainSuffix: [g.com]}}]\n", "utf8");
     await writeFile(
       readmeFile,
-      `规则覆盖范围：\n\n- Alpha (\`alpha\`)\n\n支持的客户端格式：\n\n- Surge\n`,
+      `<!-- provider-list:start -->\n\n- Alpha (\`alpha\`)\n\n<!-- provider-list:end -->\n\n- Surge\n`,
       "utf8"
     );
 
@@ -178,7 +178,7 @@ describe("check-readme", () => {
     await writeFile(path.join(sourcesDir, "alpha.yaml"), "provider: alpha\nname: A\ngroups: [{name: Core, include: {domainSuffix: [a.com]}}]\n", "utf8");
     await writeFile(
       readmeFile,
-      `规则覆盖范围：\n\n- Alpha (\`alpha\`)\n- Removed (\`removed\`)\n\n支持的客户端格式：\n\n- Surge\n`,
+      `<!-- provider-list:start -->\n\n- Alpha (\`alpha\`)\n- Removed (\`removed\`)\n\n<!-- provider-list:end -->\n\n- Surge\n`,
       "utf8"
     );
 
@@ -188,7 +188,7 @@ describe("check-readme", () => {
   });
 
   it("collectReadmeIds extracts ids only from the provider section", () => {
-    const text = `# Heading\n\nintro mentioning (\`fake\`)\n\n规则覆盖范围：\n\n- A (\`alpha\`)\n- B (\`beta-test\`)\n\n支持的客户端格式：\n\n- Surge (\`surge\`)\n`;
+    const text = `# Heading\n\nintro mentioning (\`fake\`)\n\n<!-- provider-list:start -->\n\n- A (\`alpha\`)\n- B (\`beta-test\`)\n\n<!-- provider-list:end -->\n\n- Surge (\`surge\`)\n`;
     const ids = collectReadmeIds(text);
     expect([...ids].sort()).toEqual(["alpha", "beta-test"]);
   });
