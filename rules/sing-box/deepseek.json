@@ -3,7 +3,8 @@
   "rules": [
     {
       "domain_suffix": [
-        "deepseek.com"
+        "deepseek.com",
+        "deepseeksvc.com"
       ]
     }
   ]

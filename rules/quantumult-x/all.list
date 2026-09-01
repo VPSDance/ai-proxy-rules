@@ -227,6 +227,7 @@ HOST-SUFFIX,deepinfra.com
 
 # DeepSeek / Core
 HOST-SUFFIX,deepseek.com
+HOST-SUFFIX,deepseeksvc.com
 
 # Descript / Core
 HOST-SUFFIX,descript.com

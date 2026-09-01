@@ -45,6 +45,7 @@ HOST-SUFFIX,yoma.cn
 
 # DeepSeek / Core
 HOST-SUFFIX,deepseek.com
+HOST-SUFFIX,deepseeksvc.com
 
 # MiniMax / Core
 HOST,api.minimax.io

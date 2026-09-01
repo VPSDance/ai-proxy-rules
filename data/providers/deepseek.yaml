@@ -11,3 +11,4 @@ groups:
     rules:
       domainSuffix:
         - deepseek.com
+        - deepseeksvc.com

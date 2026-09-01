@@ -159,6 +159,7 @@ domain_suffix_set:
   - "deepmind.com"
   - "deepmind.google"
   - "deepseek.com"
+  - "deepseeksvc.com"
   - "descript.com"
   - "devin.ai"
   - "diabrowser.com"

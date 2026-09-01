@@ -238,6 +238,7 @@ DOMAIN-SUFFIX,deepinfra.com
 
 # DeepSeek / Core
 DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,deepseeksvc.com
 
 # Descript / Core
 DOMAIN-SUFFIX,descript.com

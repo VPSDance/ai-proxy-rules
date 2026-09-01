@@ -46,6 +46,7 @@ payload:
 
   # DeepSeek / Core
   - DOMAIN-SUFFIX,deepseek.com
+  - DOMAIN-SUFFIX,deepseeksvc.com
 
   # MiniMax / Core
   - DOMAIN,api.minimax.io
