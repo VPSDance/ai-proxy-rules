@@ -10,5 +10,7 @@ allowDangerousDomainSuffix: []
 groups:
   - name: Core
     rules:
+      domain:
+        - api.cloudflare.com
       domainSuffix:
         - ai.cloudflare.com

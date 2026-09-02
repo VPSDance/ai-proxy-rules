@@ -59,6 +59,7 @@ HOST-SUFFIX,cerebras.ai
 HOST-SUFFIX,chutes.ai
 
 # Cloudflare AI / Core
+HOST,api.cloudflare.com
 HOST-SUFFIX,ai.cloudflare.com
 
 # Cohere / Core

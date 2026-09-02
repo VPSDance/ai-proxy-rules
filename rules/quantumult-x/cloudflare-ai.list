@@ -3,4 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
+HOST,api.cloudflare.com
 HOST-SUFFIX,ai.cloudflare.com

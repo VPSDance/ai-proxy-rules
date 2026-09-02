@@ -12,6 +12,7 @@ domain_set:
   - "anthropic.com.cdn.cloudflare.net"
   - "antigravity-pa.googleapis.com"
   - "antigravity.googleapis.com"
+  - "api.cloudflare.com"
   - "api.msn.com"
   - "api.statsig.com"
   - "assets.msn.com"

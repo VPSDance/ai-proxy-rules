@@ -117,6 +117,7 @@ HOST-SUFFIX,cline.bot
 HOST-SUFFIX,clipdrop.co
 
 # Cloudflare AI / Core
+HOST,api.cloudflare.com
 HOST-SUFFIX,ai.cloudflare.com
 
 # CodeRabbit / Core

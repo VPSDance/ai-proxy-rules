@@ -167,6 +167,7 @@ payload:
   - DOMAIN-SUFFIX,clipdrop.co
 
   # Cloudflare AI / Core
+  - DOMAIN,api.cloudflare.com
   - DOMAIN-SUFFIX,ai.cloudflare.com
 
   # CodeRabbit / Core

@@ -64,6 +64,7 @@ DOMAIN-SUFFIX,cerebras.ai
 DOMAIN-SUFFIX,chutes.ai
 
 # Cloudflare AI / Core
+DOMAIN,api.cloudflare.com
 DOMAIN-SUFFIX,ai.cloudflare.com
 
 # Cohere / Core

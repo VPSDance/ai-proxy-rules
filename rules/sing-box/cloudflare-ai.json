@@ -2,6 +2,11 @@
   "version": 2,
   "rules": [
     {
+      "domain": [
+        "api.cloudflare.com"
+      ]
+    },
+    {
       "domain_suffix": [
         "ai.cloudflare.com"
       ]
