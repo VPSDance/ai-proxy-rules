@@ -1,7 +1,7 @@
 # STATUS
 
 Last generated: 2026-09-02
-Providers: 102 · Total rules: 413
+Providers: 102 · Total rules: 414
 
 | Provider | ID | Scope | Categories | Aliases | Rules | Sources |
 |---|---|---|---|---|---:|---|
@@ -21,7 +21,7 @@ Providers: 102 · Total rules: 413
 | Civitai | `civitai` | global | media | - | 1 | _handwritten_ |
 | Cline | `cline` | global | coding | - | 1 | _handwritten_ |
 | ClipDrop | `clipdrop` | global | media | - | 1 | _handwritten_ |
-| Cloudflare AI | `cloudflare-ai` | global | model | workers-ai, ai-gateway | 1 | _handwritten_ |
+| Cloudflare AI | `cloudflare-ai` | global | model | workers-ai, ai-gateway | 2 | _handwritten_ |
 | CodeRabbit | `coderabbit` | global | coding | - | 1 | _handwritten_ |
 | Cohere | `cohere` | global | model | - | 2 | _handwritten_ |
 | ComfyUI | `comfyui` | global | media | - | 2 | _handwritten_ |
