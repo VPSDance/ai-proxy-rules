@@ -379,9 +379,14 @@ HOST-SUFFIX,manus.im
 HOST-SUFFIX,manuscdn.com
 
 # Meta AI / Core
+HOST,ai.developer.meta.com
 HOST,ai.meta.com
+HOST,aidemos.meta.com
+HOST,developer.meta.com
+HOST,llama.developer.meta.com
 HOST-SUFFIX,atmeta.com
 HOST-SUFFIX,llama.com
+HOST-SUFFIX,llamameta.net
 HOST-SUFFIX,meta.ai
 
 # Midjourney / Core
