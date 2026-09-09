@@ -14,6 +14,17 @@ groups:
     include:
       domain:
         - ai.meta.com
+        # Meta Model API console, docs and API reference; served only to supported regions
+        - ai.developer.meta.com
+        # Redirects to ai.developer.meta.com
+        - llama.developer.meta.com
+        # Llama docs and model download hub; www.llama.com (already listed) now redirects here
+        - developer.meta.com
+        # Meta AI Demos
+        - aidemos.meta.com
+      domainSuffix:
+        # Llama model weights download (signed URLs issued by the download form)
+        - llamameta.net
     fromSource: true
 patch:
   remove:

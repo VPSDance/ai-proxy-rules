@@ -3,8 +3,13 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 domain_set:
+  - "ai.developer.meta.com"
   - "ai.meta.com"
+  - "aidemos.meta.com"
+  - "developer.meta.com"
+  - "llama.developer.meta.com"
 domain_suffix_set:
   - "atmeta.com"
   - "llama.com"
+  - "llamameta.net"
   - "meta.ai"

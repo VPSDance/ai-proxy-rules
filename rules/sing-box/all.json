@@ -3,7 +3,9 @@
   "rules": [
     {
       "domain": [
+        "ai.developer.meta.com",
         "ai.meta.com",
+        "aidemos.meta.com",
         "alkalicore-pa.clients6.google.com",
         "alkalimakersuite-pa.clients6.google.com",
         "anthropic-com.ghost.io",
@@ -36,6 +38,7 @@
         "copilotprodattachments.blob.core.windows.net",
         "daily-cloudcode-pa.googleapis.com",
         "dashscope.aliyuncs.com",
+        "developer.meta.com",
         "ernie.baidu.com",
         "gateway.bingviz.microsoft.net",
         "gateway.bingviz.microsoftapp.net",
@@ -43,6 +46,7 @@
         "idetoolkits-hostedfiles.amazonaws.com",
         "idetoolkits.amazonwebservices.com",
         "in.appcenter.ms",
+        "llama.developer.meta.com",
         "location.microsoft.com",
         "notebooklm-pa.googleapis.com",
         "notebooklm.googleapis.com",
@@ -230,6 +234,7 @@
         "leonardo.ai",
         "lf3-static.bytednsdoc.com",
         "llama.com",
+        "llamameta.net",
         "lmarena.ai",
         "lmstudio.ai",
         "lovable.dev",
