@@ -4,7 +4,12 @@
 
 payload:
   # Core
+  - DOMAIN,ai.developer.meta.com
   - DOMAIN,ai.meta.com
+  - DOMAIN,aidemos.meta.com
+  - DOMAIN,developer.meta.com
+  - DOMAIN,llama.developer.meta.com
   - DOMAIN-SUFFIX,atmeta.com
   - DOMAIN-SUFFIX,llama.com
+  - DOMAIN-SUFFIX,llamameta.net
   - DOMAIN-SUFFIX,meta.ai
