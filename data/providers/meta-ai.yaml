@@ -9,8 +9,13 @@ groups:
   - name: Core
     rules:
       domain:
+        - ai.developer.meta.com
         - ai.meta.com
+        - aidemos.meta.com
+        - developer.meta.com
+        - llama.developer.meta.com
       domainSuffix:
         - atmeta.com
         - llama.com
+        - llamameta.net
         - meta.ai
