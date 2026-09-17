@@ -1,7 +1,7 @@
 # STATUS
 
 Last generated: 2026-09-17
-Providers: 102 · Total rules: 414
+Providers: 102 · Total rules: 419
 
 | Provider | ID | Scope | Categories | Aliases | Rules | Sources |
 |---|---|---|---|---|---:|---|
@@ -64,7 +64,7 @@ Providers: 102 · Total rules: 414
 | Lovart | `lovart` | global | media | - | 1 | _handwritten_ |
 | Luma AI | `luma-ai` | global | media | dream-machine | 1 | _handwritten_ |
 | Manus | `manus` | global | coding | - | 2 | v2fly, fetched 2026-09-17 |
-| Meta AI | `meta-ai` | global | - | llama | 4 | v2fly, fetched 2026-09-17 |
+| Meta AI | `meta-ai` | global | - | llama | 9 | v2fly, fetched 2026-09-17 |
 | Midjourney | `midjourney` | global | media | - | 1 | _handwritten_ |
 | MiniMax | `minimax` | cn | model, media | hailuo | 4 | _handwritten_ |
 | Mistral AI | `mistral-ai` | global | model | le-chat | 1 | _handwritten_ |
