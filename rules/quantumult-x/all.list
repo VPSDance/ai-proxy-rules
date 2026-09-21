@@ -297,6 +297,7 @@ HOST-SUFFIX,aida.googleapis.com
 HOST-SUFFIX,aisandbox-pa.googleapis.com
 HOST-SUFFIX,antigravity-unleash.goog
 HOST-SUFFIX,flow.google
+HOST-SUFFIX,flow.google.com
 HOST-SUFFIX,geller-pa.googleapis.com
 HOST-SUFFIX,gemini.gstatic.com
 HOST-SUFFIX,jules.google
@@ -304,6 +305,7 @@ HOST-SUFFIX,jules.google.com
 HOST-SUFFIX,labs.google
 HOST-SUFFIX,labs.google.com
 HOST-SUFFIX,makersuite.google.com
+HOST-SUFFIX,notebook.google
 HOST-SUFFIX,notebook.google.com
 HOST-SUFFIX,opal.google
 HOST-SUFFIX,opal.google.com
