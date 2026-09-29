@@ -3,8 +3,8 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST,api.hunyuan.cloud.tencent.com
-HOST,hunyuan.tencentcloudapi.com
-HOST-SUFFIX,hunyuan.tencent.com
-HOST-SUFFIX,yuanbao.tencent.com
-HOST-SUFFIX,yuanqi.tencent.com
+HOST,api.hunyuan.cloud.tencent.com,tencent-ai
+HOST,hunyuan.tencentcloudapi.com,tencent-ai
+HOST-SUFFIX,hunyuan.tencent.com,tencent-ai
+HOST-SUFFIX,yuanbao.tencent.com,tencent-ai
+HOST-SUFFIX,yuanqi.tencent.com,tencent-ai

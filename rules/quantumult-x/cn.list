@@ -3,96 +3,96 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Alibaba AI / Core
-HOST,bailian.console.aliyun.com
-HOST,dashscope.aliyuncs.com
-HOST,qodercn-jb.oss-cn-hangzhou.aliyuncs.com
-HOST-SUFFIX,qianwen.aliyun.com
-HOST-SUFFIX,qianwen.com
-HOST-SUFFIX,qoder.cn
-HOST-SUFFIX,qoder.com.cn
-HOST-SUFFIX,qwen.ai
-HOST-SUFFIX,qwenlm.ai
-HOST-SUFFIX,tongyi.aliyun.com
-HOST-SUFFIX,tongyi.com
+HOST,bailian.console.aliyun.com,cn
+HOST,dashscope.aliyuncs.com,cn
+HOST,qodercn-jb.oss-cn-hangzhou.aliyuncs.com,cn
+HOST-SUFFIX,qianwen.aliyun.com,cn
+HOST-SUFFIX,qianwen.com,cn
+HOST-SUFFIX,qoder.cn,cn
+HOST-SUFFIX,qoder.com.cn,cn
+HOST-SUFFIX,qwen.ai,cn
+HOST-SUFFIX,qwenlm.ai,cn
+HOST-SUFFIX,tongyi.aliyun.com,cn
+HOST-SUFFIX,tongyi.com,cn
 
 # Baidu AI / Core
-HOST,ernie.baidu.com
-HOST,qianfan.baidubce.com
-HOST,yiyan.baidu.com
+HOST,ernie.baidu.com,cn
+HOST,qianfan.baidubce.com,cn
+HOST,yiyan.baidu.com,cn
 
 # ByteDance AI (China) / Core
-HOST-SUFFIX,coze.cn
-HOST-SUFFIX,cozeapp.net
-HOST-SUFFIX,cozebaas.cn
-HOST-SUFFIX,cozebuild.com
-HOST-SUFFIX,cozecdn.com
-HOST-SUFFIX,cozedeploy.com
-HOST-SUFFIX,cozefn.cn
-HOST-SUFFIX,cozeide.cn
-HOST-SUFFIX,cozesdk.com
-HOST-SUFFIX,doudou.com
-HOST-SUFFIX,marscode.cn
-HOST-SUFFIX,marscode.com.cn
-HOST-SUFFIX,mcbaas.work
-HOST-SUFFIX,mcdemo.show
-HOST-SUFFIX,mchost.guru
-HOST-SUFFIX,mcprev.cn
-HOST-SUFFIX,tcwqqdy.guru
-HOST-SUFFIX,trae.cn
-HOST-SUFFIX,trae.com.cn
-HOST-SUFFIX,trae.guru
-HOST-SUFFIX,yoma.cn
+HOST-SUFFIX,coze.cn,cn
+HOST-SUFFIX,cozeapp.net,cn
+HOST-SUFFIX,cozebaas.cn,cn
+HOST-SUFFIX,cozebuild.com,cn
+HOST-SUFFIX,cozecdn.com,cn
+HOST-SUFFIX,cozedeploy.com,cn
+HOST-SUFFIX,cozefn.cn,cn
+HOST-SUFFIX,cozeide.cn,cn
+HOST-SUFFIX,cozesdk.com,cn
+HOST-SUFFIX,doudou.com,cn
+HOST-SUFFIX,marscode.cn,cn
+HOST-SUFFIX,marscode.com.cn,cn
+HOST-SUFFIX,mcbaas.work,cn
+HOST-SUFFIX,mcdemo.show,cn
+HOST-SUFFIX,mchost.guru,cn
+HOST-SUFFIX,mcprev.cn,cn
+HOST-SUFFIX,tcwqqdy.guru,cn
+HOST-SUFFIX,trae.cn,cn
+HOST-SUFFIX,trae.com.cn,cn
+HOST-SUFFIX,trae.guru,cn
+HOST-SUFFIX,yoma.cn,cn
 
 # DeepSeek / Core
-HOST-SUFFIX,deepseek.com
-HOST-SUFFIX,deepseeksvc.com
+HOST-SUFFIX,deepseek.com,cn
+HOST-SUFFIX,deepseeksvc.com,cn
 
 # MiniMax / Core
-HOST,api.minimax.io
-HOST,api.minimaxi.com
-HOST-SUFFIX,hailuoai.com
-HOST-SUFFIX,xingyeai.com
+HOST,api.minimax.io,cn
+HOST,api.minimaxi.com,cn
+HOST-SUFFIX,hailuoai.com,cn
+HOST-SUFFIX,xingyeai.com,cn
 
 # ModelScope / Core
-HOST-SUFFIX,modelscope.cn
-HOST-SUFFIX,modelscope.com
+HOST-SUFFIX,modelscope.cn,cn
+HOST-SUFFIX,modelscope.com,cn
 
 # Moonshot AI / Core
-HOST-SUFFIX,kimi.com
-HOST-SUFFIX,moonshot.ai
-HOST-SUFFIX,moonshot.cn
+HOST-SUFFIX,kimi.com,cn
+HOST-SUFFIX,moonshot.ai,cn
+HOST-SUFFIX,moonshot.cn,cn
 
 # PPIO / Core
-HOST-SUFFIX,ppio.cn
-HOST-SUFFIX,ppio.com
+HOST-SUFFIX,ppio.cn,cn
+HOST-SUFFIX,ppio.com,cn
 
 # SiliconFlow / Core
-HOST-SUFFIX,siliconflow.cn
-HOST-SUFFIX,siliconflow.com
+HOST-SUFFIX,siliconflow.cn,cn
+HOST-SUFFIX,siliconflow.com,cn
 
 # StepFun / Core
-HOST-SUFFIX,stepfun.ai
-HOST-SUFFIX,stepfun.com
+HOST-SUFFIX,stepfun.ai,cn
+HOST-SUFFIX,stepfun.com,cn
 
 # Tencent AI / Core
-HOST,api.hunyuan.cloud.tencent.com
-HOST,hunyuan.tencentcloudapi.com
-HOST-SUFFIX,hunyuan.tencent.com
-HOST-SUFFIX,yuanbao.tencent.com
-HOST-SUFFIX,yuanqi.tencent.com
+HOST,api.hunyuan.cloud.tencent.com,cn
+HOST,hunyuan.tencentcloudapi.com,cn
+HOST-SUFFIX,hunyuan.tencent.com,cn
+HOST-SUFFIX,yuanbao.tencent.com,cn
+HOST-SUFFIX,yuanqi.tencent.com,cn
 
 # Volcengine AI / Core
-HOST,ark.cn-beijing.volces.com
-HOST-SUFFIX,doubao.com
+HOST,ark.cn-beijing.volces.com,cn
+HOST-SUFFIX,doubao.com,cn
 
 # Xiaomi AI / Core
-HOST-SUFFIX,miaibox.com
-HOST-SUFFIX,xiaoaiassist.com
-HOST-SUFFIX,xiaomimimo.com
+HOST-SUFFIX,miaibox.com,cn
+HOST-SUFFIX,xiaoaiassist.com,cn
+HOST-SUFFIX,xiaomimimo.com,cn
 
 # Zhipu AI / Core
-HOST-SUFFIX,bigmodel.cn
-HOST-SUFFIX,chatglm.cn
-HOST-SUFFIX,z.ai
-HOST-SUFFIX,zhipuai.cn
-HOST-SUFFIX,zhipucn.com
+HOST-SUFFIX,bigmodel.cn,cn
+HOST-SUFFIX,chatglm.cn,cn
+HOST-SUFFIX,z.ai,cn
+HOST-SUFFIX,zhipuai.cn,cn
+HOST-SUFFIX,zhipucn.com,cn

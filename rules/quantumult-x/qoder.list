@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,qoder.com
+HOST-SUFFIX,qoder.com,qoder

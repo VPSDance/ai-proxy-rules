@@ -3,6 +3,6 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,hf.co
-HOST-SUFFIX,hf.space
-HOST-SUFFIX,huggingface.co
+HOST-SUFFIX,hf.co,huggingface
+HOST-SUFFIX,hf.space,huggingface
+HOST-SUFFIX,huggingface.co,huggingface

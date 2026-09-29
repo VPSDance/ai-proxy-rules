@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST,ark.cn-beijing.volces.com
-HOST-SUFFIX,doubao.com
+HOST,ark.cn-beijing.volces.com,volcengine-ai
+HOST-SUFFIX,doubao.com,volcengine-ai

@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,augmentcode.com
+HOST-SUFFIX,augmentcode.com,augment-code

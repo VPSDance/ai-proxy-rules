@@ -3,6 +3,6 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST,ernie.baidu.com
-HOST,qianfan.baidubce.com
-HOST,yiyan.baidu.com
+HOST,ernie.baidu.com,baidu-ai
+HOST,qianfan.baidubce.com,baidu-ai
+HOST,yiyan.baidu.com,baidu-ai

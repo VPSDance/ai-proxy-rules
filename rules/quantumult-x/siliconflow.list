@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,siliconflow.cn
-HOST-SUFFIX,siliconflow.com
+HOST-SUFFIX,siliconflow.cn,siliconflow
+HOST-SUFFIX,siliconflow.com,siliconflow

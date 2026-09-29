@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,deepseek.com
-HOST-SUFFIX,deepseeksvc.com
+HOST-SUFFIX,deepseek.com,deepseek
+HOST-SUFFIX,deepseeksvc.com,deepseek

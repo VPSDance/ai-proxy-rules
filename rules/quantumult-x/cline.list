@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,cline.bot
+HOST-SUFFIX,cline.bot,cline

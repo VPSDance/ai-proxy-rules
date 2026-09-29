@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,together.ai
-HOST-SUFFIX,together.xyz
+HOST-SUFFIX,together.ai,together-ai
+HOST-SUFFIX,together.xyz,together-ai

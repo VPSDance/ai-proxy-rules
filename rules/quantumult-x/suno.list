@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,suno.ai
-HOST-SUFFIX,suno.com
+HOST-SUFFIX,suno.ai,suno
+HOST-SUFFIX,suno.com,suno

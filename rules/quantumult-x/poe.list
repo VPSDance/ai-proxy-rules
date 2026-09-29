@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,poe.com
-HOST-SUFFIX,poecdn.net
+HOST-SUFFIX,poe.com,poe
+HOST-SUFFIX,poecdn.net,poe

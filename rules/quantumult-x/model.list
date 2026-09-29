@@ -3,203 +3,203 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Anthropic / Core
-HOST-SUFFIX,anthropic.com
-HOST-SUFFIX,anthropic.com.cn
-HOST-SUFFIX,antspace.dev
-HOST-SUFFIX,clau.de
-HOST-SUFFIX,claude.ai
-HOST-SUFFIX,claude.app
-HOST-SUFFIX,claude.com
-HOST-SUFFIX,claude.new
-HOST-SUFFIX,claude.site
-HOST-SUFFIX,claudemcpclient.com
-HOST-SUFFIX,claudemcpcontent.com
-HOST-SUFFIX,claudepages.dev
-HOST-SUFFIX,claudestudio.com
-HOST-SUFFIX,claudeusercontent.com
-HOST-SUFFIX,modelcontextprotocol.com
-HOST-SUFFIX,modelcontextprotocol.io
-HOST-SUFFIX,modelcontextprotocol.net
-HOST-SUFFIX,modelcontextprotocol.org
+HOST-SUFFIX,anthropic.com,model
+HOST-SUFFIX,anthropic.com.cn,model
+HOST-SUFFIX,antspace.dev,model
+HOST-SUFFIX,clau.de,model
+HOST-SUFFIX,claude.ai,model
+HOST-SUFFIX,claude.app,model
+HOST-SUFFIX,claude.com,model
+HOST-SUFFIX,claude.new,model
+HOST-SUFFIX,claude.site,model
+HOST-SUFFIX,claudemcpclient.com,model
+HOST-SUFFIX,claudemcpcontent.com,model
+HOST-SUFFIX,claudepages.dev,model
+HOST-SUFFIX,claudestudio.com,model
+HOST-SUFFIX,claudeusercontent.com,model
+HOST-SUFFIX,modelcontextprotocol.com,model
+HOST-SUFFIX,modelcontextprotocol.io,model
+HOST-SUFFIX,modelcontextprotocol.net,model
+HOST-SUFFIX,modelcontextprotocol.org,model
 
 # Anthropic / Network
-IP-CIDR,160.79.104.0/21,no-resolve
-IP6-CIDR,2607:6bc0::/32,no-resolve
-IP-ASN,399358,no-resolve
+IP-CIDR,160.79.104.0/21,model,no-resolve
+IP6-CIDR,2607:6bc0::/32,model,no-resolve
+IP-ASN,399358,model,no-resolve
 
 # Anthropic / Third-Party
-HOST,anthropic-com.ghost.io
-HOST,anthropic.auth0.com
-HOST,anthropic.com.cdn.cloudflare.net
-HOST,browser-intake-us5-datadoghq.com
-HOST,cdn.growthbook.io
-HOST,cdn.usefathom.com
-HOST,servd-anthropic-website.b-cdn.net
-HOST,storage.googleapis.com
-HOST-SUFFIX,anthropic.team
-HOST-SUFFIX,chatbotclaude.com
-HOST-SUFFIX,intercom.io
-HOST-SUFFIX,intercomcdn.com
-HOST-SUFFIX,interface.feedback
-HOST-SUFFIX,lcicat.org
-HOST-SUFFIX,lcicollections.org
-HOST-SUFFIX,mcpservertest.online
-HOST-SUFFIX,muthos.com
-HOST-SUFFIX,sentry.io
-HOST-SUFFIX,sillylittleguy.org
-HOST-SUFFIX,statsigapi.net
-HOST-KEYWORD,datadog
-HOST-KEYWORD,sentry
-HOST-KEYWORD,sift
+HOST,anthropic-com.ghost.io,model
+HOST,anthropic.auth0.com,model
+HOST,anthropic.com.cdn.cloudflare.net,model
+HOST,browser-intake-us5-datadoghq.com,model
+HOST,cdn.growthbook.io,model
+HOST,cdn.usefathom.com,model
+HOST,servd-anthropic-website.b-cdn.net,model
+HOST,storage.googleapis.com,model
+HOST-SUFFIX,anthropic.team,model
+HOST-SUFFIX,chatbotclaude.com,model
+HOST-SUFFIX,intercom.io,model
+HOST-SUFFIX,intercomcdn.com,model
+HOST-SUFFIX,interface.feedback,model
+HOST-SUFFIX,lcicat.org,model
+HOST-SUFFIX,lcicollections.org,model
+HOST-SUFFIX,mcpservertest.online,model
+HOST-SUFFIX,muthos.com,model
+HOST-SUFFIX,sentry.io,model
+HOST-SUFFIX,sillylittleguy.org,model
+HOST-SUFFIX,statsigapi.net,model
+HOST-KEYWORD,datadog,model
+HOST-KEYWORD,sentry,model
+HOST-KEYWORD,sift,model
 
 # Cerebras / Core
-HOST-SUFFIX,cerebras.ai
+HOST-SUFFIX,cerebras.ai,model
 
 # Chutes / Core
-HOST-SUFFIX,chutes.ai
+HOST-SUFFIX,chutes.ai,model
 
 # Cloudflare AI / Core
-HOST,api.cloudflare.com
-HOST-SUFFIX,ai.cloudflare.com
+HOST,api.cloudflare.com,model
+HOST-SUFFIX,ai.cloudflare.com,model
 
 # Cohere / Core
-HOST-SUFFIX,cohere.ai
-HOST-SUFFIX,cohere.com
+HOST-SUFFIX,cohere.ai,model
+HOST-SUFFIX,cohere.com,model
 
 # DeepInfra / Core
-HOST-SUFFIX,deepinfra.com
+HOST-SUFFIX,deepinfra.com,model
 
 # Fireworks AI / Core
-HOST-SUFFIX,fireworks.ai
+HOST-SUFFIX,fireworks.ai,model
 
 # Google AI / Core
-HOST-SUFFIX,ai.google.dev
-HOST-SUFFIX,ai.studio
-HOST-SUFFIX,aistudio.google.com
-HOST-SUFFIX,antigravity.google
-HOST-SUFFIX,antigravity.google.com
-HOST-SUFFIX,bard.google.com
-HOST-SUFFIX,deepmind.com
-HOST-SUFFIX,deepmind.google
-HOST-SUFFIX,gemini.google
-HOST-SUFFIX,gemini.google.com
-HOST-SUFFIX,generativeai.google
-HOST-SUFFIX,generativelanguage.googleapis.com
-HOST-SUFFIX,notebooklm.google
-HOST-SUFFIX,notebooklm.google.com
+HOST-SUFFIX,ai.google.dev,model
+HOST-SUFFIX,ai.studio,model
+HOST-SUFFIX,aistudio.google.com,model
+HOST-SUFFIX,antigravity.google,model
+HOST-SUFFIX,antigravity.google.com,model
+HOST-SUFFIX,bard.google.com,model
+HOST-SUFFIX,deepmind.com,model
+HOST-SUFFIX,deepmind.google,model
+HOST-SUFFIX,gemini.google,model
+HOST-SUFFIX,gemini.google.com,model
+HOST-SUFFIX,generativeai.google,model
+HOST-SUFFIX,generativelanguage.googleapis.com,model
+HOST-SUFFIX,notebooklm.google,model
+HOST-SUFFIX,notebooklm.google.com,model
 
 # Google AI / Third-Party
-HOST,alkalicore-pa.clients6.google.com
-HOST,alkalimakersuite-pa.clients6.google.com
-HOST,antigravity-pa.googleapis.com
-HOST,antigravity.googleapis.com
-HOST,cloudaicompanion.googleapis.com
-HOST,cloudcode-pa.googleapis.com
-HOST,daily-cloudcode-pa.googleapis.com
-HOST,notebooklm-pa.googleapis.com
-HOST,notebooklm.googleapis.com
-HOST,webchannel-alkalimakersuite-pa.clients6.google.com
-HOST-SUFFIX,aicode.googleapis.com
-HOST-SUFFIX,aida.googleapis.com
-HOST-SUFFIX,aisandbox-pa.googleapis.com
-HOST-SUFFIX,antigravity-unleash.goog
-HOST-SUFFIX,flow.google
-HOST-SUFFIX,flow.google.com
-HOST-SUFFIX,geller-pa.googleapis.com
-HOST-SUFFIX,gemini.gstatic.com
-HOST-SUFFIX,jules.google
-HOST-SUFFIX,jules.google.com
-HOST-SUFFIX,labs.google
-HOST-SUFFIX,labs.google.com
-HOST-SUFFIX,makersuite.google.com
-HOST-SUFFIX,notebook.google
-HOST-SUFFIX,notebook.google.com
-HOST-SUFFIX,opal.google
-HOST-SUFFIX,opal.google.com
-HOST-SUFFIX,proactivebackend-pa.googleapis.com
-HOST-SUFFIX,robinfrontend-pa.googleapis.com
-HOST-SUFFIX,stitch.withgoogle.com
+HOST,alkalicore-pa.clients6.google.com,model
+HOST,alkalimakersuite-pa.clients6.google.com,model
+HOST,antigravity-pa.googleapis.com,model
+HOST,antigravity.googleapis.com,model
+HOST,cloudaicompanion.googleapis.com,model
+HOST,cloudcode-pa.googleapis.com,model
+HOST,daily-cloudcode-pa.googleapis.com,model
+HOST,notebooklm-pa.googleapis.com,model
+HOST,notebooklm.googleapis.com,model
+HOST,webchannel-alkalimakersuite-pa.clients6.google.com,model
+HOST-SUFFIX,aicode.googleapis.com,model
+HOST-SUFFIX,aida.googleapis.com,model
+HOST-SUFFIX,aisandbox-pa.googleapis.com,model
+HOST-SUFFIX,antigravity-unleash.goog,model
+HOST-SUFFIX,flow.google,model
+HOST-SUFFIX,flow.google.com,model
+HOST-SUFFIX,geller-pa.googleapis.com,model
+HOST-SUFFIX,gemini.gstatic.com,model
+HOST-SUFFIX,jules.google,model
+HOST-SUFFIX,jules.google.com,model
+HOST-SUFFIX,labs.google,model
+HOST-SUFFIX,labs.google.com,model
+HOST-SUFFIX,makersuite.google.com,model
+HOST-SUFFIX,notebook.google,model
+HOST-SUFFIX,notebook.google.com,model
+HOST-SUFFIX,opal.google,model
+HOST-SUFFIX,opal.google.com,model
+HOST-SUFFIX,proactivebackend-pa.googleapis.com,model
+HOST-SUFFIX,robinfrontend-pa.googleapis.com,model
+HOST-SUFFIX,stitch.withgoogle.com,model
 
 # Groq / Core
-HOST-SUFFIX,groq.com
+HOST-SUFFIX,groq.com,model
 
 # H2O.ai / Core
-HOST-SUFFIX,h2o.ai
+HOST-SUFFIX,h2o.ai,model
 
 # Hugging Face / Core
-HOST-SUFFIX,hf.co
-HOST-SUFFIX,hf.space
-HOST-SUFFIX,huggingface.co
+HOST-SUFFIX,hf.co,model
+HOST-SUFFIX,hf.space,model
+HOST-SUFFIX,huggingface.co,model
 
 # LMArena / Core
-HOST-SUFFIX,lmarena.ai
+HOST-SUFFIX,lmarena.ai,model
 
 # LM Studio / Core
-HOST-SUFFIX,lmstudio.ai
+HOST-SUFFIX,lmstudio.ai,model
 
 # Mistral AI / Core
-HOST-SUFFIX,mistral.ai
+HOST-SUFFIX,mistral.ai,model
 
 # Novita AI / Core
-HOST-SUFFIX,novita.ai
+HOST-SUFFIX,novita.ai,model
 
 # Ollama / Core
-HOST-SUFFIX,ollama.com
+HOST-SUFFIX,ollama.com,model
 
 # OpenAI / Core
-HOST-SUFFIX,ai.com
-HOST-SUFFIX,chat.com
-HOST-SUFFIX,chatgpt.com
-HOST-SUFFIX,chatgpt.livekit.cloud
-HOST-SUFFIX,crixet.com
-HOST-SUFFIX,oaistatic.com
-HOST-SUFFIX,oaiusercontent.com
-HOST-SUFFIX,openai.com
-HOST-SUFFIX,openaiapi-site.azureedge.net
-HOST-SUFFIX,openaicom.imgix.net
-HOST-SUFFIX,sora.com
-HOST-KEYWORD,chatgpt-async-webps-prod
-HOST-KEYWORD,openai
+HOST-SUFFIX,ai.com,model
+HOST-SUFFIX,chat.com,model
+HOST-SUFFIX,chatgpt.com,model
+HOST-SUFFIX,chatgpt.livekit.cloud,model
+HOST-SUFFIX,crixet.com,model
+HOST-SUFFIX,oaistatic.com,model
+HOST-SUFFIX,oaiusercontent.com,model
+HOST-SUFFIX,openai.com,model
+HOST-SUFFIX,openaiapi-site.azureedge.net,model
+HOST-SUFFIX,openaicom.imgix.net,model
+HOST-SUFFIX,sora.com,model
+HOST-KEYWORD,chatgpt-async-webps-prod,model
+HOST-KEYWORD,openai,model
 
 # OpenAI / Network
-IP-CIDR,199.47.142.0/23,no-resolve
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
-IP6-CIDR,2604:f20::/32,no-resolve
-IP-ASN,401518,no-resolve
+IP-CIDR,199.47.142.0/23,model,no-resolve
+IP-CIDR,24.199.123.28/32,model,no-resolve
+IP-CIDR,64.23.132.171/32,model,no-resolve
+IP6-CIDR,2604:f20::/32,model,no-resolve
+IP-ASN,401518,model,no-resolve
 
 # OpenAI / Third-Party
-HOST,browser-intake-datadoghq.com
-HOST,openai-api.arkoselabs.com
-HOST,openaiassets.blob.core.windows.net
-HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-HOST,openaicomproductionae4b.blob.core.windows.net
-HOST,production-openaicom-storage.azureedge.net
-HOST,static.cloudflareinsights.com
-HOST-SUFFIX,algolia.net
-HOST-SUFFIX,api.statsig.com
-HOST-SUFFIX,auth0.com
-HOST-SUFFIX,chatgpt.site
-HOST-SUFFIX,client-api.arkoselabs.com
-HOST-SUFFIX,events.statsigapi.net
-HOST-SUFFIX,featuregates.org
-HOST-SUFFIX,host.livekit.cloud
-HOST-SUFFIX,identrust.com
-HOST-SUFFIX,launchdarkly.com
-HOST-SUFFIX,oaistatsig.com
-HOST-SUFFIX,observeit.net
-HOST-SUFFIX,openai.com.cdn.cloudflare.net
-HOST-SUFFIX,segment.io
-HOST-SUFFIX,stripe.com
-HOST-SUFFIX,turn.livekit.cloud
+HOST,browser-intake-datadoghq.com,model
+HOST,openai-api.arkoselabs.com,model
+HOST,openaiassets.blob.core.windows.net,model
+HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,model
+HOST,openaicomproductionae4b.blob.core.windows.net,model
+HOST,production-openaicom-storage.azureedge.net,model
+HOST,static.cloudflareinsights.com,model
+HOST-SUFFIX,algolia.net,model
+HOST-SUFFIX,api.statsig.com,model
+HOST-SUFFIX,auth0.com,model
+HOST-SUFFIX,chatgpt.site,model
+HOST-SUFFIX,client-api.arkoselabs.com,model
+HOST-SUFFIX,events.statsigapi.net,model
+HOST-SUFFIX,featuregates.org,model
+HOST-SUFFIX,host.livekit.cloud,model
+HOST-SUFFIX,identrust.com,model
+HOST-SUFFIX,launchdarkly.com,model
+HOST-SUFFIX,oaistatsig.com,model
+HOST-SUFFIX,observeit.net,model
+HOST-SUFFIX,openai.com.cdn.cloudflare.net,model
+HOST-SUFFIX,segment.io,model
+HOST-SUFFIX,stripe.com,model
+HOST-SUFFIX,turn.livekit.cloud,model
 
 # OpenRouter / Core
-HOST-SUFFIX,openrouter.ai
+HOST-SUFFIX,openrouter.ai,model
 
 # Replicate / Core
-HOST-SUFFIX,replicate.com
-HOST-SUFFIX,replicate.delivery
+HOST-SUFFIX,replicate.com,model
+HOST-SUFFIX,replicate.delivery,model
 
 # Together AI / Core
-HOST-SUFFIX,together.ai
-HOST-SUFFIX,together.xyz
+HOST-SUFFIX,together.ai,model
+HOST-SUFFIX,together.xyz,model

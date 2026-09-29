@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,h2o.ai
+HOST-SUFFIX,h2o.ai,h2o-ai

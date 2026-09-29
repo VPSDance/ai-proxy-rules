@@ -112,12 +112,12 @@ function renderQuantumultX(target: RenderTarget): string {
   return withHeader(
     target,
     renderGroupedLines(target, (rules) => [
-      ...rules.domain.map((value) => `HOST,${value}`),
-      ...rules.domainSuffix.map((value) => `HOST-SUFFIX,${value}`),
-      ...rules.domainKeyword.map((value) => `HOST-KEYWORD,${value}`),
-      ...rules.ipCidr.map((value) => `IP-CIDR,${value},no-resolve`),
-      ...rules.ipCidr6.map((value) => `IP6-CIDR,${value},no-resolve`),
-      ...rules.asn.map((value) => `IP-ASN,${value},no-resolve`)
+      ...rules.domain.map((value) => `HOST,${value},${target.id}`),
+      ...rules.domainSuffix.map((value) => `HOST-SUFFIX,${value},${target.id}`),
+      ...rules.domainKeyword.map((value) => `HOST-KEYWORD,${value},${target.id}`),
+      ...rules.ipCidr.map((value) => `IP-CIDR,${value},${target.id},no-resolve`),
+      ...rules.ipCidr6.map((value) => `IP6-CIDR,${value},${target.id},no-resolve`),
+      ...rules.asn.map((value) => `IP-ASN,${value},${target.id},no-resolve`)
     ])
   );
 }

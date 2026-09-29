@@ -3,69 +3,69 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Adobe Firefly / Core
-HOST-SUFFIX,firefly.adobe.com
-HOST-SUFFIX,firefly.adobe.io
+HOST-SUFFIX,firefly.adobe.com,media
+HOST-SUFFIX,firefly.adobe.io,media
 
 # Black Forest Labs / Core
-HOST-SUFFIX,bfl.ai
+HOST-SUFFIX,bfl.ai,media
 
 # Civitai / Core
-HOST-SUFFIX,civitai.com
+HOST-SUFFIX,civitai.com,media
 
 # ClipDrop / Core
-HOST-SUFFIX,clipdrop.co
+HOST-SUFFIX,clipdrop.co,media
 
 # ComfyUI / Core
-HOST-SUFFIX,comfy.org
-HOST-SUFFIX,comfyregistry.org
+HOST-SUFFIX,comfy.org,media
+HOST-SUFFIX,comfyregistry.org,media
 
 # Descript / Core
-HOST-SUFFIX,descript.com
+HOST-SUFFIX,descript.com,media
 
 # ElevenLabs / Core
-HOST-SUFFIX,elevenlabs.com
-HOST-SUFFIX,elevenlabs.io
+HOST-SUFFIX,elevenlabs.com,media
+HOST-SUFFIX,elevenlabs.io,media
 
 # HeyGen / Core
-HOST-SUFFIX,heygen.com
+HOST-SUFFIX,heygen.com,media
 
 # Ideogram / Core
-HOST-SUFFIX,ideogram.ai
+HOST-SUFFIX,ideogram.ai,media
 
 # Leonardo AI / Core
-HOST-SUFFIX,leonardo.ai
+HOST-SUFFIX,leonardo.ai,media
 
 # Lovart / Core
-HOST-SUFFIX,lovart.ai
+HOST-SUFFIX,lovart.ai,media
 
 # Luma AI / Core
-HOST-SUFFIX,lumalabs.ai
+HOST-SUFFIX,lumalabs.ai,media
 
 # Midjourney / Core
-HOST-SUFFIX,midjourney.com
+HOST-SUFFIX,midjourney.com,media
 
 # OpenArt / Core
-HOST-SUFFIX,openart.ai
+HOST-SUFFIX,openart.ai,media
 
 # Pika / Core
-HOST-SUFFIX,pika.art
+HOST-SUFFIX,pika.art,media
 
 # Recraft / Core
-HOST-SUFFIX,recraft.ai
+HOST-SUFFIX,recraft.ai,media
 
 # Runway / Core
-HOST-SUFFIX,runway.com
-HOST-SUFFIX,runwayml.com
+HOST-SUFFIX,runway.com,media
+HOST-SUFFIX,runwayml.com,media
 
 # Stability AI / Core
-HOST-SUFFIX,stability.ai
+HOST-SUFFIX,stability.ai,media
 
 # Suno / Core
-HOST-SUFFIX,suno.ai
-HOST-SUFFIX,suno.com
+HOST-SUFFIX,suno.ai,media
+HOST-SUFFIX,suno.com,media
 
 # Synthesia / Core
-HOST-SUFFIX,synthesia.io
+HOST-SUFFIX,synthesia.io,media
 
 # Udio / Core
-HOST-SUFFIX,udio.com
+HOST-SUFFIX,udio.com,media

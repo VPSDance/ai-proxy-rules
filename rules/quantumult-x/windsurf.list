@@ -3,7 +3,7 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,codeium.com
-HOST-SUFFIX,codeiumdata.com
-HOST-SUFFIX,windsurf.build
-HOST-SUFFIX,windsurf.com
+HOST-SUFFIX,codeium.com,windsurf
+HOST-SUFFIX,codeiumdata.com,windsurf
+HOST-SUFFIX,windsurf.build,windsurf
+HOST-SUFFIX,windsurf.com,windsurf

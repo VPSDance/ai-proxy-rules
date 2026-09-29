@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,recraft.ai
+HOST-SUFFIX,recraft.ai,recraft

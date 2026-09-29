@@ -3,7 +3,7 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,grok.com
-HOST-SUFFIX,grok.x.com
-HOST-SUFFIX,grokipedia.com
-HOST-SUFFIX,x.ai
+HOST-SUFFIX,grok.com,x-ai
+HOST-SUFFIX,grok.x.com,x-ai
+HOST-SUFFIX,grokipedia.com,x-ai
+HOST-SUFFIX,x.ai,x-ai

@@ -3,17 +3,17 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,abtestvm-sg.bytedance.com
-HOST-SUFFIX,bytegate-sg.byteintlapi.com
-HOST-SUFFIX,byteoversea.com
-HOST-SUFFIX,cici.com
-HOST-SUFFIX,ciciai.com
-HOST-SUFFIX,ciciaicdn.com
-HOST-SUFFIX,coze.com
-HOST-SUFFIX,lf3-static.bytednsdoc.com
-HOST-SUFFIX,marscode.com
-HOST-SUFFIX,sf16-short-sg.bytedapm.com
-HOST-SUFFIX,starling.zijieapi.com
-HOST-SUFFIX,trae-api-sg.mchost.guru
-HOST-SUFFIX,trae.ai
-HOST-SUFFIX,tron-sg.bytelemon.com
+HOST-SUFFIX,abtestvm-sg.bytedance.com,bytedance-ai
+HOST-SUFFIX,bytegate-sg.byteintlapi.com,bytedance-ai
+HOST-SUFFIX,byteoversea.com,bytedance-ai
+HOST-SUFFIX,cici.com,bytedance-ai
+HOST-SUFFIX,ciciai.com,bytedance-ai
+HOST-SUFFIX,ciciaicdn.com,bytedance-ai
+HOST-SUFFIX,coze.com,bytedance-ai
+HOST-SUFFIX,lf3-static.bytednsdoc.com,bytedance-ai
+HOST-SUFFIX,marscode.com,bytedance-ai
+HOST-SUFFIX,sf16-short-sg.bytedapm.com,bytedance-ai
+HOST-SUFFIX,starling.zijieapi.com,bytedance-ai
+HOST-SUFFIX,trae-api-sg.mchost.guru,bytedance-ai
+HOST-SUFFIX,trae.ai,bytedance-ai
+HOST-SUFFIX,tron-sg.bytelemon.com,bytedance-ai

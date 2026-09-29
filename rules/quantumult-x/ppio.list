@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,ppio.cn
-HOST-SUFFIX,ppio.com
+HOST-SUFFIX,ppio.cn,ppio
+HOST-SUFFIX,ppio.com,ppio

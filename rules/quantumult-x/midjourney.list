@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,midjourney.com
+HOST-SUFFIX,midjourney.com,midjourney

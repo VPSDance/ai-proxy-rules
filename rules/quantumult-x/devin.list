@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,devin.ai
+HOST-SUFFIX,devin.ai,devin

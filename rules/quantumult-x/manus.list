@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,manus.im
-HOST-SUFFIX,manuscdn.com
+HOST-SUFFIX,manus.im,manus
+HOST-SUFFIX,manuscdn.com,manus

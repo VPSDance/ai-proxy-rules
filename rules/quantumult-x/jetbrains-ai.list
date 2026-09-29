@@ -3,6 +3,6 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,grazie.ai
-HOST-SUFFIX,grazie.aws.intellij.net
-HOST-SUFFIX,jetbrains.ai
+HOST-SUFFIX,grazie.ai,jetbrains-ai
+HOST-SUFFIX,grazie.aws.intellij.net,jetbrains-ai
+HOST-SUFFIX,jetbrains.ai,jetbrains-ai

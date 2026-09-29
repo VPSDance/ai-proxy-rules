@@ -3,6 +3,6 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,kimi.com
-HOST-SUFFIX,moonshot.ai
-HOST-SUFFIX,moonshot.cn
+HOST-SUFFIX,kimi.com,moonshot-ai
+HOST-SUFFIX,moonshot.ai,moonshot-ai
+HOST-SUFFIX,moonshot.cn,moonshot-ai

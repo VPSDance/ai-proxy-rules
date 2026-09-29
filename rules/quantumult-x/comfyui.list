@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,comfy.org
-HOST-SUFFIX,comfyregistry.org
+HOST-SUFFIX,comfy.org,comfyui
+HOST-SUFFIX,comfyregistry.org,comfyui

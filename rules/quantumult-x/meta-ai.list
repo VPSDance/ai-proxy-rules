@@ -3,12 +3,12 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST,ai.developer.meta.com
-HOST,ai.meta.com
-HOST,aidemos.meta.com
-HOST,developer.meta.com
-HOST,llama.developer.meta.com
-HOST-SUFFIX,atmeta.com
-HOST-SUFFIX,llama.com
-HOST-SUFFIX,llamameta.net
-HOST-SUFFIX,meta.ai
+HOST,ai.developer.meta.com,meta-ai
+HOST,ai.meta.com,meta-ai
+HOST,aidemos.meta.com,meta-ai
+HOST,developer.meta.com,meta-ai
+HOST,llama.developer.meta.com,meta-ai
+HOST-SUFFIX,atmeta.com,meta-ai
+HOST-SUFFIX,llama.com,meta-ai
+HOST-SUFFIX,llamameta.net,meta-ai
+HOST-SUFFIX,meta.ai,meta-ai

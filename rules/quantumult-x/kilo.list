@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,kilo.ai
-HOST-SUFFIX,kilo.codes
+HOST-SUFFIX,kilo.ai,kilo
+HOST-SUFFIX,kilo.codes,kilo

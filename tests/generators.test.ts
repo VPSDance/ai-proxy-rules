@@ -142,14 +142,34 @@ describe("generators", () => {
     expect(parsed.rules.every((rule: Record<string, string[]>) => !("ip_asn" in rule))).toBe(true);
   });
 
-  it("renders quantumult x without per-line policy", () => {
+  it("renders quantumult x with the file ID as per-line policy", () => {
     const rendered = render("quantumult-x", providerToTarget(anthropic));
 
-    expect(rendered.content).toContain("HOST,api.anthropic.com\n");
-    expect(rendered.content).toContain("HOST-SUFFIX,anthropic.com\n");
-    expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,no-resolve");
-    expect(rendered.content).toContain("IP-ASN,399358,no-resolve");
-    expect(rendered.content).not.toMatch(/,AI(\s|$)/);
+    expect(rendered.content).toContain("HOST,api.anthropic.com,anthropic\n");
+    expect(rendered.content).toContain("HOST-SUFFIX,anthropic.com,anthropic\n");
+    expect(rendered.content).toContain("HOST-KEYWORD,claude,anthropic\n");
+    expect(rendered.content).toContain("IP-CIDR,203.0.113.0/24,anthropic,no-resolve\n");
+    expect(rendered.content).toContain("IP6-CIDR,2001:db8::/32,anthropic,no-resolve\n");
+    expect(rendered.content).toContain("IP-ASN,399358,anthropic,no-resolve\n");
+  });
+
+  it("uses the aggregate file policy for every quantumult x provider group", () => {
+    const providers = [anthropic, fixtureIde, minimax];
+    const targets = [
+      aggregateProviders(providers),
+      aggregateProvidersByScope(providers, "global", "global", "Global", ""),
+      aggregateProvidersByScope(providers, "cn", "cn", "China", ""),
+      ...aggregateProvidersByCategory(providers)
+    ];
+
+    for (const target of targets) {
+      const lines = render("quantumult-x", target).content
+        .split("\n")
+        .filter((line) => line && !line.startsWith("#"));
+
+      expect(lines.length).toBeGreaterThan(0);
+      expect(lines.every((line) => line.split(",")[2] === target.id)).toBe(true);
+    }
   });
 
   it("renders shadowrocket without per-line policy", () => {

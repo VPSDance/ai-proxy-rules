@@ -3,8 +3,8 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,repl.co
-HOST-SUFFIX,repl.it
-HOST-SUFFIX,replit.app
-HOST-SUFFIX,replit.com
-HOST-SUFFIX,replit.dev
+HOST-SUFFIX,repl.co,replit
+HOST-SUFFIX,repl.it,replit
+HOST-SUFFIX,replit.app,replit
+HOST-SUFFIX,replit.com,replit
+HOST-SUFFIX,replit.dev,replit

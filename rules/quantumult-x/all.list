@@ -3,593 +3,593 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Adobe Firefly / Core
-HOST-SUFFIX,firefly.adobe.com
-HOST-SUFFIX,firefly.adobe.io
+HOST-SUFFIX,firefly.adobe.com,all
+HOST-SUFFIX,firefly.adobe.io,all
 
 # Alibaba AI / Core
-HOST,bailian.console.aliyun.com
-HOST,dashscope.aliyuncs.com
-HOST,qodercn-jb.oss-cn-hangzhou.aliyuncs.com
-HOST-SUFFIX,qianwen.aliyun.com
-HOST-SUFFIX,qianwen.com
-HOST-SUFFIX,qoder.cn
-HOST-SUFFIX,qoder.com.cn
-HOST-SUFFIX,qwen.ai
-HOST-SUFFIX,qwenlm.ai
-HOST-SUFFIX,tongyi.aliyun.com
-HOST-SUFFIX,tongyi.com
+HOST,bailian.console.aliyun.com,all
+HOST,dashscope.aliyuncs.com,all
+HOST,qodercn-jb.oss-cn-hangzhou.aliyuncs.com,all
+HOST-SUFFIX,qianwen.aliyun.com,all
+HOST-SUFFIX,qianwen.com,all
+HOST-SUFFIX,qoder.cn,all
+HOST-SUFFIX,qoder.com.cn,all
+HOST-SUFFIX,qwen.ai,all
+HOST-SUFFIX,qwenlm.ai,all
+HOST-SUFFIX,tongyi.aliyun.com,all
+HOST-SUFFIX,tongyi.com,all
 
 # Amazon Q Developer / Core
-HOST,aws-language-servers.us-east-1.amazonaws.com
-HOST,aws-toolkit-language-servers.amazonaws.com
-HOST,client-telemetry.us-east-1.amazonaws.com
-HOST,codewhisperer.us-east-1.amazonaws.com
-HOST,cognito-identity.us-east-1.amazonaws.com
-HOST,idetoolkits-hostedfiles.amazonaws.com
-HOST,idetoolkits.amazonwebservices.com
-HOST,q-developer-integration.us-east-1.api.aws
-HOST-SUFFIX,aws.dev
-HOST-SUFFIX,awsapps.com
-HOST-SUFFIX,awsstatic.com
-HOST-SUFFIX,console.aws.a2z.com
-HOST-SUFFIX,q.eu-central-1.amazonaws.com
-HOST-SUFFIX,q.us-east-1.amazonaws.com
-HOST-SUFFIX,sso.amazonaws.com
+HOST,aws-language-servers.us-east-1.amazonaws.com,all
+HOST,aws-toolkit-language-servers.amazonaws.com,all
+HOST,client-telemetry.us-east-1.amazonaws.com,all
+HOST,codewhisperer.us-east-1.amazonaws.com,all
+HOST,cognito-identity.us-east-1.amazonaws.com,all
+HOST,idetoolkits-hostedfiles.amazonaws.com,all
+HOST,idetoolkits.amazonwebservices.com,all
+HOST,q-developer-integration.us-east-1.api.aws,all
+HOST-SUFFIX,aws.dev,all
+HOST-SUFFIX,awsapps.com,all
+HOST-SUFFIX,awsstatic.com,all
+HOST-SUFFIX,console.aws.a2z.com,all
+HOST-SUFFIX,q.eu-central-1.amazonaws.com,all
+HOST-SUFFIX,q.us-east-1.amazonaws.com,all
+HOST-SUFFIX,sso.amazonaws.com,all
 
 # Anthropic / Core
-HOST-SUFFIX,anthropic.com
-HOST-SUFFIX,anthropic.com.cn
-HOST-SUFFIX,antspace.dev
-HOST-SUFFIX,clau.de
-HOST-SUFFIX,claude.ai
-HOST-SUFFIX,claude.app
-HOST-SUFFIX,claude.com
-HOST-SUFFIX,claude.new
-HOST-SUFFIX,claude.site
-HOST-SUFFIX,claudemcpclient.com
-HOST-SUFFIX,claudemcpcontent.com
-HOST-SUFFIX,claudepages.dev
-HOST-SUFFIX,claudestudio.com
-HOST-SUFFIX,claudeusercontent.com
-HOST-SUFFIX,modelcontextprotocol.com
-HOST-SUFFIX,modelcontextprotocol.io
-HOST-SUFFIX,modelcontextprotocol.net
-HOST-SUFFIX,modelcontextprotocol.org
+HOST-SUFFIX,anthropic.com,all
+HOST-SUFFIX,anthropic.com.cn,all
+HOST-SUFFIX,antspace.dev,all
+HOST-SUFFIX,clau.de,all
+HOST-SUFFIX,claude.ai,all
+HOST-SUFFIX,claude.app,all
+HOST-SUFFIX,claude.com,all
+HOST-SUFFIX,claude.new,all
+HOST-SUFFIX,claude.site,all
+HOST-SUFFIX,claudemcpclient.com,all
+HOST-SUFFIX,claudemcpcontent.com,all
+HOST-SUFFIX,claudepages.dev,all
+HOST-SUFFIX,claudestudio.com,all
+HOST-SUFFIX,claudeusercontent.com,all
+HOST-SUFFIX,modelcontextprotocol.com,all
+HOST-SUFFIX,modelcontextprotocol.io,all
+HOST-SUFFIX,modelcontextprotocol.net,all
+HOST-SUFFIX,modelcontextprotocol.org,all
 
 # Anthropic / Network
-IP-CIDR,160.79.104.0/21,no-resolve
-IP6-CIDR,2607:6bc0::/32,no-resolve
-IP-ASN,399358,no-resolve
+IP-CIDR,160.79.104.0/21,all,no-resolve
+IP6-CIDR,2607:6bc0::/32,all,no-resolve
+IP-ASN,399358,all,no-resolve
 
 # Anthropic / Third-Party
-HOST,anthropic-com.ghost.io
-HOST,anthropic.auth0.com
-HOST,anthropic.com.cdn.cloudflare.net
-HOST,browser-intake-us5-datadoghq.com
-HOST,cdn.growthbook.io
-HOST,cdn.usefathom.com
-HOST,servd-anthropic-website.b-cdn.net
-HOST,storage.googleapis.com
-HOST-SUFFIX,anthropic.team
-HOST-SUFFIX,chatbotclaude.com
-HOST-SUFFIX,intercom.io
-HOST-SUFFIX,intercomcdn.com
-HOST-SUFFIX,interface.feedback
-HOST-SUFFIX,lcicat.org
-HOST-SUFFIX,lcicollections.org
-HOST-SUFFIX,mcpservertest.online
-HOST-SUFFIX,muthos.com
-HOST-SUFFIX,sentry.io
-HOST-SUFFIX,sillylittleguy.org
-HOST-SUFFIX,statsigapi.net
-HOST-KEYWORD,datadog
-HOST-KEYWORD,sentry
-HOST-KEYWORD,sift
+HOST,anthropic-com.ghost.io,all
+HOST,anthropic.auth0.com,all
+HOST,anthropic.com.cdn.cloudflare.net,all
+HOST,browser-intake-us5-datadoghq.com,all
+HOST,cdn.growthbook.io,all
+HOST,cdn.usefathom.com,all
+HOST,servd-anthropic-website.b-cdn.net,all
+HOST,storage.googleapis.com,all
+HOST-SUFFIX,anthropic.team,all
+HOST-SUFFIX,chatbotclaude.com,all
+HOST-SUFFIX,intercom.io,all
+HOST-SUFFIX,intercomcdn.com,all
+HOST-SUFFIX,interface.feedback,all
+HOST-SUFFIX,lcicat.org,all
+HOST-SUFFIX,lcicollections.org,all
+HOST-SUFFIX,mcpservertest.online,all
+HOST-SUFFIX,muthos.com,all
+HOST-SUFFIX,sentry.io,all
+HOST-SUFFIX,sillylittleguy.org,all
+HOST-SUFFIX,statsigapi.net,all
+HOST-KEYWORD,datadog,all
+HOST-KEYWORD,sentry,all
+HOST-KEYWORD,sift,all
 
 # Augment Code / Core
-HOST-SUFFIX,augmentcode.com
+HOST-SUFFIX,augmentcode.com,all
 
 # Baidu AI / Core
-HOST,ernie.baidu.com
-HOST,qianfan.baidubce.com
-HOST,yiyan.baidu.com
+HOST,ernie.baidu.com,all
+HOST,qianfan.baidubce.com,all
+HOST,yiyan.baidu.com,all
 
 # Black Forest Labs / Core
-HOST-SUFFIX,bfl.ai
+HOST-SUFFIX,bfl.ai,all
 
 # Bolt.new / Core
-HOST-SUFFIX,bolt.new
+HOST-SUFFIX,bolt.new,all
 
 # ByteDance AI / Core
-HOST-SUFFIX,abtestvm-sg.bytedance.com
-HOST-SUFFIX,bytegate-sg.byteintlapi.com
-HOST-SUFFIX,byteoversea.com
-HOST-SUFFIX,cici.com
-HOST-SUFFIX,ciciai.com
-HOST-SUFFIX,ciciaicdn.com
-HOST-SUFFIX,coze.com
-HOST-SUFFIX,lf3-static.bytednsdoc.com
-HOST-SUFFIX,marscode.com
-HOST-SUFFIX,sf16-short-sg.bytedapm.com
-HOST-SUFFIX,starling.zijieapi.com
-HOST-SUFFIX,trae-api-sg.mchost.guru
-HOST-SUFFIX,trae.ai
-HOST-SUFFIX,tron-sg.bytelemon.com
+HOST-SUFFIX,abtestvm-sg.bytedance.com,all
+HOST-SUFFIX,bytegate-sg.byteintlapi.com,all
+HOST-SUFFIX,byteoversea.com,all
+HOST-SUFFIX,cici.com,all
+HOST-SUFFIX,ciciai.com,all
+HOST-SUFFIX,ciciaicdn.com,all
+HOST-SUFFIX,coze.com,all
+HOST-SUFFIX,lf3-static.bytednsdoc.com,all
+HOST-SUFFIX,marscode.com,all
+HOST-SUFFIX,sf16-short-sg.bytedapm.com,all
+HOST-SUFFIX,starling.zijieapi.com,all
+HOST-SUFFIX,trae-api-sg.mchost.guru,all
+HOST-SUFFIX,trae.ai,all
+HOST-SUFFIX,tron-sg.bytelemon.com,all
 
 # ByteDance AI (China) / Core
-HOST-SUFFIX,coze.cn
-HOST-SUFFIX,cozeapp.net
-HOST-SUFFIX,cozebaas.cn
-HOST-SUFFIX,cozebuild.com
-HOST-SUFFIX,cozecdn.com
-HOST-SUFFIX,cozedeploy.com
-HOST-SUFFIX,cozefn.cn
-HOST-SUFFIX,cozeide.cn
-HOST-SUFFIX,cozesdk.com
-HOST-SUFFIX,doudou.com
-HOST-SUFFIX,marscode.cn
-HOST-SUFFIX,marscode.com.cn
-HOST-SUFFIX,mcbaas.work
-HOST-SUFFIX,mcdemo.show
-HOST-SUFFIX,mchost.guru
-HOST-SUFFIX,mcprev.cn
-HOST-SUFFIX,tcwqqdy.guru
-HOST-SUFFIX,trae.cn
-HOST-SUFFIX,trae.com.cn
-HOST-SUFFIX,trae.guru
-HOST-SUFFIX,yoma.cn
+HOST-SUFFIX,coze.cn,all
+HOST-SUFFIX,cozeapp.net,all
+HOST-SUFFIX,cozebaas.cn,all
+HOST-SUFFIX,cozebuild.com,all
+HOST-SUFFIX,cozecdn.com,all
+HOST-SUFFIX,cozedeploy.com,all
+HOST-SUFFIX,cozefn.cn,all
+HOST-SUFFIX,cozeide.cn,all
+HOST-SUFFIX,cozesdk.com,all
+HOST-SUFFIX,doudou.com,all
+HOST-SUFFIX,marscode.cn,all
+HOST-SUFFIX,marscode.com.cn,all
+HOST-SUFFIX,mcbaas.work,all
+HOST-SUFFIX,mcdemo.show,all
+HOST-SUFFIX,mchost.guru,all
+HOST-SUFFIX,mcprev.cn,all
+HOST-SUFFIX,tcwqqdy.guru,all
+HOST-SUFFIX,trae.cn,all
+HOST-SUFFIX,trae.com.cn,all
+HOST-SUFFIX,trae.guru,all
+HOST-SUFFIX,yoma.cn,all
 
 # Cerebras / Core
-HOST-SUFFIX,cerebras.ai
+HOST-SUFFIX,cerebras.ai,all
 
 # Character.AI / Core
-HOST-SUFFIX,character.ai
+HOST-SUFFIX,character.ai,all
 
 # Chutes / Core
-HOST-SUFFIX,chutes.ai
+HOST-SUFFIX,chutes.ai,all
 
 # Civitai / Core
-HOST-SUFFIX,civitai.com
+HOST-SUFFIX,civitai.com,all
 
 # Cline / Core
-HOST-SUFFIX,cline.bot
+HOST-SUFFIX,cline.bot,all
 
 # ClipDrop / Core
-HOST-SUFFIX,clipdrop.co
+HOST-SUFFIX,clipdrop.co,all
 
 # Cloudflare AI / Core
-HOST,api.cloudflare.com
-HOST-SUFFIX,ai.cloudflare.com
+HOST,api.cloudflare.com,all
+HOST-SUFFIX,ai.cloudflare.com,all
 
 # CodeRabbit / Core
-HOST-SUFFIX,coderabbit.ai
+HOST-SUFFIX,coderabbit.ai,all
 
 # Cohere / Core
-HOST-SUFFIX,cohere.ai
-HOST-SUFFIX,cohere.com
+HOST-SUFFIX,cohere.ai,all
+HOST-SUFFIX,cohere.com,all
 
 # ComfyUI / Core
-HOST-SUFFIX,comfy.org
-HOST-SUFFIX,comfyregistry.org
+HOST-SUFFIX,comfy.org,all
+HOST-SUFFIX,comfyregistry.org,all
 
 # Command Code / Core
-HOST-SUFFIX,commandcode.ai
+HOST-SUFFIX,commandcode.ai,all
 
 # Continue / Core
-HOST-SUFFIX,continue.dev
+HOST-SUFFIX,continue.dev,all
 
 # Copilot / Core
-HOST,location.microsoft.com
-HOST,odc.officeapps.live.com
-HOST-SUFFIX,copilot.microsoft.com
-HOST-SUFFIX,githubcopilot.com
+HOST,location.microsoft.com,all
+HOST,odc.officeapps.live.com,all
+HOST-SUFFIX,copilot.microsoft.com,all
+HOST-SUFFIX,githubcopilot.com,all
 
 # Copilot / Third-Party
-HOST,api.msn.com
-HOST,api.statsig.com
-HOST,assets.msn.com
-HOST,browser-intake-datadoghq.com
-HOST,copilot-proxy.githubusercontent.com
-HOST,copilot-workspace.githubnext.com
-HOST,copilotprodattachments.blob.core.windows.net
-HOST,gateway.bingviz.microsoft.net
-HOST,gateway.bingviz.microsoftapp.net
-HOST,in.appcenter.ms
-HOST,self.events.data.microsoft.com
-HOST,static.cloudflareinsights.com
-HOST,sydney.bing.com
-HOST-SUFFIX,algolia.net
-HOST-SUFFIX,api.microsoftapp.net
-HOST-SUFFIX,auth0.com
-HOST-SUFFIX,bing-shopping.microsoft-falcon.io
-HOST-SUFFIX,challenges.cloudflare.com
-HOST-SUFFIX,client-api.arkoselabs.com
-HOST-SUFFIX,edgeservices.bing.com
-HOST-SUFFIX,events.statsigapi.net
-HOST-SUFFIX,featuregates.org
-HOST-SUFFIX,identrust.com
-HOST-SUFFIX,launchdarkly.com
-HOST-SUFFIX,observeit.net
-HOST-SUFFIX,segment.io
-HOST-SUFFIX,stripe.com
-IP-ASN,14061,no-resolve
+HOST,api.msn.com,all
+HOST,api.statsig.com,all
+HOST,assets.msn.com,all
+HOST,browser-intake-datadoghq.com,all
+HOST,copilot-proxy.githubusercontent.com,all
+HOST,copilot-workspace.githubnext.com,all
+HOST,copilotprodattachments.blob.core.windows.net,all
+HOST,gateway.bingviz.microsoft.net,all
+HOST,gateway.bingviz.microsoftapp.net,all
+HOST,in.appcenter.ms,all
+HOST,self.events.data.microsoft.com,all
+HOST,static.cloudflareinsights.com,all
+HOST,sydney.bing.com,all
+HOST-SUFFIX,algolia.net,all
+HOST-SUFFIX,api.microsoftapp.net,all
+HOST-SUFFIX,auth0.com,all
+HOST-SUFFIX,bing-shopping.microsoft-falcon.io,all
+HOST-SUFFIX,challenges.cloudflare.com,all
+HOST-SUFFIX,client-api.arkoselabs.com,all
+HOST-SUFFIX,edgeservices.bing.com,all
+HOST-SUFFIX,events.statsigapi.net,all
+HOST-SUFFIX,featuregates.org,all
+HOST-SUFFIX,identrust.com,all
+HOST-SUFFIX,launchdarkly.com,all
+HOST-SUFFIX,observeit.net,all
+HOST-SUFFIX,segment.io,all
+HOST-SUFFIX,stripe.com,all
+IP-ASN,14061,all,no-resolve
 
 # CrewAI / Core
-HOST-SUFFIX,crewai.com
+HOST-SUFFIX,crewai.com,all
 
 # Cursor / Core
-HOST-SUFFIX,cursor-cdn.com
-HOST-SUFFIX,cursor.com
-HOST-SUFFIX,cursor.sh
-HOST-SUFFIX,cursorapi.com
+HOST-SUFFIX,cursor-cdn.com,all
+HOST-SUFFIX,cursor.com,all
+HOST-SUFFIX,cursor.sh,all
+HOST-SUFFIX,cursorapi.com,all
 
 # DeepInfra / Core
-HOST-SUFFIX,deepinfra.com
+HOST-SUFFIX,deepinfra.com,all
 
 # DeepSeek / Core
-HOST-SUFFIX,deepseek.com
-HOST-SUFFIX,deepseeksvc.com
+HOST-SUFFIX,deepseek.com,all
+HOST-SUFFIX,deepseeksvc.com,all
 
 # Descript / Core
-HOST-SUFFIX,descript.com
+HOST-SUFFIX,descript.com,all
 
 # Devin / Core
-HOST-SUFFIX,devin.ai
+HOST-SUFFIX,devin.ai,all
 
 # Dia Browser / Core
-HOST-SUFFIX,diabrowser.com
-HOST-SUFFIX,diabrowser.engineering
+HOST-SUFFIX,diabrowser.com,all
+HOST-SUFFIX,diabrowser.engineering,all
 
 # Dify / Core
-HOST-SUFFIX,dify.ai
+HOST-SUFFIX,dify.ai,all
 
 # DuckDuckGo AI / Core
-HOST-SUFFIX,duck.ai
+HOST-SUFFIX,duck.ai,all
 
 # Eigent / Core
-HOST-SUFFIX,eigent.ai
+HOST-SUFFIX,eigent.ai,all
 
 # ElevenLabs / Core
-HOST-SUFFIX,elevenlabs.com
-HOST-SUFFIX,elevenlabs.io
+HOST-SUFFIX,elevenlabs.com,all
+HOST-SUFFIX,elevenlabs.io,all
 
 # Factory / Core
-HOST-SUFFIX,factory.ai
+HOST-SUFFIX,factory.ai,all
 
 # Fireworks AI / Core
-HOST-SUFFIX,fireworks.ai
+HOST-SUFFIX,fireworks.ai,all
 
 # Gamma / Core
-HOST-SUFFIX,gamma.app
+HOST-SUFFIX,gamma.app,all
 
 # Genspark / Core
-HOST-SUFFIX,genspark.ai
+HOST-SUFFIX,genspark.ai,all
 
 # Google AI / Core
-HOST-SUFFIX,ai.google.dev
-HOST-SUFFIX,ai.studio
-HOST-SUFFIX,aistudio.google.com
-HOST-SUFFIX,antigravity.google
-HOST-SUFFIX,antigravity.google.com
-HOST-SUFFIX,bard.google.com
-HOST-SUFFIX,deepmind.com
-HOST-SUFFIX,deepmind.google
-HOST-SUFFIX,gemini.google
-HOST-SUFFIX,gemini.google.com
-HOST-SUFFIX,generativeai.google
-HOST-SUFFIX,generativelanguage.googleapis.com
-HOST-SUFFIX,notebooklm.google
-HOST-SUFFIX,notebooklm.google.com
+HOST-SUFFIX,ai.google.dev,all
+HOST-SUFFIX,ai.studio,all
+HOST-SUFFIX,aistudio.google.com,all
+HOST-SUFFIX,antigravity.google,all
+HOST-SUFFIX,antigravity.google.com,all
+HOST-SUFFIX,bard.google.com,all
+HOST-SUFFIX,deepmind.com,all
+HOST-SUFFIX,deepmind.google,all
+HOST-SUFFIX,gemini.google,all
+HOST-SUFFIX,gemini.google.com,all
+HOST-SUFFIX,generativeai.google,all
+HOST-SUFFIX,generativelanguage.googleapis.com,all
+HOST-SUFFIX,notebooklm.google,all
+HOST-SUFFIX,notebooklm.google.com,all
 
 # Google AI / Third-Party
-HOST,alkalicore-pa.clients6.google.com
-HOST,alkalimakersuite-pa.clients6.google.com
-HOST,antigravity-pa.googleapis.com
-HOST,antigravity.googleapis.com
-HOST,cloudaicompanion.googleapis.com
-HOST,cloudcode-pa.googleapis.com
-HOST,daily-cloudcode-pa.googleapis.com
-HOST,notebooklm-pa.googleapis.com
-HOST,notebooklm.googleapis.com
-HOST,webchannel-alkalimakersuite-pa.clients6.google.com
-HOST-SUFFIX,aicode.googleapis.com
-HOST-SUFFIX,aida.googleapis.com
-HOST-SUFFIX,aisandbox-pa.googleapis.com
-HOST-SUFFIX,antigravity-unleash.goog
-HOST-SUFFIX,flow.google
-HOST-SUFFIX,flow.google.com
-HOST-SUFFIX,geller-pa.googleapis.com
-HOST-SUFFIX,gemini.gstatic.com
-HOST-SUFFIX,jules.google
-HOST-SUFFIX,jules.google.com
-HOST-SUFFIX,labs.google
-HOST-SUFFIX,labs.google.com
-HOST-SUFFIX,makersuite.google.com
-HOST-SUFFIX,notebook.google
-HOST-SUFFIX,notebook.google.com
-HOST-SUFFIX,opal.google
-HOST-SUFFIX,opal.google.com
-HOST-SUFFIX,proactivebackend-pa.googleapis.com
-HOST-SUFFIX,robinfrontend-pa.googleapis.com
-HOST-SUFFIX,stitch.withgoogle.com
+HOST,alkalicore-pa.clients6.google.com,all
+HOST,alkalimakersuite-pa.clients6.google.com,all
+HOST,antigravity-pa.googleapis.com,all
+HOST,antigravity.googleapis.com,all
+HOST,cloudaicompanion.googleapis.com,all
+HOST,cloudcode-pa.googleapis.com,all
+HOST,daily-cloudcode-pa.googleapis.com,all
+HOST,notebooklm-pa.googleapis.com,all
+HOST,notebooklm.googleapis.com,all
+HOST,webchannel-alkalimakersuite-pa.clients6.google.com,all
+HOST-SUFFIX,aicode.googleapis.com,all
+HOST-SUFFIX,aida.googleapis.com,all
+HOST-SUFFIX,aisandbox-pa.googleapis.com,all
+HOST-SUFFIX,antigravity-unleash.goog,all
+HOST-SUFFIX,flow.google,all
+HOST-SUFFIX,flow.google.com,all
+HOST-SUFFIX,geller-pa.googleapis.com,all
+HOST-SUFFIX,gemini.gstatic.com,all
+HOST-SUFFIX,jules.google,all
+HOST-SUFFIX,jules.google.com,all
+HOST-SUFFIX,labs.google,all
+HOST-SUFFIX,labs.google.com,all
+HOST-SUFFIX,makersuite.google.com,all
+HOST-SUFFIX,notebook.google,all
+HOST-SUFFIX,notebook.google.com,all
+HOST-SUFFIX,opal.google,all
+HOST-SUFFIX,opal.google.com,all
+HOST-SUFFIX,proactivebackend-pa.googleapis.com,all
+HOST-SUFFIX,robinfrontend-pa.googleapis.com,all
+HOST-SUFFIX,stitch.withgoogle.com,all
 
 # Grammarly / Core
-HOST-SUFFIX,grammarly.com
+HOST-SUFFIX,grammarly.com,all
 
 # Groq / Core
-HOST-SUFFIX,groq.com
+HOST-SUFFIX,groq.com,all
 
 # H2O.ai / Core
-HOST-SUFFIX,h2o.ai
+HOST-SUFFIX,h2o.ai,all
 
 # Hermes Agent / Core
-HOST-SUFFIX,hermes-agent.nousresearch.com
+HOST-SUFFIX,hermes-agent.nousresearch.com,all
 
 # HeyGen / Core
-HOST-SUFFIX,heygen.com
+HOST-SUFFIX,heygen.com,all
 
 # Hugging Face / Core
-HOST-SUFFIX,hf.co
-HOST-SUFFIX,hf.space
-HOST-SUFFIX,huggingface.co
+HOST-SUFFIX,hf.co,all
+HOST-SUFFIX,hf.space,all
+HOST-SUFFIX,huggingface.co,all
 
 # Ideogram / Core
-HOST-SUFFIX,ideogram.ai
+HOST-SUFFIX,ideogram.ai,all
 
 # Inflection / Pi / Core
-HOST-SUFFIX,inflection.ai
-HOST-SUFFIX,pi.ai
+HOST-SUFFIX,inflection.ai,all
+HOST-SUFFIX,pi.ai,all
 
 # Jasper / Core
-HOST-SUFFIX,jasper.ai
+HOST-SUFFIX,jasper.ai,all
 
 # JetBrains AI / Core
-HOST-SUFFIX,grazie.ai
-HOST-SUFFIX,grazie.aws.intellij.net
-HOST-SUFFIX,jetbrains.ai
+HOST-SUFFIX,grazie.ai,all
+HOST-SUFFIX,grazie.aws.intellij.net,all
+HOST-SUFFIX,jetbrains.ai,all
 
 # Kilo / Core
-HOST-SUFFIX,kilo.ai
-HOST-SUFFIX,kilo.codes
+HOST-SUFFIX,kilo.ai,all
+HOST-SUFFIX,kilo.codes,all
 
 # Kiro / Core
-HOST-SUFFIX,kiro.dev
+HOST-SUFFIX,kiro.dev,all
 
 # LangChain / Core
-HOST-SUFFIX,langchain.com
+HOST-SUFFIX,langchain.com,all
 
 # Leonardo AI / Core
-HOST-SUFFIX,leonardo.ai
+HOST-SUFFIX,leonardo.ai,all
 
 # LMArena / Core
-HOST-SUFFIX,lmarena.ai
+HOST-SUFFIX,lmarena.ai,all
 
 # LM Studio / Core
-HOST-SUFFIX,lmstudio.ai
+HOST-SUFFIX,lmstudio.ai,all
 
 # Lovable / Core
-HOST-SUFFIX,lovable.dev
+HOST-SUFFIX,lovable.dev,all
 
 # Lovart / Core
-HOST-SUFFIX,lovart.ai
+HOST-SUFFIX,lovart.ai,all
 
 # Luma AI / Core
-HOST-SUFFIX,lumalabs.ai
+HOST-SUFFIX,lumalabs.ai,all
 
 # Manus / Core
-HOST-SUFFIX,manus.im
-HOST-SUFFIX,manuscdn.com
+HOST-SUFFIX,manus.im,all
+HOST-SUFFIX,manuscdn.com,all
 
 # Meta AI / Core
-HOST,ai.developer.meta.com
-HOST,ai.meta.com
-HOST,aidemos.meta.com
-HOST,developer.meta.com
-HOST,llama.developer.meta.com
-HOST-SUFFIX,atmeta.com
-HOST-SUFFIX,llama.com
-HOST-SUFFIX,llamameta.net
-HOST-SUFFIX,meta.ai
+HOST,ai.developer.meta.com,all
+HOST,ai.meta.com,all
+HOST,aidemos.meta.com,all
+HOST,developer.meta.com,all
+HOST,llama.developer.meta.com,all
+HOST-SUFFIX,atmeta.com,all
+HOST-SUFFIX,llama.com,all
+HOST-SUFFIX,llamameta.net,all
+HOST-SUFFIX,meta.ai,all
 
 # Midjourney / Core
-HOST-SUFFIX,midjourney.com
+HOST-SUFFIX,midjourney.com,all
 
 # MiniMax / Core
-HOST,api.minimax.io
-HOST,api.minimaxi.com
-HOST-SUFFIX,hailuoai.com
-HOST-SUFFIX,xingyeai.com
+HOST,api.minimax.io,all
+HOST,api.minimaxi.com,all
+HOST-SUFFIX,hailuoai.com,all
+HOST-SUFFIX,xingyeai.com,all
 
 # Mistral AI / Core
-HOST-SUFFIX,mistral.ai
+HOST-SUFFIX,mistral.ai,all
 
 # ModelScope / Core
-HOST-SUFFIX,modelscope.cn
-HOST-SUFFIX,modelscope.com
+HOST-SUFFIX,modelscope.cn,all
+HOST-SUFFIX,modelscope.com,all
 
 # Moonshot AI / Core
-HOST-SUFFIX,kimi.com
-HOST-SUFFIX,moonshot.ai
-HOST-SUFFIX,moonshot.cn
+HOST-SUFFIX,kimi.com,all
+HOST-SUFFIX,moonshot.ai,all
+HOST-SUFFIX,moonshot.cn,all
 
 # Novita AI / Core
-HOST-SUFFIX,novita.ai
+HOST-SUFFIX,novita.ai,all
 
 # Ollama / Core
-HOST-SUFFIX,ollama.com
+HOST-SUFFIX,ollama.com,all
 
 # OpenAI / Core
-HOST-SUFFIX,ai.com
-HOST-SUFFIX,chat.com
-HOST-SUFFIX,chatgpt.com
-HOST-SUFFIX,chatgpt.livekit.cloud
-HOST-SUFFIX,crixet.com
-HOST-SUFFIX,oaistatic.com
-HOST-SUFFIX,oaiusercontent.com
-HOST-SUFFIX,openai.com
-HOST-SUFFIX,openaiapi-site.azureedge.net
-HOST-SUFFIX,openaicom.imgix.net
-HOST-SUFFIX,sora.com
-HOST-KEYWORD,chatgpt-async-webps-prod
-HOST-KEYWORD,openai
+HOST-SUFFIX,ai.com,all
+HOST-SUFFIX,chat.com,all
+HOST-SUFFIX,chatgpt.com,all
+HOST-SUFFIX,chatgpt.livekit.cloud,all
+HOST-SUFFIX,crixet.com,all
+HOST-SUFFIX,oaistatic.com,all
+HOST-SUFFIX,oaiusercontent.com,all
+HOST-SUFFIX,openai.com,all
+HOST-SUFFIX,openaiapi-site.azureedge.net,all
+HOST-SUFFIX,openaicom.imgix.net,all
+HOST-SUFFIX,sora.com,all
+HOST-KEYWORD,chatgpt-async-webps-prod,all
+HOST-KEYWORD,openai,all
 
 # OpenAI / Network
-IP-CIDR,199.47.142.0/23,no-resolve
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
-IP6-CIDR,2604:f20::/32,no-resolve
-IP-ASN,401518,no-resolve
+IP-CIDR,199.47.142.0/23,all,no-resolve
+IP-CIDR,24.199.123.28/32,all,no-resolve
+IP-CIDR,64.23.132.171/32,all,no-resolve
+IP6-CIDR,2604:f20::/32,all,no-resolve
+IP-ASN,401518,all,no-resolve
 
 # OpenAI / Third-Party
-HOST,openai-api.arkoselabs.com
-HOST,openaiassets.blob.core.windows.net
-HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-HOST,openaicomproductionae4b.blob.core.windows.net
-HOST,production-openaicom-storage.azureedge.net
-HOST-SUFFIX,api.statsig.com
-HOST-SUFFIX,chatgpt.site
-HOST-SUFFIX,host.livekit.cloud
-HOST-SUFFIX,oaistatsig.com
-HOST-SUFFIX,openai.com.cdn.cloudflare.net
-HOST-SUFFIX,turn.livekit.cloud
+HOST,openai-api.arkoselabs.com,all
+HOST,openaiassets.blob.core.windows.net,all
+HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,all
+HOST,openaicomproductionae4b.blob.core.windows.net,all
+HOST,production-openaicom-storage.azureedge.net,all
+HOST-SUFFIX,api.statsig.com,all
+HOST-SUFFIX,chatgpt.site,all
+HOST-SUFFIX,host.livekit.cloud,all
+HOST-SUFFIX,oaistatsig.com,all
+HOST-SUFFIX,openai.com.cdn.cloudflare.net,all
+HOST-SUFFIX,turn.livekit.cloud,all
 
 # OpenArt / Core
-HOST-SUFFIX,openart.ai
+HOST-SUFFIX,openart.ai,all
 
 # OpenClaw / Core
-HOST-SUFFIX,openclaw.ai
+HOST-SUFFIX,openclaw.ai,all
 
 # OpenCode / Core
-HOST-SUFFIX,opencode.ai
+HOST-SUFFIX,opencode.ai,all
 
 # OpenRouter / Core
-HOST-SUFFIX,openrouter.ai
+HOST-SUFFIX,openrouter.ai,all
 
 # Otter.ai / Core
-HOST-SUFFIX,otter.ai
+HOST-SUFFIX,otter.ai,all
 
 # Perplexity / Core
-HOST,ppl-ai-file-upload.s3.amazonaws.com
-HOST,pplx-res.cloudinary.com
-HOST-SUFFIX,perplexity.ai
-HOST-SUFFIX,perplexity.com
-HOST-SUFFIX,pplx.ai
+HOST,ppl-ai-file-upload.s3.amazonaws.com,all
+HOST,pplx-res.cloudinary.com,all
+HOST-SUFFIX,perplexity.ai,all
+HOST-SUFFIX,perplexity.com,all
+HOST-SUFFIX,pplx.ai,all
 
 # Phind / Core
-HOST-SUFFIX,phind.com
+HOST-SUFFIX,phind.com,all
 
 # Pika / Core
-HOST-SUFFIX,pika.art
+HOST-SUFFIX,pika.art,all
 
 # Poe / Core
-HOST-SUFFIX,poe.com
-HOST-SUFFIX,poecdn.net
+HOST-SUFFIX,poe.com,all
+HOST-SUFFIX,poecdn.net,all
 
 # PPIO / Core
-HOST-SUFFIX,ppio.cn
-HOST-SUFFIX,ppio.com
+HOST-SUFFIX,ppio.cn,all
+HOST-SUFFIX,ppio.com,all
 
 # Qoder / Core
-HOST-SUFFIX,qoder.com
+HOST-SUFFIX,qoder.com,all
 
 # Recraft / Core
-HOST-SUFFIX,recraft.ai
+HOST-SUFFIX,recraft.ai,all
 
 # Replicate / Core
-HOST-SUFFIX,replicate.com
-HOST-SUFFIX,replicate.delivery
+HOST-SUFFIX,replicate.com,all
+HOST-SUFFIX,replicate.delivery,all
 
 # Replit / Core
-HOST-SUFFIX,repl.co
-HOST-SUFFIX,repl.it
-HOST-SUFFIX,replit.app
-HOST-SUFFIX,replit.com
-HOST-SUFFIX,replit.dev
+HOST-SUFFIX,repl.co,all
+HOST-SUFFIX,repl.it,all
+HOST-SUFFIX,replit.app,all
+HOST-SUFFIX,replit.com,all
+HOST-SUFFIX,replit.dev,all
 
 # Runway / Core
-HOST-SUFFIX,runway.com
-HOST-SUFFIX,runwayml.com
+HOST-SUFFIX,runway.com,all
+HOST-SUFFIX,runwayml.com,all
 
 # SiliconFlow / Core
-HOST-SUFFIX,siliconflow.cn
-HOST-SUFFIX,siliconflow.com
+HOST-SUFFIX,siliconflow.cn,all
+HOST-SUFFIX,siliconflow.com,all
 
 # Sourcegraph / Core
-HOST-SUFFIX,ampcode.com
-HOST-SUFFIX,ampworkers.com
-HOST-SUFFIX,cody.dev
-HOST-SUFFIX,sourcegraph.com
+HOST-SUFFIX,ampcode.com,all
+HOST-SUFFIX,ampworkers.com,all
+HOST-SUFFIX,cody.dev,all
+HOST-SUFFIX,sourcegraph.com,all
 
 # Stability AI / Core
-HOST-SUFFIX,stability.ai
+HOST-SUFFIX,stability.ai,all
 
 # StepFun / Core
-HOST-SUFFIX,stepfun.ai
-HOST-SUFFIX,stepfun.com
+HOST-SUFFIX,stepfun.ai,all
+HOST-SUFFIX,stepfun.com,all
 
 # Suno / Core
-HOST-SUFFIX,suno.ai
-HOST-SUFFIX,suno.com
+HOST-SUFFIX,suno.ai,all
+HOST-SUFFIX,suno.com,all
 
 # Synthesia / Core
-HOST-SUFFIX,synthesia.io
+HOST-SUFFIX,synthesia.io,all
 
 # Tabnine / Core
-HOST-SUFFIX,tabnine.com
+HOST-SUFFIX,tabnine.com,all
 
 # Tencent AI / Core
-HOST,api.hunyuan.cloud.tencent.com
-HOST,hunyuan.tencentcloudapi.com
-HOST-SUFFIX,hunyuan.tencent.com
-HOST-SUFFIX,yuanbao.tencent.com
-HOST-SUFFIX,yuanqi.tencent.com
+HOST,api.hunyuan.cloud.tencent.com,all
+HOST,hunyuan.tencentcloudapi.com,all
+HOST-SUFFIX,hunyuan.tencent.com,all
+HOST-SUFFIX,yuanbao.tencent.com,all
+HOST-SUFFIX,yuanqi.tencent.com,all
 
 # Together AI / Core
-HOST-SUFFIX,together.ai
-HOST-SUFFIX,together.xyz
+HOST-SUFFIX,together.ai,all
+HOST-SUFFIX,together.xyz,all
 
 # Udio / Core
-HOST-SUFFIX,udio.com
+HOST-SUFFIX,udio.com,all
 
 # v0 / Core
-HOST-SUFFIX,v0.app
-HOST-SUFFIX,v0.dev
+HOST-SUFFIX,v0.app,all
+HOST-SUFFIX,v0.dev,all
 
 # Volcengine AI / Core
-HOST,ark.cn-beijing.volces.com
-HOST-SUFFIX,doubao.com
+HOST,ark.cn-beijing.volces.com,all
+HOST-SUFFIX,doubao.com,all
 
 # Windsurf / Core
-HOST-SUFFIX,codeium.com
-HOST-SUFFIX,codeiumdata.com
-HOST-SUFFIX,windsurf.build
-HOST-SUFFIX,windsurf.com
+HOST-SUFFIX,codeium.com,all
+HOST-SUFFIX,codeiumdata.com,all
+HOST-SUFFIX,windsurf.build,all
+HOST-SUFFIX,windsurf.com,all
 
 # xAI / Core
-HOST-SUFFIX,grok.com
-HOST-SUFFIX,grok.x.com
-HOST-SUFFIX,grokipedia.com
-HOST-SUFFIX,x.ai
+HOST-SUFFIX,grok.com,all
+HOST-SUFFIX,grok.x.com,all
+HOST-SUFFIX,grokipedia.com,all
+HOST-SUFFIX,x.ai,all
 
 # Xiaomi AI / Core
-HOST-SUFFIX,miaibox.com
-HOST-SUFFIX,xiaoaiassist.com
-HOST-SUFFIX,xiaomimimo.com
+HOST-SUFFIX,miaibox.com,all
+HOST-SUFFIX,xiaoaiassist.com,all
+HOST-SUFFIX,xiaomimimo.com,all
 
 # You.com / Core
-HOST-SUFFIX,you.com
+HOST-SUFFIX,you.com,all
 
 # YouMind / Core
-HOST-SUFFIX,youmind.ai
-HOST-SUFFIX,youmind.com
-HOST-SUFFIX,youmind.site
+HOST-SUFFIX,youmind.ai,all
+HOST-SUFFIX,youmind.com,all
+HOST-SUFFIX,youmind.site,all
 
 # Zed / Core
-HOST-SUFFIX,zed.dev
+HOST-SUFFIX,zed.dev,all
 
 # Zhipu AI / Core
-HOST-SUFFIX,bigmodel.cn
-HOST-SUFFIX,chatglm.cn
-HOST-SUFFIX,z.ai
-HOST-SUFFIX,zhipuai.cn
-HOST-SUFFIX,zhipucn.com
+HOST-SUFFIX,bigmodel.cn,all
+HOST-SUFFIX,chatglm.cn,all
+HOST-SUFFIX,z.ai,all
+HOST-SUFFIX,zhipuai.cn,all
+HOST-SUFFIX,zhipucn.com,all

@@ -3,8 +3,8 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,bigmodel.cn
-HOST-SUFFIX,chatglm.cn
-HOST-SUFFIX,z.ai
-HOST-SUFFIX,zhipuai.cn
-HOST-SUFFIX,zhipucn.com
+HOST-SUFFIX,bigmodel.cn,zhipu-ai
+HOST-SUFFIX,chatglm.cn,zhipu-ai
+HOST-SUFFIX,z.ai,zhipu-ai
+HOST-SUFFIX,zhipuai.cn,zhipu-ai
+HOST-SUFFIX,zhipucn.com,zhipu-ai

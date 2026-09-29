@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,civitai.com
+HOST-SUFFIX,civitai.com,civitai

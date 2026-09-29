@@ -3,18 +3,18 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST,aws-language-servers.us-east-1.amazonaws.com
-HOST,aws-toolkit-language-servers.amazonaws.com
-HOST,client-telemetry.us-east-1.amazonaws.com
-HOST,codewhisperer.us-east-1.amazonaws.com
-HOST,cognito-identity.us-east-1.amazonaws.com
-HOST,idetoolkits-hostedfiles.amazonaws.com
-HOST,idetoolkits.amazonwebservices.com
-HOST,q-developer-integration.us-east-1.api.aws
-HOST-SUFFIX,aws.dev
-HOST-SUFFIX,awsapps.com
-HOST-SUFFIX,awsstatic.com
-HOST-SUFFIX,console.aws.a2z.com
-HOST-SUFFIX,q.eu-central-1.amazonaws.com
-HOST-SUFFIX,q.us-east-1.amazonaws.com
-HOST-SUFFIX,sso.amazonaws.com
+HOST,aws-language-servers.us-east-1.amazonaws.com,amazon-q
+HOST,aws-toolkit-language-servers.amazonaws.com,amazon-q
+HOST,client-telemetry.us-east-1.amazonaws.com,amazon-q
+HOST,codewhisperer.us-east-1.amazonaws.com,amazon-q
+HOST,cognito-identity.us-east-1.amazonaws.com,amazon-q
+HOST,idetoolkits-hostedfiles.amazonaws.com,amazon-q
+HOST,idetoolkits.amazonwebservices.com,amazon-q
+HOST,q-developer-integration.us-east-1.api.aws,amazon-q
+HOST-SUFFIX,aws.dev,amazon-q
+HOST-SUFFIX,awsapps.com,amazon-q
+HOST-SUFFIX,awsstatic.com,amazon-q
+HOST-SUFFIX,console.aws.a2z.com,amazon-q
+HOST-SUFFIX,q.eu-central-1.amazonaws.com,amazon-q
+HOST-SUFFIX,q.us-east-1.amazonaws.com,amazon-q
+HOST-SUFFIX,sso.amazonaws.com,amazon-q

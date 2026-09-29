@@ -3,6 +3,6 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,youmind.ai
-HOST-SUFFIX,youmind.com
-HOST-SUFFIX,youmind.site
+HOST-SUFFIX,youmind.ai,youmind
+HOST-SUFFIX,youmind.com,youmind
+HOST-SUFFIX,youmind.site,youmind

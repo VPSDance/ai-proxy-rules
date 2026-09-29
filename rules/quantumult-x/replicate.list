@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,replicate.com
-HOST-SUFFIX,replicate.delivery
+HOST-SUFFIX,replicate.com,replicate
+HOST-SUFFIX,replicate.delivery,replicate

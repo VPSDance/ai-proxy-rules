@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,zed.dev
+HOST-SUFFIX,zed.dev,zed

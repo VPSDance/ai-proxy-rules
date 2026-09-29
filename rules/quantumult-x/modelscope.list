@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,modelscope.cn
-HOST-SUFFIX,modelscope.com
+HOST-SUFFIX,modelscope.cn,modelscope
+HOST-SUFFIX,modelscope.com,modelscope

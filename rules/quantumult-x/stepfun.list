@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,stepfun.ai
-HOST-SUFFIX,stepfun.com
+HOST-SUFFIX,stepfun.ai,stepfun
+HOST-SUFFIX,stepfun.com,stepfun

@@ -3,7 +3,7 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST,api.minimax.io
-HOST,api.minimaxi.com
-HOST-SUFFIX,hailuoai.com
-HOST-SUFFIX,xingyeai.com
+HOST,api.minimax.io,minimax
+HOST,api.minimaxi.com,minimax
+HOST-SUFFIX,hailuoai.com,minimax
+HOST-SUFFIX,xingyeai.com,minimax

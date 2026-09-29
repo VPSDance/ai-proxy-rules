@@ -3,8 +3,8 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST,ppl-ai-file-upload.s3.amazonaws.com
-HOST,pplx-res.cloudinary.com
-HOST-SUFFIX,perplexity.ai
-HOST-SUFFIX,perplexity.com
-HOST-SUFFIX,pplx.ai
+HOST,ppl-ai-file-upload.s3.amazonaws.com,perplexity
+HOST,pplx-res.cloudinary.com,perplexity
+HOST-SUFFIX,perplexity.ai,perplexity
+HOST-SUFFIX,perplexity.com,perplexity
+HOST-SUFFIX,pplx.ai,perplexity

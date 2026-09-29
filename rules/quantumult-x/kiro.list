@@ -3,6 +3,6 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,kiro.dev
-HOST-SUFFIX,q.eu-central-1.amazonaws.com
-HOST-SUFFIX,q.us-east-1.amazonaws.com
+HOST-SUFFIX,kiro.dev,kiro
+HOST-SUFFIX,q.eu-central-1.amazonaws.com,kiro
+HOST-SUFFIX,q.us-east-1.amazonaws.com,kiro

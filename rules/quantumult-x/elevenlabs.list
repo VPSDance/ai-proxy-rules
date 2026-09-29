@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,elevenlabs.com
-HOST-SUFFIX,elevenlabs.io
+HOST-SUFFIX,elevenlabs.com,elevenlabs
+HOST-SUFFIX,elevenlabs.io,elevenlabs

@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,firefly.adobe.com
-HOST-SUFFIX,firefly.adobe.io
+HOST-SUFFIX,firefly.adobe.com,adobe-firefly
+HOST-SUFFIX,firefly.adobe.io,adobe-firefly

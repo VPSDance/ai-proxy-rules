@@ -3,24 +3,24 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,coze.cn
-HOST-SUFFIX,cozeapp.net
-HOST-SUFFIX,cozebaas.cn
-HOST-SUFFIX,cozebuild.com
-HOST-SUFFIX,cozecdn.com
-HOST-SUFFIX,cozedeploy.com
-HOST-SUFFIX,cozefn.cn
-HOST-SUFFIX,cozeide.cn
-HOST-SUFFIX,cozesdk.com
-HOST-SUFFIX,doudou.com
-HOST-SUFFIX,marscode.cn
-HOST-SUFFIX,marscode.com.cn
-HOST-SUFFIX,mcbaas.work
-HOST-SUFFIX,mcdemo.show
-HOST-SUFFIX,mchost.guru
-HOST-SUFFIX,mcprev.cn
-HOST-SUFFIX,tcwqqdy.guru
-HOST-SUFFIX,trae.cn
-HOST-SUFFIX,trae.com.cn
-HOST-SUFFIX,trae.guru
-HOST-SUFFIX,yoma.cn
+HOST-SUFFIX,coze.cn,bytedance-ai-cn
+HOST-SUFFIX,cozeapp.net,bytedance-ai-cn
+HOST-SUFFIX,cozebaas.cn,bytedance-ai-cn
+HOST-SUFFIX,cozebuild.com,bytedance-ai-cn
+HOST-SUFFIX,cozecdn.com,bytedance-ai-cn
+HOST-SUFFIX,cozedeploy.com,bytedance-ai-cn
+HOST-SUFFIX,cozefn.cn,bytedance-ai-cn
+HOST-SUFFIX,cozeide.cn,bytedance-ai-cn
+HOST-SUFFIX,cozesdk.com,bytedance-ai-cn
+HOST-SUFFIX,doudou.com,bytedance-ai-cn
+HOST-SUFFIX,marscode.cn,bytedance-ai-cn
+HOST-SUFFIX,marscode.com.cn,bytedance-ai-cn
+HOST-SUFFIX,mcbaas.work,bytedance-ai-cn
+HOST-SUFFIX,mcdemo.show,bytedance-ai-cn
+HOST-SUFFIX,mchost.guru,bytedance-ai-cn
+HOST-SUFFIX,mcprev.cn,bytedance-ai-cn
+HOST-SUFFIX,tcwqqdy.guru,bytedance-ai-cn
+HOST-SUFFIX,trae.cn,bytedance-ai-cn
+HOST-SUFFIX,trae.com.cn,bytedance-ai-cn
+HOST-SUFFIX,trae.guru,bytedance-ai-cn
+HOST-SUFFIX,yoma.cn,bytedance-ai-cn

@@ -3,7 +3,7 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,ampcode.com
-HOST-SUFFIX,ampworkers.com
-HOST-SUFFIX,cody.dev
-HOST-SUFFIX,sourcegraph.com
+HOST-SUFFIX,ampcode.com,sourcegraph
+HOST-SUFFIX,ampworkers.com,sourcegraph
+HOST-SUFFIX,cody.dev,sourcegraph
+HOST-SUFFIX,sourcegraph.com,sourcegraph

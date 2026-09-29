@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,diabrowser.com
-HOST-SUFFIX,diabrowser.engineering
+HOST-SUFFIX,diabrowser.com,dia-browser
+HOST-SUFFIX,diabrowser.engineering,dia-browser

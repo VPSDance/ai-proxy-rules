@@ -3,4 +3,4 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,duck.ai
+HOST-SUFFIX,duck.ai,duck-ai

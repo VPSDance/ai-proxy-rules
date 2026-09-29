@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,v0.app
-HOST-SUFFIX,v0.dev
+HOST-SUFFIX,v0.app,v0
+HOST-SUFFIX,v0.dev,v0

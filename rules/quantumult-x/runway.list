@@ -3,5 +3,5 @@
 # https://github.com/VPSDance/ai-proxy-rules
 
 # Core
-HOST-SUFFIX,runway.com
-HOST-SUFFIX,runwayml.com
+HOST-SUFFIX,runway.com,runway
+HOST-SUFFIX,runwayml.com,runway
