@@ -13,3 +13,5 @@ payload:
   - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,llamameta.net
   - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,metaaivm.com
+  - DOMAIN-SUFFIX,muse.ai

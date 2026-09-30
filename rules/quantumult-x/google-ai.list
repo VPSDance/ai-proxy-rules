@@ -26,6 +26,8 @@ HOST,antigravity.googleapis.com,google-ai
 HOST,cloudaicompanion.googleapis.com,google-ai
 HOST,cloudcode-pa.googleapis.com,google-ai
 HOST,daily-cloudcode-pa.googleapis.com,google-ai
+HOST,geminiweb-pa.clients.google.com,google-ai
+HOST,geminiweb-pa.clients6.google.com,google-ai
 HOST,notebooklm-pa.googleapis.com,google-ai
 HOST,notebooklm.googleapis.com,google-ai
 HOST,webchannel-alkalimakersuite-pa.clients6.google.com,google-ai
@@ -41,6 +43,7 @@ HOST-SUFFIX,jules.google,google-ai
 HOST-SUFFIX,jules.google.com,google-ai
 HOST-SUFFIX,labs.google,google-ai
 HOST-SUFFIX,labs.google.com,google-ai
+HOST-SUFFIX,labstailwind.pa.googleapis.com,google-ai
 HOST-SUFFIX,makersuite.google.com,google-ai
 HOST-SUFFIX,notebook.google,google-ai
 HOST-SUFFIX,notebook.google.com,google-ai

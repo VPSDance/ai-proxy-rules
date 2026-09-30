@@ -244,6 +244,8 @@ HOST,antigravity.googleapis.com,global
 HOST,cloudaicompanion.googleapis.com,global
 HOST,cloudcode-pa.googleapis.com,global
 HOST,daily-cloudcode-pa.googleapis.com,global
+HOST,geminiweb-pa.clients.google.com,global
+HOST,geminiweb-pa.clients6.google.com,global
 HOST,notebooklm-pa.googleapis.com,global
 HOST,notebooklm.googleapis.com,global
 HOST,webchannel-alkalimakersuite-pa.clients6.google.com,global
@@ -259,6 +261,7 @@ HOST-SUFFIX,jules.google,global
 HOST-SUFFIX,jules.google.com,global
 HOST-SUFFIX,labs.google,global
 HOST-SUFFIX,labs.google.com,global
+HOST-SUFFIX,labstailwind.pa.googleapis.com,global
 HOST-SUFFIX,makersuite.google.com,global
 HOST-SUFFIX,notebook.google,global
 HOST-SUFFIX,notebook.google.com,global
@@ -345,6 +348,8 @@ HOST-SUFFIX,atmeta.com,global
 HOST-SUFFIX,llama.com,global
 HOST-SUFFIX,llamameta.net,global
 HOST-SUFFIX,meta.ai,global
+HOST-SUFFIX,metaaivm.com,global
+HOST-SUFFIX,muse.ai,global
 
 # Midjourney / Core
 HOST-SUFFIX,midjourney.com,global
