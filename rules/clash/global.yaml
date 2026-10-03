@@ -65,6 +65,7 @@ payload:
   - DOMAIN,storage.googleapis.com
   - DOMAIN-SUFFIX,anthropic.team
   - DOMAIN-SUFFIX,chatbotclaude.com
+  - DOMAIN-SUFFIX,claude.dev
   - DOMAIN-SUFFIX,intercom.io
   - DOMAIN-SUFFIX,intercomcdn.com
   - DOMAIN-SUFFIX,interface.feedback

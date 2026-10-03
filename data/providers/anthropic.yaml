@@ -58,6 +58,7 @@ groups:
       domainSuffix:
         - anthropic.team
         - chatbotclaude.com
+        - claude.dev
         - intercom.io
         - intercomcdn.com
         - interface.feedback
