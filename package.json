@@ -24,7 +24,7 @@
     "@types/node": "^24.13.3",
     "tsx": "^4.23.12",
     "typescript": "^5.9.3",
-    "vite": "^8.2.2",
+    "vite": "^8.2.4",
     "vitest": "^4.1.11"
   },
   "packageManager": "pnpm@10.33.2"
