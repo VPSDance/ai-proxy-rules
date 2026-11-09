@@ -165,6 +165,7 @@ DOMAIN,copilotprodattachments.blob.core.windows.net
 DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
 DOMAIN,in.appcenter.ms
+DOMAIN,production-copilot-host-westus.webpubsub.azure.com
 DOMAIN,self.events.data.microsoft.com
 DOMAIN,static.cloudflareinsights.com
 DOMAIN,sydney.bing.com
@@ -522,6 +523,7 @@ PROCESS-NAME,windsurf
 # xAI / Core
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,grok.x.com
+DOMAIN-SUFFIX,grokbot.com
 DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,x.ai
 

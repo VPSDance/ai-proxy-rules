@@ -16,6 +16,7 @@ domain_set:
   - "in.appcenter.ms"
   - "location.microsoft.com"
   - "odc.officeapps.live.com"
+  - "production-copilot-host-westus.webpubsub.azure.com"
   - "self.events.data.microsoft.com"
   - "static.cloudflareinsights.com"
   - "sydney.bing.com"

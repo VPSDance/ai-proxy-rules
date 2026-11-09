@@ -5,5 +5,6 @@
 domain_suffix_set:
   - "grok.com"
   - "grok.x.com"
+  - "grokbot.com"
   - "grokipedia.com"
   - "x.ai"

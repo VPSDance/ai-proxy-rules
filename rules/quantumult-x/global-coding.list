@@ -123,6 +123,7 @@ HOST,copilotprodattachments.blob.core.windows.net,global-coding
 HOST,gateway.bingviz.microsoft.net,global-coding
 HOST,gateway.bingviz.microsoftapp.net,global-coding
 HOST,in.appcenter.ms,global-coding
+HOST,production-copilot-host-westus.webpubsub.azure.com,global-coding
 HOST,self.events.data.microsoft.com,global-coding
 HOST,static.cloudflareinsights.com,global-coding
 HOST,sydney.bing.com,global-coding

@@ -157,6 +157,7 @@ HOST,copilotprodattachments.blob.core.windows.net,global
 HOST,gateway.bingviz.microsoft.net,global
 HOST,gateway.bingviz.microsoftapp.net,global
 HOST,in.appcenter.ms,global
+HOST,production-copilot-host-westus.webpubsub.azure.com,global
 HOST,self.events.data.microsoft.com,global
 HOST,static.cloudflareinsights.com,global
 HOST,sydney.bing.com,global
@@ -499,6 +500,7 @@ HOST-SUFFIX,windsurf.com,global
 # xAI / Core
 HOST-SUFFIX,grok.com,global
 HOST-SUFFIX,grok.x.com,global
+HOST-SUFFIX,grokbot.com,global
 HOST-SUFFIX,grokipedia.com,global
 HOST-SUFFIX,x.ai,global
 

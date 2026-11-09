@@ -31,6 +31,7 @@ groups:
         - gateway.bingviz.microsoft.net
         - gateway.bingviz.microsoftapp.net
         - in.appcenter.ms
+        - production-copilot-host-westus.webpubsub.azure.com
         - self.events.data.microsoft.com
         - static.cloudflareinsights.com
         - sydney.bing.com
