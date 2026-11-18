@@ -187,6 +187,7 @@ domain_suffix_set:
   - "eigent.ai"
   - "elevenlabs.com"
   - "elevenlabs.io"
+  - "elevenlabsusercontent.com"
   - "events.statsigapi.net"
   - "factory.ai"
   - "featuregates.org"

@@ -212,6 +212,7 @@ HOST-SUFFIX,eigent.ai,global
 # ElevenLabs / Core
 HOST-SUFFIX,elevenlabs.com,global
 HOST-SUFFIX,elevenlabs.io,global
+HOST-SUFFIX,elevenlabsusercontent.com,global
 
 # Factory / Core
 HOST-SUFFIX,factory.ai,global

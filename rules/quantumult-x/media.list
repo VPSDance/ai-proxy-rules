@@ -25,6 +25,7 @@ HOST-SUFFIX,descript.com,media
 # ElevenLabs / Core
 HOST-SUFFIX,elevenlabs.com,media
 HOST-SUFFIX,elevenlabs.io,media
+HOST-SUFFIX,elevenlabsusercontent.com,media
 
 # HeyGen / Core
 HOST-SUFFIX,heygen.com,media

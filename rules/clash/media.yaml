@@ -26,6 +26,7 @@ payload:
   # ElevenLabs / Core
   - DOMAIN-SUFFIX,elevenlabs.com
   - DOMAIN-SUFFIX,elevenlabs.io
+  - DOMAIN-SUFFIX,elevenlabsusercontent.com
 
   # HeyGen / Core
   - DOMAIN-SUFFIX,heygen.com
