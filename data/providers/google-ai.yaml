@@ -59,6 +59,7 @@ groups:
         - flow.google.com
         - geller-pa.googleapis.com
         - gemini.gstatic.com
+        - gemma.ai
         - jules.google
         - jules.google.com
         - labs.google

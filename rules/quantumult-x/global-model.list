@@ -115,6 +115,7 @@ HOST-SUFFIX,flow.google,global-model
 HOST-SUFFIX,flow.google.com,global-model
 HOST-SUFFIX,geller-pa.googleapis.com,global-model
 HOST-SUFFIX,gemini.gstatic.com,global-model
+HOST-SUFFIX,gemma.ai,global-model
 HOST-SUFFIX,jules.google,global-model
 HOST-SUFFIX,jules.google.com,global-model
 HOST-SUFFIX,labs.google,global-model

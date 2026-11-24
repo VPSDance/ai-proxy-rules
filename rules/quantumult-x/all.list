@@ -311,6 +311,7 @@ HOST-SUFFIX,flow.google,all
 HOST-SUFFIX,flow.google.com,all
 HOST-SUFFIX,geller-pa.googleapis.com,all
 HOST-SUFFIX,gemini.gstatic.com,all
+HOST-SUFFIX,gemma.ai,all
 HOST-SUFFIX,jules.google,all
 HOST-SUFFIX,jules.google.com,all
 HOST-SUFFIX,labs.google,all

@@ -42,6 +42,7 @@ HOST-SUFFIX,flow.google,google-ai
 HOST-SUFFIX,flow.google.com,google-ai
 HOST-SUFFIX,geller-pa.googleapis.com,google-ai
 HOST-SUFFIX,gemini.gstatic.com,google-ai
+HOST-SUFFIX,gemma.ai,google-ai
 HOST-SUFFIX,jules.google,google-ai
 HOST-SUFFIX,jules.google.com,google-ai
 HOST-SUFFIX,labs.google,google-ai

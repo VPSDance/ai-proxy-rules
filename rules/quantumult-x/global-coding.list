@@ -202,6 +202,7 @@ HOST-SUFFIX,flow.google,global-coding
 HOST-SUFFIX,flow.google.com,global-coding
 HOST-SUFFIX,geller-pa.googleapis.com,global-coding
 HOST-SUFFIX,gemini.gstatic.com,global-coding
+HOST-SUFFIX,gemma.ai,global-coding
 HOST-SUFFIX,jules.google,global-coding
 HOST-SUFFIX,jules.google.com,global-coding
 HOST-SUFFIX,labs.google,global-coding
